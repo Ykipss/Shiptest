@@ -132,9 +132,9 @@ Acquire: Anomaly
 		"A strange lizard on the outpost"
 	))
 
-	desc = "[group] has requested that a ship [pick(list("procure", "grab", "acquire", "find", "locate"))] \
-	an anomaly core for [pick(list("research", "analysis", "technical development", "closer inspection", "some reason"))]. \
-	They've offered to pay well, so we're relaying this mission to you"
+	desc = "[group] запрашивает корабль, чтобы [pick(list("добыть", "захватить", "получить", "нашйти", "обнаружить"))] \
+	ядро аномалии для [pick(list("исследований", "анализа", "технической разработки", "тщательного осмотра", "неназванной причины"))]. \
+	Они предложили хорошо заплатить, поэтому мы передаем эту миссию вам"
 	. = ..()
 
 
@@ -146,8 +146,8 @@ Acquire: Anomaly
 
 /datum/mission/acquire/creature
 	name = "Capture a goliath"
-	desc = "I require a live goliath for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
+		desc = "Мне нужен живой голиаф для исследовательских целей. Поймайте одного в выданный \
+				LCU и верните его мне, вам щедро."
 	value = 1500
 	duration = 30 MINUTES
 	weight = 6
@@ -166,31 +166,31 @@ Acquire: Anomaly
 
 /datum/mission/acquire/creature/legion
 	name = "Capture a legion"
-	desc = "I require a live legion for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
+	desc = "Мне нужен живой легион для исследовательских целей. Поймайте одного в выданный \
+			LCU и верните его мне, вам щедро заплатят."
 	value = 1300
 	objective_type = /mob/living/simple_animal/hostile/asteroid/hivelord/legion
 
 /datum/mission/acquire/creature/ice_whelp
 	name = "Capture an ice whelp"
-	desc = "I require a live ice whelp for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
+	desc = "Мне нужно живое ледяное отродье для исследовательских целей. Поймайте одного в выданный \
+			LCU и верните его мне, вам щедро заплатят."
 	value = 1700
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_whelp
 
 /datum/mission/acquire/creature/ice_demon
 	name = "Capture an ice demon"
-	desc = "I require a live ice demon for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
+	desc = "Мне нужно живое ледяной демон для исследовательских целей. Поймайте одного в выданный \
+			LCU и верните его мне, вам щедро заплатят."
 	value = 1500
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_demon
 
 /datum/mission/acquire/creature/migo
 	name = "Capture a live mi-go"
-	desc = "I require a live mi-go for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
+	desc = "Мне нужно живое ми-го для исследовательских целей. Поймайте одного в выданный \
+			LCU и верните его мне, вам щедро заплатят"
 	value = 1050
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/netherworld/migo/asteroid
@@ -237,8 +237,8 @@ Acquire: Anomaly
 						/obj/item/fish/bass,
 						/obj/item/fish/armorfish,
 						/obj/item/fish/needlefish)
-	desc = "My aquarium is sorely lacking in [initial(objective_type.name)], can you please bring one to me? \
-			Don't worry about if it's alive or dead, I have methods."
+	desc = "Моему аквариуму катастрофически не хватает [initial(objective_type.name)], не могли бы вы, пожалуйста, принести мне один? \
+			Не беспокойтесь о том, жив он или мертв, у меня есть методы."
 	. = ..()
 
 /datum/mission/acquire/aquarium/rare
@@ -252,8 +252,8 @@ Acquire: Anomaly
 	objective_type = pick(/obj/item/fish/lanternfish,
 						/obj/item/fish/firefish,
 						/obj/item/fish/donkfish)
-	desc = "I seek to make my beloved aquarium truly spectacular, and to do this I need only the finest fish! \
-			Bring me a [initial(objective_type.name)] and I will reward you handsomely."
+	desc = "Я стремлюсь сделать свой любимый аквариум по-настоящему впечатляющим, и для этого мне нужны только самые лучшие рыбки! \
+			Принеси мне [initial(objective_type.name)] и я щедро вознагражу тебя."
 
 /datum/mission/acquire/aquarium/sabatoge
 	name = "That bastard has had it good for too long!"
@@ -263,8 +263,8 @@ Acquire: Anomaly
 
 /datum/mission/acquire/aquarium/sabatoge/New(...)
 	. = ..()
-	desc = "My arch-nemesis [pick("Rutherford","Baldwin","Anderson","Percival")] thinks his aquarium is so much better than mine, I'll show him! \
-			Bring me an emulsijack, and make sure it's alive!"
+	desc = "Мой заклятый враг [pick("Rutherford","Baldwin","Anderson","Percival")] думает, что его аквариум намного лучше моего, я ему покажу! \
+			Принеси мне emulsijack, убедись, что он живой!"
 	objective_type = pick(/obj/item/fish/emulsijack)
 
 /datum/mission/acquire/fish_cook
@@ -277,7 +277,7 @@ Acquire: Anomaly
 
 /datum/mission/acquire/fish_cook/New(...)
 	num_wanted = rand(1,3)
-	desc = "I am a chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
+	desc = "Я шеф-повар, нуждающийся в [num_wanted] рыба для моего последнего блюда. Подойдет любая рыба, только убедитесь, что она не филеированная!"
 	value = (250*num_wanted)
 	. = ..()
 
@@ -295,7 +295,7 @@ Acquire: Anomaly
 
 /obj/structure/closet/mob_capture
 	name = "\improper Lifeform Containment Unit"
-	desc = "A large closet-like container, used to capture hostile lifeforms for retrieval and analysis. The interior is heavily armored, preventing animals from breaking out while inside."
+	desc = "Большой контейнер, похожий на шкаф, используемый для захвата враждебных форм жизни для извлечения и анализа. Внутренняя часть сильно бронирована, что не позволяет существам вырваться наружу, находясь внутри."
 	icon_state = "abductor"
 	icon_door = "abductor"
 	color = "#FF88FF"
