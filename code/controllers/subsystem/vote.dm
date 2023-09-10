@@ -240,7 +240,7 @@ SUBSYSTEM_DEF(vote)
 					valid_clients -= C
 			for(var/c in valid_clients)
 				var/client/C = c
-				SEND_SOUND(C, sound('sound/misc/vinethud.ogg'))
+				// SEND_SOUND(C, sound('sound/misc/vinethud.ogg'))
 				to_chat(C.mob, vote_message)
 				var/datum/action/vote/V = new
 				if(question)
