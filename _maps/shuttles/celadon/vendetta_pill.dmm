@@ -10,15 +10,7 @@
 	dir = 1
 	},
 /obj/item/stack/sheet/mineral/diamond/five,
-/obj/item/stack/sheet/mineral/diamond/five,
 /obj/structure/fans/tiny,
-/obj/docking_port/mobile{
-	can_move_docking_ports = 1;
-	name = null;
-	port_direction = 8;
-	preferred_direction = 4;
-	dir = 2
-	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -29,6 +21,9 @@
 /obj/machinery/power/port_gen/pacman/mrs,
 /obj/item/gun/ballistic/automatic/assualt/ak47,
 /obj/item/gun/ballistic/automatic/assualt/ak47,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/storage)
 "b" = (
@@ -67,6 +62,16 @@
 /obj/item/ammo_box/magazine/ak47,
 /obj/item/areaeditor/shuttle,
 /obj/machinery/door/window,
+/obj/machinery/airalarm/directional/south{
+	pixel_y = -4
+	},
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	name = null;
+	port_direction = 8;
+	preferred_direction = 4;
+	dir = 2
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/storage)
 "y" = (
@@ -76,14 +81,17 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/storage)
