@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"prefix": "SSV",
+	"namelists": [
+		"GORLEX",
+		"SPACE",
+		"ACLF"
+	],
+	"map_name": "KAAS-Class Armed Cruiser",
+	"description": "Отсутствует.",
+	"tags": [
+		"Инженерный",
+		"Боевой",
+		"Ивентовый",
+		"Медицинский"
+	],
+	"map_short_name": "Kaas-class",
+	"map_path": "_maps/shuttles/shiptest/syndicate_kaas.dmm",
+	"limit": 1,
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/captain/syndicate/sbc",
+			"officer": true,
+			"slots": 1
+		},
+		"Lieutenant": {
+			"outfit": "/datum/outfit/job/warden/syndicate/sbc",
+			"officer": true,
+			"slots": 1
+		},
+		"Medic": {
+			"outfit": "/datum/outfit/job/brig_phys/syndicate/sbc",
+			"slots": 1
+		},
+		"Engineer": {
+			"outfit": "/datum/outfit/job/engineer/syndicate/sbc",
+			"slots": 2
+		},
+		"Operative": {
+			"outfit": "/datum/outfit/job/security/syndicate/sbc",
+			"slots": 3
+		}
+	},
+	"enabled" : false
+}
