@@ -6018,7 +6018,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/ship/engineering/engine)
+/area/ship/hallway/central)
 "JA" = (
 /obj/effect/turf_decal/industrial/warning/corner,
 /obj/structure/cable{
@@ -9380,19 +9380,19 @@ Qa
 dD
 xj
 Jz
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
-ZD
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
+xB
 PL
 Si
 si
