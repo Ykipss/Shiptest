@@ -891,7 +891,7 @@
 	pixel_y = 32
 	},
 /turf/template_noop,
-/area)
+/area/template_noop)
 "vP" = (
 /obj/effect/turf_decal/industrial/fire{
 	dir = 6
@@ -1448,6 +1448,12 @@
 	name = "Gauss Rifle";
 	desc = "2nd Battle Grounds Prototype"
 	},
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
+/obj/item/firing_pin,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "Fz" = (
@@ -1594,13 +1600,13 @@
 	dwidth = 2
 	},
 /turf/template_noop,
-/area)
+/area/template_noop)
 "JK" = (
 /obj/structure/sign/poster/contraband/syndicate{
 	pixel_y = -32
 	},
 /turf/template_noop,
-/area)
+/area/template_noop)
 "Kf" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -1878,9 +1884,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
-"Td" = (
-/turf/template_noop,
-/area)
 "Tr" = (
 /obj/effect/turf_decal/syndicateemblem/top/left{
 	dir = 8
@@ -2206,24 +2209,24 @@
 /area/ship/bridge)
 
 (1,1,1) = {"
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
-Td
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
+CE
 CE
 "}
 (2,1,1) = {"
-Td
+CE
 zb
 mu
 np
@@ -2257,7 +2260,7 @@ Na
 CE
 "}
 (4,1,1) = {"
-Td
+CE
 xV
 Ie
 Nk
@@ -2274,7 +2277,7 @@ xV
 CE
 "}
 (5,1,1) = {"
-Td
+CE
 Ex
 vP
 Au
@@ -2308,7 +2311,7 @@ qV
 CE
 "}
 (7,1,1) = {"
-Td
+CE
 Ex
 TH
 bM
@@ -2325,7 +2328,7 @@ qV
 CE
 "}
 (8,1,1) = {"
-Td
+CE
 Na
 DR
 iP
@@ -2342,7 +2345,7 @@ Na
 CE
 "}
 (9,1,1) = {"
-Td
+CE
 zb
 Zq
 Zq
@@ -2359,7 +2362,7 @@ zb
 CE
 "}
 (10,1,1) = {"
-Td
+CE
 Zq
 qY
 un
@@ -2376,7 +2379,7 @@ Zq
 CE
 "}
 (11,1,1) = {"
-Td
+CE
 Zq
 Pq
 RC
@@ -2393,7 +2396,7 @@ Zq
 CE
 "}
 (12,1,1) = {"
-Td
+CE
 Zq
 WI
 bw
@@ -2427,7 +2430,7 @@ Zq
 CE
 "}
 (14,1,1) = {"
-Td
+CE
 xV
 ak
 cp
@@ -2444,7 +2447,7 @@ xV
 CE
 "}
 (15,1,1) = {"
-Td
+CE
 ae
 ki
 hk
@@ -2461,7 +2464,7 @@ fi
 CE
 "}
 (16,1,1) = {"
-Td
+CE
 ae
 tj
 PH
@@ -2478,7 +2481,7 @@ fi
 CE
 "}
 (17,1,1) = {"
-Td
+CE
 ae
 ax
 mU
@@ -2495,7 +2498,7 @@ fi
 CE
 "}
 (18,1,1) = {"
-Td
+CE
 ae
 zQ
 Si
@@ -2512,7 +2515,7 @@ fi
 CE
 "}
 (19,1,1) = {"
-Td
+CE
 ae
 Tz
 hk
@@ -2529,7 +2532,7 @@ fi
 CE
 "}
 (20,1,1) = {"
-Td
+CE
 ae
 Cz
 jo
@@ -2546,7 +2549,7 @@ fi
 CE
 "}
 (21,1,1) = {"
-Td
+CE
 Ly
 xQ
 xQ
@@ -2563,8 +2566,8 @@ Ly
 CE
 "}
 (22,1,1) = {"
-Td
-Td
+CE
+CE
 xQ
 kk
 yF
@@ -2576,12 +2579,12 @@ fc
 Bv
 wT
 xQ
-Td
+CE
 CE
 "}
 (23,1,1) = {"
-Td
-Td
+CE
+CE
 dU
 Wc
 yF
@@ -2593,12 +2596,12 @@ Iw
 ZV
 Bq
 xQ
-Td
+CE
 CE
 "}
 (24,1,1) = {"
-Td
-Td
+CE
+CE
 xd
 aB
 yF
@@ -2610,12 +2613,12 @@ ZV
 BY
 GP
 xd
-Td
+CE
 CE
 "}
 (25,1,1) = {"
-Td
-Td
+CE
+CE
 xd
 hm
 RD
@@ -2627,11 +2630,11 @@ Fn
 rW
 gZ
 xd
-Td
+CE
 CE
 "}
 (26,1,1) = {"
-Td
+CE
 JK
 xQ
 gj
@@ -2648,8 +2651,8 @@ vO
 CE
 "}
 (27,1,1) = {"
-Td
-Td
+CE
+CE
 qZ
 kY
 xK
@@ -2661,13 +2664,13 @@ TE
 IU
 kY
 qZ
-Td
+CE
 CE
 "}
 (28,1,1) = {"
-Td
-Td
-Td
+CE
+CE
+CE
 xQ
 fy
 nX
@@ -2677,14 +2680,14 @@ IC
 nX
 gv
 xQ
-Td
-Td
+CE
+CE
 CE
 "}
 (29,1,1) = {"
-Td
-Td
-Td
+CE
+CE
+CE
 Ly
 xQ
 Ta
@@ -2694,8 +2697,8 @@ Ta
 Ta
 xQ
 Ly
-Td
-Td
+CE
+CE
 CE
 "}
 (30,1,1) = {"
