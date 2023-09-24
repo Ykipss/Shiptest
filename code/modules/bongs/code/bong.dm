@@ -20,7 +20,7 @@
 	var/moan_chance = 0
 
 	///Max units able to be stored inside the bong
-	var/chem_volume = 30
+	var/chem_volume = 15
 	///Is it filled?
 	var/packed_item = FALSE
 
@@ -176,7 +176,7 @@
 	icon_on = "lungbusteron"
 	icon_off = "lungbusteroff"
 	max_hits = 2
-	chem_volume = 50
+	chem_volume = 15
 	smoke_range = 7
 	moan_chance = 50
 
