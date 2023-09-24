@@ -34,22 +34,24 @@
 	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/cryo)
-"bd" = (
-/obj/machinery/suit_storage_unit/syndicate,
-/turf/open/floor/wood/birch,
-/area/ship/security/armory)
 "bh" = (
-/obj/machinery/suit_storage_unit/syndicate,
 /obj/effect/turf_decal/trimline/opaque/neutral/warning{
 	dir = 6
 	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi,
+/obj/item/clothing/mask/gas/syndicate/voicechanger,
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "bw" = (
-/obj/machinery/suit_storage_unit/syndicate,
 /obj/effect/turf_decal/trimline/opaque/neutral/warning{
 	dir = 4
 	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi,
+/obj/item/clothing/mask/gas/syndicate/voicechanger,
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "bM" = (
@@ -153,7 +155,6 @@
 /turf/open/floor/engine,
 /area/ship/engineering)
 "fc" = (
-/obj/structure/table/wood/reinforced,
 /obj/machinery/light{
 	dir = 8;
 	pixel_x = -25
@@ -164,8 +165,10 @@
 	pixel_x = -20;
 	on = 1
 	},
-/obj/item/gun/energy/beam_rifle,
-/obj/machinery/recharger,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/mask/gas/syndicate/voicechanger,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/clothing/suit/space/hardsuit/syndi/elite,
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "fi" = (
@@ -214,6 +217,9 @@
 	},
 /obj/effect/turf_decal/industrial/fire{
 	dir = 8
+	},
+/obj/structure/chair/comfy/black{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/ship/engineering)
@@ -312,6 +318,20 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/binary/pump/on,
+/obj/machinery/button/door{
+	id = "colossus_port";
+	name = "Port Cargo Door Control";
+	pixel_x = 25;
+	dir = 8
+	},
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/item/stack/sheet/mineral/plastitanium/twenty,
+/obj/item/stack/sheet/mineral/plastitanium/twenty,
+/obj/item/stack/sheet/mineral/plastitanium/twenty,
+/obj/item/stack/sheet/plastitaniumglass,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/metal/twenty,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "iV" = (
@@ -538,7 +558,9 @@
 /area/ship/bridge)
 "oi" = (
 /obj/structure/table/wood/reinforced,
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south{
+	cell_type = /obj/item/stock_parts/cell/bluespace
+	},
 /obj/structure/cable,
 /obj/machinery/fax,
 /turf/open/floor/carpet/royalblack,
@@ -562,6 +584,9 @@
 /obj/effect/turf_decal/trimline/opaque/neutral/warning{
 	dir = 8
 	},
+/obj/item/wrench/combat,
+/obj/item/wrench/combat,
+/obj/item/wrench/combat,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "oS" = (
@@ -606,14 +631,17 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/hallway/central)
 "qV" = (
-/obj/machinery/door/poddoor{
-	id = "twinkle_cargo";
-	name = "Cargo Shutters"
-	},
 /obj/structure/fans/tiny,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+/obj/effect/turf_decal/industrial/fire{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "colossus_starboard"
+	},
+/obj/effect/turf_decal/industrial/hatch/red,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/engineering)
 "qY" = (
@@ -801,6 +829,19 @@
 /obj/effect/turf_decal/trimline/opaque/neutral/warning{
 	dir = 8
 	},
+/obj/item/construction/rcd/combat,
+/obj/item/construction/rcd/combat,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "ut" = (
@@ -1165,7 +1206,19 @@
 /obj/machinery/airalarm/syndicate{
 	pixel_y = -28
 	},
-/obj/item/flashlight/lamp/green,
+/obj/item/flashlight/lamp/green{
+	pixel_x = -10
+	},
+/obj/item/paper_bin/carbon{
+	pixel_x = 7
+	},
+/obj/item/pen/edagger{
+	pixel_x = 7
+	},
+/obj/item/stamp/chameleon,
+/obj/machinery/recharger{
+	cell_type = /obj/item/stock_parts/cell/bluespace
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "Bv" = (
@@ -1311,14 +1364,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "DR" = (
-/obj/machinery/button/door{
-	pixel_y = -10;
-	name = "Cargo Doors";
-	id = "twinkle_cargo";
-	pixel_x = 23;
-	dir = 8;
-	req_access = list(150)
-	},
 /obj/effect/turf_decal/industrial/fire{
 	dir = 5
 	},
@@ -1346,12 +1391,13 @@
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "Ex" = (
-/obj/machinery/door/poddoor{
-	id = "twinkle_cargo";
-	name = "Cargo Shutters"
-	},
 /obj/structure/fans/tiny,
 /obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/industrial/fire,
+/obj/machinery/door/poddoor{
+	id = "colossus_port"
+	},
+/obj/effect/turf_decal/industrial/hatch/red,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/engineering)
 "EE" = (
@@ -1448,12 +1494,6 @@
 	name = "Gauss Rifle";
 	desc = "2nd Battle Grounds Prototype"
 	},
-/obj/item/firing_pin,
-/obj/item/firing_pin,
-/obj/item/firing_pin,
-/obj/item/firing_pin,
-/obj/item/firing_pin,
-/obj/item/firing_pin,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "Fz" = (
@@ -1508,12 +1548,7 @@
 /area/ship/hallway/central)
 "GP" = (
 /obj/structure/table/wood/reinforced,
-/obj/item/stamp/chameleon,
-/obj/item/paper_bin/carbon,
-/obj/item/pen/edagger{
-	pixel_x = -8;
-	pixel_y = 8
-	},
+/obj/item/gun/energy/beam_rifle,
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "HW" = (
@@ -1528,6 +1563,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
+/obj/structure/table/wood/fancy/royalblack,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "Ie" = (
@@ -1776,6 +1812,10 @@
 	dir = 8;
 	pixel_x = -30
 	},
+/obj/machinery/suit_storage_unit/syndicate{
+	name = "captain's suit storage unit";
+	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "RA" = (
@@ -1862,6 +1902,13 @@
 	pixel_y = -30
 	},
 /obj/item/kirbyplants/random,
+/obj/machinery/button/door{
+	dir = 1;
+	id = "colossus_starboard";
+	name = "Starboard Cargo Door Control";
+	pixel_x = -4;
+	pixel_y = -25
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "SY" = (
@@ -1965,6 +2012,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
+/obj/effect/turf_decal/industrial/hatch/red,
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "Uo" = (
@@ -2051,10 +2099,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Wc" = (
-/obj/machinery/suit_storage_unit/syndicate{
-	name = "captain's suit storage unit";
-	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/elite
-	},
+/obj/structure/table/wood/fancy/royalblack,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "Ww" = (
@@ -2068,10 +2113,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "WI" = (
-/obj/machinery/suit_storage_unit/syndicate,
 /obj/effect/turf_decal/trimline/opaque/neutral/warning{
 	dir = 5
 	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi,
+/obj/item/clothing/mask/gas/syndicate/voicechanger,
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "WZ" = (
@@ -2168,6 +2216,7 @@
 /obj/effect/turf_decal/industrial/fire{
 	dir = 9
 	},
+/obj/machinery/vending/tool,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "YU" = (
@@ -2424,7 +2473,7 @@ ub
 Zq
 Zq
 WI
-bd
+bw
 bh
 Zq
 CE
