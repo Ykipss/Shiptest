@@ -7,7 +7,7 @@
 		"ACLF"
 	],
 	"map_name": "KAAS-Class Armed Cruiser",
-	"description": "Отсутствует.",
+	"description": "Крейсер Карательного Отряда Триглава Синдикат - О.С.Т.О.В.",
 	"tags": [
 		"Инженерный",
 		"Боевой",
@@ -18,25 +18,25 @@
 	"map_path": "_maps/shuttles/shiptest/syndicate_kaas.dmm",
 	"limit": 1,
 	"job_slots": {
-		"Captain": {
+		"Commander": {
 			"outfit": "/datum/outfit/job/captain/syndicate/sbc",
 			"officer": true,
 			"slots": 1
 		},
-		"Lieutenant": {
+		"Lieutenant Commander": {
 			"outfit": "/datum/outfit/job/warden/syndicate/sbc",
 			"officer": true,
 			"slots": 1
 		},
-		"Medic": {
+		"Lieutenant Junior Grade Medic": {
 			"outfit": "/datum/outfit/job/brig_phys/syndicate/sbc",
 			"slots": 1
 		},
-		"Engineer": {
+		"Lieutenant Junior Grade Engineer": {
 			"outfit": "/datum/outfit/job/engineer/syndicate/sbc",
 			"slots": 2
 		},
-		"Operative": {
+		"Lieutenant": {
 			"outfit": "/datum/outfit/job/security/syndicate/sbc",
 			"slots": 3
 		}
