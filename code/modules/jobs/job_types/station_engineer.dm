@@ -99,6 +99,7 @@
 	name = "Station Engineer (GEC)"
 
 	uniform = /obj/item/clothing/under/syndicate/gec
+	ears = /obj/item/radio/headset/syndicate
 	suit = /obj/item/clothing/suit/toggle/hazard
 	head = /obj/item/clothing/head/hardhat
 	id = /obj/item/card/id/syndicate_command/crew_id
