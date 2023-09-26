@@ -1473,6 +1473,7 @@
 /obj/item/clothing/glasses/thermal/monocle,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c500,
+/obj/item/areaeditor/blueprints,
 /turf/open/floor/plasteel/grimy,
 /area/ship/bridge)
 "cx" = (
@@ -1586,7 +1587,7 @@
 	dir = 10
 	},
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/machinery/holopad/emergency,
+/obj/machinery/holopad/emergency/command,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "cH" = (
@@ -2458,17 +2459,6 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/ship/maintenance/external)
-"WL" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	icon_state = "smes";
-	dir = 4
-	},
-/obj/machinery/light_switch,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/ship/external)
 
 (1,1,1) = {"
 aa
@@ -2585,7 +2575,7 @@ aa
 aa
 aa
 bK
-WL
+bK
 ac
 ad
 am
