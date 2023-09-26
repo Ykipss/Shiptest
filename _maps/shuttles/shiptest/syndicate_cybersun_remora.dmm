@@ -2137,7 +2137,7 @@
 	icon_state = "rwindow";
 	dir = 1
 	},
-/obj/machinery/computer/camera_advanced{
+/obj/machinery/computer/cargo/express{
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -3183,7 +3183,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/camera_advanced{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
