@@ -7,7 +7,7 @@
 		"ACLF"
 	],
 	"map_name": "KAAS-Class Armed Cruiser",
-	"description": "Отсутствует.",
+	"description": "Крейсер Карательного Отряда Триглава Синдикат - О.С.Т.О.В.",
 	"tags": [
 		"Инженерный",
 		"Боевой",
@@ -18,27 +18,27 @@
 	"map_path": "_maps/shuttles/shiptest/syndicate_kaas.dmm",
 	"limit": 1,
 	"job_slots": {
-		"Captain": {
-			"outfit": "/datum/outfit/job/captain/syndicate/sbc",
+		"Commander": {
+			"outfit": "/datum/outfit/job/captain/syndicate/ostov",
+			"officer": true,
+			"slots": 1
+		},
+		"Lieutenant Commander": {
+			"outfit": "/datum/outfit/job/hos/syndicate/ostov",
 			"officer": true,
 			"slots": 1
 		},
 		"Lieutenant": {
-			"outfit": "/datum/outfit/job/warden/syndicate/sbc",
-			"officer": true,
+			"outfit": "/datum/outfit/job/security/syndicate/ostov",
+			"slots": 4
+		},
+		"Lieutenant Junior Grade Medic": {
+			"outfit": "/datum/outfit/job/brig_phys/syndicate/ostov",
 			"slots": 1
 		},
-		"Medic": {
-			"outfit": "/datum/outfit/job/brig_phys/syndicate/sbc",
+		"Lieutenant Junior Grade Engineer": {
+			"outfit": "/datum/outfit/job/engineer/syndicate/ostov",
 			"slots": 1
-		},
-		"Engineer": {
-			"outfit": "/datum/outfit/job/engineer/syndicate/sbc",
-			"slots": 2
-		},
-		"Operative": {
-			"outfit": "/datum/outfit/job/security/syndicate/sbc",
-			"slots": 3
 		}
 	},
 	"enabled" : false
