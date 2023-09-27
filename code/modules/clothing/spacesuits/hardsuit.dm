@@ -700,6 +700,23 @@
 	item_state = "capspacesuit"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/swat/captain
 
+	//Mime
+/obj/item/clothing/head/helmet/space/hardsuit/mime
+	name = "mime EVA helmet"
+	desc = ". . ."
+	icon_state = "spacemimehelmet"
+	item_state = "spacemimehelmet"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 75, "fire" = 60, "acid" = 30)
+	hardsuit_type = "mime"
+
+/obj/item/clothing/suit/space/hardsuit/mime
+	name = "mime EVA suit"
+	desc = ". . ."
+	icon_state = "spacemime_suit"
+	item_state = "spacemime_items"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 75, "fire" = 60, "acid" = 30)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mime
+
 	//Clown
 /obj/item/clothing/head/helmet/space/hardsuit/clown
 	name = "cosmohonk hardsuit helmet"
