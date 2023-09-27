@@ -1759,7 +1759,7 @@
 /area/ship/medical)
 "dF" = (
 /obj/structure/table/chem,
-/obj/effect/spawner/lootdrop/organ_spawner,
+/obj/effect/spawner/lootdrop/memeorgans,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "dG" = (
@@ -2137,7 +2137,7 @@
 	icon_state = "rwindow";
 	dir = 1
 	},
-/obj/machinery/computer/camera_advanced{
+/obj/machinery/computer/cargo/express{
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2483,10 +2483,16 @@
 	pixel_x = 4;
 	pixel_y = -7
 	},
-/obj/structure/closet/secure_closet,
+/obj/structure/closet/secure_closet{
+	name = "Ammo locker"
+	},
 /obj/item/ammo_box/magazine/m12g,
 /obj/item/ammo_box/magazine/m12g/slug,
 /obj/item/ammo_box/magazine/m12g,
+/obj/machinery/door/window{
+	icon_state = "left";
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "eU" = (
@@ -2687,6 +2693,10 @@
 /obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
 /obj/item/gun/ballistic/automatic/pistol,
 /obj/item/gun/ballistic/automatic/pistol,
+/obj/machinery/door/window{
+	icon_state = "left";
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "fk" = (
@@ -3183,7 +3193,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/camera_advanced{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
