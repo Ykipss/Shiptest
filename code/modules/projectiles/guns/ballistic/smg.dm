@@ -109,14 +109,15 @@
 	desc = "A police carbine based off of an SMG design, with most of the complex workings removed for reliability. Chambered in 9mm."
 	icon_state = "vector"
 	item_state = "vector"
-	mag_type = /obj/item/ammo_box/magazine/smgm9mm/rubbershot //you guys remember when the autorifle was chambered in 9mm
+	mag_type = /obj/item/ammo_box/magazine/smgm9mm //you guys remember when the autorifle was chambered in 9mm
 	bolt_type = BOLT_TYPE_LOCKING
 	mag_display = TRUE
 	weapon_weight = WEAPON_LIGHT
+	fire_delay = 0.5
 
 /obj/item/gun/ballistic/automatic/smg/vector/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.25 SECONDS)
+	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
 
 /obj/item/gun/ballistic/automatic/smg/m90
 	name = "\improper M-90gl Carbine"
