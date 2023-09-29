@@ -1,7 +1,7 @@
 /obj/item/ammo_box/magazine/wt550m9
 	name = "wt550 magazine (4.6x30mm)"
 	desc = "A compact top-loading PDW magazine, designed to chamber 4.6x30mm."
-	icon_state = "46x30mmt-20"
+	icon_state = "46x30mmt-30"
 	base_icon_state = "46x30mmt"
 	ammo_type = /obj/item/ammo_casing/c46x30mm
 	caliber = "4.6x30mm"
@@ -9,26 +9,26 @@
 
 /obj/item/ammo_box/magazine/wt550m9/update_icon_state()
 	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(), 4)]"
+	icon_state = "[base_icon_state]-[round(ammo_count(), 6)]"
 
 /obj/item/ammo_box/magazine/wt550m9/wtap
 	name = "wt550 magazine (Armour Piercing 4.6x30mm)"
-	icon_state = "46x30mmtA-20"
+	icon_state = "46x30mmtA-30"
 	base_icon_state = "46x30mmtA"
 	ammo_type = /obj/item/ammo_casing/c46x30mm/ap
 
 /obj/item/ammo_box/magazine/wt550m9/wtap/update_icon_state()
 	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(), 4)]"
+	icon_state = "[base_icon_state]-[round(ammo_count(), 6)]"
 
 /obj/item/ammo_box/magazine/wt550m9/wtic
 	name = "wt550 magazine (Incendiary 4.6x30mm)"
-	icon_state = "46x30mmtI-20"
+	icon_state = "46x30mmtI-30"
 	ammo_type = /obj/item/ammo_casing/c46x30mm/inc
 
 /obj/item/ammo_box/magazine/wt550m9/wtic/update_icon_state()
 	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(),4)]"
+	icon_state = "[base_icon_state]-[round(ammo_count(),6)]"
 
 /obj/item/ammo_box/magazine/uzim9mm
 	name = "long SMG magazine (9mm)"
