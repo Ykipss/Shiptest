@@ -19,26 +19,26 @@
 	"limit": 1,
 	"job_slots": {
 		"Commander": {
-			"outfit": "/datum/outfit/job/captain/syndicate/sbc",
+			"outfit": "/datum/outfit/job/captain/syndicate/ostov",
 			"officer": true,
 			"slots": 1
 		},
 		"Lieutenant Commander": {
-			"outfit": "/datum/outfit/job/warden/syndicate/sbc",
+			"outfit": "/datum/outfit/job/hos/syndicate/ostov",
 			"officer": true,
 			"slots": 1
 		},
+		"Lieutenant": {
+			"outfit": "/datum/outfit/job/security/syndicate/ostov",
+			"slots": 4
+		},
 		"Lieutenant Junior Grade Medic": {
-			"outfit": "/datum/outfit/job/brig_phys/syndicate/sbc",
+			"outfit": "/datum/outfit/job/brig_phys/syndicate/ostov",
 			"slots": 1
 		},
 		"Lieutenant Junior Grade Engineer": {
-			"outfit": "/datum/outfit/job/engineer/syndicate/sbc",
-			"slots": 2
-		},
-		"Lieutenant": {
-			"outfit": "/datum/outfit/job/security/syndicate/sbc",
-			"slots": 3
+			"outfit": "/datum/outfit/job/engineer/syndicate/ostov",
+			"slots": 1
 		}
 	},
 	"enabled" : false
