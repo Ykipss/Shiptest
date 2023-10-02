@@ -105,6 +105,43 @@
 	. = ..()
 	icon_state = "p16_mag-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/p16/g36sh
+	name = "\improper G36-SH magazine"
+	desc = " Polymer 20-round assault rifle magazine 5.56x45mm."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "g36sh_mag"
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 20
+
+/obj/item/ammo_box/magazine/p16/g36sh/update_icon_state()
+	. = ..()
+	icon_state = "g36sh_mag-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/p16/g36
+	name = "\improper G36 magazine"
+	desc = "Polymer standart assault rifle magazine 5.56x45mm."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "g36_mag"
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 30
+
+/obj/item/ammo_box/magazine/p16/g36/update_icon_state()
+	. = ..()
+	icon_state = "g36_mag-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/p16/g36drum
+	name = "\improper G36 drum magazine"
+	desc = "Polymer high-capacyti assault rifle drum 5.56x45mm."
+	icon = 'icons/obj/ammo.dmi'
+	item_state = "g36drum_mag"
+	icon_state = "g36drum_mag"
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 75
+
+/obj/item/ammo_box/magazine/p16/g36drum/update_icon_state()
+	. = ..()
+	icon_state = "g36drum_mag-[!!ammo_count()]"
+
 /obj/item/ammo_box/magazine/swiss
 	name = "\improper Swiss Cheese Magazine (5.56mm)"
 	icon_state = "swissmag"
