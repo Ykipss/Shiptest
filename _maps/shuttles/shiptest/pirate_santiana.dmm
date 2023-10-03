@@ -636,6 +636,9 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "by" = (
@@ -735,6 +738,9 @@
 	icon_state = "closed";
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/aft)
 "bM" = (
@@ -761,10 +767,6 @@
 /area/ship/medical)
 "bP" = (
 /obj/effect/decal/cleanable/plastic,
-/obj/structure/table/reinforced,
-/obj/item/circuitboard/mecha/ripley/peripherals,
-/obj/item/spacecash/bundle/c200,
-/obj/item/spacecash/bundle/c5,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "bQ" = (
@@ -996,6 +998,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating,
 /area/ship/cargo)
 "cm" = (
@@ -1136,11 +1141,12 @@
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 20;
-	pixel_y = 14
+	pixel_y = -10
 	},
 /obj/item/ammo_box/magazine/pistolm9mm{
 	pixel_x = -7
 	},
+/obj/item/circuitboard/mecha/ripley/main,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "cE" = (
@@ -1183,6 +1189,7 @@
 	pixel_x = 8;
 	pixel_y = -22
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "cJ" = (
@@ -1217,7 +1224,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "cN" = (
 /obj/machinery/power/smes/shuttle/precharged{
@@ -1282,6 +1289,10 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "cU" = (
@@ -1588,6 +1599,9 @@
 	icon_state = "floor6"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "dC" = (
@@ -1610,6 +1624,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/wrapping,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken"
 	},
@@ -1638,6 +1655,9 @@
 	pixel_y = 11
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "dI" = (
@@ -1647,6 +1667,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "dJ" = (
@@ -1808,6 +1831,7 @@
 /obj/structure/cable{
 	icon_state = "0-5"
 	},
+/obj/item/mecha_parts/chassis/ripley,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "ec" = (
@@ -1822,6 +1846,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/south,
+/obj/item/spacecash/bundle/c5,
+/obj/item/spacecash/bundle/c200,
+/obj/item/circuitboard/mecha/ripley/peripherals,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "ed" = (
@@ -1897,6 +1924,15 @@
 /obj/item/storage/firstaid/medical,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"Cx" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating,
+/area/ship/crew/dorm)
 "Et" = (
 /obj/machinery/power/terminal{
 	icon_state = "term";
@@ -2179,7 +2215,7 @@ dI
 dd
 bW
 dk
-dC
+Cx
 bv
 aa
 aa
