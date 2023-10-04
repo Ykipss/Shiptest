@@ -3771,7 +3771,8 @@
 	dir = 1
 	},
 /obj/machinery/computer/rdconsole/robotics{
-	dir = 1
+	dir = 1;
+	density = 0
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
@@ -4429,7 +4430,6 @@
 	icon_state = "bordercolorhalf";
 	dir = 8
 	},
-/obj/item/robot_module/syndicate_medical,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
@@ -4438,6 +4438,7 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/plasteel/twenty,
 /obj/item/book/manual/ripley_build_and_repair,
+/obj/item/borg/upgrade/transform/syndicate_medical,
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
 "Qx" = (
