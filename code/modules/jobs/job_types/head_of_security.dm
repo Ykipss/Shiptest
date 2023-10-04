@@ -127,3 +127,37 @@
 /datum/job/hos/roumain
 	outfit = /datum/outfit/job/hos/roumain
 	mind_traits = null
+
+/datum/outfit/job/hos/syndicate/ostov
+	name = "Lieutenant Commander (O.S.T.O.V.)"
+
+	uniform = /obj/item/clothing/under/syndicate/aclf
+	head = /obj/item/clothing/head/HoS/beret/syndicate
+	ears = /obj/item/radio/headset/syndicate/alt
+	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
+	gloves = /obj/item/clothing/gloves/krav_maga/combatglovesplus
+	l_pocket = /obj/item/ammo_box/magazine/pistolm9mm
+	r_pocket = /obj/item/melee/transforming/energy/sword/saber/red
+	shoes = /obj/item/clothing/shoes/combat
+	suit = /obj/item/clothing/suit/armor/vest
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/APS
+	alt_suit = /obj/item/clothing/suit/aclf
+	id = /obj/item/card/id/syndicate_command/lieutenant
+	implants = list(/obj/item/implant/weapons_auth, /obj/item/implant/explosive/macro, /obj/item/implant/krav_maga)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic/contractor_baton, /obj/item/ammo_box/magazine/pistolm9mm=4)
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	courierbag = /obj/item/storage/backpack/messenger/sec
+
+	box = /obj/item/storage/box/survival/syndie
+
+/datum/outfit/job/hos/syndicate/ostov/post_equip(mob/living/carbon/human/H)
+	H.faction = list("PlayerSyndicate")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.twinkle_names) + "-" + num2text(rand(8, 10)) // squidquest real
+	I.access |= list(ACCESS_SYNDICATE)
+	I.assignment = "Lieutenant Commander"
+	I.update_label()

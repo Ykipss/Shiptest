@@ -418,7 +418,6 @@
 	req_access = list(150)
 	},
 /obj/item/uplink/nuclear,
-/obj/item/disk/tech_disk/major,
 /obj/item/bodybag/bluespace,
 /obj/item/book_of_babel,
 /obj/item/stack/telecrystal/five,
@@ -714,7 +713,15 @@
 /obj/structure/railing{
 	dir = 9
 	},
-/obj/effect/landmark/start/captain,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
 "se" = (
@@ -982,6 +989,10 @@
 	dir = 10;
 	layer = 3.1
 	},
+/obj/effect/turf_decal/box/red/corners,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
 "wJ" = (
@@ -997,8 +1008,29 @@
 /area/ship/bridge)
 "wT" = (
 /obj/structure/table/wood/reinforced,
-/obj/item/kirbyplants{
-	pixel_y = 10
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/item/card/id/syndicate_command/crew_id{
+	name = "operative ID card"
+	},
+/obj/structure/closet/secure_closet/wall{
+	dir = 1;
+	name = "spare cards locker";
+	req_access = list(3,150);
+	pixel_y = -30
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
@@ -1222,31 +1254,29 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "Bv" = (
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
-	pixel_x = -28;
-	name = "spare cards locker";
+/obj/structure/closet/secure_closet{
+	anchored = 1;
+	icon_state = "syndicate";
+	name = "lieutenant locker";
 	req_access = list(3,150)
 	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/item/card/id/syndicate_command/crew_id{
-	name = "operative ID card"
-	},
-/obj/structure/table/wood/reinforced,
+/obj/item/clothing/under/syndicate/aclfgrunt,
+/obj/item/clothing/accessory/holster/lieutenant,
+/obj/item/storage/backpack/duffelbag/syndie/x4,
+/obj/item/storage/backpack/duffelbag/syndie/x4,
+/obj/item/sbeacondrop/bomb,
+/obj/item/sbeacondrop/bomb,
+/obj/item/sbeacondrop/bomb,
+/obj/item/ammo_box/c9mm/fire,
+/obj/item/ammo_box/c9mm/fire,
+/obj/item/ammo_box/c9mm/fire,
+/obj/item/ammo_box/magazine/pistolm9mm,
+/obj/item/ammo_box/magazine/pistolm9mm,
+/obj/item/ammo_box/magazine/pistolm9mm,
+/obj/item/ammo_box/magazine/pistolm9mm,
+/obj/item/card/emag/limited,
+/obj/item/storage/box/firingpins/syndicate,
+/obj/item/storage/box/firingpins/syndicate,
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "BP" = (
@@ -1564,6 +1594,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/structure/table/wood/fancy/royalblack,
+/obj/item/flashlight/lamp{
+	pixel_y = 12;
+	pixel_x = 3
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "Ie" = (
@@ -1848,12 +1882,14 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
 	},
-/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/extinguisher_cabinet/directional/west{
+	pixel_y = -2
+	},
 /obj/machinery/button/door{
 	id = "kaas bridge";
 	name = "Lockdown Control";
 	pixel_x = -20;
-	pixel_y = 11;
+	pixel_y = 9;
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -2100,6 +2136,10 @@
 /area/ship/engineering)
 "Wc" = (
 /obj/structure/table/wood/fancy/royalblack,
+/obj/item/kirbyplants/dead{
+	pixel_y = 15;
+	pixel_x = -4
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "Ww" = (
@@ -2159,6 +2199,9 @@
 	},
 /obj/item/storage/toolbox/emergency/shuttle/fueled,
 /obj/structure/table/reinforced,
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 14
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "Yj" = (
@@ -2251,6 +2294,12 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/table/reinforced,
+/obj/item/storage/toolbox/infiltrator{
+	pixel_y = 9
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_y = -4
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "ZV" = (
