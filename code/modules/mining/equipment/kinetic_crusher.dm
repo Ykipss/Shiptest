@@ -750,7 +750,6 @@
 
 /obj/item/kinetic_crusher/old/update_icon_state()
 	item_state = "crusherold[wielded]" // still not supported by 2hcomponent
-	return ..()
 
 //100% original syndicate oc, plz do not steal. More effective against human targets then the typical crusher, with a bit of block chance.
 /obj/item/kinetic_crusher/syndie_crusher
@@ -809,7 +808,6 @@
 
 /obj/item/kinetic_crusher/syndie_crusher/update_icon_state()
 	item_state = "crushersyndie[wielded]" // this is not icon_state and not supported by 2hcomponent
-	return ..()
 
 /obj/item/kinetic_crusher/syndie_crusher/update_overlays()
 	. = ..()
