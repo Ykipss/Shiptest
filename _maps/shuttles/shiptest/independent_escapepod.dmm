@@ -18,11 +18,6 @@
 	icon_state = "2-8"
 	},
 /obj/item/storage/box/survival/medical,
-/obj/machinery/light/directional/north{
-	pixel_x = 32;
-	dir = 2;
-	pixel_y = 5
-	},
 /obj/item/kitchen/knife/combat/survival,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -43,6 +38,10 @@
 /obj/item/clothing/suit/space/hardsuit,
 /obj/item/areaeditor/blueprints,
 /turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"q" = (
+/obj/machinery/light_switch,
+/turf/closed/wall,
 /area/ship/bridge)
 "t" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -101,6 +100,7 @@
 	pixel_x = -1;
 	pixel_y = 32
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "P" = (
@@ -111,10 +111,6 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"V" = (
-/obj/machinery/light_switch,
-/turf/closed/wall,
 /area/ship/bridge)
 "X" = (
 /obj/machinery/light_switch{
@@ -180,7 +176,7 @@ a
 "}
 (6,1,1) = {"
 a
-V
+q
 m
 Z
 Z
