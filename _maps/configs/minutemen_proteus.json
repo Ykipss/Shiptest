@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Proteus Assault Corvet",
 	"prefix": "CMSV",
-	"description": ".Small but heavyly armored ship, designed to do special task missions.",
+	"description": "Small but heavyly armored ship, designed to do special task missions.",
 	"tags": [
 		"Robotics"
 	],
