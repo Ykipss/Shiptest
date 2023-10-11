@@ -22,7 +22,6 @@
 /obj/item/clothing/suit/armor/vest/marine/heavy,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/head/helmet/marine,
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "ce" = (
@@ -30,7 +29,6 @@
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/head/helmet/marine,
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "cl" = (
@@ -101,8 +99,6 @@
 	icon_state = "pump_on_map-2";
 	dir = 1
 	},
-/obj/item/pickaxe,
-/obj/item/pickaxe,
 /turf/open/floor/plasteel,
 /area/ship/engineering/engine)
 "lK" = (
@@ -166,19 +162,20 @@
 /obj/item/stack/medical/suture/medicated,
 /obj/item/stack/medical/suture/medicated,
 /obj/item/storage/box/hug/medical,
+/obj/item/storage/box/hug/medical,
 /obj/item/storage/firstaid/medical,
+/obj/item/storage/box/survival/medical,
+/obj/item/storage/box/survival/medical,
+/obj/structure/closet/wall/red{
+	pixel_x = 31;
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/closet/wall/white{
-	pixel_y = -1;
-	pixel_x = 32
-	},
-/obj/item/storage/firstaid/brute,
-/obj/item/storage/firstaid/fire,
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "sj" = (
@@ -199,7 +196,7 @@
 /area/ship/bridge)
 "sE" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/crew)
 "tY" = (
 /obj/machinery/advanced_airlock_controller{
@@ -274,7 +271,6 @@
 	},
 /obj/item/storage/belt/military/minutemen,
 /obj/item/storage/belt/military/assault,
-/obj/item/kitchen/knife/combat/survival,
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "wt" = (
@@ -294,12 +290,19 @@
 	},
 /obj/item/storage/belt/military/minutemen,
 /obj/item/storage/belt/military/assault,
-/obj/item/kitchen/knife/combat/survival,
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "wY" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/crew)
+"xx" = (
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/closed/wall,
+/area/ship/security/armory)
 "ym" = (
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -311,7 +314,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/crew)
 "AL" = (
 /obj/machinery/computer/cargo/express,
@@ -345,7 +348,7 @@
 	pixel_x = -8;
 	pixel_y = 10
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/security/armory)
 "DB" = (
 /obj/machinery/light/directional/north{
@@ -353,7 +356,7 @@
 	dir = 2;
 	pixel_y = 5
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/crew)
 "En" = (
 /obj/machinery/door/airlock/external{
@@ -465,14 +468,14 @@
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "Je" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/bridge)
 "Ju" = (
 /obj/structure/sign/poster/minutemen/lanchester,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/crew)
 "JB" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/engineering/engine)
 "KN" = (
 /obj/structure/cable{
@@ -520,7 +523,7 @@
 /area/ship/engineering/engine)
 "MT" = (
 /obj/structure/sign/poster/minutemen/gold,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/security/armory)
 "MY" = (
 /obj/structure/cable{
@@ -571,7 +574,7 @@
 /area/ship/engineering/engine)
 "OR" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/security/armory)
 "Pc" = (
 /obj/machinery/airalarm/directional/east,
@@ -589,15 +592,15 @@
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "Pn" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/security/armory)
 "PZ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/light/directional/north{
 	pixel_y = 3;
 	dir = 8;
 	pixel_x = -26
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "Qw" = (
@@ -617,7 +620,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
 	dir = 4
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall,
 /area/ship/security/armory)
 "Uh" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -672,10 +675,6 @@
 	pixel_y = -4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/light_switch{
-	pixel_x = -21;
-	pixel_y = 9
-	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "YX" = (
@@ -801,7 +800,7 @@ Fq
 Pn
 Pn
 BO
-Pn
+xx
 MZ
 Je
 lK
