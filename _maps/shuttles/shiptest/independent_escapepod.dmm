@@ -3,6 +3,10 @@
 /turf/template_noop,
 /area/template_noop)
 "g" = (
+/obj/structure/closet/secure_closet/brig/wall{
+	pixel_y = 28
+	},
+/obj/item/reagent_containers/hypospray/CMO,
 /obj/item/storage/belt/utility/chief/full,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/tank/internals/emergency_oxygen/double,
@@ -15,11 +19,6 @@
 	},
 /obj/item/storage/box/survival/medical,
 /obj/item/kitchen/knife/combat/survival,
-/obj/structure/closet/wall{
-	pixel_y = 32
-	},
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/storage/firstaid/medical,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "m" = (
@@ -28,7 +27,7 @@
 	pixel_y = 4
 	},
 /obj/structure/closet/wall{
-	pixel_y = 32
+	pixel_y = -30
 	},
 /obj/item/stack/sheet/mineral/plasma/five,
 /obj/item/stack/sheet/metal/twenty,
@@ -39,6 +38,10 @@
 /obj/item/clothing/suit/space/hardsuit,
 /obj/item/areaeditor/blueprints,
 /turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"q" = (
+/obj/machinery/light_switch,
+/turf/closed/wall,
 /area/ship/bridge)
 "t" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -55,7 +58,6 @@
 	preferred_direction = 4;
 	set_dir_on_move = 4
 	},
-/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "x" = (
@@ -174,7 +176,7 @@ a
 "}
 (6,1,1) = {"
 a
-Z
+q
 m
 Z
 Z
