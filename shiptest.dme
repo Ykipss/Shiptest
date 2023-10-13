@@ -1813,6 +1813,7 @@
 #include "code\modules\awaymissions\mission_code\undergroundoutpost45.dm"
 #include "code\modules\awaymissions\mission_code\wildwest.dm"
 #include "code\modules\balloon_alert\balloon_alert.dm"
+#include "code\modules\bongs\code\bong.dm"
 #include "code\modules\buildmode\bm_mode.dm"
 #include "code\modules\buildmode\buildmode.dm"
 #include "code\modules\buildmode\buttons.dm"
@@ -3452,5 +3453,4 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
-#include "code\modules\bongs\code\bong.dm"
 // END_INCLUDE
