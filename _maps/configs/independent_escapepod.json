@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Escape Pod X-03",
+	"description": "Your main ship was destroyed, now you need to survive.",
+	"tags": [
+		"Survival"
+	],
+	"prefix": "CMSV",
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"NATURAL"
+	],
+	"map_short_name": "Escape Pod",
+	"map_path": "_maps/shuttles/shiptest/independent_escapepod.dmm",
+	"job_slots": {
+		"Ship's Engineer": {
+			"outfit": "/datum/outfit/job/engineer/hazard",
+			"slots": 1
+		},
+		"Prisoner": {
+			"outfit": "/datum/outfit/job/prisoner",
+			"slots": 2
+		}
+	},
+	"enabled": true
+}

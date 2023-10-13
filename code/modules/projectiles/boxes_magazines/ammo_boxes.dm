@@ -97,6 +97,13 @@
 	desc = "Designed to quickly reload revolvers. Iceblox bullets contain a cryogenic payload."
 	ammo_type = /obj/item/ammo_casing/c38/iceblox
 
+/obj/item/ammo_box/a556_box
+	name = "ammo box (5.56x45mm)"
+	desc = "A box of standard 5.56x45mm ammo."
+	icon_state = "a556box"
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 50
+
 /obj/item/ammo_box/c38_box
 	name = "ammo box (.38)"
 	desc = "A box of standard .38 ammo."

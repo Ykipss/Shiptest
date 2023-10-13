@@ -36,7 +36,7 @@
 			"slots": 4
 		},
 		"CyberSun Pharma specialist": {
-			"outfit": "/datum/outfit/job/chemist/gec",
+			"outfit": "/datum/outfit/job/chemist/syndiesun",
 			"slots": 1
 		},
 		"CyberSun Bio Terrorist": {
@@ -44,7 +44,7 @@
 			"slots": 1
 		},
 		"GEC Engineer": {
-			"outfit": "/datum/outfit/job/engineer/syndicate/gec",
+			"outfit": "/datum/outfit/job/engineer/syndicate/cybersun",
 			"slots": 3
 		},
 		"CyberSun Bio-engineer": {

@@ -1715,6 +1715,7 @@
 	pixel_y = 10
 	},
 /obj/item/mmi/posibrain,
+/obj/item/borg/upgrade/ai,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/science/ai_chamber)
 "kp" = (

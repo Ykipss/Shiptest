@@ -118,6 +118,8 @@
 /obj/item/pinpointer/crew,
 /obj/item/storage/box/bodybags,
 /obj/item/storage/firstaid/regular,
+/obj/item/organ/cyberimp/eyes/hud/medical,
+/obj/item/clothing/glasses/hud/health,
 /turf/open/floor/wood,
 /area/ship/medical)
 "aP" = (
@@ -3992,8 +3994,10 @@
 /obj/item/robot_suit,
 /obj/structure/closet/crate/engineering,
 /obj/effect/turf_decal/industrial/hatch/orange,
-/obj/item/assembly/flash,
-/obj/item/assembly/flash,
+/obj/item/assembly/flash/handheld,
+/obj/item/assembly/flash/handheld,
+/obj/item/stock_parts/cell/hyper,
+/obj/item/stack/cable_coil/random,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Qu" = (

@@ -132,8 +132,6 @@
 	item_state = "swiss"
 	mag_display = TRUE
 	empty_indicator = TRUE
-	burst_size = 3
-	fire_delay = 1.5
 	spread = 8
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -168,3 +166,115 @@
 	update_appearance()
 	for(var/datum/action/action as anything in actions)
 		action.UpdateButtonIcon()
+
+/obj/item/gun/ballistic/automatic/assualt/g36sh
+	name = "\improper G36-SH"
+	desc = "A Night of Fire-era assault rifle pattern from Sol, chambered in 5.56mm. Shortened version. Rediscovered by the Colonial Minutemen and sold to InteQ.A more complex design compared to p16 is more expensive to produce and is therefore used only by the best professionals."
+	icon = 'icons/obj/guns/48x32guns.dmi'
+	fire_sound = 'sound/weapons/gun/rifle/g36sh.ogg'
+	icon_state = "g36sh"
+	item_state = "g36sh"
+	mag_type = /obj/item/ammo_box/magazine/p16/g36sh
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_NORMAL
+	spread = 9
+	actions_types = list()
+	mag_display = TRUE
+	empty_indicator = FALSE
+	empty_alarm = FALSE
+	special_mags = TRUE
+	internal_magazine = FALSE
+	tac_reloads = TRUE
+	semi_auto = TRUE
+	var/obj/item/ammo_box/magazine/p16/g36sh/alternate_magazine
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+
+/obj/item/gun/ballistic/automatic/assualt/g36sh/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
+
+/obj/item/gun/ballistic/automatic/assualt/g36sh/Initialize()
+	. = ..()
+	if (!alternate_magazine)
+		alternate_magazine = new mag_type(src)
+		spawnwithmagazine = FALSE
+		mag_type = /obj/item/ammo_box/magazine/p16
+
+/obj/item/gun/ballistic/automatic/assualt/g36sh/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 1
+			burst_size = 1
+			fire_delay = 0
+			to_chat(user, "<span class='notice'>You switch to full automatic.</span>")
+			SEND_SIGNAL(src,COMSIG_GUN_ENABLE_AUTOFIRE)
+		if(1)
+			select = 2
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+		if(2)
+			select = 0
+			burst_size = 3
+			fire_delay = 2
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd Matter.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
+	update_icon()
+	return
+
+/obj/item/gun/ballistic/automatic/assualt/g36
+	name = "\improper G36"
+	desc = "A Night of Fire-era assault rifle pattern from Sol, chambered in 5.56mm. Rediscovered by the Colonial Minutemen and sold to InteQ. A more complex design compared to p16 is more expensive to produce and is therefore used only by the best professionals."
+	icon = 'icons/obj/guns/48x32guns.dmi'
+	fire_sound = 'sound/weapons/gun/rifle/g36.ogg'
+	icon_state = "g36"
+	item_state = "g36"
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	spread = 4
+	mag_type = /obj/item/ammo_box/magazine/p16/g36
+	actions_types = list()
+	mag_display = TRUE
+	empty_indicator = FALSE
+	empty_alarm = FALSE
+	special_mags = TRUE
+	internal_magazine = FALSE
+	tac_reloads = TRUE
+	var/obj/item/ammo_box/magazine/p16/g36/alternate_magazine
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+
+/obj/item/gun/ballistic/automatic/assualt/g36/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
+
+/obj/item/gun/ballistic/automatic/assualt/g36/Initialize()
+	. = ..()
+	if (!alternate_magazine)
+		alternate_magazine = new mag_type(src)
+		spawnwithmagazine = FALSE
+		mag_type = /obj/item/ammo_box/magazine/p16
+
+/obj/item/gun/ballistic/automatic/assualt/g36/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 1
+			burst_size = 1
+			fire_delay = 0
+			to_chat(user, "<span class='notice'>You switch to full automatic.</span>")
+			SEND_SIGNAL(src,COMSIG_GUN_ENABLE_AUTOFIRE)
+		if(1)
+			select = 2
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+		if(2)
+			select = 0
+			burst_size = 3
+			fire_delay = 2
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd Matter.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
+	update_icon()
+	return
