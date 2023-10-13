@@ -24,8 +24,7 @@
 /area/ship/bridge)
 "m" = (
 /obj/structure/chair/comfy/shuttle{
-	dir = 4;
-	pixel_y = 4
+	dir = 4
 	},
 /obj/structure/closet/wall{
 	pixel_y = 31;
@@ -38,7 +37,7 @@
 /obj/item/pickaxe,
 /obj/item/pipe_dispenser,
 /obj/item/clothing/suit/space/hardsuit,
-/obj/item/areaeditor/blueprints,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "q" = (
