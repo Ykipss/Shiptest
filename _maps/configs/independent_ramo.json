@@ -9,8 +9,10 @@
 		"NATURAL",
 		"SPACE"
 	],
-	"map_path": "_maps/shuttles/shiptest/independent_ramo.dmm",
+	"map_path": "_maps/shuttles/independent/independent_ramo.dmm",
 	"roundstart": true,
+	"starting_funds": 2000,
+	"limit": 2,
 	"job_slots": {
 		"Salvage Leader": {
 			"outfit": "/datum/outfit/job/captain",
@@ -28,6 +30,10 @@
 		"Salvager": {
 			"outfit": "/datum/outfit/job/miner/hazard",
 			"slots": 2
+		},
+		"Assistant": {
+			"outfit": "/datum/outfit/job/assistant",
+			"slots": 4
 		}
 	},
 	"enabled": true
