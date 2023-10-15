@@ -348,7 +348,7 @@
 
 //Полное РнД
 /datum/supply_pack/machinery/rnd_full
-	name = "Набор подозрительных плат."
+	name = "Набор подозрительных плат"
 	desc = "Набор специализированных плат для исследования и производства. Неизвестны умелец взломал их , теперь они не ограничены лицензией. "
 	cost = 99950
 	contains = list(/obj/item/circuitboard/machine/circuit_imprinter,
