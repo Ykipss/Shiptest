@@ -301,7 +301,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/ship/maintenance/port)
 "aM" = (
 /obj/effect/turf_decal/siding/thinplating,
@@ -383,7 +383,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "aW" = (
 /obj/structure/table/wood,
@@ -614,7 +614,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "bt" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -1720,7 +1720,6 @@
 "dT" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/light/directional/east,
-/obj,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "dU" = (
