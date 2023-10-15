@@ -133,8 +133,8 @@
 	name = "CM-GAL .308 Magazine Crate"
 	desc = "Содержит два 308 CM-GAL магазина для винтовки CM-GAL, каждый из которых содержит по десять патронов."
 	contains = list(/obj/item/ammo_box/magazine/gal,
-					/obj/item/ammo_box/magazine/gal)
-	cost = 2000
+					/obj/item/ammo_box/magazine/gal,)
+	cost = 2500
 
 /datum/supply_pack/ammo/gar_ammo
 	name = "GAR Ferromagnetic Lance Magazine Crate"
@@ -179,3 +179,19 @@
 					/obj/item/ammo_box/a762,
 					/obj/item/ammo_box/a762)
 	cost = 1000
+
+/datum/supply_pack/ammo/g36_ammo
+	name = "G-36 5.56mm Magazine Crate"
+	desc = "Содержит два магазина калибра 5,56 мм для винтовки G36, каждый из которых содержит по 25 патронов. Также в комплект входит коробка стандартных патронов."
+	contains = list(/obj/item/ammo_box/magazine/p16/g36sh,
+					/obj/item/ammo_box/magazine/p16/g36sh,
+					/obj/item/ammo_box/a556_box)
+	cost = 3500
+
+/datum/supply_pack/ammo/morita_ammo
+	name = "Morita Mk.I .308 Magazine Crate"
+	desc = "Содержит два магазина калибра .308 мм для винтовки Morita Mk.I, каждый из которых содержит по 10 патронов. Также в комплект входит коробка стандартных патронов."
+	contains = list(/obj/item/ammo_box/magazine/morita1/small,
+					/obj/item/ammo_box/magazine/morita1/small,
+					/obj/item/ammo_box/a308)
+	cost = 4000
