@@ -163,3 +163,37 @@
 	multiple_sprites = AMMO_BOX_PER_BULLET
 	w_class = WEIGHT_CLASS_TINY
 	instant_load = TRUE
+
+/obj/item/ammo_box/magazine/morita1
+	name = "\improper assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
+	icon_state = "morita1_mag"
+	caliber = ".308 Winchester"
+	ammo_type = /obj/item/ammo_casing/win308
+	max_ammo = 25
+
+/obj/item/ammo_box/magazine/morita1/update_icon_state()
+	. = ..()
+	icon_state = "morita1_mag-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/morita1/small
+	name = "\improper small assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
+	icon_state = "morita1_small_mag"
+	ammo_type = /obj/item/ammo_casing/win308
+	max_ammo = 10
+
+/obj/item/ammo_box/magazine/morita1/small/update_icon_state()
+	. = ..()
+	icon_state = "morita1_small_mag-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/morita1/drum
+	name = "\improper drum assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
+	icon_state = "morita1_drum_mag"
+	ammo_type = /obj/item/ammo_casing/win308
+	max_ammo = 50
+
+/obj/item/ammo_box/magazine/morita1/drum/update_icon_state()
+	. = ..()
+	icon_state = "morita1_drum_mag-[!!ammo_count()]"
