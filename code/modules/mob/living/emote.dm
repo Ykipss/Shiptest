@@ -196,6 +196,25 @@
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = HARD_CRIT
 
+/datum/emote/living/gasp/can_run_emote(mob/living/user, status_check = TRUE , intentional)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/gasp/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/human_gasp = ishumanbasic(H)
+	if(human_gasp && (!H.mind || !H.mind.miming))
+		if(user.gender == FEMALE)
+			return pick('sound/voice/human/gasp_female1.ogg', 'sound/voice/human/gasp_female2.ogg', 'sound/voice/human/gasp_female3.ogg', 'sound/voice/human/gasp_female4.ogg', 'sound/voice/human/gasp_female5.ogg', 'sound/voice/human/gasp_female6.ogg', 'sound/voice/human/gasp_female7.ogg')
+		else
+			return pick('sound/voice/human/gasp_male1.ogg', 'sound/voice/human/gasp_male2.ogg', 'sound/voice/human/gasp_male3.ogg', 'sound/voice/human/gasp_male4.ogg', 'sound/voice/human/gasp_male5.ogg', 'sound/voice/human/gasp_male6.ogg', 'sound/voice/human/gasp_male7.ogg')
+	if(ismoth(H))
+		return 'sound/voice/human/gasp_female3.ogg'
+
 /datum/emote/living/giggle
 	key = "giggle"
 	key_third_person = "giggles"
