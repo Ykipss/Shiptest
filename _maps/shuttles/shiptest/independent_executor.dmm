@@ -324,8 +324,8 @@
 /area/ship/security)
 "aO" = (
 /obj/machinery/autolathe/hacked,
-/obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "aP" = (
@@ -418,6 +418,7 @@
 	pixel_x = 10;
 	pixel_y = 23
 	},
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "aZ" = (
@@ -813,12 +814,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "bT" = (
-/obj/structure/frame/computer{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/airalarm/directional/north{
 	pixel_x = 1
+	},
+/obj/machinery/computer/crew{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1114,9 +1115,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "cv" = (
-/obj/structure/frame/computer{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
@@ -1125,6 +1123,9 @@
 	dir = 1;
 	pixel_x = 11;
 	pixel_y = -20
+	},
+/obj/machinery/computer/cargo/express{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1171,10 +1172,6 @@
 	pixel_y = 10
 	},
 /obj/machinery/light/directional/south,
-/obj/structure/closet/crate/engineering,
-/obj/item/circuitboard/computer/bounty,
-/obj/item/circuitboard/machine/techfab/department/security,
-/obj/item/circuitboard/computer/cargo/express,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "cC" = (
@@ -1621,8 +1618,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
 	},
-/obj/structure/closet/secure_closet/atmospherics,
 /obj/machinery/light/small/directional/south,
+/obj/structure/closet/secure_closet/lp/engineer,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "dE" = (
@@ -1952,9 +1949,14 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/engine)
+"fn" = (
+/obj/machinery/rnd/production/techfab/department/security,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "mW" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/light/directional/north,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "nw" = (
@@ -2696,7 +2698,7 @@ aE
 ol
 bu
 bu
-bu
+aO
 aE
 bL
 cf
@@ -2722,10 +2724,10 @@ ab
 ab
 ab
 aE
-aO
 bu
 bu
 bu
+fn
 aE
 bM
 cg
