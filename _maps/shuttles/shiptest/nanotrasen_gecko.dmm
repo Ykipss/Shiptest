@@ -4620,6 +4620,9 @@
 	},
 /obj/effect/turf_decal/siding/yellow,
 /obj/effect/turf_decal/radiation,
+/obj/item/paper/crumpled{
+	default_raw_text = "A mix of 67/33 ratio of oxygen (node 1) and plasma (node 2) works very well, even at 500 kPa."
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/engine)
 "UR" = (
