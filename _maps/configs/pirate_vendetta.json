@@ -1,7 +1,7 @@
 {
 	"map_name": "Vendetta-class Pirate Pill",
 	"map_short_name": "Vendetta-class",
-	"map_path": "_maps/shuttles/celadon/vendetta_pill.dmm",
+	"map_path": "_maps/shuttles/pirate/vendetta_pill.dmm",
 	"tags": [
 		"Specialist",
 		"Combat"

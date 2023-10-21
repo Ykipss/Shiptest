@@ -15,7 +15,7 @@
 		"Медицинский"
 	],
 	"map_short_name": "Kaas-class",
-	"map_path": "_maps/shuttles/shiptest/syndicate_kaas.dmm",
+	"map_path": "_maps/shuttles/syndicate/syndicate_kaas.dmm",
 	"limit": 1,
 	"job_slots": {
 		"Commander": {

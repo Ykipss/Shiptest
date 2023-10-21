@@ -1388,7 +1388,8 @@
 	pixel_y = 10;
 	dir = 8;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = s
 	},
 /turf/open/floor/carpet/black,
 /area/ship/crew)
@@ -1823,7 +1824,8 @@
 	pixel_y = 10;
 	dir = 4;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = s
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
@@ -2850,7 +2852,8 @@
 	pixel_y = 10;
 	dir = 8;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = s
 	},
 /turf/open/floor/carpet/black,
 /area/ship/crew)
@@ -3439,7 +3442,8 @@
 	pixel_y = 10;
 	dir = 8;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = s
 	},
 /turf/open/floor/carpet/black,
 /area/ship/crew)
@@ -6209,7 +6213,8 @@
 	pixel_y = 10;
 	dir = 4;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = null
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
@@ -6445,7 +6450,8 @@
 	pixel_y = 10;
 	dir = 4;
 	specialfunctions = 4;
-	normaldoorcontrol = 1
+	normaldoorcontrol = 1;
+	next_clicksound = s
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
