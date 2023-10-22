@@ -15,7 +15,7 @@
 /obj/machinery/jukebox/boombox
 	name = "boombox"
 	desc = "A theoretically-portable music player that's much larger and heavier than it really needs to be."
-	icon_state = "boombox"
+	icon_state = "boombox-"
 	density = FALSE
 
 
