@@ -14,7 +14,7 @@
 		"NATURAL_AGGRESSIVE",
 		"INTEQ"
 		],
-	"map_path": "_maps/shuttles/shiptest/inteq_iron_maiden.dmm",
+	"map_path": "_maps/shuttles/inteq/inteq_iron_maiden.dmm",
 	"limit": 2,
 	"job_slots": {
 		"Капитан-лейтенант INTEQ": {

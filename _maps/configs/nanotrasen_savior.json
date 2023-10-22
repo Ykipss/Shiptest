@@ -13,7 +13,7 @@
 		"Science",
 		"medical"
 	],
-	"map_path": "_maps/shuttles/celadon/nanotrasen_savior.dmm",
+	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_savior.dmm",
 	"starting_funds": 4000,
 	"job_slots": {
 		"Captain": {
