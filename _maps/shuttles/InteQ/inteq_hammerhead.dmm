@@ -1764,7 +1764,6 @@
 	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/trimline/opaque/yellow/warning,
-/obj/item/storage/box/prisoner,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
 "kt" = (
@@ -2199,11 +2198,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/head/warden/drill{
-	desc = "A special armored campaign hat with the IRMG insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.";
-	name = "master at arms' campaign hat"
-	},
-/obj/item/storage/belt/military/assault,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/communications)
 "nR" = (
@@ -5568,6 +5562,7 @@
 /obj/item/clothing/gloves/tackler/combat/insulated,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
+/obj/item/storage/box/prisoner,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
 "GR" = (
