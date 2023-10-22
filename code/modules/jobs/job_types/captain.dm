@@ -223,6 +223,17 @@
 	suit = null
 	gloves = null
 	suit_store = null
+/datum/outfit/job/captain/inteq/naked/cardacces
+	name = "Vanguard (InteQ)"
+	id = /obj/item/card/id/inteq/vanguard
+
+/datum/outfit/job/captain/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("PlayerInteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = get_all_accesses()+get_inteq_acces()
+	I.update_label()
 
 /datum/outfit/job/captain/aipirate
 	name = "Nodesman (Command)"
