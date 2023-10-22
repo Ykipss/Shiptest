@@ -413,10 +413,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
-"bI" = (
-/obj/structure/sign/poster/random,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/security/prison)
 "bL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
@@ -1653,6 +1649,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/structure/sign/poster/random{
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
@@ -10075,7 +10074,7 @@ Gj
 Gj
 Gj
 Dg
-bI
+Dg
 Dg
 oM
 sn
