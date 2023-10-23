@@ -16,6 +16,7 @@
 	"map_short_name": "Remora-class",
 	"map_path": "_maps/shuttles/shiptest/syndicate_cybersun_remora.dmm",
 	"map_id": "cybersun_remora",
+	"limit": 1,
 	"job_slots": {
 		"Chief Biology Research Director": {
 			"outfit": "/datum/outfit/job/captain/syndicate/cybersun",
