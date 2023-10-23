@@ -304,10 +304,7 @@
 /obj/machinery/door/airlock/external/glass,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 1;
-	preferred_direction = 1
+	dir = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/aft)
