@@ -258,3 +258,17 @@
 					/obj/effect/spawner/lootdrop/ration)
 	crate_name = "ration crate"
 	crate_type = /obj/structure/closet/crate
+
+/datum/supply_pack/food/ration_irp
+	name = "Набор ИРП"
+	desc = "6 расширеных ИРП наборов. Теперь с разогревом!"
+	cost = 3500
+	contains = list(/obj/item/storage/ration/vegan_chili,
+					/obj/item/storage/ration/shredded_beef,
+					/obj/item/storage/ration/pork_spaghetti,
+					/obj/item/storage/ration/fried_fish,
+					/obj/item/storage/ration/beef_strips,
+					/obj/item/storage/ration/chili_macaroni
+	)
+	crate_name = "Набор ИРП"
+	crate_type = /obj/structure/closet/crate/secure/weapon
