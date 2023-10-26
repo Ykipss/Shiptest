@@ -949,9 +949,9 @@
 /area/ship/bridge)
 "jc" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/lootdrop/ration,
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
@@ -1420,11 +1420,18 @@
 /obj/item/reagent_containers/food/snacks/canned/beans,
 /obj/item/reagent_containers/food/snacks/canned/beans,
 /obj/structure/closet/crate,
+<<<<<<< HEAD:_maps/shuttles/nanotrasen/nanotrasen_gecko.dmm
 /obj/item/reagent_containers/food/snacks/rationpack,
 /obj/item/reagent_containers/food/snacks/rationpack,
 /obj/item/reagent_containers/food/snacks/rationpack,
 /obj/item/reagent_containers/food/snacks/rationpack,
 /obj/effect/decal/cleanable/oil/streak,
+=======
+/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/lootdrop/ration,
+>>>>>>> 877174c... Rations! (#2260):_maps/shuttles/shiptest/nanotrasen_gecko.dmm
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage)
 "oR" = (
