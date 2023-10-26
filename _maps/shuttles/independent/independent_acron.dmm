@@ -116,7 +116,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 8
 	},
-/obj/effect/landmark/start/captain,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "hh" = (
