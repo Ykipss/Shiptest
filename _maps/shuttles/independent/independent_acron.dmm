@@ -12,7 +12,7 @@
 "bj" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 6;
-	faction = list("ROLE_NINJA")
+	faction = list("Neutral")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -102,7 +102,7 @@
 "gs" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5;
-	faction = list("ROLE_NINJA")
+	faction = list("Neutral")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -207,12 +207,6 @@
 	},
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/ship/engineering)
-"lA" = (
-/obj/machinery/porta_turret/syndicate/energy{
-	dir = 6
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/science)
 "mQ" = (
 /obj/machinery/light_switch{
 	dir = 1;
@@ -299,7 +293,7 @@
 "sB" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 10;
-	faction = list("ROLE_NINJA")
+	faction = list("Neutral")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -393,7 +387,7 @@
 "xz" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 9;
-	faction = list("ROLE_NINJA")
+	faction = list("Neutral")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -967,7 +961,7 @@ ig
 Hw
 dK
 Tg
-lA
+Tg
 "}
 (12,1,1) = {"
 Yk
