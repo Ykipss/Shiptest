@@ -35,6 +35,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -18
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "di" = (
@@ -147,6 +151,9 @@
 	icon_state = "0-2"
 	},
 /obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
 "ig" = (
@@ -311,7 +318,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 21;
 	pixel_x = -12;
-	dir = 8
+	dir = 6
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
@@ -361,6 +368,9 @@
 /area/ship/medical)
 "vG" = (
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
 "vQ" = (
@@ -610,6 +620,11 @@
 "JB" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
+/obj/machinery/light_switch{
+	pixel_y = 21;
+	pixel_x = -12;
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "JR" = (
@@ -759,6 +774,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
