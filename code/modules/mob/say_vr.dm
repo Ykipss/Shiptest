@@ -101,7 +101,7 @@ SUBTLER
 	else
 		user.visible_message(message = message, self_message = message, vision_distance = 1)
 
-///////////////// SUBTLE 2: NO GHOST BOOGALOO
+///////////////// SUBTLE 2: Анти гост
 
 /datum/emote/living/subtler
 	key = "subtler"
