@@ -14,7 +14,6 @@
 	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/energy_katana
 	implants = list(/obj/item/implant/explosive)
-	id = /obj/item/card/id/gold
 
 /datum/outfit/acron_ninja/post_equip(mob/living/carbon/human/H)
 	if(istype(H.wear_suit, suit))
@@ -43,7 +42,6 @@
 	var/datum/objective/assassinate/Objective_one = new /datum/objective/assassinate()
 	Objective_one.owner = owner
 	objectives += Objective_one
-	var/datum/objective/survive/Objective_two = new /datum/objective/survive(
-	)
+	var/datum/objective/survive/Objective_two = new /datum/objective/survive()
 	Objective_two.owner = owner
 	objectives += Objective_two
