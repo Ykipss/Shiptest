@@ -315,11 +315,6 @@
 "tB" = (
 /obj/structure/table,
 /obj/machinery/recharger,
-/obj/machinery/light_switch{
-	pixel_y = 21;
-	pixel_x = -12;
-	dir = 6
-	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "tY" = (
