@@ -13,7 +13,7 @@
 "bj" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 6;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -107,7 +107,7 @@
 "gs" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -292,7 +292,7 @@
 "sB" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 10;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -394,7 +394,7 @@
 "xz" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 9;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
