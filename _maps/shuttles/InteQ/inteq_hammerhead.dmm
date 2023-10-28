@@ -3637,7 +3637,11 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters{
 	dir = 1;
-	id = 2
+	id = "Hamm_ext_win"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	explosion_block = 7;
+	id = "Armory"
 	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
@@ -7707,7 +7711,8 @@
 "TM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	dir = 1
+	dir = 1;
+	id = "Hamm_ext_win"
 	},
 /turf/open/floor/plating,
 /area/ship/crew)
