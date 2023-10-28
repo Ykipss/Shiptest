@@ -13,7 +13,7 @@
 "bj" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 6;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -34,10 +34,6 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -18
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
@@ -107,7 +103,7 @@
 "gs" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -151,9 +147,6 @@
 	icon_state = "0-2"
 	},
 /obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
 "ig" = (
@@ -292,7 +285,7 @@
 "sB" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 10;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -315,6 +308,11 @@
 "tB" = (
 /obj/structure/table,
 /obj/machinery/recharger,
+/obj/machinery/light_switch{
+	pixel_y = 21;
+	pixel_x = -12;
+	dir = 8
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "tY" = (
@@ -363,9 +361,6 @@
 /area/ship/medical)
 "vG" = (
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
 "vQ" = (
@@ -389,7 +384,7 @@
 "xz" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 9;
-	faction = list("Neutral")
+	faction = list("neutral","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -615,11 +610,6 @@
 "JB" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
-/obj/machinery/light_switch{
-	pixel_y = 21;
-	pixel_x = -12;
-	dir = 4
-	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
 "JR" = (
@@ -769,9 +759,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
