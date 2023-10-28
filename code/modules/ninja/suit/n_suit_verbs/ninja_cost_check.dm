@@ -8,7 +8,7 @@
 		to_chat(H, "<span class='warning'>Not enough energy!</span>")
 		return 1
 	if(s_coold)
-		to_chat(H, "<span class='warning'>Ability is on cooldown!</span>")
+		to_chat(H, "<span class='warning'>Abilities is on cooldown!</span>")
 		return 1
 	else
 		//This shit used to be handled individually on every proc.. why even bother with a universal check proc then?
