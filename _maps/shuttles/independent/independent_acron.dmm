@@ -348,8 +348,8 @@
 	},
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/spiderclan/surgery,
-/obj/item/storage/firstaid/advanced,
-/obj/item/storage/firstaid/advanced,
+/obj/item/storage/firstaid,
+/obj/item/storage/firstaid,
 /turf/open/floor/carpet/blue,
 /area/ship/medical)
 "vG" = (
