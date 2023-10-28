@@ -279,6 +279,13 @@
 	item_state = "defibnt"
 	paddle_type = /obj/item/shockpaddles/syndicate/nanotrasen
 
+/obj/item/defibrillator/compact/combat/loaded/spiderclan
+	name = "elite SpiderClan defibrillator"
+	desc = "A belt-equipped state-of-the-art defibrillator. Can revive through spacesuits, has an experimental self-recharging battery, and can be utilized in combat via applying the paddles in a disarming or agressive manner."
+	icon_state = "defibcompact"
+	item_state = "defibcompact"
+	paddle_type = /obj/item/shockpaddles/syndicate
+
 //paddles
 
 /obj/item/shockpaddles

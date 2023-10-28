@@ -23,6 +23,7 @@
 		S.randomize_param()
 	H.faction |= ROLE_NINJA
 	H.mind.add_antag_datum(/datum/antagonist/ninja/acron_ninja)
+	ADD_TRAIT(H, TRAIT_NOGUNS, SPACE_NINJA_TRAIT)
 	return
 
 /datum/antagonist/ninja/acron_ninja/addMemories()
@@ -39,9 +40,6 @@
 	return
 
 /datum/antagonist/ninja/acron_ninja/addObjectives(quantity)
-	var/datum/objective/assassinate/Objective_one = new /datum/objective/assassinate()
+	var/datum/objective/survive/Objective_one = new /datum/objective/survive()
 	Objective_one.owner = owner
 	objectives += Objective_one
-	var/datum/objective/survive/Objective_two = new /datum/objective/survive()
-	Objective_two.owner = owner
-	objectives += Objective_two
