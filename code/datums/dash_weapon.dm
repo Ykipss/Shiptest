@@ -31,16 +31,21 @@
 /datum/action/innate/dash/proc/Teleport(mob/user, atom/target)
 	if(!IsAvailable())
 		return
+	var/mob/living/tprange = new(get_turf(user))
+	if(!(target in view(7, tprange)))
+		return
+	qdel(tprange)
+	if(!istype(target, /turf/open))
+		return
 	var/turf/T = get_turf(target)
-	if(target in view(user.client.view, user))
-		var/obj/spot1 = new phaseout(get_turf(user), user.dir)
-		user.forceMove(T)
-		playsound(T, dash_sound, 25, TRUE)
-		var/obj/spot2 = new phasein(get_turf(user), user.dir)
-		spot1.Beam(spot2,beam_effect,time=20)
-		current_charges--
-		holder.update_action_buttons_icon()
-		addtimer(CALLBACK(src, .proc/charge), charge_rate)
+	var/obj/spot1 = new phaseout(get_turf(user), user.dir)
+	user.forceMove(T)
+	playsound(T, dash_sound, 25, TRUE)
+	var/obj/spot2 = new phasein(get_turf(user), user.dir)
+	spot1.Beam(spot2,beam_effect,time=20)
+	current_charges--
+	holder.update_action_buttons_icon()
+	addtimer(CALLBACK(src, .proc/charge), charge_rate)
 
 /datum/action/innate/dash/proc/charge()
 	current_charges = clamp(current_charges + 1, 0, max_charges)
