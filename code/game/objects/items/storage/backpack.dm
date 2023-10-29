@@ -577,8 +577,8 @@
 /obj/item/storage/backpack/duffelbag/spiderclan/surgery
 	name = "surgery duffel bag"
 	desc = "Spider Clan's surgery duffel bag for holding surgery tools."
-	icon_state = "duffel-syndiemed"
-	item_state = "duffel-syndiemed"
+	icon_state = "duffel-spidermed"
+	item_state = "duffel-spidermed"
 
 /obj/item/storage/backpack/duffelbag/spiderclan/surgery/PopulateContents()
 	new /obj/item/surgicaldrill/advanced(src)
