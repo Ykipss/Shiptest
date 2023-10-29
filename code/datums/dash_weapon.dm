@@ -33,6 +33,7 @@
 		return
 	var/mob/living/tprange = new(get_turf(user))
 	if(!(target in view(7, tprange)))
+		qdel(tprange)
 		return
 	qdel(tprange)
 	if(!istype(target, /turf/open))
