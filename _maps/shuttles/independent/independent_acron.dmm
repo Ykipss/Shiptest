@@ -229,16 +229,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ship/cargo)
-"og" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	id = "Ranger_SB_maint_shut"
-	},
-/obj/machinery/door/poddoor{
-	id = "acron_external"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
 "oQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -348,8 +338,8 @@
 	},
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/spiderclan/surgery,
-/obj/item/storage/firstaid,
-/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/carpet/blue,
 /area/ship/medical)
 "vG" = (
@@ -521,16 +511,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/black,
 /area/ship/cargo)
-"Dn" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	id = "acron_external"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
 "Dr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -837,10 +817,10 @@
 	},
 /obj/item/t_scanner/adv_mining_scanner,
 /obj/item/t_scanner/adv_mining_scanner,
-/obj/item/gun/energy/kinetic_accelerator,
-/obj/item/gun/energy/kinetic_accelerator,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
+/obj/item/pickaxe/drill/jackhammer/old,
+/obj/item/pickaxe/drill/jackhammer/old,
 /turf/open/floor/carpet/black,
 /area/ship/cargo)
 "WI" = (
@@ -1080,7 +1060,7 @@ Yk
 "}
 (18,1,1) = {"
 Yk
-og
+kB
 zN
 Vm
 HD
@@ -1091,13 +1071,13 @@ Yk
 "}
 (19,1,1) = {"
 Yk
-Dn
+kB
 Re
 fz
 AV
 ZK
 Re
-Dn
+kB
 Yk
 "}
 (20,1,1) = {"
