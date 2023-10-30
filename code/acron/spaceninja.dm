@@ -35,13 +35,11 @@
 	SEND_SOUND(owner.current, sound('sound/effects/ninja_greeting.ogg'))
 	to_chat(owner.current, "Я являюсь элитным наемником-ассасином великого клана Паука!")
 	to_chat(owner.current, "Неожиданность - мое оружие. Тень - моя броня. Без них - я ничто. (//Активируйте костюм для использования способностей)")
-	to_chat(owner.current, "Кровь невиновных на моем клинке лишь запятнает мою честь. Я не должен прибегать к неоправданному насилию.")
+	to_chat(owner.current, "Официально, я наемник, и только я решаю, кто будет моим нанимателем.")
 	owner.announce_objectives()
 	return
 
 /datum/antagonist/ninja/acron_ninja/addObjectives(quantity)
-	var/datum/objective/custom/Objective_one = new /datum/objective/custom()
+	var/datum/objective/survive/Objective_one = new /datum/objective/survive()
 	Objective_one.owner = owner
 	objectives += Objective_one
-	Objective_one.explanation_text = "Я обязан сохранить существование клана Паука в тайне."
-
