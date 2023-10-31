@@ -328,12 +328,13 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/machinery/door/airlock/security/glass{
-	dir = 4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
 	dir = 4
+	},
+/obj/machinery/door/airlock/security/glass{
+	dir = 4;
+	req_access_txt = "148,149"
 	},
 /turf/open/floor/plating/ship,
 /area/ship/construction)
@@ -671,7 +672,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/security/glass{
-	dir = 4
+	dir = 4;
+	req_access_txt = "148,149"
 	},
 /turf/open/floor/plating/ship,
 /area/ship/crew/cryo)
@@ -880,10 +882,11 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/machinery/door/airlock/security/glass{
-	dir = 4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/door/airlock/security/glass{
+	dir = 4;
+	req_access_txt = "148,149"
+	},
 /turf/open/floor/plating/ship,
 /area/ship/crew/cryo)
 "My" = (
@@ -1137,7 +1140,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/security/glass{
-	dir = 4
+	dir = 4;
+	req_access_txt = "148,149"
 	},
 /turf/open/floor/plating/ship,
 /area/ship/construction)
@@ -1149,7 +1153,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/security/glass{
-	dir = 4
+	dir = 4;
+	req_access_txt = "148,149"
 	},
 /turf/open/floor/plating/ship,
 /area/ship/construction)
@@ -1181,6 +1186,9 @@
 /obj/machinery/recharger{
 	pixel_x = -5;
 	pixel_y = 8
+	},
+/obj/item/stamp/inteq{
+	layer = 4
 	},
 /turf/open/floor/plasteel/tech/grid/airless,
 /area/ship/crew/cryo)
