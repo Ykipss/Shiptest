@@ -7,7 +7,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	force = 40
 	throwforce = 20
-	block_chance = 35
+	block_chance = 50
 	armour_penetration = 50
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -33,8 +33,6 @@
 
 /obj/item/energy_katana/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
-	if(!is_ninja(user))
-		return
 	if(dash_toggled)
 		jaunt.Teleport(user, target)
 	if(proximity_flag && (isobj(target) || issilicon(target)))
@@ -51,7 +49,7 @@
 
 /obj/item/energy_katana/dropped(mob/user)
 	. = ..()
-	jaunt.Remove(user)
+	jaunt?.Remove(user)
 	user.update_icons()
 
 //If we hit the Ninja who owns this Katana, they catch it.
@@ -98,10 +96,11 @@
 
 /obj/item/energy_katana/Destroy()
 	QDEL_NULL(spark_system)
+	QDEL_NULL(jaunt)
 	return ..()
 
 /datum/action/innate/dash/ninja
 	current_charges = 3
 	max_charges = 3
-	charge_rate = 85
+	charge_rate = 30
 	recharge_sound = null

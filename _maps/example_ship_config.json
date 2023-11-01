@@ -4,7 +4,7 @@
 	"map_short_name": "Test-class",
 	"prefix": "STSV",
 	"namelists": ["GENERAL", "SPACE", "MYTHOLOGICAL", "WEAPONS"],
-	"map_path": "_maps/shuttles/shiptest/null.dmm",
+	"map_path": "_maps/shuttles/null.dmm",
 	"limit": 2,
 	"spawn_time_coeff": 1.5,
 	"officer_time_coeff": 0.5,

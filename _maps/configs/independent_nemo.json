@@ -52,11 +52,7 @@
 		"Assistant": {
 			"outfit": "/datum/outfit/job/assistant",
 			"slots": 1
-		},
-		"Bartender": {
-			"outfit": "/datum/outfit/job/bartender",
-			"slots": 1
 		}
 	},
-	"enabled": true
+	"enabled": false
 }

@@ -72,6 +72,11 @@ Contents:
 	cell.name = "black power cell"
 	cell.icon_state = "bscell"
 
+/obj/item/clothing/suit/space/space_ninja/Destroy()
+	QDEL_NULL(spark_system)
+	QDEL_NULL(cell)
+	return ..()
+
 // Space Suit temperature regulation and power usage
 /obj/item/clothing/suit/space/space_ninja/process()
 	var/mob/living/carbon/human/user = src.loc
@@ -135,7 +140,7 @@ Contents:
 	ADD_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
 	n_shoes = H.shoes
 	ADD_TRAIT(n_shoes, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	n_shoes.slowdown -= 0.3
+	n_shoes.slowdown--
 	n_gloves = H.gloves
 	ADD_TRAIT(n_gloves, TRAIT_NODROP, NINJA_SUIT_TRAIT)
 	return TRUE

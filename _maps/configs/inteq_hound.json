@@ -22,7 +22,7 @@
 			"slots": 1
 		},
 		"Enforcer": {
-			"outfit": "/datum/outfit/job/security/inteq/cardacces",
+			"outfit": "/datum/outfit/job/security/inteq/naked/cardacces",
 			"slots": 3
 		},
 		"Recruit": {
