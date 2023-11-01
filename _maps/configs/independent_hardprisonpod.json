@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Hard prison pod",
 	"map_short_name": "HPP-class",
-	"map_path": "_maps/shuttles/independent/independent_hardprisonpod.dmm",
+	"map_path": "_maps/shuttles/independent/hard_prison_pod.dmm",
         "prefix": "SV",
 	"description": " Is it a ship? Oh no...it seems pod.",
 	"tags": ["Soloship"],
