@@ -1,29 +1,17 @@
 /**********************Rock Planet Areas**************************/
 
-/area/ruin/rock
-
-/area/mine/rockplanet
+//syndicate
+/area/ruin/rockplanet/syndicate
 	name = "Abandoned Syndicate Mining Facility"
+	icon_state = "green"
 
-/area/mine/rockplanet_nanotrasen
+//budgetcuts
+/area/ruin/rockplanet/nanotrasen
 	name = "Abandoned Mining Facility"
+	icon_state = "green"
 
-/area/ruin/rock/shippingdockoffice
-	name = "Employee Office"
-	icon_state = "crew_quarters"
-
-/area/ruin/rock/shippingdockcustoms
-	name = "Cargo Checkpoint"
-	icon_state = "security"
-
-/area/ruin/rock/shippingdockwarehouse
-	name = "Warehouse"
-	icon_state = "storage"
-
-/area/ruin/rock/shippingdocksecure
-	name = "Warehouse Secure Storage"
-	icon_state = "armory"
-
-/area/ruin/rock/shippingdock
-	name = "Abandoned Shipping Dock"
+//nomad
+/area/ruin/rockplanet/nomad
+	name = "Abandoned Crash Site"
+	always_unpowered = FALSE
 	icon_state = "red"

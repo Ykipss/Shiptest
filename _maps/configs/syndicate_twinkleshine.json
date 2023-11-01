@@ -16,7 +16,6 @@
 	],
 	"map_short_name": "Twinkleshine-class",
 	"map_path": "_maps/shuttles/syndicate/syndicate_twinkleshine.dmm",
-	"limit": 1,
 	"job_slots": {
 		"Captain": {
 			"outfit": "/datum/outfit/job/captain/syndicate/sbc",

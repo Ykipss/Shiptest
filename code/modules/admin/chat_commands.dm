@@ -2,8 +2,7 @@
 
 /datum/tgs_chat_command/restart
 	name = "restart"
-	admin_only = TRUE
-	help_text = "Перезагрузит сервер, при условии что администраторы отсутствуют на сервере."
+	help_text = "Restarts the server if there are no active admins on."
 
 /datum/tgs_chat_command/restart/Run(datum/tgs_chat_user/sender, params)
 	var/active_admins = FALSE
@@ -12,17 +11,17 @@
 			active_admins = TRUE
 			break
 	if(!active_admins)
-		SSticker.Reboot("Запрос перезагрузки с Discord был подтверждён.", "discord")
-		return "Запущен перезапуск сервера..."
+		SSticker.Reboot("Restart requested from the discord.", "discord")
+		return "Rebooting..."
 	else
-		return "Отказано. Имеются активные администраторы на сервере."
+		return "There are active admins on the server! Ask them to restart."
 
 /datum/tgs_chat_command/join
 	name = "join"
-	help_text = "Покажет IP для подключения к игре.."
+	help_text = "Sends a join link."
 
 /datum/tgs_chat_command/join/Run(datum/tgs_chat_user/sender, params)
-	return "byond://celadon.spacestation13.su:1337"
+	return "<[world.internet_address]:[world.port]>"
 
 /datum/tgs_chat_command/tgsstatus
 	name = "status"

@@ -222,7 +222,6 @@
 	pixel_x = -20;
 	pixel_y = -5
 	},
-/obj/effect/spawner/bundle/costume/commie,
 /turf/open/floor/plasteel/tech/grid/airless,
 /area/ship/construction)
 "nL" = (

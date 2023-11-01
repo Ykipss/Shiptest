@@ -14,13 +14,26 @@
 	"map_short_name": "Escape Pod",
 	"map_path": "_maps/shuttles/independent/independent_escapepod.dmm",
 	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/captain/western",
+			"officer": true,
+			"slots": 1
+		},
+		"Ship's Doctor": {
+			"outfit": "/datum/outfit/job/doctor",
+			"slots": 1
+		},
 		"Ship's Engineer": {
 			"outfit": "/datum/outfit/job/engineer/hazard",
 			"slots": 1
 		},
-		"Prisoner": {
-			"outfit": "/datum/outfit/job/prisoner",
-			"slots": 2
+		"Asteroid Miner": {
+			"outfit": "/datum/outfit/job/miner/hazard",
+			"slots": 1
+		},
+		"Deckhand": {
+			"outfit": "/datum/outfit/job/assistant",
+			"slots": 1
 		}
 	},
 	"enabled": true

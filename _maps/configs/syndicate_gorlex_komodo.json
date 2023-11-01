@@ -16,7 +16,7 @@
 	],
 	"map_path": "_maps/shuttles/syndicate/syndicate_gorlex_komodo.dmm",
 	"map_id": "syndicate_gorlex_komodo",
-	"limit": 2,
+	"limit": 1,
 	"job_slots": {
 		"Captain": {
 			"outfit": "/datum/outfit/job/captain/syndicate/gorlex",

@@ -574,21 +574,6 @@
 	new /obj/item/clothing/mask/muzzle(src)
 	new /obj/item/mmi/syndie(src)
 
-/obj/item/storage/backpack/duffelbag/spiderclan/surgery
-	name = "surgery duffel bag"
-	desc = "Spider Clan's surgery duffel bag for holding surgery tools."
-	icon_state = "duffel-spidermed"
-	item_state = "duffel-spidermed"
-
-/obj/item/storage/backpack/duffelbag/spiderclan/surgery/PopulateContents()
-	new /obj/item/surgicaldrill/advanced(src)
-	new /obj/item/scalpel/advanced(src)
-	new /obj/item/retractor/advanced(src)
-	new /obj/item/healthanalyzer/advanced(src)
-	new /obj/item/clothing/glasses/hud/health/night(src)
-	new /obj/item/defibrillator/compact/combat/loaded/spiderclan(src)
-	new /obj/item/mmi(src)
-
 /obj/item/storage/backpack/duffelbag/syndie/ammo
 	name = "ammunition duffel bag"
 	desc = "A large duffel bag for holding extra weapons ammunition and supplies."
@@ -686,10 +671,9 @@
 		new /obj/item/grenade/c4/x4(src)
 
 /obj/item/storage/backpack/duffelbag/syndie/firestarter
-	desc = "A large duffel bag containing a New Russian pyro backpack sprayer, Elite hardsuit, a Stechkin APS pistol, minibomb, ammo, and other equipment."
+	desc = "A large duffel bag containing a pyro backpack sprayer, Elite hardsuit, a Stechkin APS pistol, minibomb, ammo, and other equipment."
 
 /obj/item/storage/backpack/duffelbag/syndie/firestarter/PopulateContents()
-	new /obj/item/clothing/under/syndicate/soviet(src)
 	new /obj/item/watertank/op(src)
 	new /obj/item/clothing/suit/space/hardsuit/syndi/elite(src)
 	new /obj/item/gun/ballistic/automatic/pistol/APS(src)

@@ -15,7 +15,7 @@
 	],
 	"job_slots": {
 		"Loner": {
-			"outfit": "/datum/outfit/job/hermit",
+			"outfit": "/datum/outfit/hermit",
 			"officer": true,
 			"slots": 1
 		}

@@ -39,12 +39,18 @@
 					/obj/item/gun/ballistic/revolver)
 
 /datum/supply_pack/gun/detrevolver
-	name = "Revolver crate"
+	name = "Hunter's Pride Detective Revolver crate"
 	desc = "Contains two concealable Solarian revolvers, chambered in .38."
 	cost = 2000
 	contains = list(/obj/item/gun/ballistic/revolver/detective,
 					/obj/item/gun/ballistic/revolver/detective)
 
+/datum/supply_pack/gun/cattlemanrevolver
+	name = "Cattleman Revolver crate"
+	desc = "Contains two concealable Cattleman revolvers, chambered in .45 ACP."
+	cost = 2500
+	contains = list(/obj/item/gun/ballistic/revolver/cattleman,
+					/obj/item/gun/ballistic/revolver/cattleman)
 
 
 /*
@@ -130,23 +136,23 @@
 	name = "P16 Assault Rifle Crate"
 	desc = "Contains two high-powered, automatic rifles chambered in 5.56mm."
 	cost = 8000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/p16,
-					/obj/item/gun/ballistic/automatic/assualt/p16)
+	contains = list(/obj/item/gun/ballistic/automatic/assault/p16,
+					/obj/item/gun/ballistic/automatic/assault/p16)
 	crate_name = "auto rifle crate"
 
 /datum/supply_pack/gun/ak
 	name = "SVG-67 Rifle Crate"
 	desc = "Contains two high-powered, automatic rifles chambered in 7.62x39mm."
 	cost = 6000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/ak47,
-					/obj/item/gun/ballistic/automatic/assualt/ak47)
+	contains = list(/obj/item/gun/ballistic/automatic/assault/ak47,
+					/obj/item/gun/ballistic/automatic/assault/ak47)
 	crate_name = "auto rifle crate"
 
 /datum/supply_pack/gun/g36sh
 	name = "G36-SH Rifle crate"
 	desc = "Содержит G36-SH и запасную обойму. "
 	cost = 13000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/g36sh,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/g36sh,
 					/obj/item/ammo_box/magazine/p16/g36)
 	crate_name = "auto rifle crate"
 
@@ -154,7 +160,7 @@
 	name = "G36 Rifle crate"
 	desc = "Содержит G36-SH и запасную обойму. "
 	cost = 15000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/g36,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/g36,
 					/obj/item/ammo_box/magazine/p16/g36)
 	crate_name = "auto rifle crate"
 
@@ -162,7 +168,7 @@
 	name = "Morita Mk.I Rifle crate"
 	desc = "Содержит Morita Mk.I. и дополнительную обойму. "
 	cost = 20000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/morita1,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/morita1,
 					/obj/item/ammo_box/magazine/morita1)
 	crate_name = "auto rifle crate"
 
@@ -170,7 +176,7 @@
 	name = "Morita/forest Mk.I Rifle crate"
 	desc = "Содержит Morita/forest Mk.I. и дополнительный барабанный магазин. "
 	cost = 23000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/morita1/desert,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/morita1/desert,
 					/obj/item/ammo_box/magazine/morita1/drum)
 	crate_name = "auto rifle crate"
 
@@ -178,7 +184,7 @@
 	name = "Morita/desert Mk.I Rifle crate"
 	desc = "Содержит Morita/desert Mk.I. и дополнительный барабанный магазин. "
 	cost = 23000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/morita1/forest,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/morita1/forest,
 					/obj/item/ammo_box/magazine/morita1/drum)
 	crate_name = "auto rifle crate"
 
@@ -186,7 +192,7 @@
 	name = "Morita/swamp Mk.I Rifle crate"
 	desc = "Содержит Morita/swamp Mk.I. и дополнительный барабанный магазин. "
 	cost = 23000
-	contains = list(/obj/item/gun/ballistic/automatic/assualt/morita1/swamp,
+	contains = list(/obj/item/gun/ballistic/automatic/assault/morita1/swamp,
 					/obj/item/ammo_box/magazine/morita1/drum)
 	crate_name = "auto rifle crate"
 
