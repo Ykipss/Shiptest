@@ -1,590 +1,117 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aU" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/carpet/purple,
-/area/ship/science)
+/obj/structure/table,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/backpack/duffelbag/syndie/spiderclan_surg,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
 "bj" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 6;
 	faction = list("Space Ninja")
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "bJ" = (
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -16
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"ck" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/camera/autoname{
-	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"di" = (
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 4;
-	id = "acron_holofield"
-	},
-/obj/machinery/door/poddoor{
-	id = "acron_cargo"
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"dK" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/cargo)
-"eb" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	id = "acron_eng";
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/engineering)
-"eH" = (
-/obj/machinery/camera/autoname,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/hallway/central)
-"fm" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"fz" = (
-/obj/machinery/computer/helm{
-	dir = 8
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"gs" = (
-/obj/machinery/porta_turret/syndicate/energy{
-	dir = 5;
-	faction = list("Space Ninja")
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/bridge)
-"gA" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"hh" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"hx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"hA" = (
-/obj/machinery/rnd/server,
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"hY" = (
-/obj/machinery/power/terminal{
-	dir = 8
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"ig" = (
+/turf/open/floor/circuit/green,
+/area/ship/bridge)
+"ck" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+/obj/structure/closet/crate/freezer,
+/obj/item/storage/ration/vegan_chili,
+/obj/item/storage/ration/vegan_chili,
+/obj/item/storage/ration/vegan_chili,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/soap/homemade,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"cR" = (
+/obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"iv" = (
-/obj/structure/table/optable,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"iQ" = (
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "0-4"
 	},
-/obj/machinery/door/poddoor{
-	id = "acron_cargo"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/layer_manifold,
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"kB" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "acron_external"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"kV" = (
-/obj/machinery/atmospherics/pipe/simple/supply/visible,
-/obj/machinery/light/directional/east,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"mQ" = (
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 11;
-	pixel_y = -16
-	},
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"na" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "acron_external"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/medical)
-"nx" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/rnd/production/circuit_imprinter/department/science,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"od" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"oQ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
-/obj/structure/chair/office{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"pG" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering)
-"qv" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
 	id = "acron_eng";
 	dir = 4
 	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/circuit/green/off,
 /area/ship/engineering)
-"rG" = (
+"di" = (
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/visible{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"sc" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"sB" = (
-/obj/machinery/porta_turret/syndicate/energy{
-	dir = 10;
-	faction = list("Space Ninja")
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering)
-"tt" = (
-/obj/machinery/airalarm{
+/obj/structure/closet/emcloset/wall{
 	dir = 4;
-	pixel_x = -16
+	pixel_x = -28
 	},
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"tA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"tB" = (
-/obj/item/areaeditor/shuttle,
-/obj/item/radio/intercom/wideband/table{
-	dir = 6
-	},
-/obj/structure/table,
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"tY" = (
-/obj/machinery/light_switch{
-	pixel_y = 21;
-	pixel_x = 8
-	},
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"vn" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/autolathe,
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"vA" = (
-/obj/machinery/camera/autoname{
-	dir = 9
-	},
-/obj/machinery/button/door{
-	pixel_x = 22;
-	pixel_y = 10;
-	name = "blast door control";
-	id = "acron_cargo";
-	dir = 8
-	},
-/obj/machinery/button/shieldwallgen{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = -7;
-	id = "acron_holofield"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"vC" = (
-/obj/machinery/camera/autoname{
-	dir = 5
-	},
-/obj/structure/table,
-/obj/item/storage/backpack/duffelbag/spiderclan/surgery,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"vG" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"vQ" = (
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
-/obj/machinery/computer/rdconsole{
-	dir = 4
-	},
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"xr" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"xz" = (
-/obj/machinery/porta_turret/syndicate/energy{
-	dir = 9;
-	faction = list("Space Ninja")
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering)
-"xA" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/door/window{
-	dir = 4
-	},
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"yA" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/door/window{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"yR" = (
-/obj/structure/closet/wall/orange{
-	dir = 6;
-	pixel_y = -32;
-	name = "Engineering Closet"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
-/obj/item/storage/belt/utility/chief/full,
-/obj/item/storage/toolbox/electrical,
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"zc" = (
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "acron_holofield";
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/door/poddoor{
-	id = "acron_cargo"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"zB" = (
-/obj/machinery/power/port_gen/pacman,
-/obj/structure/cable,
-/obj/item/stack/sheet/mineral/plasma/twenty,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"zL" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"zN" = (
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"Aq" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"Au" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+/obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"AQ" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
+/obj/effect/turf_decal/industrial/stand_clear,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"dl" = (
+/obj/machinery/light/directional/east,
+/obj/machinery/computer/operating{
+	dir = 1
 	},
-/obj/machinery/vending/medical,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"AV" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"Bf" = (
-/obj/machinery/door/airlock/medical{
-	name = "Medical"
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"dK" = (
+/obj/structure/table/optable,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"eb" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
 	},
+/obj/machinery/light/directional/east,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"eH" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/carpet/black,
-/area/ship/medical)
-"Cq" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+/obj/machinery/door/airlock/survival_pod,
+/obj/machinery/door/firedoor,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"fm" = (
+/obj/machinery/power/terminal{
 	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/cargo)
-"CA" = (
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"CM" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"Dr" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/circuit/green/off,
 /area/ship/engineering)
-"Ea" = (
-/obj/machinery/airalarm{
-	dir = 8;
-	pixel_x = 16
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"Ek" = (
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"EK" = (
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"Fa" = (
-/obj/machinery/rnd/production/protolathe/department/science,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/turf/open/floor/carpet/purple,
-/area/ship/science)
-"Fg" = (
-/obj/machinery/camera/autoname{
-	dir = 10
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/hallway/central)
-"Gl" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/medical)
-"Ht" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/door/airlock/command{
-	dir = 4;
-	name = "Bridge"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
-/area/ship/bridge)
-"Hw" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
-/obj/machinery/mineral/ore_redemption{
-	dir = 1;
-	output_dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"HD" = (
+"fz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
@@ -593,72 +120,252 @@
 	},
 /obj/machinery/button/door{
 	dir = 8;
-	pixel_x = 22;
-	pixel_y = 10;
+	pixel_x = 32;
+	pixel_y = -5;
 	name = "blast door control";
-	id = "acron_external"
+	id = "113"
 	},
 /obj/machinery/turretid{
 	pixel_x = 32;
 	pixel_y = 12
 	},
-/obj/machinery/light_switch{
-	pixel_x = 22;
-	pixel_y = null;
+/obj/machinery/holopad,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green,
+/area/ship/bridge)
+"gs" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"gA" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	dir = 9;
+	faction = list("Space Ninja")
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"gY" = (
+/obj/effect/decal/cleanable/xenoblood/xgibs/limb,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"hh" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
-/obj/machinery/holopad,
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"IJ" = (
-/turf/open/floor/carpet/blue,
+/obj/machinery/door/airlock/survival_pod{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"hx" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"hA" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/preopen{
+	id = 113
+	},
+/turf/open/floor/carpet/black,
+/area/ship/crew/cryo)
+"hY" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"ig" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"iv" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood/yew,
 /area/ship/medical)
-"JA" = (
-/obj/machinery/door/airlock/research{
-	name = "Research"
+"iQ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/docking_port/mobile{
+	port_direction = 8;
+	preferred_direction = 4;
+	dir = 2
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/carpet/black,
-/area/ship/science)
-"JB" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
-/obj/structure/table,
-/obj/item/pizzabox/meat,
-/obj/item/pizzabox/meat,
-/obj/item/pizzabox/meat,
-/obj/item/pizzabox/meat,
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"JR" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "acron_external"
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
-/turf/open/floor/carpet/black,
-/area/ship/science)
-"JS" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"kB" = (
+/turf/closed/wall/mineral/plastitanium/interior,
+/area/ship/bridge)
+"kJ" = (
+/obj/structure/closet/wall/blue{
+	dir = 4;
+	pixel_x = -28
+	},
+/obj/item/areaeditor/shuttle,
+/obj/item/reagent_containers/hypospray/combat/nanites,
+/obj/item/reagent_containers/hypospray/medipen/bonefixingjuice,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"kV" = (
 /obj/machinery/power/terminal{
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/light/directional/south,
-/turf/open/floor/plating,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
 /area/ship/engineering)
-"Ka" = (
-/obj/machinery/atmospherics/components/binary/volume_pump{
+"lh" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
+"me" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/preopen{
+	id = 113;
 	dir = 1
 	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"MR" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
-"Os" = (
+"mQ" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"na" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/fluff/divine/convertaltar{
+	desc = "An altar dedicated to a kami.";
+	name = "altar"
+	},
+/obj/item/toy/katana{
+	name = "Хондзё Масамунэ";
+	desc = "Великое сокровище , но уже бесполезное в бою."
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"nx" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/crew/cryo)
+"od" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/machinery/autolathe,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"oQ" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = -12
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"pG" = (
+/obj/machinery/light/directional/north,
+/obj/structure/table/abductor,
+/obj/machinery/cell_charger,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"qv" = (
+/obj/machinery/door/poddoor{
+	id = "acron_cargo"
+	},
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "acron_holofield"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"rG" = (
+/obj/structure/table/abductor,
+/obj/item/stock_parts/cell/super/empty,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"sc" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -670,104 +377,32 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
-/turf/open/floor/carpet/black,
+/turf/open/floor/circuit/green,
 /area/ship/hallway/central)
-"Ot" = (
-/obj/docking_port/mobile{
-	port_direction = 8;
-	preferred_direction = 4;
-	dir = 2
+"sB" = (
+/obj/machinery/button/shieldwallgen{
+	dir = 2;
+	pixel_y = 18;
+	id = "acron_holofield";
+	pixel_x = -5
 	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/cargo)
-"PO" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "acron_external"
+/obj/machinery/button/door{
+	name = "blast door control";
+	id = "acron_cargo";
+	dir = 2;
+	pixel_y = 20;
+	pixel_x = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
-/area/ship/science)
-"QU" = (
-/turf/open/floor/engine/hull,
-/area/ship/external)
-"Re" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "acron_external";
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"Ru" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 11;
-	pixel_y = -16
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"Tg" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/science)
-"TS" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/atmos_waste,
-/turf/open/floor/engine/hull,
-/area/ship/external)
-"UV" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/door/airlock/engineering{
-	dir = 4;
-	name = "Engineering"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
-/area/ship/hallway/central)
-"Vm" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/turf/open/floor/carpet/royalblack,
-/area/ship/bridge)
-"Vy" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "0-2"
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
-"VA" = (
-/obj/machinery/atmospherics/components/unary/tank/air{
-	dir = 1
-	},
-/turf/open/floor/plating,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"sW" = (
+/turf/closed/wall/mineral/plastitanium/interior,
 /area/ship/engineering)
-"VD" = (
+"tt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
 	dir = 8
 	},
@@ -777,9 +412,69 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/circuit/green,
 /area/ship/engineering)
-"VX" = (
+"tA" = (
+/obj/machinery/light/directional/east,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"tB" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/preopen{
+	id = 113;
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/ship/bridge)
+"tY" = (
+/obj/machinery/light/directional/west,
+/obj/effect/decal/cleanable/ash/large,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"vn" = (
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"vA" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/shreds,
+/turf/open/floor/circuit/green,
+/area/ship/cargo)
+"vC" = (
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"vG" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"vQ" = (
+/turf/closed/wall/mineral/plastitanium/interior,
+/area/ship/crew/cryo)
+"xr" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -789,53 +484,255 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/carpet/black,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/circuit/green,
+/area/ship/cargo)
+"xz" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/bottle/sake{
+	pixel_y = 10;
+	pixel_x = 10
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/snacks/vegetariansushiroll{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"xA" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"yA" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	dir = 10;
+	faction = list("Space Ninja")
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"yR" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/central)
-"Wy" = (
+"zc" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"zn" = (
+/obj/machinery/light/directional/west,
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"zB" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor{
+	id = "acron_eng";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced/spawner/east,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"zL" = (
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/obj/structure/closet/wall{
+	dir = 1;
+	pixel_y = -28
+	},
+/obj/item/pickaxe/drill/jackhammer/old,
+/obj/item/card/mining_access_card,
+/obj/item/gps/mining,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"zN" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/camera/autoname{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"Aq" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/door/window{
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"Au" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/window/reinforced/spawner{
-	dir = 1
+/obj/structure/closet/wall/orange{
+	dir = 1;
+	pixel_y = -28
 	},
-/turf/open/floor/plating,
-/area/ship/engineering)
-"WH" = (
+/obj/item/stack/sheet/glass/twenty,
+/obj/item/stack/sheet/glass/twenty,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/metal/twenty,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"AQ" = (
 /obj/machinery/camera/autoname{
+	dir = 5
+	},
+/obj/structure/rack,
+/obj/item/spear,
+/obj/item/katana{
+	pixel_x = -3
+	},
+/obj/item/clothing/suit/chaplainsuit/whiterobe,
+/obj/item/clothing/under/pants/white,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -8
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"AV" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/circuit/green,
+/area/ship/bridge)
+"Bf" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
-/obj/structure/closet/wall{
-	dir = 6;
-	pixel_y = -32;
-	name = "Mining Closet"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/obj/item/t_scanner/adv_mining_scanner,
-/obj/item/t_scanner/adv_mining_scanner,
-/obj/item/storage/bag/ore,
-/obj/item/storage/bag/ore,
-/obj/item/pickaxe/drill/jackhammer/old,
-/obj/item/pickaxe/drill/jackhammer/old,
-/turf/open/floor/carpet/black,
-/area/ship/cargo)
-"WI" = (
-/obj/machinery/power/terminal{
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"Ce" = (
+/obj/effect/turf_decal/siding/wood{
 	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/mineral_door/paperframe,
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"Cq" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"CA" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/mineral_door/paperframe,
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"CM" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/airlock/survival_pod{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"Dr" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"DH" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"Ea" = (
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/plating,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
 /area/ship/engineering)
-"Xk" = (
+"Ek" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/mineral/ore_redemption{
+	dir = 1;
+	output_dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"EK" = (
 /obj/machinery/button/door{
 	dir = 8;
 	pixel_x = 22;
@@ -844,67 +741,376 @@
 	id = "acron_eng"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 14;
+	pixel_x = 21;
 	pixel_y = null;
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/plating,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green,
 /area/ship/engineering)
-"Xu" = (
+"Fa" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = 113
+	},
+/turf/open/floor/carpet/black,
+/area/ship/crew/cryo)
+"Fg" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/preopen{
+	id = 113
+	},
+/obj/structure/curtain/bounty,
+/turf/open/floor/carpet/black,
+/area/ship/medical)
+"Gl" = (
+/turf/closed/wall/mineral/plastitanium/interior,
+/area/ship/medical)
+"Ht" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/door/airlock/survival_pod{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/circuit/green,
+/area/ship/bridge)
+"Hw" = (
+/obj/machinery/airalarm/directional/north,
+/obj/machinery/firealarm/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"HD" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"IJ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"JA" = (
+/obj/machinery/light_switch{
+	pixel_y = 18
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"JB" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"JR" = (
+/obj/machinery/computer/cargo/express{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"JS" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/atmos_waste,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
+"Ka" = (
+/obj/machinery/light/directional/south,
+/obj/structure/table/abductor,
+/obj/item/clothing/glasses/meson,
+/obj/item/wrench/combat,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"Ll" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -18
+	},
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"MR" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green,
+/area/ship/hallway/central)
+"Nn" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/preopen{
+	id = 113
+	},
+/turf/open/floor/carpet/royalblack,
+/area/ship/bridge)
+"Os" = (
+/obj/machinery/light/directional/east,
+/obj/structure/chair/stool,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/light_switch{
+	pixel_x = 12;
+	pixel_y = 23
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"Ot" = (
+/turf/closed/wall/mineral/wood,
+/area/ship/medical)
+"PO" = (
+/obj/structure/table/abductor,
+/obj/item/card/emag/limited,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"QU" = (
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "acron_holofield";
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/door/poddoor{
+	id = "acron_cargo"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"Re" = (
+/obj/item/radio/intercom/wideband/directional/south,
+/obj/structure/table/abductor,
+/obj/item/book/granter/spell/smoke/lesser{
+	desc = "This book is overflowing with the mystical arts of the ninja.";
+	name = "Ninja Vanish"
+	},
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"Ru" = (
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
+"Tg" = (
+/obj/machinery/camera/autoname{
+	dir = 4
+	},
+/obj/machinery/cryopod,
+/obj/machinery/computer/cryopod/directional/north,
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
+"TS" = (
+/obj/machinery/door/poddoor{
+	id = "acron_cargo"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/circuit/green/off,
+/area/ship/hallway/central)
+"UV" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible,
+/obj/structure/closet/wall/orange{
+	dir = 8;
+	pixel_x = 28
+	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/multitool,
+/turf/open/floor/circuit/green,
+/area/ship/engineering)
+"Vm" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/circuit/green,
+/area/ship/bridge)
+"Vy" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/mineral_door/paperframe,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood/yew,
+/area/ship/medical)
+"VA" = (
+/obj/structure/table/abductor,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/flashlight/seclite,
+/obj/item/radio,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/circuit/green/off,
+/area/ship/bridge)
+"VD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"VP" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	dir = 5;
+	faction = list("Space Ninja")
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"VX" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/medical)
+"Wy" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering)
+"WH" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 1
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/central)
+"WI" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/machinery/door/poddoor{
+	id = "acron_eng";
+	dir = 4
+	},
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"Xk" = (
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/carpet/purple,
-/area/ship/science)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/insectguts,
+/turf/open/floor/circuit/green/off,
+/area/ship/engineering)
+"Xu" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood/yew,
+/area/ship/crew/cryo)
 "Yk" = (
 /turf/template_noop,
 /area/template_noop)
 "ZK" = (
-/obj/machinery/computer/crew{
-	dir = 8
-	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/circuit/green/off,
 /area/ship/bridge)
 
 (1,1,1) = {"
-xz
-eb
-eb
-qv
-qv
-qv
-eb
-eb
-sB
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
 "}
 (2,1,1) = {"
-pG
-yA
-xA
-Ek
-WI
+Yk
+gA
+Wy
 zB
+WI
+Wy
+WI
+cR
 Wy
 yA
-pG
+Yk
 "}
 (3,1,1) = {"
-pG
+Yk
+Wy
+sW
 Aq
 hY
 fm
-rG
-Dr
-zL
-JS
-pG
+ck
+gs
+sW
+Wy
+Yk
 "}
 (4,1,1) = {"
+Yk
+Wy
 pG
 Ea
 vG
@@ -912,182 +1118,240 @@ Xk
 VD
 kV
 Ka
-VA
-pG
+Wy
+Yk
 "}
 (5,1,1) = {"
-Gl
-Gl
-Gl
-Gl
+Yk
+Wy
+rG
+tA
+EK
+tt
 UV
-Tg
-Tg
-Tg
-Tg
+eb
+xA
+Wy
+Yk
 "}
 (6,1,1) = {"
-Gl
-Gl
-vC
-Gl
+Yk
 VX
-Tg
+Ot
+Ot
+Ot
+hh
 vQ
-Tg
-Tg
+vQ
+vQ
+nx
+Yk
 "}
 (7,1,1) = {"
-na
+Yk
+VX
+zn
 AQ
-mQ
-Gl
-Fg
+CA
+MR
+vQ
 Tg
 tY
 nx
-PO
+Yk
 "}
 (8,1,1) = {"
-na
-hx
+Yk
+Fg
+Cq
+vC
 CA
 Bf
-Os
+vQ
 JA
 Xu
 Fa
-JR
+Yk
 "}
 (9,1,1) = {"
+Yk
+Fg
 na
 IJ
 Vy
-Gl
+sc
 eH
-Tg
+Dr
 aU
-EK
-JR
+hA
+Yk
 "}
 (10,1,1) = {"
-na
+Yk
+Fg
+vC
 iv
-dK
-dK
-Ru
-dK
+CA
+DH
+vQ
+mQ
 dK
 hA
-JR
+Yk
 "}
 (11,1,1) = {"
-Gl
-Gl
-dK
-bJ
-ig
+Yk
+VX
+Os
+xz
+Ce
+Ll
+vQ
 Hw
-dK
-Tg
-Tg
+dl
+nx
+Yk
 "}
 (12,1,1) = {"
 Yk
-Yk
-Ot
+VX
+VX
+VX
+Gl
 CM
-od
-vn
-dK
-Yk
+vQ
+nx
+nx
+nx
 Yk
 "}
 (13,1,1) = {"
 Yk
-QU
+Yk
+lh
+qv
 di
-sc
-od
-tA
-dK
+ig
+Ek
+yR
+Yk
 Yk
 Yk
 "}
 (14,1,1) = {"
 Yk
+Yk
+Ru
 TS
 iQ
 xr
 Au
 yR
-Cq
+Yk
 Yk
 Yk
 "}
 (15,1,1) = {"
 Yk
+Yk
+JS
 QU
 zc
 vA
 od
 WH
-dK
+Yk
 Yk
 Yk
 "}
 (16,1,1) = {"
 Yk
-gs
-MR
-MR
-Ht
-MR
-MR
+Yk
+VP
+yR
+sB
+hx
+zL
+yR
 bj
+Yk
 Yk
 "}
 (17,1,1) = {"
 Yk
-kB
-tt
-hh
-gA
-ck
+Yk
 JB
 kB
+kB
+Ht
+kB
+kB
+JB
+Yk
 Yk
 "}
 (18,1,1) = {"
 Yk
-kB
+Yk
+Nn
+kJ
 zN
 Vm
 HD
 oQ
-tB
-kB
+me
+Yk
 Yk
 "}
 (19,1,1) = {"
 Yk
-kB
-Re
+Yk
+Nn
+gY
+bJ
 fz
 AV
 ZK
-Re
-kB
+me
+Yk
 Yk
 "}
 (20,1,1) = {"
 Yk
 Yk
+JB
+VA
+vn
+PO
+JR
 Re
-Re
-Re
-Re
-Re
+JB
+Yk
+Yk
+"}
+(21,1,1) = {"
+Yk
+Yk
+VP
+JB
+tB
+tB
+tB
+JB
+VP
+Yk
+Yk
+"}
+(22,1,1) = {"
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
 Yk
 Yk
 "}

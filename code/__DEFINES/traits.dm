@@ -429,3 +429,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Trait granted by [mob/living/silicon/ai]
 /// Applied when the ai anchors itself
 #define AI_ANCHOR_TRAIT "ai_anchor"
+
+//Acron ship - ниндзя не стреляет
+#define SPACE_NINJA_TRAIT "space_ninja"

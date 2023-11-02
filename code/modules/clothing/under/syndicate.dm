@@ -283,3 +283,13 @@
 	icon_state = "inteq_honorable"
 	item_state = "inteq_honorable"
 	supports_variations = KEPORI_VARIATION | DIGITIGRADE_VARIATION
+
+//acron
+/obj/item/clothing/under/syndicate/ninja
+	name = "Ninja under"
+	desc = "A non-descript and slightly suspicious looking under with digital camouflage."
+	icon = 'icons/obj/ninjaobjects.dmi'
+	icon_state = "ninja_under"
+	item_state = "ninja_under"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
+	mob_overlay_icon = 'icons/mob/clothing/under/syndicate.dmi'

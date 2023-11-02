@@ -12,7 +12,6 @@
 	],
 	"map_short_name": "Acron-class",
 	"map_path": "_maps/shuttles/independent/independent_acron.dmm",
-	"limit": 1,
 	"job_slots": {
 		"Space Ninja": {
 			"outfit": "/datum/outfit/acron_ninja",
@@ -20,5 +19,5 @@
 			"officer": true
 		}
 	},
-	"enabled": false
+	"enabled": true
 }

@@ -350,6 +350,25 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	attack_verb = list("stabbed", "ripped", "gored", "impaled")
 	embedding = list("pain_mult" = 8, "embed_chance" = 100, "fall_chance" = 0, "impact_pain_mult" = 15) //55 damage+embed on hit
 
+/obj/item/throwing_star/ninja
+	name = "throwing star"
+	desc = "An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts."
+	icon = 'icons/obj/ninjaobjects.dmi'
+	icon_state = "shuriken_projectile"
+	item_state = "shuriken_projectile"
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	force = 2
+	throwforce = 20 //20 + 2 (WEIGHT_CLASS_SMALL) * 4 (EMBEDDED_IMPACT_PAIN_MULTIPLIER) = 28 damage on hit due to guaranteed embedding
+	throw_speed = 4
+	embedding = list("pain_mult" = 4, "embed_chance" = 100, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
+	armour_penetration = 40
+
+	w_class = WEIGHT_CLASS_SMALL
+	sharpness = IS_SHARP
+	custom_materials = list(/datum/material/iron=500, /datum/material/glass=500)
+	resistance_flags = FIRE_PROOF
+
 /obj/item/switchblade
 	name = "switchblade"
 	icon_state = "switchblade"

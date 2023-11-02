@@ -23,8 +23,8 @@
 /datum/action/item_action/ninjastar
 	name = "Create Throwing Stars (1E)"
 	desc = "Creates some throwing stars"
-	button_icon_state = "throwingstar"
-	icon_icon = 'icons/obj/items_and_weapons.dmi'
+	button_icon_state = "shuriken"
+	icon_icon = 'icons/obj/ninjaobjects.dmi'
 
 /datum/action/item_action/ninjanet
 	name = "Energy Net (20E)"
