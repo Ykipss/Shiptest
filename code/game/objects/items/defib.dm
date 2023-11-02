@@ -279,6 +279,15 @@
 	item_state = "defibnt"
 	paddle_type = /obj/item/shockpaddles/syndicate/nanotrasen
 
+//Acron - дефиб ниндзи
+/obj/item/defibrillator/compact/combat/loaded/spiderclan
+	name = "Elite SpiderClan defibrillator"
+	desc = "A belt-equipped state-of-the-art defibrillator. Can revive through spacesuits, has an experimental self-recharging battery, and can be utilized in combat via applying the paddles in a disarming or agressive manner."
+	icon_state = "defibsc"
+	item_state = "defibsc"
+	paddle_type = /obj/item/shockpaddles/syndicate/spider
+
+
 //paddles
 
 /obj/item/shockpaddles
@@ -666,6 +675,15 @@
 	icon_state = "ntpaddles0"
 	item_state = "ntpaddles0"
 	base_icon_state = "ntpaddles"
+
+/obj/item/shockpaddles/syndicate/spider
+	name = "spider clan defibrillator paddles"
+	desc = "A pair of paddles used to revive deceased operatives. They possess both the ability to penetrate armor and to deliver powerful or disabling shocks offensively."
+	combat = TRUE
+	icon = 'icons/obj/defib.dmi'
+	icon_state = "spiderpaddles0"
+	item_state = "spiderpaddles0"
+	base_icon_state = "spiderpaddles"
 
 /obj/item/shockpaddles/syndicate/cyborg
 	req_defib = FALSE

@@ -708,3 +708,24 @@
 	name = "police bag"
 	desc = "A large duffel bag for holding extra police gear."
 	slowdown = 0
+
+//Acron - дюффель ниндзи
+
+/obj/item/storage/backpack/duffelbag/syndie/spiderclan_surg
+	name = "Spider Clan's surgery duffel bag"
+	desc = "Spider Clan's surgery duffel bag for holding surgery tools."
+	icon_state = "duffel-spidermed"
+	item_state = "duffel-spidermed"
+
+/obj/item/storage/backpack/duffelbag/syndie/spiderclan_surg/PopulateContents()
+	new /obj/item/surgicaldrill/advanced(src)
+	new /obj/item/scalpel/advanced(src)
+	new /obj/item/retractor/advanced(src)
+	new /obj/item/defibrillator/compact/combat/loaded/spiderclan(src)
+
+/obj/item/storage/backpack/ninja
+	name = "Spider Clan's bag"
+	desc = "Spider Clan's bag - green."
+	icon = 'icons/obj/ninjaobjects.dmi'
+	icon_state = "backpack_ninja_green"
+	item_state = "backpack_ninja_green"

@@ -300,6 +300,15 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
+/obj/item/radio/headset/ninja
+	name = "Spider clan's headset"
+	desc = "Dresses the ears of ninja's"
+	icon = 'icons/obj/ninjaobjects.dmi'
+	icon_state = "headset_green"
+	item_state = "headset_green"
+	keyslot = new /obj/item/encryptionkey/headset_com
+	keyslot2 = new /obj/item/encryptionkey/headset_cent
+
 //special headsets
 /obj/item/radio/headset/binary
 /obj/item/radio/headset/binary/Initialize()
