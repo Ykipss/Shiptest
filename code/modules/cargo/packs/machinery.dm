@@ -355,3 +355,20 @@
 					/obj/item/circuitboard/machine/protolathe)
 	crate_name = "Взломанный набор исследователя"
 	crate_type = /obj/structure/closet/crate/science
+
+/*
+	Движки
+*/
+
+/datum/supply_pack/machinery/plasma_thruster
+	name = "Набор для создания плазменного двигателя"
+	desc = "Набор содержит одну канистру плазмы, платы плазменного двигателя, плазменного нагревателя и раздатчика труб."
+	cost = 5000
+	contains = list(
+		/obj/item/circuitboard/machine/shuttle/engine/plasma,
+		/obj/item/circuitboard/machine/shuttle/heater,
+		/obj/item/circuitboard/machine/pipedispenser,
+		/obj/machinery/portable_atmospherics/canister/toxins
+	)
+	crate_name = "Набор для создания плазменного двигателя"
+	crate_type = /obj/structure/closet/crate/secure/engineering

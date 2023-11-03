@@ -113,9 +113,9 @@
 	icon_state_off = "burst_off"
 	icon_state_closed = "burst"
 	icon_state_open = "burst_open"
-	thrust = 10
+	thrust = 1.5
 	///Amount, in kilojoules, needed for a full burn.
-	var/power_per_burn = 50000
+	var/power_per_burn = 85000
 
 /obj/machinery/power/shuttle/engine/electric/bad
 	name = "Outdated Ion Thruster"
