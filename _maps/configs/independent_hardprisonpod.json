@@ -1,15 +1,16 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Hard prison pod",
-	"map_short_name": "HPP-class",
-	"map_path": "_maps/shuttles/independent/independent_hardprisonpod.dmm",
-        "prefix": "SV",
-	"description": " Is it a ship? Oh no...it seems pod.",
-	"tags": ["Soloship"],
-        "namelists": [
+	"prefix": "SV",
+	"namelists": [
 		"SPACE",
 		"NATURAL"
 	],
+	"map_short_name": "HPP-class",
+	"description": " Is it a ship? Oh no...it seems pod.",
+	"tags": ["Survival"],
+	"map_path": "_maps/shuttles/independent/independent_hardprisonpod.dmm",
+	"starting_funds": 0,
 	"limit": 1,
 	"job_slots": {
 		"Prisoner": {
@@ -17,5 +18,6 @@
 			"slots": 1
 		}
 	},
-        "enabled": true
+	"space_spawn": true,
+	"enabled": true
 }
