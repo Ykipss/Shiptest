@@ -197,7 +197,6 @@
 /area/ship/bridge)
 "B" = (
 /obj/machinery/power/apc/auto_name/directional/north,
-/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -255,14 +254,14 @@
 /obj/item/flashlight,
 /obj/item/paper_bin/bundlenatural,
 /obj/item/pen/survival,
-/obj/item/spacecash/bundle/c10000,
-/obj/item/spacecash/bundle/c10000,
 /obj/item/storage/cans/sixbeer,
 /obj/effect/decal/cleanable/plastic,
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets/donkpocketpizza,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/item/reagent_containers/spray/cleaner,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "G" = (
