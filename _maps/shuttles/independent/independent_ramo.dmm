@@ -2287,7 +2287,6 @@
 "dJ" = (
 /obj/effect/turf_decal/box/corners,
 /obj/structure/closet/crate/trashcart,
-/obj/item/clothing/head/soft/solgov,
 /obj/item/clothing/head/kitty,
 /obj/effect/spawner/lootdrop/costume,
 /obj/effect/spawner/lootdrop/armory_contraband,
