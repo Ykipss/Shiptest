@@ -74,12 +74,12 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "aq" = (
@@ -98,10 +98,10 @@
 /area/ship/hallway/central)
 "at" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light/directional/east,
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "au" = (
@@ -365,13 +365,13 @@
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "aV" = (
@@ -385,10 +385,10 @@
 "aX" = (
 /obj/structure/window/reinforced,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only,
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "aY" = (
@@ -1121,7 +1121,6 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/cybersun,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -1130,6 +1129,7 @@
 	dir = 1
 	},
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "ct" = (
@@ -1145,12 +1145,12 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/cybersun,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "cv" = (
@@ -1327,12 +1327,12 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/cybersun,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "cL" = (
@@ -2264,10 +2264,10 @@
 /area/ship/hallway/central)
 "ey" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/cybersun,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light/directional/east,
 /obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "ez" = (

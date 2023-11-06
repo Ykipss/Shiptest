@@ -664,6 +664,33 @@
 	category = list ("Shuttle Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
 
+/datum/design/board/shuttle/engine/electric/tech1
+	name = "Machine Design (Ion Thruster Board) 1st generation"
+	desc = "The circuit board for an 1st generation ion thruster."
+	id = "engine_ion_t1"
+	materials = list(/datum/material/glass = 1000, /datum/material/silver = 2000, /datum/material/bluespace = 1000)
+	build_path = /obj/item/circuitboard/machine/shuttle/engine/electric/tech1
+	category = list ("Shuttle Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/board/shuttle/engine/electric/tech2
+	name = "Machine Design (Ion Thruster Board) 2nd generation"
+	desc = "The circuit board for an 2nd generation ion thruster."
+	id = "engine_ion_t2"
+	materials = list(/datum/material/glass = 1000, /datum/material/gold = 2000, /datum/material/bluespace = 1000, /datum/material/silver = 2000)
+	build_path = /obj/item/circuitboard/machine/shuttle/engine/electric/tech2
+	category = list ("Shuttle Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/board/shuttle/engine/electric/tech3
+	name = "Machine Design (Ion Thruster Board) 3nd generation"
+	desc = "The circuit board for an 3nd generation ion thruster."
+	id = "engine_ion_t3"
+	materials = list(/datum/material/glass = 1000, /datum/material/gold = 2000, /datum/material/bluespace = 1000, /datum/material/silver = 2000,/datum/material/diamond = 1500)
+	build_path = /obj/item/circuitboard/machine/shuttle/engine/electric/tech3
+	category = list ("Shuttle Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+
 /datum/design/board/shuttle/engine/expulsion
 	name = "Machine Design (Expulsion Thruster Board)"
 	desc = "The circuit board for an expulsion thruster."
