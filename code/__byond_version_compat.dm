@@ -15,9 +15,12 @@
 #error Please consider upgrading to 514.1577 or above.
 #endif
 
+
+
 #if (DM_VERSION == 514 && DM_BUILD == 1590)
 #error Warning! Byond 514.1590 has been known to be unstable. Use at your own risk.
 #error Please consider using 514.1589.
+
 #endif
 
 // Keep savefile compatibilty at minimum supported level
