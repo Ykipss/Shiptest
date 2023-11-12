@@ -113,6 +113,7 @@
 		"stamp-centcom" = 'icons/stamp_icons/large_stamp-centcom.png',
 		"stamp-syndicate" = 'icons/stamp_icons/large_stamp-syndicate.png',
 		"stamp-solgov" = 'icons/stamp_icons/large_stamp-solgov.png',
+		"stamp-solfed" = 'icons/stamp_icons/large_stamp-solfed.png',
 		"stamp-inteq" = 'icons/stamp_icons/large_stamp-inteq.png'
 	)
 
