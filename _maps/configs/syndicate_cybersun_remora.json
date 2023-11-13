@@ -19,25 +19,25 @@
 	"limit": 1,
 	"job_slots": {
 		"Chief Biology Research Director": {
-			"outfit": "/datum/outfit/job/captain/syndicate/cybersun",
+			"outfit": "/datum/outfit/job/syndicate/captain/cybersun",
 			"officer": true,
 			"slots": 1
 		},
 		"Research and Development Director": {
-			"outfit": "/datum/outfit/job/head_of_personnel/syndicate/intel",
+			"outfit": "/datum/outfit/job/syndicate/head_of_personnel/cybersun",
 			"officer": true,
 			"slots": 1
 		},
 		"CyberSun doctor":{
-			"outfit": "/datum/outfit/job/doctor/syndicate/nsv",
+			"outfit": "/datum/outfit/job/syndicate/doctor/cybersun",
 			"slots": 3
 		},
 		"CyberSun paramedic": {
-			"outfit": "/datum/outfit/job/paramedic/syndicate",
+			"outfit": "/datum/outfit/job/syndicate/paramedic/cybersun",
 			"slots": 4
 		},
 		"CyberSun Pharma specialist": {
-			"outfit": "/datum/outfit/job/chemist/syndiesun",
+			"outfit": "/datum/outfit/job/syndicate/chemist",
 			"slots": 1
 		},
 		"CyberSun Bio Terrorist": {
@@ -45,7 +45,7 @@
 			"slots": 1
 		},
 		"GEC Engineer": {
-			"outfit": "/datum/outfit/job/engineer/syndicate/cybersun",
+			"outfit": "/datum/outfit/job/syndicate/engineer/cybersun",
 			"slots": 3
 		},
 		"CyberSun Bio-engineer": {
@@ -53,7 +53,7 @@
 			"slots": 2
 		},
 		"CyberSun Inern": {
-			"outfit": "/datum/outfit/job/assistant/syndicate/cyberagent",
+			"outfit": "/datum/outfit/job/syndicate/assistant/cybersun",
 			"slots": 4
 		}
 	},
