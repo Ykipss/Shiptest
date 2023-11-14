@@ -77,6 +77,14 @@
 	var/static/regex/lizard_kSS = new(@"(\w)X", "g")
 	var/static/regex/lizard_ecks = new(@"\bx([\-|r|R]|\b)", "g")
 	var/static/regex/lizard_eckS = new(@"\bX([\-|r|R]|\b)", "g")
+	var/static/regex/lizard_Extended_hiss = new("с+", "g")
+	var/static/regex/lizard_Extended_hiSS = new("С+", "g")
+	var/static/regex/lizard_Extended_hich = new("ч+", "g")
+	var/static/regex/lizard_Extended_hiCH = new("Ч+", "g")
+	var/static/regex/lizard_Extended_hics = new("ш+", "g")
+	var/static/regex/lizard_Extended_hiCS = new("Ш+", "g")
+	var/static/regex/lizard_Extended_hiccc = new("щ+", "g")
+	var/static/regex/lizard_Extended_hiCCC = new("Щ+", "g")
 
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
@@ -86,6 +94,15 @@
 		message = lizard_kSS.Replace(message, "$1KSS")
 		message = lizard_ecks.Replace(message, "ecks$1")
 		message = lizard_eckS.Replace(message, "ECKS$1")
+		message = lizard_Extended_hiss.Replace(message, pick("сссс", "ccс", "сс"))
+		message = lizard_Extended_hiSS.Replace(message, pick("СССС", "ССС", "СС"))
+		message = lizard_Extended_hich.Replace(message, pick("щщщ", "щщ", "щ"))
+		message = lizard_Extended_hiCH.Replace(message, pick("ЩЩЩ", "ЩЩ", "Щ"))
+		message = lizard_Extended_hics.Replace(message, pick("шшшш", "шшш", "шш"))
+		message = lizard_Extended_hiCS.Replace(message, pick("ШШШШ", "ШШШ", "ШШ"))
+		message = lizard_Extended_hiccc.Replace(message, pick("щщ", "щ"))
+		message = lizard_Extended_hiCCC.Replace(message, pick("ЩЩ", "Щ"))
+
 
 	speech_args[SPEECH_MESSAGE] = message
 
@@ -116,10 +133,14 @@
 /obj/item/organ/tongue/fly/handle_speech(datum/source, list/speech_args)
 	var/static/regex/fly_buzz = new("z+", "g")
 	var/static/regex/fly_buZZ = new("Z+", "g")
+	var/static/regex/fly_Extended_buzz = new("з+", "g")
+	var/static/regex/fly_Extended_buZZ = new("З+", "g")
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
 		message = fly_buzz.Replace(message, "zzz")
 		message = fly_buZZ.Replace(message, "ZZZ")
+		message = fly_Extended_buzz.Replace(message, pick("ззз", "зз"))
+		message = fly_Extended_buZZ.Replace(message, pick("ЗЗЗ", "ЗЗ"))
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/fly/Initialize(mapload)
@@ -198,7 +219,7 @@
 			message_list[insertpos] = inserttext + "..."
 
 		if(prob(20) && message_list.len > 3)
-			message_list.Insert(insertpos, "[pick("BRAINS", "Brains", "Braaaiinnnsss", "BRAAAIIINNSSS")]...")
+			message_list.Insert(insertpos, "[pick("МОЗГИ", "Мозги", "Мооооозгииии", "МООООЗГИИИИ")]...")
 
 	speech_args[SPEECH_MESSAGE] = jointext(message_list, " ")
 
@@ -398,12 +419,20 @@
 	var/static/regex/uwuspeak_LR2W = new("(\[LR])", "g")
 	var/static/regex/uwuspeak_nya = new("(\[Nn])(\[aeiou])|(\[n])(\[AEIOU])", "g")
 	var/static/regex/uwuspeak_NYA = new("(N)(\[AEIOU])", "g")
+	var/static/regex/uwuspeak_Extended_lr2w = new("(\[лр])", "g")
+	var/static/regex/uwuspeak_Extended_LR2W = new("(\[ЛР])", "g")
+	var/static/regex/uwuspeak_Extended_nya = new("(\[Нн])(\[аеиоу])|(\[н])(\[АЕИОУ])", "g")
+	var/static/regex/uwuspeak_Extended_NYA = new("(Н)(\[АЕИОУ])", "g")
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
 		message = uwuspeak_lr2w.Replace(message, "w")
 		message = uwuspeak_LR2W.Replace(message, "W")
 		message = uwuspeak_nya.Replace(message, "$1$3y$2$4")
 		message = uwuspeak_NYA.Replace(message, "$1Y$2")
+		message = uwuspeak_Extended_lr2w.Replace(message, "в")
+		message = uwuspeak_Extended_LR2W.Replace(message, "В")
+		message = uwuspeak_Extended_nya.Replace(message, "$1$3я$2$4")
+		message = uwuspeak_Extended_NYA.Replace(message, "$1я$2")
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/kepori
