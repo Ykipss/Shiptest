@@ -2,7 +2,8 @@
 
 /datum/tgs_chat_command/restart
 	name = "restart"
-	help_text = "Restarts the server if there are no active admins on."
+	help_text = "Перезапустит сервер при отсутствии администрации на нём."
+	admin_only = TRUE
 
 /datum/tgs_chat_command/restart/Run(datum/tgs_chat_user/sender, params)
 	var/active_admins = FALSE
@@ -12,20 +13,20 @@
 			break
 	if(!active_admins)
 		SSticker.Reboot("Restart requested from the discord.", "discord")
-		return "Rebooting..."
+		return "Запущен перезапуск..."
 	else
-		return "There are active admins on the server! Ask them to restart."
+		return "На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!"
 
 /datum/tgs_chat_command/join
 	name = "join"
-	help_text = "Sends a join link."
+	help_text = "Покажет ссылку для подключения к игре."
 
 /datum/tgs_chat_command/join/Run(datum/tgs_chat_user/sender, params)
 	return "<[world.internet_address]:[world.port]>"
 
 /datum/tgs_chat_command/tgsstatus
 	name = "status"
-	help_text = "Gets the admincount, playercount, gamemode, and true game mode of the server"
+	help_text = "Покажет список администраторов, количество игроков и игровой режим."
 	admin_only = TRUE
 	var/last_tgs_status = 0
 
@@ -36,8 +37,8 @@
 	last_tgs_status = rtod
 	var/list/adm = get_admin_counts()
 	var/list/allmins = adm["total"]
-	var/status = "Admins: [allmins.len] (Active: [english_list(adm["present"])] AFK: [english_list(adm["afk"])] Stealth: [english_list(adm["stealth"])] Skipped: [english_list(adm["noflags"])]). "
-	status += "Players: [GLOB.clients.len] (Active: [get_active_player_count(0,1,0)]). Mode: [SSticker.mode ? SSticker.mode.name : "Not started"]."
+	var/status = "Администраторы: [allmins.len] (Активные: [english_list(adm["present"])] AFK: [english_list(adm["afk"])] Скрытые: [english_list(adm["stealth"])] Пропущенные: [english_list(adm["noflags"])]). "
+	status += "Игроки: [GLOB.clients.len] (Активные: [get_active_player_count(0,1,0)]). Режим: [SSticker.mode ? SSticker.mode.name : "Не запущен."]."
 	for(var/c in GLOB.clients)
 		var/client/C = c
 		status += "\n[C.key]"
@@ -45,7 +46,7 @@
 
 /datum/tgs_chat_command/tgscheck
 	name = "check"
-	help_text = "Gets the playercount, gamemode, and address of the server"
+	help_text = "Показывает количество игроков, игровой режим и ссылку для доступа к игре."
 	var/last_tgs_check = 0
 
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
@@ -54,7 +55,7 @@
 		return
 	last_tgs_check = rtod
 	var/server = CONFIG_GET(string/server)
-	return "[GLOB.round_id ? "Round #[GLOB.round_id]: " : ""][GLOB.clients.len] players, Mode: [GLOB.master_mode]; Round [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
+	return "[GLOB.round_id ? "Раунд #[GLOB.round_id]: " : ""][GLOB.clients.len] игроков, Игровой режим: [GLOB.master_mode]; Раунд [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
 
 /datum/tgs_chat_command/ahelp
 	name = "ahelp"
@@ -64,7 +65,7 @@
 /datum/tgs_chat_command/ahelp/Run(datum/tgs_chat_user/sender, params)
 	var/list/all_params = splittext(params, " ")
 	if(all_params.len < 2)
-		return "Insufficient parameters"
+		return "Неверные параметры."
 	var/target = all_params[1]
 	all_params.Cut(1, 2)
 	var/id = text2num(target)
@@ -73,14 +74,14 @@
 		if(AH)
 			target = AH.initiator_ckey
 		else
-			return "Ticket #[id] not found!"
+			return "Тикет #[id] не найден!"
 	var/res = TgsPm(target, all_params.Join(" "), sender.friendly_name)
 	if(res != "Message Successful")
 		return res
 
 /datum/tgs_chat_command/namecheck
 	name = "namecheck"
-	help_text = "Returns info on the specified target"
+	help_text = "Показывает информацию по игроку с указанным активным игроком."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/namecheck/Run(datum/tgs_chat_user/sender, params)
@@ -93,7 +94,7 @@
 
 /datum/tgs_chat_command/adminwho
 	name = "adminwho"
-	help_text = "Lists administrators currently on the server"
+	help_text = "Покажет список администрации на сервере."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/adminwho/Run(datum/tgs_chat_user/sender, params)
@@ -103,14 +104,14 @@ GLOBAL_LIST(round_end_notifiees)
 
 /datum/tgs_chat_command/endnotify
 	name = "endnotify"
-	help_text = "Pings the invoker when the round ends"
+	help_text = "Оповестит об окончании раунда."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/endnotify/Run(datum/tgs_chat_user/sender, params)
 	if(!SSticker.IsRoundInProgress() && SSticker.HasRoundStarted())
-		return "[sender.mention], the round has already ended!"
+		return "[sender.mention], раунд уже закончился!"
 	LAZYSET(GLOB.round_end_notifiees, sender.mention, TRUE)
-	return "I will notify [sender.mention] when the round ends."
+	return "Я дам знать, [sender.mention], когда закончится раунд."
 
 /datum/tgs_chat_command/sdql
 	name = "sdql"
@@ -131,13 +132,13 @@ GLOBAL_LIST(round_end_notifiees)
 
 /datum/tgs_chat_command/reload_admins
 	name = "reload_admins"
-	help_text = "Forces the server to reload admins."
+	help_text = "Принудительно перезагрузит администраторов на сервере."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/reload_admins/Run(datum/tgs_chat_user/sender, params)
 	ReloadAsync()
 	log_admin("[sender.friendly_name] reloaded admins via chat command.")
-	return "Admins reloaded."
+	return "Администраторы перезагружены."
 
 /datum/tgs_chat_command/reload_admins/proc/ReloadAsync()
 	set waitfor = FALSE

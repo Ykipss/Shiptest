@@ -94,6 +94,10 @@
 	name = "SolGov rubber stamp"
 	icon_state = "stamp-solgov"
 
+/obj/item/stamp/solfed
+	name = "SolFed rubber stamp"
+	icon_state = "stamp-solfed"
+
 /obj/item/stamp/inteq
 	name = "InteQ rubber stamp"
 	icon_state = "stamp-inteq"
