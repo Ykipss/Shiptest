@@ -59,7 +59,7 @@
 
 /obj/item/melee/transforming/energy/axe
 	name = "energy axe"
-	desc = "An energized battle axe."
+	desc = "Заряженный энергией боевой топор."
 	icon_state = "axe0"
 	lefthand_file = 'icons/mob/inhands/weapons/axes_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/axes_righthand.dmi'
@@ -80,7 +80,7 @@
 
 /obj/item/melee/transforming/energy/sword
 	name = "energy sword"
-	desc = "For when a katana isn't enough. While Nanotrasen and the Syndicate both produce the so-called e-swords, they are visually and functionaly identical."
+	desc = "Для тех случаев когда катаны уже не достаточно, в Nanotrasen и Syndicate производят одинаково зовущиеся энерго мечи, что визуально и функцианально идентичны."
 	icon_state = "sword"
 	base_icon_state = "sword"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -121,7 +121,7 @@
 
 /obj/item/melee/transforming/energy/sword/cyborg/saw //Used by medical Syndicate cyborgs
 	name = "energy saw"
-	desc = "For heavy duty cutting. It has a carbon-fiber blade in addition to a toggleable hard-light edge to dramatically increase sharpness."
+	desc = "Для важных надрезов. Имеет лезвие из углеволокна в дополнении к переключаемому световому лезвию для резкого увеличения остроты."
 	force_on = 30
 	force = 18 //About as much as a spear
 	hitsound = 'sound/weapons/circsawhit.ogg'
@@ -194,7 +194,7 @@
 
 /obj/item/melee/transforming/energy/sword/saber/pirate
 	name = "energy cutlass"
-	desc = "Arrrr matey."
+	desc = "А те из вас, кто останется в живых, позавидуют мертвым!"
 	icon_state = "cutlass"
 	base_icon_state = "cutlass"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -218,7 +218,7 @@
 
 /obj/item/melee/transforming/energy/blade
 	name = "energy blade"
-	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
+	desc = "Сконцентрированый луч энергии в виде клинка. Очень стильно.... и смертоносно."
 	icon_state = "blade"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
@@ -248,13 +248,13 @@
 
 /obj/item/melee/transforming/energy/blade/hardlight
 	name = "hardlight blade"
-	desc = "An extremely sharp blade made out of hard light. Packs quite a punch."
+	desc = "Невооброзимо острый клинок созданый из сконцентрированного света. Обладает не малой убойностью."
 	icon_state = "lightblade"
 	item_state = "lightblade"
 
 /obj/item/melee/transforming/energy/ctf
 	name = "energy sword"
-	desc = "That cable over there, I'm going to cut it."
+	desc = "Видишь кабель на полу, я собираюсь его перерубить!."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "plasmasword0"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'

@@ -4,7 +4,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	name = "spear"
-	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
+	desc = "Непойми как  сконструированное, но все еще смертоносное оружие древнего образца."
 	force = 10
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
@@ -121,7 +121,7 @@
 //GREY TIDE
 /obj/item/spear/grey_tide
 	name = "\improper Grey Tide"
-	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among Nanotrasen military forces."
+	desc = "Оправился от последствий восстания на борту оборонительного форпоста Тета Эгида, в ходе которого кажущийся бесконечным поток помощников привел к тяжелым потерям среди вооруженных сил Nanotrasen ."
 	attack_verb = list("gored")
 	force=15
 
@@ -152,7 +152,7 @@
 	name = "bone spear"
 	base_icon_state = "bone_spear0"
 	icon_prefix = "bone_spear"
-	desc = "A haphazardly-constructed yet still deadly weapon. The pinnacle of modern technology."
+	desc = "AНепойми как  сконструированное, вершина современных технологий."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -225,7 +225,7 @@
 /obj/item/spear/crystal
 	icon_state = "crystal_spear0"
 	name = "crystal spear"
-	desc = "While more 'sharp stick' than spear, this thing is extremely dangerous neverless. Crafted out of the mysterous crystals, it can hit for very high damage, although it will break with repeated use."
+	desc = "Хотя эта штука скорее 'острая палка', чем копье, она всегда чрезвычайно опасна. Изготовленный из таинственных кристаллов, он может наносить очень высокий урон, хотя и сломается при повторном использовании."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	base_icon_state = "crystal_spear"
 	icon_prefix = "crystal_spear"

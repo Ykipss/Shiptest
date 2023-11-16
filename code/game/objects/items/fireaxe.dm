@@ -7,7 +7,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/axes_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/axes_righthand.dmi'
 	name = "fire axe"
-	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
+	desc = "Воистину, оружее безумцев. Кто додумаеться бороться с огнем топором?"
 	force = 5
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
@@ -63,7 +63,7 @@
 	icon_state = "bone_axe0"
 	base_icon_state = "bone_axe"
 	name = "bone axe"
-	desc = "A large, vicious axe crafted out of several sharpened bone plates and crudely tied together. Made of monsters, by killing monsters, for killing monsters."
+	desc = "Большой и грозный топор, созданный из нескольких заостренных костных пластин что были грубо связаны вместе. Созданый из монстров для их убийства."
 	icon = 'icons/obj/items_and_weapons.dmi'
 
 /obj/item/fireaxe/boneaxe/ComponentInitialize()

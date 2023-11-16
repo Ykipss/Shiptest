@@ -16,7 +16,7 @@
 
 /obj/item/kitchen/fork
 	name = "fork"
-	desc = "Pointy."
+	desc = "Остренькое."
 	icon_state = "fork"
 	force = 5
 	w_class = WEIGHT_CLASS_TINY
@@ -49,7 +49,7 @@
 
 /obj/item/kitchen/fork/plastic
 	name = "plastic fork"
-	desc = "Really takes you back to highschool lunch."
+	desc = "Возвращет тебя в школьные годы.."
 	icon_state = "plastic_fork"
 	force = 0
 	w_class = WEIGHT_CLASS_TINY
@@ -68,7 +68,7 @@
 	name = "kitchen knife"
 	icon_state = "knife"
 	item_state = "knife"
-	desc = "A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come."
+	desc = "Универсальный поварской нож производства SpaceCook Incorporated. Гарантированно останется острым долгие годы."
 	pickup_sound =  'sound/items/handling/knife1_pickup.ogg'
 	drop_sound = 'sound/items/handling/knife3_drop.ogg'
 	flags_1 = CONDUCT_1
@@ -98,7 +98,7 @@
 	name = "plastic knife"
 	icon_state = "plastic_knife"
 	item_state = "knife"
-	desc = "A very safe, barely sharp knife made of plastic. Good for cutting food and not much else."
+	desc = "Очень безопасный, едва заточенный нож из пластика. Хорош для нарезки продуктов и не более того."
 	force = 0
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
@@ -118,7 +118,7 @@
 /obj/item/kitchen/knife/pizza_cutter
 	name = "pizza cutter"
 	icon_state = "pizza_cutter"
-	desc = "A knife edge bent around a circle using the power of science. Perfect for safely cutting pizza."
+	desc = "Лезвие ножа изогнуто по кругу с использованием силы науки. Идеально подходит для безопасной нарезки пиццы."
 	force = 1
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 1
@@ -129,7 +129,7 @@
 
 /obj/item/kitchen/knife/ritual
 	name = "ritual knife"
-	desc = "The unearthly energies that once powered this blade are now dormant."
+	desc = "Неземные энергии, которые когда-то питали этот клинок, теперь дремлют."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "render"
 	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
@@ -138,7 +138,7 @@
 
 /obj/item/kitchen/knife/bloodletter
 	name = "bloodletter"
-	desc = "An occult looking dagger that is cold to the touch. Somehow, the flawless orb on the pommel is made entirely of liquid blood."
+	desc = "Кинжал оккультного вида, холодный на ощупь. Каким-то образом безупречный шар на рукояти полностью сделан из жидкой крови."
 	icon = 'icons/obj/ice_moon/artifacts.dmi'
 	icon_state = "bloodletter"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -157,7 +157,7 @@
 	name = "butcher's cleaver"
 	icon_state = "butch"
 	item_state = "butch"
-	desc = "A huge thing used for chopping and chopping up meat. This includes clowns and clown by-products."
+	desc = "Огромная штука, используемая для измельчения мяса. Включая клоунов и клоунские субпродукты."
 	flags_1 = CONDUCT_1
 	force = 15
 	throwforce = 10
@@ -168,7 +168,7 @@
 
 /obj/item/kitchen/knife/hunting
 	name = "hunting knife"
-	desc = "Despite its name, it's mainly used for cutting meat from dead prey rather than actual hunting."
+	desc = "Несмотря на свое название, он в основном используется для разделки мяса мертвой добычи, а не для настоящей охоты."
 	item_state = "huntingknife"
 	icon_state = "huntingknife"
 
@@ -178,7 +178,7 @@
 /obj/item/kitchen/knife/combat
 	name = "combat knife"
 	icon_state = "buckknife"
-	desc = "A military combat utility survival knife."
+	desc = "Армейский нож для выживания."
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
 	force = 20
 	throwforce = 20
@@ -189,7 +189,7 @@
 	name = "survival knife"
 	icon_state = "survivalknife"
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	desc = "A hunting grade survival knife."
+	desc = "Охотничий нож для выживания."
 	force = 15
 	throwforce = 15
 	bayonet = TRUE
@@ -200,7 +200,7 @@
 	icon_state = "bone_dagger"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	desc = "A sharpened bone. The bare minimum in survival."
+	desc = "Заостренная кость. Необходимый минимум для выживания."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
 	force = 15
 	throwforce = 15
@@ -210,7 +210,7 @@
 	name = "cyborg knife"
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "knife_cyborg"
-	desc = "A cyborg-mounted plasteel knife. Extremely sharp and durable."
+	desc = "Пластиковый нож, установленный киборгом. Чрезвычайно острый и прочный."
 
 /obj/item/kitchen/knife/shiv
 	name = "glass shiv"
@@ -219,7 +219,7 @@
 	item_state = "shiv"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	desc = "A makeshift glass shiv."
+	desc = "Самодельная заточка из стекла."
 	force = 8
 	throwforce = 12
 	attack_verb = list("shanked", "shivved")
@@ -231,12 +231,12 @@
 	icon_state = "carrotshiv"
 	item_state = "carrotshiv"
 	icon = 'icons/obj/kitchen.dmi'
-	desc = "Unlike other carrots, you should probably keep this far away from your eyes."
+	desc = "В отличие от другой моркови, вам, вероятно, следует держать ее подальше от глаз."
 	custom_materials = null
 
 /obj/item/kitchen/rollingpin
 	name = "rolling pin"
-	desc = "Used to knock out the Bartender."
+	desc = "Используеться чтобы вырубить бармена."
 	icon_state = "rolling_pin"
 	force = 8
 	throwforce = 5
@@ -251,7 +251,7 @@
 
 /obj/item/kitchen/spoon/plastic
 	name = "plastic spoon"
-	desc = "Just be careful your food doesn't melt the spoon first."
+	desc = "Только будьте осторожны, чтобы ваша еда не расплавила ложку первой."
 	icon_state = "plastic_spoon"
 	force = 0
 	w_class = WEIGHT_CLASS_TINY
