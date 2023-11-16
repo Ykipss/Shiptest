@@ -11,7 +11,7 @@
 
 /obj/item/melee/chainofcommand
 	name = "chain of command"
-	desc = "A tool used by great men to placate the frothing masses."
+	desc = "Инструмент великих людей, для усмерения бунтующих масс."
 	icon_state = "chain"
 	item_state = "chain"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -27,7 +27,7 @@
 
 /obj/item/melee/synthetic_arm_blade
 	name = "synthetic arm blade"
-	desc = "A grotesque blade that on closer inspection seems to be made out of synthetic flesh, it still feels like it would hurt very badly as a weapon."
+	desc = "Гротескно выглядящий клинок что при ближайшем рассмотрении, кажеться что он сделан из синто-плоти, он все еще чувствуеться как оружее, которым можно причинить немало боли."
 	icon = 'icons/obj/changeling_items.dmi'
 	icon_state = "arm_blade"
 	item_state = "arm_blade"
@@ -46,7 +46,7 @@
 
 /obj/item/melee/sabre
 	name = "officer's sabre"
-	desc = "An elegant weapon, its monomolecular edge is capable of cutting through flesh and bone with ease."
+	desc = "Элегантное оружее, его мономолекулярное лезвие способно с легкостью проникат ьсквозь плоть и кости."
 	icon_state = "sabre"
 	item_state = "sabre"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -81,13 +81,13 @@
 
 /obj/item/melee/sabre/solgov
 	name = "solarian sabre"
-	desc = "A refined ceremonial blade often given to soldiers and high ranking officials of SolGov."
+	desc = " Благородный церемониальный клинок обычно выдаваемый солдатам и выскопоставленным офицерам SolGov."
 	icon_state = "sabresolgov"
 	item_state = "sabresolgov"
 
 /obj/item/melee/beesword
 	name = "The Stinger"
-	desc = "Taken from a giant bee and folded over one thousand times in pure honey. Can sting through anything."
+	desc = "Полученный с огромной пчелы и сложенный из тысячи слоев чистого меда. Может жалить сквозь что угодно."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "beesword"
 	item_state = "stinger"
@@ -114,7 +114,7 @@
 
 /obj/item/melee/classic_baton
 	name = "police baton"
-	desc = "A wooden truncheon for beating criminal scum."
+	desc = "Деревянная дубинка чтобы приподать урок всякому криминальному сброду."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "classic_baton"
 	item_state = "classic_baton"
@@ -263,14 +263,14 @@
 
 /obj/item/conversion_kit
 	name = "conversion kit"
-	desc = "A strange box containing wood working tools and an instruction paper to turn stun batons into something else."
+	desc = "Странная корбка содержащая инструменты для работы по дереву и инструкцию на бумаге о том как переделать stun batons в что-то другое."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "uk"
 	custom_price = 450
 
 /obj/item/melee/classic_baton/telescopic
 	name = "telescopic baton"
-	desc = "A compact yet robust personal defense weapon. Can be concealed when folded."
+	desc = "Компактное и надежное оружее для самообороны. Может быть спрятан в сложенном виде."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "telebaton_0"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -315,7 +315,7 @@
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton
 	name = "contractor baton"
-	desc = "A compact, specialised baton assigned to Syndicate contractors. Applies light electrical shocks to targets."
+	desc = "Компактная, специализированная дубинга предназначенная для Syndicate контрактников. Бьет слабым электрическим током вашу жертву."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "contractor_baton_0"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -348,7 +348,7 @@
 
 /obj/item/melee/supermatter_sword
 	name = "supermatter sword"
-	desc = "In a universe full of bad ideas, this might just be the worst."
+	desc = "В селенной, наполенной ужасными идеями, эта должна быть ужаснийшей."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "supermatter_sword"
 	item_state = "supermatter_sword"
@@ -441,7 +441,7 @@
 
 /obj/item/melee/curator_whip
 	name = "curator's whip"
-	desc = "Somewhat eccentric and outdated, it still stings like hell to be hit by."
+	desc = "Несколько устаревший и эксцентричный, но все еще адски болючий если им ударить."
 	icon_state = "whip"
 	item_state = "chain"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -461,7 +461,7 @@
 
 /obj/item/melee/roastingstick
 	name = "advanced roasting stick"
-	desc = "A telescopic roasting stick with a miniature shield generator designed to ensure entry into various high-tech shielded cooking ovens and firepits."
+	desc = "Телескопическая палка для жарки с миниатюрным генераторм щита обеспечивающим доступ к различным высокотехнологичным экранированным кухонным печам и источникам огня."
 	icon_state = "roastingstick_0"
 	item_state = "null"
 	slot_flags = ITEM_SLOT_BELT
@@ -569,7 +569,7 @@
 
 /obj/item/melee/cleric_mace
 	name = "cleric mace"
-	desc = "The grandson of the club, yet the grandfather of the baseball bat. Most notably used by holy orders in days past."
+	desc = "Внук дубинки, но дедушка бейсбольной биты. По всей видимости ранее использовалась богослужителями в прошлом."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "mace_greyscale"
 	item_state = "mace_greyscale"
@@ -594,7 +594,7 @@
 
 /obj/item/melee/greykingsword
 	name = "blade of the grey-king"
-	desc = "A legendary sword made with 3 replica katanas nailed together and dipped in heavy narcotics."
+	desc = "Легендарный меч созданный из 3 реплик катан сколоченных вместе и вымоченный в тяжелой наркоте."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "grey_sword"
 	item_state = "swordoff"
@@ -645,7 +645,7 @@
 	name = "letter opener"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "letter_opener"
-	desc = "A military combat utility survival knife."
+	desc = "Военный мультифункциональный нож для выживания."
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
 	force = 15
 	throwforce = 15
@@ -655,7 +655,7 @@
 						)
 /obj/item/melee/weebstick
 	name = "Weeb Stick"
-	desc = "Glorious nippon steel, folded 1000 times."
+	desc = "Великая японская сталь, кованная тысячу раз."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "weeb_blade"
 	item_state = "weeb_blade"
@@ -698,7 +698,7 @@
 
 /obj/item/storage/belt/weebstick
 	name = "nanoforged blade sheath"
-	desc = "It yearns to bath in the blood of your enemies... but you hold it back!"
+	desc = "Оно жаждет искупаться в крови твоих врагов... Но ты сдерживаешь его!"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "weeb_sheath"
 	item_state = "sheath"

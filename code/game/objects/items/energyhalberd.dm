@@ -8,7 +8,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	name = "energy halberd"
-	desc = "For when a normal halberd just isnt enough."
+	desc = "Для тех случаев, когда обычной алебарды недостаточно."
 	force = 3
 	throwforce = 5
 	throw_speed = 3

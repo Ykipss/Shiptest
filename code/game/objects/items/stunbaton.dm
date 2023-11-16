@@ -1,6 +1,6 @@
 /obj/item/melee/baton
 	name = "stun baton"
-	desc = "A stun baton for incapacitating people with."
+	desc = "Электрошоковая дубинка для выведения из строя людей."
 
 	icon_state = "stunbaton"
 	item_state = "baton"
@@ -268,7 +268,7 @@
 //Makeshift stun baton. Replacement for stun gloves.
 /obj/item/melee/baton/cattleprod
 	name = "stunprod"
-	desc = "An improvised stun baton."
+	desc = "Импровизированая шоковая дубинка."
 	icon_state = "stunprod"
 	item_state = "prod"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -298,7 +298,7 @@
 
 /obj/item/melee/baton/boomerang
 	name = "\improper OZtek Boomerang"
-	desc = "A device invented in 2486 for the great Space Emu War by the confederacy of Australicus, these high-tech boomerangs also work exceptionally well at stunning crewmembers. Just be careful to catch it when thrown!"
+	desc = "Эти высокотехнологичные бумеранги, изобретенные конфедерацией Австраликус в 2486 году для великой космической войны Эму, также исключительно хорошо поражают членов экипажа. Просто будьте осторожны, чтобы поймать его при броске!"
 	throw_speed = 1
 	icon_state = "boomerang"
 	item_state = "boomerang"

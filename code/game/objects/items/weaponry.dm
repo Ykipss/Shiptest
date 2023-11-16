@@ -30,7 +30,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/sord
 	name = "\improper SORD"
-	desc = "This thing is so unspeakably shitty you are having a hard time even holding it."
+	desc = "Эта штука настолько невыразимо дерьмовая, что тебе трудно даже держать ее в руках."
 	icon_state = "sord"
 	item_state = "sord"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -44,7 +44,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/claymore
 	name = "claymore"
-	desc = "What are you standing around staring at this for? Get to killing!"
+	desc = "Чего вы стоите и пялитесь на это? Приступайте к убийству!"
 	icon_state = "claymore"
 	item_state = "claymore"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -69,7 +69,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	AddComponent(/datum/component/butchering, 40, 105)
 
 /obj/item/claymore/highlander //ALL COMMENTS MADE REGARDING THIS SWORD MUST BE MADE IN ALL CAPS
-	desc = "<b><i>THERE CAN BE ONLY ONE, AND IT WILL BE YOU!!!</i></b>\nActivate it in your hand to point to the nearest victim."
+	desc = "<b><i>ЗДЕСЬ МОЖЕТ БЫТЬ ТОЛЬКО ОДИН, И ЭТО БУДЕШЬ ТЫ!!!</i></b>\nАктивируйте его в своей руке, чтобы указать на ближайшую жертву."
 	flags_1 = CONDUCT_1
 	item_flags = DROPDEL //WOW BRO YOU LOST AN ARM, GUESS WHAT YOU DONT GET YOUR SWORD ANYMORE //I CANT BELIEVE SPOOKYDONUT WOULD BREAK THE REQUIREMENTS
 	slot_flags = null
@@ -195,7 +195,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/katana
 	name = "katana"
-	desc = "Woefully underpowered in D20."
+	desc = "Прискорбно слабый в D20."
 	icon_state = "katana"
 	item_state = "katana"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -218,7 +218,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/katana/cursed
 	name = "ominous katana"
-	desc = "A japanese single-edged blade, once used to contain an ancient evil. The being within is grateful for being released, but beware: <b>generosity has a price.</b></span>"
+	desc = "Японский клинок с односторонним лезвием, когда-то использовавшийся для сдерживания древнего зла. Существо внутри благодарно за освобождение, но будьте осторожны: <b>Щедрость имеет свою цену.</b></span>"
 	icon_state = "ominous_katana"
 	item_state = "ominous_katana"
 	icon = 'icons/obj/lavaland/artefacts.dmi'
@@ -269,7 +269,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/wirerod
 	name = "wired rod"
-	desc = "A rod with some wire wrapped around the top. It'd be easy to attach something to the top bit."
+	desc = "Стержень, обмотанный сверху проволокой. Было бы легко прикрепить что-нибудь к верхнему наконечнику."
 	icon_state = "wiredrod"
 	item_state = "rods"
 	flags_1 = CONDUCT_1
@@ -309,7 +309,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star
 	name = "throwing star"
-	desc = "An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts."
+	desc = "Древнее оружие, используемое и по сей день, благодаря своей легкости вживления в части тела жертвы."
 	icon_state = "throwingstar"
 	item_state = "eshield0"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
@@ -327,13 +327,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star/stamina
 	name = "shock throwing star"
-	desc = "An aerodynamic disc designed to cause excruciating pain when stuck inside fleeing targets, hopefully without causing fatal harm."
+	desc = "Аэродинамический диск, предназначенный для того, чтобы причинять мучительную боль при попадании в убегающие цели, благо, не причиняя смертельного вреда."
 	throwforce = 5
 	embedding = list("pain_chance" = 5, "embed_chance" = 100, "fall_chance" = 0, "jostle_chance" = 10, "pain_stam_pct" = 0.8, "jostle_pain_mult" = 3)
 
 /obj/item/throwing_star/toy
 	name = "toy throwing star"
-	desc = "An aerodynamic disc strapped with adhesive for sticking to people, good for playing pranks and getting yourself killed by security."
+	desc = "Аэродинамический диск, обвязанный клеем, чтобы прилипать к людям, хорош для розыгрышей и того, чтобы быть убитым охраной."
 	sharpness = IS_BLUNT
 	force = 0
 	throwforce = 0
@@ -341,7 +341,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star/magspear
 	name = "magnetic spear"
-	desc = "A reusable spear that is typically loaded into kinetic spearguns."
+	desc = "Многоразовое копье, которое обычно заряжается в кинетические ружья для подводного плавания."
 	icon = 'icons/obj/ammo_bullets.dmi'
 	icon_state = "magspear"
 	throwforce = 25 //kills regular carps in one hit
@@ -352,7 +352,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star/ninja
 	name = "throwing star"
-	desc = "An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts."
+	desc = "Древнее оружие, используемое и по сей день, благодаря своей легкости вживления в части тела жертвы."
 	icon = 'icons/obj/ninjaobjects.dmi'
 	icon_state = "shuriken_projectile"
 	item_state = "shuriken_projectile"
@@ -374,7 +374,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	icon_state = "switchblade"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	desc = "A sharp, concealable, spring-loaded knife."
+	desc = "Острый, скрытый, подпружиненный нож."
 	flags_1 = CONDUCT_1
 	force = 3
 	w_class = WEIGHT_CLASS_SMALL
@@ -486,7 +486,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/mounted_chainsaw
 	name = "mounted chainsaw"
-	desc = "A chainsaw that has replaced your arm."
+	desc = "Пила заменяющая твою руку."
 	icon_state = "chainsaw_on"
 	item_state = "mounted_chainsaw"
 	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
@@ -521,7 +521,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/statuebust
 	name = "bust"
-	desc = "A priceless ancient marble bust, the kind that belongs in a museum." //or you can hit people with it
+	desc = "Бесценный древний мраморный бюст, которому место в музее." //or you can hit people with it
 	icon = 'icons/obj/statue.dmi'
 	icon_state = "bust"
 	force = 15
@@ -538,13 +538,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/statuebust/hippocratic
 	name = "hippocrates bust"
-	desc = "A bust of the famous Greek physician Hippocrates of Kos, often referred to as the father of western medicine."
+	desc = "Бюст знаменитого греческого врача Гиппократа с острова Кос, которого часто называют отцом западной медицины."
 	icon_state = "hippocratic"
 	impressiveness = 50
 
 /obj/item/tailclub
 	name = "tail club"
-	desc = "For the beating to death of lizards with their own tails."
+	desc = "Для избиения до смерти ящериц их собственными хвостами."
 	icon_state = "tailclub"
 	force = 14
 	throwforce = 1 // why are you throwing a club do you even weapon
@@ -554,14 +554,14 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/chainofcommand/tailwhip
 	name = "liz o' nine tails"
-	desc = "A whip fashioned from the severed tails of lizards."
+	desc = "Хлыст, сделанный из отрубленных хвостов ящериц."
 	icon_state = "tailwhip"
 	item_state = "tailwhip"
 	item_flags = NONE
 
 /obj/item/melee/chainofcommand/tailwhip/kitty
 	name = "cat o' nine tails"
-	desc = "A whip fashioned from the severed tails of cats."
+	desc = "Хлыст, сделанный из отрубленных хвостов кошек."
 	icon_state = "catwhip"
 	item_state = "catwhip"
 
@@ -607,7 +607,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/baseball_bat
 	name = "baseball bat"
-	desc = "There ain't a skull in the league that can withstand a swatter."
+	desc = "В лиге нет ни одного черепа, который мог бы выдержать удар ею."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "baseball_bat"
 	item_state = "baseball_bat"
@@ -656,7 +656,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/baseball_bat/ablative
 	name = "metal baseball bat"
-	desc = "This bat is made of highly reflective, highly armored material."
+	desc = "TЭта бита сделаан из очень прочных материалов!"
 	icon_state = "baseball_bat_metal"
 	item_state = "baseball_bat_metal"
 	force = 12
@@ -664,7 +664,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/baseball_bat/bone
 	name = "bone club"
-	desc = "A long and hard shaft of rock solid bone." // I am the master of comedy
+	desc = "Длинный и твердый стержень из твердой, как скала, кости." // I am the master of comedy
 	icon_state = "baseball_bat_bone"
 	item_state = "baseball_bat_bone"
 
@@ -764,7 +764,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	name = "vibro sword"
-	desc = "A potent weapon capable of cutting through nearly anything. Wielding it in two hands will allow you to deflect gunfire."
+	desc = "Мощное оружие, способное разрубить практически все. Владение им двумя руками позволит вам отражать выстрелы."
 	armour_penetration = 100
 	block_chance = 30
 	force = 20
@@ -822,7 +822,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
 	name = "legionnaire staff"
-	desc = "The remnants of a legionnaire, reconstructed around a pole of bone. The skulls it produces are loyal to the wielder, seeming to recognize them as their host body."
+	desc = "Останки легионера, восстановленные вокруг костяного столба. Черепа, которые он производит, лояльны к владельцу, и, похоже, признают в них свое тело-хозяина."
 	icon = 'icons/obj/guns/magic.dmi'
 	block_chance = 20
 	force = 20
@@ -848,7 +848,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/claymore/bone
 	name = "Bone Sword"
-	desc = "Jagged pieces of bone are tied to what looks like a goliaths femur."
+	desc = "Раздробленные кусочки кости привязаны к чему-то похожему на бедренную кость голиафа."
 	icon_state = "bone_sword"
 	item_state = "bone_sword"
 	icon = 'icons/obj/items_and_weapons.dmi'
