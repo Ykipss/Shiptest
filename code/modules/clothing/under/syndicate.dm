@@ -306,4 +306,4 @@
 	icon_state = "ninja_under"
 	item_state = "ninja_under"
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
-	mob_overlay_icon = 'icons/mob/clothing/under/syndicate.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/under/syndicate_celadon.dmi'

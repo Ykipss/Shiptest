@@ -287,6 +287,8 @@ Contains:
 
 /obj/item/clothing/suit/space/eva/evamime
 	name = "mime EVA suit"
+	icon = 'icons/obj/clothing/suits/spacesuits_celadon.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/suits/spacesuits_celadon.dmi'
 	icon_state = "spacemime_suit"
 	item_state = "spacemime_suit"
 	desc = ". . ."
@@ -294,6 +296,8 @@ Contains:
 
 /obj/item/clothing/head/helmet/space/eva/evamime
 	name = "mime EVA helmet"
+	icon = 'icons/obj/clothing/hats_celadon.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/head_celadon.dmi'
 	icon_state = "spacemimehelmet"
 	item_state = "spacemimehelmet"
 	desc = ". . ."
