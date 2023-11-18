@@ -232,7 +232,8 @@
 		return
 	var/mob/living/carbon/human/H = user
 	var/human_warcray = ishumanbasic(H)
-	if(human_warcray && (!H.mind || !H.mind.miming))
+	var/slime_warcray = isjellyperson(H)
+	if((human_warcray||slime_warcray) && (!H.mind || !H.mind.miming))
 		if(user.gender == FEMALE)
 			return pick(
 			'sound/voice/human_female_warcry_1.ogg',
@@ -262,6 +263,7 @@
 			'sound/voice/alastor_wing1_2.ogg',
 			'sound/voice/alastor_wing2.ogg',
 			'sound/voice/alastor_wing2_2.ogg')
+
 
 /datum/emote/living/giggle
 	key = "giggle"
