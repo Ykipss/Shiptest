@@ -1,5 +1,5 @@
 /obj/mecha/combat/marauder
-	desc = "Heavy-duty, combat exosuit, developed after the Durand model. Rarely found among civilian populations."
+	desc = "Сверхпрочный боевой экзоскелет, разработанный по образцу Дюранда. Редко встречается среди гражданского населения."
 	name = "\improper Marauder"
 	icon_state = "marauder"
 	step_in = 5
@@ -43,7 +43,7 @@
 	max_ammo()
 
 /obj/mecha/combat/marauder/seraph
-	desc = "Heavy-duty, command-type exosuit. This is a custom model, utilized only by high-ranking military personnel."
+	desc = "Сверхпрочный экзоскелет командирского типа. Это специальная модель, используемая только высокопоставленными военнослужащими."
 	name = "\improper Seraph"
 	icon_state = "seraph"
 	operation_req_access = list(ACCESS_CENT_SPECOPS)
@@ -72,7 +72,7 @@
 	max_ammo()
 
 /obj/mecha/combat/marauder/mauler
-	desc = "Heavy-duty, combat exosuit, developed off of the existing Marauder model."
+	desc = "Сверхпрочный боевой экзоскелет, разработанный на основе существующей модели Marauder."
 	name = "\improper Mauler"
 	icon_state = "mauler"
 	operation_req_access = list(ACCESS_SYNDICATE)
