@@ -7,7 +7,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/drill
 	name = "exosuit drill"
-	desc = "Оборудование для инженерных и боевых экзоскелетов. Этим буром мы пронзим небеса!"
+	desc = "Equipment for engineering and combat exosuits. This is the drill that'll pierce the heavens!"
 	icon_state = "mecha_drill"
 	equip_cooldown = 15
 	energy_drain = 10
@@ -32,14 +32,14 @@
 		if(target_obj.resistance_flags & UNACIDABLE)
 			return
 	target.visible_message(
-		"<span class='warning'>[chassis] начинает бурить [target].</span>",
-		"<span class='userdanger'>[chassis] начинает бурить [target]...</span>",
-		"<span class='hear'>Вы слышите бурение.</span>"
+		"<span class='warning'>[chassis] starts to drill [target].</span>",
+		"<span class='userdanger'>[chassis] starts to drill [target]...</span>",
+		"<span class='hear'>You hear drilling.</span>"
 	)
 
 	if(do_after_cooldown(target))
 		set_ready_state(FALSE)
-		log_message("Начинает бурить [target]", LOG_MECHA)
+		log_message("Started drilling [target]", LOG_MECHA)
 		if(isturf(target))
 			var/turf/T = target
 			T.drill_act(src)
@@ -63,29 +63,29 @@
 
 /turf/closed/wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	if(drill.do_after_mecha(src, 60 / drill.drill_level))
-		drill.log_message("Пробурился сквозь [src]", LOG_MECHA)
+		drill.log_message("Drilled through [src]", LOG_MECHA)
 		dismantle_wall(devastated = TRUE)
 
 /turf/closed/wall/r_wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	if(drill.drill_level >= DRILL_HARDENED)
 		if(drill.do_after_mecha(src, 120 / drill.drill_level))
-			drill.log_message("Пробурился сквозь [src]", LOG_MECHA)
+			drill.log_message("Drilled through [src]", LOG_MECHA)
 			dismantle_wall(devastated = TRUE)
 	else
-		drill.occupant_message("<span class='danger'>[src] слишком прочно, чтобы бробуриться сквозь это.</span>")
+		drill.occupant_message("<span class='danger'>[src] is too durable to drill through.</span>")
 
 /turf/closed/mineral/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	for(var/turf/closed/mineral/M in range(drill.chassis,1))
 		if(get_dir(drill.chassis,M)&drill.chassis.dir)
 			M.gets_drilled()
-	drill.log_message("Пробурился сквозь [src]", LOG_MECHA)
+	drill.log_message("Drilled through [src]", LOG_MECHA)
 	drill.move_ores()
 
 /turf/open/floor/plating/asteroid/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	for(var/turf/open/floor/plating/asteroid/M in range(1, drill.chassis))
 		if((get_dir(drill.chassis,M)&drill.chassis.dir) && !M.dug)
 			M.getDug()
-	drill.log_message("Пробурился сквозь  [src]", LOG_MECHA)
+	drill.log_message("Drilled through [src]", LOG_MECHA)
 	drill.move_ores()
 
 
@@ -111,8 +111,8 @@
 	butchering.butchering_enabled = FALSE
 
 /obj/item/mecha_parts/mecha_equipment/drill/proc/drill_mob(mob/living/target, mob/user)
-	target.visible_message("<span class='danger'>[chassis] бурит [target] с помощью [src]!</span>", \
-						"<span class='userdanger'>[chassis] бурит вас с помощью [src]!</span>")
+	target.visible_message("<span class='danger'>[chassis] is drilling [target] with [src]!</span>", \
+						"<span class='userdanger'>[chassis] is drilling you with [src]!</span>")
 	log_combat(user, target, "drilled", "[name]", "(INTENT: [uppertext(user.a_intent)]) (DAMTYPE: [uppertext(damtype)])")
 	if(target.stat == DEAD && target.getBruteLoss() >= 200)
 		log_combat(user, target, "gibbed", name)
@@ -143,7 +143,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/drill/diamonddrill
 	name = "diamond-tipped exosuit drill"
-	desc = "Оборудование для инженерных и боевых экзоскелетов. Это модернизированная версия дрели, которая пронзит небеса до рая!"
+	desc = "Equipment for engineering and combat exosuits. This is an upgraded version of the drill that'll pierce the heavens!"
 	icon_state = "mecha_diamond_drill"
 	equip_cooldown = 10
 	drill_delay = 4
@@ -154,7 +154,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/mining_scanner
 	name = "exosuit mining scanner"
-	desc = "Снаряжение для инженерных и боевых экзоскелетов. Он автоматически проверит окружающую породу на наличие полезных минералов."
+	desc = "Equipment for engineering and combat exosuits. It will automatically check surrounding rock for useful minerals."
 	icon_state = "mecha_analyzer"
 	selectable = 0
 	equip_cooldown = 15
