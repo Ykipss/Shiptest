@@ -6,7 +6,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/teleporter
 	name = "mounted teleporter"
-	desc = "An exosuit module that allows exosuits to teleport to any position in view."
+	desc = "Модуль экзоскелета, позволяющий экзоскелетам телепортироваться в любое видимое положение."
 	icon_state = "mecha_teleport"
 	equip_cooldown = 150
 	energy_drain = 1000
@@ -27,7 +27,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/wormhole_generator
 	name = "mounted wormhole generator"
-	desc = "An exosuit module that allows generating of small quasi-stable wormholes."
+	desc = "Модуль экзоскелета, позволяющий создавать небольшие квазистабильные червоточины."
 	icon_state = "mecha_wholegen"
 	equip_cooldown = 50
 	energy_drain = 300
@@ -59,8 +59,8 @@
 		return
 	var/list/obj/effect/portal/created = create_portal_pair(get_turf(src), target_turf, 300, 1, /obj/effect/portal/anom)
 	var/turf/T = get_turf(target)
-	message_admins("[ADMIN_LOOKUPFLW(chassis.occupant)] used a Wormhole Generator in [ADMIN_VERBOSEJMP(T)]")
-	log_game("[key_name(chassis.occupant)] used a Wormhole Generator in [AREACOORD(T)]")
+	message_admins("[ADMIN_LOOKUPFLW(chassis.occupant)] использовал генератор червоточин в [ADMIN_VERBOSEJMP(T)]")
+	log_game("[key_name(chassis.occupant)] использовал генератор червоточин в [AREACOORD(T)]")
 	src = null
 	QDEL_LIST_IN(created, rand(150,300))
 	return 1
@@ -70,7 +70,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/gravcatapult
 	name = "mounted gravitational catapult"
-	desc = "An exosuit mounted Gravitational Catapult."
+	desc = "Гравитационная катапульта, установленная на экзоскелет."
 	icon_state = "mecha_teleport"
 	equip_cooldown = 10
 	energy_drain = 100
@@ -86,15 +86,15 @@
 		if(1)
 			if(!locked)
 				if(!istype(target) || target.anchored || target.move_resist >= MOVE_FORCE_EXTREMELY_STRONG)
-					occupant_message("<span class='warning'>Unable to lock on [target]!</span>")
+					occupant_message("<span class='warning'>Не удается взять в захват [target]!</span>")
 					return
 				if(ismob(target))
 					var/mob/M = target
 					if(M.mob_negates_gravity())
-						occupant_message("<span class='warning'>Unable to lock on [target]!</span>")
+						occupant_message("<span class='warning'>Не удается взять в захват [target]!</span>")
 						return
 				locked = target
-				occupant_message("<span class='notice'>Locked on [target].</span>")
+				occupant_message("<span class='notice'>[target] захвачен.</span>")
 				send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
 			else if(target!=locked)
 				if(locked in view(chassis))
@@ -103,11 +103,11 @@
 					locked.throw_at(target, 14, 1.5)
 					locked = null
 					send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
-					log_game("[key_name(chassis.occupant)] used a Gravitational Catapult to throw [locked] (From [AREACOORD(orig)]) at [target] ([AREACOORD(targ)]).")
+					log_game("[key_name(chassis.occupant)] использовал гравитационную катапульту чтобы запустить [locked] (Из [AREACOORD(orig)]) в [target] ([AREACOORD(targ)]).")
 					return TRUE
 				else
 					locked = null
-					occupant_message("<span class='notice'>Lock on [locked] disengaged.</span>")
+					occupant_message("<span class='notice'>Захват был снят с [locked].</span>")
 					send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
 		if(2)
 			var/list/atoms = list()
@@ -125,7 +125,7 @@
 				INVOKE_ASYNC(src, PROC_REF(do_scatter), A, target)
 
 			var/turf/T = get_turf(target)
-			log_game("[key_name(chassis.occupant)] used a Gravitational Catapult repulse wave on [AREACOORD(T)]")
+			log_game("[key_name(chassis.occupant)] использовал гравитационную катапульту для отражения волны на [AREACOORD(T)]")
 			return TRUE
 
 /obj/item/mecha_parts/mecha_equipment/gravcatapult/proc/do_scatter(atom/movable/A, atom/movable/target)
@@ -152,7 +152,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster //what is that noise? A BAWWW from TK mutants.
 	name = "armor booster module (Close Combat Weaponry)"
-	desc = "Boosts exosuit armor against armed melee attacks. Requires energy to operate."
+	desc = "BУсиливает броню экзоскелета против атак ближнего боя. Для работы требуется энергия."
 	icon_state = "mecha_abooster_ccw"
 	equip_cooldown = 10
 	energy_drain = 50
@@ -170,7 +170,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster
 	name = "armor booster module (Ranged Weaponry)"
-	desc = "Boosts exosuit armor against ranged attacks. Completely blocks taser shots. Requires energy to operate."
+	desc = "Усиливает броню экзоскелета против дальних атак. Полностью блокирует выстрелы электрошоком. Для работы требуется энергия."
 	icon_state = "mecha_abooster_proj"
 	equip_cooldown = 10
 	energy_drain = 50
@@ -190,7 +190,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/repair_droid
 	name = "exosuit repair droid"
-	desc = "An automated repair droid for exosuits. Scans for damage and repairs it. Can fix almost all types of external or internal damage."
+	desc = "Автоматический ремонтный дроид для экзоскелетов. Сканирует повреждения и восстанавливает их. Может устранять практически все типы внешних или внутренних повреждений."
 	icon_state = "repair_droid"
 	energy_drain = 50
 	range = 0
@@ -218,7 +218,7 @@
 /obj/item/mecha_parts/mecha_equipment/repair_droid/get_equip_info()
 	if(!chassis)
 		return
-	return "<span style=\"color:[equip_ready?"#0f0":"#f00"];\">*</span>&nbsp; [src.name] - <a href='?src=[REF(src)];toggle_repairs=1'>[equip_ready?"A":"Dea"]ctivate</a>"
+	return "<span style=\"color:[equip_ready?"#0f0":"#f00"];\">*</span>&nbsp; [src.name] - <a href='?src=[REF(src)];toggle_repairs=1'>[equip_ready?"Включен":"Выключен"]</a>"
 
 
 /obj/item/mecha_parts/mecha_equipment/repair_droid/Topic(href, href_list)
@@ -228,12 +228,12 @@
 		if(equip_ready)
 			START_PROCESSING(SSobj, src)
 			droid_overlay = new(src.icon, icon_state = "repair_droid_a")
-			log_message("Activated.", LOG_MECHA)
+			log_message("Активирован.", LOG_MECHA)
 			set_ready_state(0)
 		else
 			STOP_PROCESSING(SSobj, src)
 			droid_overlay = new(src.icon, icon_state = "repair_droid")
-			log_message("Deactivated.", LOG_MECHA)
+			log_message("Выключен.", LOG_MECHA)
 			set_ready_state(1)
 		chassis.add_overlay(droid_overlay)
 		send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
@@ -275,7 +275,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
 	name = "exosuit energy relay"
-	desc = "An exosuit module that wirelessly drains energy from any available power channel in area. The performance index is quite low."
+	desc = "Модуль экзоскелета, который по беспроводной сети забирает энергию из любого доступного канала питания в округе. Показатель производительности довольно низкий."
 	icon_state = "tesla"
 	energy_drain = 0
 	range = 0
@@ -325,7 +325,7 @@
 /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay/get_equip_info()
 	if(!chassis)
 		return
-	return "<span style=\"color:[equip_ready?"#0f0":"#f00"];\">*</span>&nbsp; [src.name] - <a href='?src=[REF(src)];toggle_relay=1'>[equip_ready?"A":"Dea"]ctivate</a>"
+	return "<span style=\"color:[equip_ready?"#0f0":"#f00"];\">*</span>&nbsp; [src.name] - <a href='?src=[REF(src)];toggle_relay=1'>[equip_ready?"Активирован":"Деактивирован"]</a>"
 
 
 /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay/process()
@@ -337,7 +337,7 @@
 	if(isnull(cur_charge) || !chassis.cell)
 		STOP_PROCESSING(SSobj, src)
 		set_ready_state(1)
-		occupant_message("<span class='notice'>No powercell detected.</span>")
+		occupant_message("<span class='notice'>Энрегоячейки не найдено.</span>")
 		return
 	if(cur_charge < chassis.cell.maxcharge)
 		var/area/A = get_area(chassis)
@@ -360,7 +360,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/generator
 	name = "exosuit plasma converter"
-	desc = "An exosuit module that generates power using solid plasma as fuel. Pollutes the environment."
+	desc = "Модуль экзоскелета, который генерирует энергию, используя твердую плазму в качестве топлива. Загрязняет окружающую среду."
 	icon_state = "tesla"
 	range = MECHA_MELEE
 	var/coeff = 100
@@ -391,16 +391,16 @@
 		if(equip_ready) //inactive
 			set_ready_state(0)
 			START_PROCESSING(SSobj, src)
-			log_message("Activated.", LOG_MECHA)
+			log_message("Активирован.", LOG_MECHA)
 		else
 			set_ready_state(1)
 			STOP_PROCESSING(SSobj, src)
-			log_message("Deactivated.", LOG_MECHA)
+			log_message("Выключен.", LOG_MECHA)
 
 /obj/item/mecha_parts/mecha_equipment/generator/get_equip_info()
 	var/output = ..()
 	if(output)
-		return "[output] \[[fuel]: [round(fuel.amount*MINERAL_MATERIAL_AMOUNT,0.1)] cm<sup>3</sup>\] - <a href='?src=[REF(src)];toggle=1'>[equip_ready?"A":"Dea"]ctivate</a>"
+		return "[output] \[[fuel]: [round(fuel.amount*MINERAL_MATERIAL_AMOUNT,0.1)] cm<sup>3</sup>\] - <a href='?src=[REF(src)];toggle=1'>[equip_ready?"Активирован":"Выключен"]</a>"
 
 /obj/item/mecha_parts/mecha_equipment/generator/action(target)
 	if(chassis)
@@ -415,13 +415,13 @@
 			var/units = min(max(round(to_load / MINERAL_MATERIAL_AMOUNT),1),sheet_being_inserted.amount)
 			fuel.amount += units
 			sheet_being_inserted.use(units)
-			occupant_message("<span class='notice'>[units] unit\s of [fuel] successfully loaded.</span>")
+			occupant_message("<span class='notice'>[units] юнитов\s  [fuel] успешно загружено.</span>")
 			return units
 		else
-			occupant_message("<span class='notice'>Unit is full.</span>")
+			occupant_message("<span class='notice'>Ячейка заполнена.</span>")
 			return 0
 	else
-		occupant_message("<span class='warning'>[fuel] traces in target minimal! [sheet_being_inserted] cannot be used as fuel.</span>")
+		occupant_message("<span class='warning'>[fuel] следы в целевом минимуме! [sheet_being_inserted] не может быть использован как топливо.</span>")
 		return
 
 /obj/item/mecha_parts/mecha_equipment/generator/attackby(weapon,mob/user, params)
@@ -434,14 +434,14 @@
 		return
 	if(fuel.amount<=0)
 		STOP_PROCESSING(SSobj, src)
-		log_message("Deactivated - no fuel.", LOG_MECHA)
+		log_message("Выключение - недостаточно топлива.", LOG_MECHA)
 		set_ready_state(1)
 		return
 	var/cur_charge = chassis.get_charge()
 	if(isnull(cur_charge))
 		set_ready_state(1)
-		occupant_message("<span class='notice'>No powercell detected.</span>")
-		log_message("Deactivated.", LOG_MECHA)
+		occupant_message("<span class='notice'>Энергоячейки не обнаружено.</span>")
+		log_message("Выключен.", LOG_MECHA)
 		STOP_PROCESSING(SSobj, src)
 		return
 	var/use_fuel = fuel_per_cycle_idle
@@ -455,7 +455,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/generator/nuclear
 	name = "exonuclear reactor"
-	desc = "An exosuit module that generates power using uranium as fuel. Pollutes the environment."
+	desc = "Модуль экзоскелета, который вырабатывает энергию, используя уран в качестве топлива. Загрязняет окружающую среду."
 	icon_state = "tesla"
 	max_fuel = 50000
 	fuel_per_cycle_idle = 10
@@ -475,7 +475,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/thrusters
 	name = "generic exosuit thrusters" //parent object, in-game sources will be a child object
-	desc = "A generic set of thrusters, from an unknown source. Uses not-understood methods to propel exosuits seemingly for free."
+	desc = "Универсальный набор двигателей из неизвестного источника. Использует непонятные методы для приведения в движение экзоскелетов, по-видимому, бесплатно."
 	icon_state = "thrusters"
 	selectable = FALSE
 	var/effect_type = /obj/effect/particle_effect/sparks
@@ -483,7 +483,7 @@
 /obj/item/mecha_parts/mecha_equipment/thrusters/try_attach_part(mob/user, obj/mecha/M)
 	for(var/obj/item/I in M.equipment)
 		if(istype(I, src))
-			to_chat(user, "<span class='warning'>[M] already has this thruster package!</span>")
+			to_chat(user, "<span class='warning'>[M] уже имеет набор двигателей!</span>")
 			return FALSE
 	. = ..()
 
@@ -518,16 +518,16 @@
 	if (chassis.active_thrusters == src)
 		return
 	chassis.active_thrusters = src
-	occupant_message("<span class='notice'>[src] enabled.</span>")
+	occupant_message("<span class='notice'>[src] включен.</span>")
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/proc/disable()
 	if(chassis.active_thrusters != src)
 		return
 	chassis.active_thrusters = null
-	occupant_message("<span class='notice'>[src] disabled.</span>")
+	occupant_message("<span class='notice'>[src] выключен.</span>")
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/get_equip_info()
-	return "[..()] \[<a href='?src=[REF(src)];mode=0'>Enable</a>|<a href='?src=[REF(src)];mode=1'>Disable</a>\]"
+	return "[..()] \[<a href='?src=[REF(src)];mode=0'>включен</a>|<a href='?src=[REF(src)];mode=1'>выключен</a>\]"
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/proc/thrust(movement_dir)
 	if(!chassis)
@@ -544,13 +544,13 @@
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/gas
 	name = "RCS thruster package"
-	desc = "A set of thrusters that allow for exosuit movement in zero-gravity enviroments, by expelling gas from the internal life support tank."
+	desc = "Набор двигателей, которые обеспечивают передвижение экзоскелета в условиях невесомости за счет вытеснения газа из внутреннего резервуара жизнеобеспечения."
 	effect_type = /obj/effect/particle_effect/smoke
 	var/move_cost = 20 //moles per step
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/gas/try_attach_part(mob/user, obj/mecha/M)
 	if(!M.internal_tank)
-		to_chat(user, "<span class='warning'>[M] does not have an internal tank and cannot support this upgrade!</span>")
+		to_chat(user, "<span class='warning'>[M] не имеет бака с газом чтобы обеспечить работоспособность этого модуля!</span>")
 		return FALSE
 	. = ..()
 
@@ -569,7 +569,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/ion //for mechs with built-in thrusters, should never really exist un-attached to a mech
 	name = "Ion thruster package"
-	desc = "A set of thrusters that allow for exosuit movement in zero-gravity enviroments."
+	desc = "Набор двигателей, которые позволяют передвигаться экзоскелету в условиях невесомости."
 	detachable = FALSE
 	salvageable = FALSE
 	effect_type = /obj/effect/particle_effect/ion_trails
