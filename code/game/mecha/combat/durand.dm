@@ -1,5 +1,5 @@
 /obj/mecha/combat/durand
-	desc = "An aging combat exosuit utilized by the Nanotrasen corporation. Originally developed to combat hostile alien lifeforms."
+	desc = "Устаревший боевой экзоскелет, используемый корпорацией Nanotrasen. Первоначально разработанный для борьбы с враждебными инопланетными формами жизни.."
 	name = "\improper Durand"
 	icon_state = "durand"
 	step_in = 4
@@ -15,7 +15,7 @@
 
 
 /obj/mecha/combat/durand/cmm
-	desc = "An aging combat exosuit appropriated from abandoned Nanotrasen facilities, now supplied to the CMM-BARD anti-xenofauna division."
+	desc = "Устаревший боевой экзоскелет, позаимствованный с заброшенных объектов Nanotrasen, теперь поставляется подразделению CMM-BARD по борьбе с ксенофауной."
 	name = "\improper Paladin"
 	icon_state = "cmmdurand"
 	wreckage = /obj/structure/mecha_wreckage/durand/cmm
@@ -69,7 +69,7 @@
 	SIGNAL_HANDLER
 
 	if(!shield) //if the shield somehow got deleted
-		stack_trace("Durand triggered relay without a shield")
+		stack_trace("Дюранд запускает реле без защитного экрана")
 		shield = new /obj/durand_shield(loc, src, layer)
 	shield.setDir(dir)
 	SEND_SIGNAL(shield, COMSIG_MECHA_ACTION_ACTIVATE, source, signal_args)
@@ -105,29 +105,29 @@ Expects a turf. Returns true if the attack should be blocked, false if not.*/
 
 /obj/mecha/combat/durand/attack_generic(mob/user, damage_amount = 0, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, armor_penetration = 0)
 	if(defense_check(user.loc))
-		log_message("Attack absorbed by defense field. Attacker - [user].", LOG_MECHA, color="orange")
+		log_message("Атака поглощена защитным полем. Атакующий - [user].", LOG_MECHA, color="orange")
 		shield.attack_generic(user, damage_amount, damage_type, damage_flag, sound_effect, armor_penetration)
 	else
 		. = ..()
 
 /obj/mecha/combat/durand/blob_act(obj/structure/blob/B)
 	if(defense_check(B.loc))
-		log_message("Attack by blob. Attacker - [B].", LOG_MECHA, color="red")
-		log_message("Attack absorbed by defense field.", LOG_MECHA, color="orange")
+		log_message("Атака от blob'а. Атакующий - [B].", LOG_MECHA, color="red")
+		log_message("Атака поглощена защитным полем.", LOG_MECHA, color="orange")
 		shield.blob_act(B)
 	else
 		. = ..()
 
 /obj/mecha/combat/durand/attackby(obj/item/W as obj, mob/user as mob, params)
 	if(defense_check(user.loc))
-		log_message("Attack absorbed by defense field. Attacker - [user], with [W]", LOG_MECHA, color="orange")
+		log_message("Атака поглощена защитным полем. Атакующий - [user], with [W]", LOG_MECHA, color="orange")
 		shield.attackby(W, user, params)
 	else
 		. = ..()
 
 /obj/mecha/combat/durand/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
 	if(defense_check(AM.loc))
-		log_message("Impact with [AM] absorbed by defense field.", LOG_MECHA, color="orange")
+		log_message("Столкновение с [AM] поглащено защитным полем.", LOG_MECHA, color="orange")
 		shield.hitby(AM, skipcatch, hitpush, blocked, throwingdatum)
 	else
 		. = ..()
@@ -186,16 +186,16 @@ the shield is disabled by means other than the action button (like running out o
 	if(switching && !signal_args[1])
 		return
 	if(!chassis.defense_mode && (!chassis.cell || chassis.cell.charge < 100)) //If it's off, and we have less than 100 units of power
-		chassis.occupant_message("<span class='warn'>Insufficient power; cannot activate defense mode.</span>")
+		chassis.occupant_message("<span class='warn'>Недостаточно энергии; Активация защитного режима невозможна.</span>")
 		return
 	switching = TRUE
 	chassis.defense_mode = !chassis.defense_mode
 	chassis.defense_action.button_icon_state = "mech_defense_mode_[chassis.defense_mode ? "on" : "off"]" //This is backwards because we haven't changed the var yet
 	if(!signal_args[1])
-		chassis.occupant_message("<span class='notice'>Defense mode [chassis.defense_mode?"enabled":"disabled"].</span>")
-		chassis.log_message("User has toggled defense mode -- now [chassis.defense_mode?"enabled":"disabled"].", LOG_MECHA)
+		chassis.occupant_message("<span class='notice'>Защитный режим [chassis.defense_mode?"Включен":"Выключен"].</span>")
+		chassis.log_message("Пользователь включил защитный режим -- Сейчас оно [chassis.defense_mode?"Включен":"Выключен"].", LOG_MECHA)
 	else
-		chassis.log_message("defense mode state changed -- now [chassis.defense_mode?"enabled":"disabled"].", LOG_MECHA)
+		chassis.log_message("Изменено состояние режима защиты -- Сейчас оно [chassis.defense_mode?"Включен":"Выключен"].", LOG_MECHA)
 	chassis.defense_action.UpdateButtonIcon()
 
 	set_light_on(chassis.defense_mode)
