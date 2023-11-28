@@ -24,6 +24,7 @@
 /obj/item/storage/box/stockparts/basic,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty,
+/obj/item/paper_bin,
 /turf/open/floor/plasteel/tech/grid/airless,
 /area/ship/cargo)
 "cT" = (
@@ -554,7 +555,7 @@
 	dir = 4
 	},
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/external)
+/area/ship/crew/cryo)
 "yR" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/suit_storage_unit/inherit,
@@ -925,10 +926,12 @@
 /area/ship/crew/cryo)
 "MP" = (
 /obj/machinery/porta_turret/syndicate/energy/heavy{
-	faction = list("neutral","turret")
+	faction = list("neutral","turret");
+	req_access = null;
+	req_access_txt = "147;148;3"
 	},
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/external)
+/area/ship/crew/cryo)
 "MV" = (
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west{
@@ -1679,7 +1682,7 @@ Cp
 Cp
 Cp
 Le
-tT
+bX
 yM
 bX
 CO
