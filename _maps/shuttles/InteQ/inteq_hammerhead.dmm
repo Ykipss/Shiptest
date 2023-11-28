@@ -327,7 +327,7 @@
 	},
 /obj/item/tank/jetpack/oxygen,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "bo" = (

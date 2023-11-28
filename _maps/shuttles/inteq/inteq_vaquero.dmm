@@ -3011,7 +3011,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable{
@@ -3024,6 +3023,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "20"
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "VN" = (
