@@ -2938,6 +2938,7 @@
 #include "code\modules\projectiles\ammunition\ballistic\pistol.dm"
 #include "code\modules\projectiles\ammunition\ballistic\revolver.dm"
 #include "code\modules\projectiles\ammunition\ballistic\rifle.dm"
+#include "code\modules\projectiles\ammunition\ballistic\rifle_celadon.dm"
 #include "code\modules\projectiles\ammunition\ballistic\shotgun.dm"
 #include "code\modules\projectiles\ammunition\ballistic\smg.dm"
 #include "code\modules\projectiles\ammunition\ballistic\sniper.dm"
