@@ -20,8 +20,8 @@
 		return COMPONENT_INCOMPATIBLE
 	var/obj/item/gun = parent
 	RegisterSignal(parent, COMSIG_ITEM_EQUIPPED, PROC_REF(wake_up))
-	RegisterSignal(parent, COMSIG_GUN_DISABLE_AUTOFIRE, .proc/disable_autofire)
-	RegisterSignal(parent, COMSIG_GUN_ENABLE_AUTOFIRE, .proc/enable_autofire)
+	RegisterSignal(parent, COMSIG_GUN_DISABLE_AUTOFIRE, PROC_REF(disable_autofire))
+	RegisterSignal(parent, COMSIG_GUN_ENABLE_AUTOFIRE, PROC_REF(enable_autofire))
 	if(_autofire_shot_delay)
 		autofire_shot_delay = _autofire_shot_delay
 	if(autofire_stat == AUTOFIRE_STAT_IDLE && ismob(gun.loc))

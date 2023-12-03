@@ -161,7 +161,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/swiss
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 8
 	spread_unwielded = 15
 
@@ -213,8 +213,8 @@
 
 	mag_display = TRUE
 	empty_indicator = TRUE
-
-
+	fire_sound = 'sound/weapons/gun/laser/e40_bal.ogg'
+	manufacturer = MANUFACTURER_EOEHOMA
 
 /obj/item/gun/ballistic/automatic/assault/e40/Initialize()
 	. = ..()
@@ -305,4 +305,10 @@
 
 //laser
 
-
+/obj/item/gun/energy/laser/e40_laser_secondary
+	name = "secondary e40 laser gun"
+	desc = "The laser component of a E-40 Hybrid Rifle. You probably shouldn't see this."
+	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault)
+	fire_delay = 2
