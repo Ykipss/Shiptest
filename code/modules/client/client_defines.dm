@@ -196,3 +196,4 @@
 	/// Used by SSserver_maint to detect if a client is newly AFK.
 	var/last_seen_afk = 0
 
+	var/fullscreen = FALSE
