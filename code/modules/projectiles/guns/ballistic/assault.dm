@@ -153,12 +153,15 @@
 	item_state = "swiss"
 	mag_display = TRUE
 	empty_indicator = TRUE
+	burst_size = 3
+	fire_delay = 1.5
 	spread = 8
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/swiss
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 8
 	spread_unwielded = 15
 
@@ -190,194 +193,122 @@
 	for(var/datum/action/action as anything in actions)
 		action.UpdateButtonIcon()
 
-/obj/item/gun/ballistic/automatic/assault/g36sh
-	name = "\improper G36-SH"
-	desc = "Наследие огненной эры Союза Человечества , укороченная версия ,  калибра 5.56x45 . Технология производства восстановлена минитменами , но ввиду усложненной конструкции продана корпорации InteQ. Используется сотрудниками InteQ по сей день , как оружие для элитных наемников."
+#define E40_BALLISTIC_MODE 1
+#define E40_LASER_MODE 2
+
+/obj/item/gun/ballistic/automatic/assault/e40
+	name = "\improper E-40 Hybrid Rifle"
+	desc = "A Hybrid Assault Rifle, best known for being having a dual ballistic and laser system. Chambered in .229 Eoehoma caseless, and uses energy for lasers."
 	icon = 'icons/obj/guns/48x32guns.dmi'
-	fire_sound = 'sound/weapons/gun/rifle/g36sh.ogg'
-	icon_state = "g36sh"
-	item_state = "g36sh"
-	mag_type = /obj/item/ammo_box/magazine/p16/g36sh
+	icon_state = "e40"
+	item_state = "e40"
+	mag_type = /obj/item/ammo_box/magazine/e40
+	can_suppress = FALSE
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	var/obj/item/gun/energy/laser/e40_laser_secondary/secondary
+
 	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+
+	mag_display = TRUE
+	empty_indicator = TRUE
+	fire_sound = 'sound/weapons/gun/laser/e40_bal.ogg'
+	manufacturer = MANUFACTURER_EOEHOMA
+
+/obj/item/gun/ballistic/automatic/assault/e40/Initialize()
+	. = ..()
+	secondary = new /obj/item/gun/energy/laser/e40_laser_secondary(src)
+	AddComponent(/datum/component/automatic_fire, 0.2 SECONDS)
+	RegisterSignal(secondary, COMSIG_ATOM_UPDATE_ICON, PROC_REF(secondary_update_icon))
+	SEND_SIGNAL(secondary, COMSIG_GUN_DISABLE_AUTOFIRE)
+	update_appearance()
+
+/obj/item/gun/ballistic/automatic/assault/e40/do_autofire(datum/source, atom/target, mob/living/shooter, params)
+	if(select == E40_LASER_MODE)
+		secondary.do_autofire(source, target, shooter, params)
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/do_autofire_shot(datum/source, atom/target, mob/living/shooter, params)
+	if(select == E40_LASER_MODE)
+		secondary.do_autofire_shot(source, target, shooter, params)
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/process_fire(atom/target, mob/living/user, message, params, zone_override, bonus_spread)
+	if(select == E40_LASER_MODE)
+		secondary.process_fire(target, user, message, params, zone_override, bonus_spread)
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/can_shoot()
+	if(select == E40_LASER_MODE)
+		return secondary.can_shoot()
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/afterattack(atom/target, mob/living/user, flag, params)
+	if(select == E40_LASER_MODE)
+		secondary.afterattack(target, user, flag, params)
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/attackby(obj/item/attack_obj, mob/user, params)
+	if(istype(attack_obj, /obj/item/stock_parts/cell/gun) || istype(attack_obj, /obj/item/screwdriver))
+		secondary.attack_self()
+		secondary.attackby(attack_obj, user, params)
+	else
+		..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/can_shoot()
+	if(select == E40_LASER_MODE)
+		return secondary.can_shoot()
+	return ..()
+
+/obj/item/gun/ballistic/automatic/assault/e40/proc/secondary_update_icon()
+	update_icon()
+
+/obj/item/gun/ballistic/automatic/assault/e40/update_overlays()
+	. = ..()
+	//handle laser gunn overlays
+	if(!secondary)
+		return
+	var/ratio = secondary.get_charge_ratio()
+	if(ratio == 0)
+		. += "[icon_state]_chargeempty"
+	else
+		. += "[icon_state]_charge[ratio]"
+	if(secondary.cell)
+		. += "[icon_state]_cell"
+
+
+/obj/item/gun/ballistic/automatic/assault/e40/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(NONE)
+			select = E40_BALLISTIC_MODE
+			to_chat(user, "<span class='notice'>You switch to full automatic ballistic.</span>")
+		if(E40_BALLISTIC_MODE)
+			select = E40_LASER_MODE
+			to_chat(user, "<span class='notice'>You switch to full auto laser.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+			SEND_SIGNAL(secondary, COMSIG_GUN_ENABLE_AUTOFIRE)
+		if(E40_LASER_MODE)
+			select = E40_BALLISTIC_MODE
+			to_chat(user, "<span class='notice'>You switch to full automatic ballistic.</span>")
+			SEND_SIGNAL(src, COMSIG_GUN_ENABLE_AUTOFIRE)
+			SEND_SIGNAL(secondary, COMSIG_GUN_DISABLE_AUTOFIRE)
+	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
+	update_icon()
+	return
+
+//laser
+
+/obj/item/gun/energy/laser/e40_laser_secondary
+	name = "secondary e40 laser gun"
+	desc = "The laser component of a E-40 Hybrid Rifle. You probably shouldn't see this."
+	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	spread = 16
-	actions_types = list()
-	mag_display = TRUE
-	special_mags = TRUE
-	tac_reloads = TRUE
-	var/obj/item/ammo_box/magazine/p16/g36sh/alternate_magazine
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-
-/obj/item/gun/ballistic/automatic/assault/g36sh/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
-
-/obj/item/gun/ballistic/automatic/assault/g36sh/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new mag_type(src)
-		spawnwithmagazine = FALSE
-		mag_type = /obj/item/ammo_box/magazine/p16
-
-/obj/item/gun/ballistic/automatic/assault/g36sh/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size = 1
-			fire_delay = 0
-			spread = 16
-			to_chat(user, "<span class='notice'>You switch to full automatic.</span>")
-			SEND_SIGNAL(src,COMSIG_GUN_ENABLE_AUTOFIRE)
-		if(1)
-			select = 2
-			spread = 4
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-		if(2)
-			select = 0
-			burst_size = 3
-			fire_delay = 2
-			spread = 8
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd Matter.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
-	update_icon()
-	return
-
-/obj/item/gun/ballistic/automatic/assault/g36sh/inteq
-	name = "\improper Moded G36-SH"
-	desc = "Обширная модификация G36-SH, которая входит в стандартную комплектацию вооружения InteQ. Калибр 5,56x45 мм."
-	icon_state = "g36shinteq"
-	item_state = "g36shinteq"
-	empty_indicator = TRUE
-	empty_alarm = TRUE
-
-/obj/item/gun/ballistic/automatic/assault/g36
-	name = "\improper G36"
-	desc = "Наследие огненной эры Союза Человечества , калибра 5.56x45 . Технология производства восстановлена минитменами , но ввиду усложненной конструкции продана корпорации InteQ. Используется сотрудниками InteQ по сей день , как оружие для элитных наемников. "
-	icon = 'icons/obj/guns/48x32guns.dmi'
-	fire_sound = 'sound/weapons/gun/rifle/g36.ogg'
-	icon_state = "g36"
-	item_state = "g36"
-	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
-	spread = 12
-	mag_type = /obj/item/ammo_box/magazine/p16/g36
-	actions_types = list()
-	mag_display = TRUE
-	special_mags = TRUE
-	tac_reloads = TRUE
-	var/obj/item/ammo_box/magazine/p16/g36/alternate_magazine
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-
-/obj/item/gun/ballistic/automatic/assault/g36/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
-
-/obj/item/gun/ballistic/automatic/assault/g36/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new mag_type(src)
-		spawnwithmagazine = FALSE
-		mag_type = /obj/item/ammo_box/magazine/p16
-
-/obj/item/gun/ballistic/automatic/assault/g36/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size = 1
-			fire_delay = 0
-			spread = 12
-			to_chat(user, "<span class='notice'>You switch to full automatic.</span>")
-			SEND_SIGNAL(src,COMSIG_GUN_ENABLE_AUTOFIRE)
-		if(1)
-			select = 2
-			spread = 4
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-		if(2)
-			select = 0
-			burst_size = 3
-			fire_delay = 2
-			spread = 6
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd Matter.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
-	update_icon()
-	return
-
-/obj/item/gun/ballistic/automatic/assault/g36/inteq
-	name = "\improper Moded G36"
-	desc = "Обширная модификация G36, которая входит в стандартную комплектацию вооружения InteQ. Калибр 5,56x45 мм."
-	icon_state = "g36inteq"
-	item_state = "g36inteq"
-	empty_indicator = TRUE
-	empty_alarm = TRUE
-
-/obj/item/gun/ballistic/automatic/assault/morita1
-	name = "\improper Morita MK.I"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes."
-	icon = 'icons/obj/guns/48x32guns.dmi'
-	fire_sound = 'sound/weapons/gun/rifle/morita1.ogg'
-	icon_state = "morita1"
-	item_state = "morita1"
-	actions_types = list()
-	special_mags = TRUE
-	mag_display = TRUE
-	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
-	spread = 9
-	mag_type = /obj/item/ammo_box/magazine/morita1
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-
-/obj/item/gun/ballistic/automatic/assault/morita1/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.20 SECONDS)
-
-/obj/item/gun/ballistic/automatic/assault/morita1/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size = 1
-			fire_delay = 0
-			spread = 9
-			to_chat(user, "<span class='notice'>You switch to full automatic.</span>")
-			SEND_SIGNAL(src,COMSIG_GUN_ENABLE_AUTOFIRE)
-		if(1)
-			select = 2
-			spread = 4
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-		if(2)
-			select = 0
-			burst_size = 3
-			fire_delay = 2
-			spread = 4
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd Matter.</span>")
-			SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
-	playsound(user, 'sound/weapons/empty.ogg', 100, TRUE)
-	update_icon()
-	return
-
-/obj/item/gun/ballistic/automatic/assault/morita1/desert
-	name = "\improper Morita MK.I(desert)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с пустынным камуфляжем"
-	icon_state = "morita1_desert"
-	item_state = "morita1_desert"
-
-/obj/item/gun/ballistic/automatic/assault/morita1/forest
-	name = "\improper Morita MK.I(forest)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с лесным камуфляжем"
-	icon_state = "morita1_forest"
-	item_state = "morita1_forest"
-
-/obj/item/gun/ballistic/automatic/assault/morita1/swamp
-	name = "\improper Morita MK.I(swamp)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с болотным камуфляжем"
-	icon_state = "morita1_swamp"
-	item_state = "morita1_swamp"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault)
+	fire_delay = 2
