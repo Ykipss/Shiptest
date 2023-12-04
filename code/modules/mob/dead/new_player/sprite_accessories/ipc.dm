@@ -6,6 +6,10 @@
 	icon = 'icons/mob/ipc_accessories.dmi'
 	color_src = EYECOLOR
 
+/datum/sprite_accessory/ipc_screens/none
+	name = "None"
+	icon_state = "none"
+
 /datum/sprite_accessory/ipc_screens/blank
 	name = "Blank Canvas"
 	icon_state = "blank"
@@ -170,6 +174,10 @@
 	name = "Color Test"
 	icon_state = "tv"
 
+/datum/sprite_accessory/ipc_screens/android
+	name = "Android"
+	icon_state = "android"
+
 /datum/sprite_accessory/ipc_screens/badapple
 	name = "Old Animation"
 	icon_state = "bad_apple"
@@ -287,3 +295,7 @@
 /datum/sprite_accessory/ipc_chassis/zenghupharmaceuticals
 	name = "Zeng-Hu Pharmaceuticals"
 	limbs_id = "zhpipc"
+
+/datum/sprite_accessory/ipc_chassis/android
+	name = "Custom Android chassis"
+	limbs_id = "android"
