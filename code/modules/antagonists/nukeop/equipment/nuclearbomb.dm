@@ -9,7 +9,7 @@
 
 	var/timer_set = 90
 	var/minimum_timer_set = 90
-	var/maximum_timer_set = 3600
+	var/maximum_timer_set = 18000
 
 	var/numeric_input = ""
 	var/ui_mode = NUKEUI_AWAIT_DISK
