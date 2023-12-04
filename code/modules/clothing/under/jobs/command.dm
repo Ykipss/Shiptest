@@ -113,12 +113,6 @@
 
 //Lieutenant
 
-/obj/item/clothing/under/rank/command
-	desc = "A standard command jumpsuit in the colours of the Lieutenant."
-	name = "\improper lieutenant jumpsuit"
-	icon_state = "lt"
-	can_adjust = FALSE
-
 /obj/item/clothing/under/rank/command/skirt
 	desc = "A command jumpskirt in the colours of the Lieutenant."
 	name = "\improper lieutenant jumpskirt"
