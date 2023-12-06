@@ -21,7 +21,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/ratvar
 	))
 
@@ -44,15 +43,6 @@
 
 /obj/item/organ/tongue/could_speak_language(language)
 	return is_type_in_typecache(language, languages_possible)
-
-//Say_mod-Only Tongues
-/obj/item/organ/tongue/golem_base
-	name = "golem tongue"
-	say_mod = "rumbles"
-
-/obj/item/organ/tongue/golem_honk
-	name = "bananium tongue"
-	say_mod = "honks"
 
 /obj/item/organ/tongue/toma
 	name = "mutated tongue"
@@ -125,7 +115,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/buzzwords,
 		/datum/language/ratvar
 	))
@@ -266,7 +255,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/calcic,
 		/datum/language/ratvar
 	))
@@ -349,7 +337,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/ratvar,
 	))
 
@@ -374,7 +361,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/ratvar,
 		/datum/language/slime
 	))
@@ -399,7 +385,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/buzzwords
 	))
 
@@ -449,7 +434,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/teceti_unified
 	))
 
@@ -473,7 +457,6 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/terrum,
 		/datum/language/vox_pidgin
 	))
 
