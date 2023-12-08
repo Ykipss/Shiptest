@@ -133,6 +133,7 @@
 /obj/item/ammo_box/a357/match,
 /obj/item/ammo_box/a357/match,
 /obj/item/pen/edagger,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "bJ" = (
