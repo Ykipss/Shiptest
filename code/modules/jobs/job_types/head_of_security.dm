@@ -122,7 +122,6 @@
 /datum/outfit/job/hos/syndicate/ostov
 	name = "Lieutenant Commander (O.S.T.O.V.)"
 
-	uniform = /obj/item/clothing/under/syndicate/aclf
 	head = /obj/item/clothing/head/HoS/beret/syndicate
 	ears = /obj/item/radio/headset/syndicate/alt
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
@@ -132,7 +131,6 @@
 	shoes = /obj/item/clothing/shoes/combat
 	suit = /obj/item/clothing/suit/armor/vest
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/APS
-	alt_suit = /obj/item/clothing/suit/aclf
 	id = /obj/item/card/id/syndicate_command/lieutenant
 	implants = list(/obj/item/implant/weapons_auth, /obj/item/implant/explosive/macro, /obj/item/implant/krav_maga)
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic/contractor_baton, /obj/item/ammo_box/magazine/pistolm9mm=4)
