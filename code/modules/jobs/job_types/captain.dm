@@ -228,7 +228,6 @@
 /datum/outfit/job/captain/syndicate/ostov
 	name = "Commander (O.S.T.O.V)"
 
-	uniform = /obj/item/clothing/under/syndicate/aclf
 	gloves = /obj/item/clothing/gloves/krav_maga/combatglovesplus
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/syndicate/alt/captain
