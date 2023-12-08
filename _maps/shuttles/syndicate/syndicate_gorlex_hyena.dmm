@@ -46,24 +46,23 @@
 "ac" = (
 /obj/effect/turf_decal/industrial/outline,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_one_access = list(48,56)
 	},
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/jetpack/carbondioxide,
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
+/obj/item/clothing/suit/space/syndicate/black,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
 "ad" = (
 /obj/effect/turf_decal/industrial/outline,
 /obj/machinery/light/small/directional/west,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/tank/jetpack/carbondioxide,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_one_access = list(48,56)
 	},
-/obj/item/clothing/suit/space/hardsuit/syndi/scarlet,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/syndicate/black,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
 "aF" = (
