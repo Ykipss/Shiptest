@@ -422,7 +422,9 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/cargo)
 "ic" = (
-/obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/extinguisher_cabinet/directional/north{
+	pixel_x = -5
+	},
 /obj/effect/turf_decal/corner/transparent/purple/border{
 	icon_state = "bordercolor";
 	dir = 1
@@ -438,6 +440,9 @@
 	pixel_y = 12;
 	dir = 4
 	},
+/obj/structure/rack,
+/obj/item/weldingtool/experimental,
+/obj/item/clothing/glasses/hud/diagnostic,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/robotics)
 "io" = (
@@ -466,9 +471,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/armory)
 "iL" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -906,9 +908,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/science)
 "qt" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
@@ -1011,6 +1010,9 @@
 /obj/effect/turf_decal/radiation/white,
 /obj/effect/turf_decal/industrial/outline,
 /obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
 "rB" = (
@@ -1136,10 +1138,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "tR" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/ship/bridge)
+/obj/structure/extinguisher_cabinet/directional/north{
+	pixel_x = -5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/security/armory)
 "tX" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt,
@@ -1498,9 +1501,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "zz" = (
-/obj/structure/rack,
-/obj/item/clothing/glasses/hud/diagnostic,
-/obj/item/weldingtool/experimental,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
@@ -1970,6 +1970,14 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/north,
+/obj/structure/closet/wall/blue{
+	dir = 4;
+	pixel_x = -28;
+	name = "Mecha parts locker"
+	},
+/obj/item/mecha_parts/mecha_equipment/thrusters/ion,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/carbine,
+/obj/item/circuitboard/mecha/gygax/main,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/robotics)
 "Hr" = (
@@ -2425,9 +2433,6 @@
 /area/ship/medical)
 "Qb" = (
 /obj/structure/dresser,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -2688,9 +2693,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "UJ" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
@@ -3359,7 +3361,7 @@ zY
 fH
 tw
 cH
-ve
+tR
 QU
 Pr
 QU
@@ -3442,7 +3444,7 @@ Zu
 ru
 nj
 ru
-tR
+nq
 ru
 ru
 "}
