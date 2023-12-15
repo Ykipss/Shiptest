@@ -6,7 +6,7 @@
 	"prefix": "ISV",
 	"description": "A budget ship designed for seasoned space explorers...",
 	"tags": [
-		"Soloship"
+		"Survival"
 	],
 	"limit": 1,
 	"namelists": [
@@ -15,10 +15,10 @@
 	],
 	"job_slots": {
 		"Loner": {
-			"outfit": "/datum/outfit/hermit",
+			"outfit": "/datum/outfit/job/assistant",
 			"officer": true,
 			"slots": 1
 		}
 	},
-	"enabled": false
+	"enabled": true
 }
