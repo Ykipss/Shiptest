@@ -296,6 +296,3 @@
 	name = "Zeng-Hu Pharmaceuticals"
 	limbs_id = "zhpipc"
 
-/datum/sprite_accessory/ipc_chassis/android
-	name = "Custom Android chassis"
-	limbs_id = "android"
