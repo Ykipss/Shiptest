@@ -243,7 +243,8 @@
 "dV" = (
 /obj/machinery/mineral/ore_redemption{
 	output_dir = 4;
-	dir = 4
+	dir = 4;
+	input_dir = 4
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/tech,
@@ -361,6 +362,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
 "gB" = (
@@ -557,6 +559,7 @@
 	dir = 9
 	},
 /obj/machinery/light/directional/east,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
 "kv" = (
@@ -669,8 +672,8 @@
 /area/ship/maintenance/starboard)
 "lS" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
-/obj/structure/reagent_dispensers/watertank,
 /obj/machinery/light/directional/east,
+/obj/item/wrench/syndie,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
 "lW" = (
@@ -995,6 +998,7 @@
 	icon_state = "2-8"
 	},
 /obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/shoes/jackboots,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
 "ru" = (
@@ -1169,11 +1173,14 @@
 	pixel_x = -6;
 	pixel_y = 5
 	},
-/obj/item/pen/fountain/captain,
 /obj/effect/turf_decal/corner/opaque/syndiered/border{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
+/obj/item/pen/fountain/captain,
+/obj/item/gps{
+	pixel_x = 7
+	},
 /obj/item/folder/syndicate/red{
 	pixel_x = 8;
 	pixel_y = 7
@@ -1294,8 +1301,11 @@
 	},
 /obj/item/stack/cable_coil/random,
 /obj/item/clothing/head/welding,
-/obj/item/stack/sheet/metal/fifty,
 /obj/effect/turf_decal/corner/transparent/purple/mono,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/plasteel{
+	amount = 10
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
 "xg" = (
@@ -1694,8 +1704,8 @@
 /obj/machinery/atmospherics/components/binary/pump/on/layer2{
 	dir = 8
 	},
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plasteel/tech/grid,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "CF" = (
 /obj/effect/turf_decal/trimline/opaque/black/line{
@@ -1915,6 +1925,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
+/obj/item/soap/syndie,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew/dorm)
 "Go" = (
@@ -2329,6 +2340,7 @@
 	name = "blood-red curtains"
 	},
 /obj/machinery/light/directional/south,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "Oo" = (
@@ -2870,6 +2882,9 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/light/small/directional/north,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
 "Xz" = (
@@ -3052,7 +3067,7 @@
 "Zr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/wrench/syndie,
+/obj/structure/reagent_dispensers/foamtank,
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
