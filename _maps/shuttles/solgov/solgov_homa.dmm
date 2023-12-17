@@ -331,9 +331,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"jZ" = (
-/turf/template_noop,
-/area/ship/bridge)
 "kg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -1829,7 +1826,7 @@ SR
 SR
 SR
 SR
-jZ
+SR
 Cm
 KZ
 kU
