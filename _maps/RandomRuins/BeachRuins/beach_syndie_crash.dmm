@@ -1,0 +1,8706 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/obj/effect/turf_decal/industrial/fire{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = -28
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"af" = (
+/obj/machinery/door/airlock{
+	name = "Cryopod Room"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"aj" = (
+/obj/structure/sign/departments/engineering,
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"am" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/suit_storage_unit/inherit/industrial{
+	req_access = list(11)
+	},
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/clothing/suit/space/hardsuit/syndi/sbg,
+/obj/item/clothing/mask/gas/syndicate,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"an" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"aD" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"aG" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/north,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"aJ" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/ruin/jungle/syndifort/jerry)
+"aP" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/structure/chair/comfy/teal{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"bb" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/machinery/firealarm/directional/east,
+/obj/structure/sign/poster/contraband/stechkin{
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate{
+	desc = "God dammit Jerry! Why the fuck are you barricading yourself in with all of our weapon supplies?";
+	name = "Jerry";
+	unsuitable_atmos_damage = 0
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort/jerry)
+"bl" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"bq" = (
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"bs" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"bu" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"bD" = (
+/obj/machinery/button/door{
+	dir = 8;
+	id = "syndiecrash kantatsu";
+	name = "Engine Blast Shutters";
+	pixel_x = -8
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"bF" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "thefunny"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Office"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort/jerry)
+"bG" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/oil/streak,
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"bN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"bT" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"bW" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/industrial/outline,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"bY" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/obj/item/bedsheet/syndie,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"cg" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"cm" = (
+/obj/structure/table/wood/poker,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/coin/antagtoken{
+	pixel_y = -3;
+	pixel_x = 5
+	},
+/obj/item/spacecash/bundle/c200{
+	pixel_y = 4;
+	pixel_x = 7
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"cn" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"co" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/rdconsole/core{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"cp" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"ct" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"cw" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"cx" = (
+/obj/structure/table/wood/poker,
+/obj/item/spacecash/bundle/c1000,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"cA" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"cM" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/light/small/directional/south,
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"cZ" = (
+/obj/machinery/light/small/directional/west,
+/obj/structure/table,
+/obj/item/chair/plastic,
+/obj/item/chair/plastic{
+	pixel_y = 8
+	},
+/obj/item/chair/plastic{
+	pixel_y = 16
+	},
+/obj/item/stack/sheet/mineral/wood{
+	amount = 3
+	},
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/glass/five,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"df" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"du" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"dB" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"dN" = (
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/item/mecha_parts/chassis/gygax,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"dR" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"dZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"ek" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"eo" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"ev" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"eG" = (
+/obj/machinery/fax,
+/obj/structure/table/glass,
+/obj/effect/turf_decal/corner/opaque/syndiered/border{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"eK" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/smg,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"eL" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"eM" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"fk" = (
+/obj/effect/mob_spawn/human/skeleton,
+/obj/item/kinetic_crusher/syndie_crusher,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/glasses/meson/night,
+/obj/structure/closet/crate/grave/loot{
+	name = "Могила черта"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"fm" = (
+/obj/structure/railing/corner{
+	dir = 4;
+	layer = 3.1
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"fu" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"fy" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"fB" = (
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"fO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"fQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"fU" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 4;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/ruin/jungle/syndifort/jerry)
+"gl" = (
+/obj/machinery/door/airlock/wood/glass,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"gp" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"gC" = (
+/obj/machinery/power/floodlight,
+/obj/structure/cable,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"gD" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 8
+	},
+/obj/machinery/vending/syndichem,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"gK" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/reagentgrinder/constructed,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"gM" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"gQ" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/visible/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/industrial/fire,
+/obj/item/analyzer,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"gT" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/light/small/directional/west,
+/obj/structure/table,
+/obj/item/gun/energy/lasercannon/unrestricted{
+	pixel_y = 10;
+	pixel_x = 2
+	},
+/obj/item/toy/nuke,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"gX" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/rust,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"hb" = (
+/obj/machinery/door/airlock/wood/glass{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"hc" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"hk" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/closet/crate/radiation{
+	name = "fuel crate"
+	},
+/obj/effect/turf_decal/radiation/white,
+/obj/effect/turf_decal/industrial/outline,
+/obj/structure/cable{
+	icon_state = "0-6"
+	},
+/obj/item/stack/sheet/mineral/uranium/five,
+/obj/item/stack/sheet/mineral/uranium/five,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"hF" = (
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"hI" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"hK" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"hS" = (
+/turf/closed/wall/mineral/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"hY" = (
+/obj/structure/table/wood/fancy,
+/obj/item/kitchen/knife/pizza_cutter,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"id" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner,
+/obj/machinery/vending/donksofttoyvendor,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ih" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 8;
+	piping_layer = 2
+	},
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ik" = (
+/obj/structure/closet/syndicate{
+	desc = "It's a basic storage unit.";
+	name = "uniform closet"
+	},
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/mask/gas/sechailer/minutemen,
+/obj/item/clothing/mask/gas/sechailer/minutemen,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/gloves/combat/maid,
+/obj/item/clothing/gloves/combat/maid,
+/obj/item/clothing/shoes/jackboots/fast,
+/obj/item/clothing/shoes/jackboots/fast,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"iq" = (
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ix" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/jukebox{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"iz" = (
+/obj/structure/flora/ausbushes/stalkybush,
+/turf/open/water/beach/deep,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"iJ" = (
+/obj/structure/cable{
+	icon_state = "1-10"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"iL" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"iT" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"iU" = (
+/turf/open/water/beach/deep,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"iV" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/light/small/directional/east,
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"jc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"jh" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ju" = (
+/obj/structure/table/wood/fancy,
+/obj/item/reagent_containers/food/snacks/store/cake/brain,
+/obj/item/scalpel/supermatter,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"jA" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"jQ" = (
+/obj/effect/turf_decal/industrial/fire{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"jY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/stool/bar,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"kh" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "Power Shack";
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ki" = (
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"kw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"kE" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"kG" = (
+/obj/structure/sign/poster/official/wtf_is_co2,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"kP" = (
+/obj/structure/railing{
+	dir = 8;
+	layer = 2.91
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"kU" = (
+/obj/structure/table/reinforced,
+/obj/item/soap/syndie,
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/borderfloorblack,
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"kV" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ld" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"lq" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"lu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"lv" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/open/floor/plating/rust{
+	light_range = 2
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"lJ" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort/jerry)
+"lL" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloor,
+/obj/effect/turf_decal/industrial/fire,
+/obj/machinery/door/airlock/hatch{
+	name = "Power Shack"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"lN" = (
+/obj/machinery/power/floodlight,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"lO" = (
+/obj/structure/table/wood/bar,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/snacks/meat/steak/bear,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"lQ" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"lR" = (
+/obj/structure/cable{
+	icon_state = "6-9"
+	},
+/turf/open/floor/plating/rust,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"lV" = (
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"lW" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/jungle/syndifort)
+"me" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"mp" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/melee/sword,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"mt" = (
+/obj/structure/chair/sofa{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/syndicate/civilian,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"mB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,
+/obj/structure/chair/sofa{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"mE" = (
+/obj/structure/railing/corner{
+	dir = 4;
+	layer = 3.1
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"mJ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/wood/glass{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"mO" = (
+/obj/machinery/rnd/production/protolathe/department/science,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"mT" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"mW" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"mZ" = (
+/obj/item/paper_bin,
+/obj/structure/table/glass,
+/obj/effect/turf_decal/corner/opaque/syndiered/border{
+	dir = 4
+	},
+/obj/item/storage/box/rxglasses/spyglasskit,
+/obj/item/kitchen/knife/letter_opener,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"na" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/east,
+/obj/machinery/computer/apc_control{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"nd" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"nf" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"ni" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/wood/glass,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"no" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/melee,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"nq" = (
+/obj/machinery/light/small/directional/north,
+/obj/structure/table/wood,
+/obj/item/binoculars,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"nr" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_y = 6
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"nt" = (
+/obj/machinery/door/airlock{
+	name = "Cryopod Room"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"nw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood/reinforced,
+/obj/item/toy/balloon/syndicate,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"nG" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"nO" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"nU" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"od" = (
+/obj/structure/chair/plastic{
+	dir = 4
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"of" = (
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"oj" = (
+/obj/structure/flora/ash/garden/seaweed,
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"oD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"oE" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/obj/structure/table,
+/obj/item/bedsheet/black,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"oK" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"oS" = (
+/mob/living/simple_animal/hostile/syndicate/melee,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"pb" = (
+/obj/machinery/computer/operating,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"pc" = (
+/obj/effect/turf_decal/atmos/air,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"po" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"pu" = (
+/obj/effect/turf_decal/radiation/white,
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/light/small/directional/north,
+/obj/structure/closet/crate/engineering,
+/obj/item/stack/sheet/mineral/diamond/five,
+/obj/item/stack/sheet/mineral/diamond/five,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"px" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/industrial/outline,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"pD" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Starboard Thrusters";
+	req_access = list(10)
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/fire{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"pF" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"pH" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/obj/machinery/recharger,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"pM" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1;
+	layer = 3.9
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"pQ" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qg" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ql" = (
+/obj/machinery/computer/security/wooden_tv,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qp" = (
+/obj/machinery/door/airlock/wood/glass{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qq" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qF" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qK" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/machinery/light/small/directional/north,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"qO" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"qY" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort/jerry)
+"rd" = (
+/obj/structure/table/wood/bar,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"rl" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"rm" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"rr" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"rB" = (
+/obj/machinery/light/small/directional/east,
+/obj/structure/closet/syndicate{
+	desc = "It's a basic storage unit.";
+	name = "uniform closet"
+	},
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/mask/gas/sechailer/minutemen,
+/obj/item/clothing/mask/gas/sechailer/minutemen,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/shoes/jackboots/fast,
+/obj/item/clothing/shoes/jackboots/fast,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"rG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/item/weldingtool/experimental,
+/obj/item/clothing/glasses/hud/diagnostic/night{
+	pixel_x = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"sc" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"si" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"sk" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"so" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"sq" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"su" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"sy" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"sH" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort/jerry)
+"sR" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
+/obj/machinery/door/window/eastleft{
+	name = "Engine Access"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "syndiecrash hyena"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"sV" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"sY" = (
+/obj/structure/flora/ausbushes/sunnybush,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"td" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1;
+	piping_layer = 2
+	},
+/obj/machinery/firealarm/directional/east,
+/obj/effect/turf_decal/industrial/fire{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"th" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/airlock/hatch{
+	name = "Power Shack"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"to" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"tp" = (
+/obj/structure/railing/corner,
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"tq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"tC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/item/soap/syndie,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"tN" = (
+/obj/machinery/atmospherics/pipe/manifold/orange/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/fire,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2{
+	dir = 8;
+	name = "Distribution"
+	},
+/obj/effect/turf_decal/corner_techfloor_grid{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"tW" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"um" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort/jerry)
+"ur" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"uu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/directional/west,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"uG" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 4
+	},
+/turf/open/floor/engine/hull,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"uL" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"uV" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/box,
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"vg" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"vo" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 9;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"vp" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/wood/glass{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"vr" = (
+/obj/structure/flora/tree/chapel{
+	name = "Дубовое"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"vs" = (
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"vz" = (
+/obj/machinery/light/small/directional/west,
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"vF" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"vH" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/airalarm/directional/west,
+/obj/structure/closet/wall/white/med{
+	dir = 1;
+	name = "medicine locker";
+	pixel_y = -28
+	},
+/obj/item/storage/pill_bottle/lsd,
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"vJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/stack/cable_coil/cyan,
+/obj/item/stack/cable_coil/pink{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/storage/box/emptysandbags,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"vN" = (
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"vP" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"vS" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"vU" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"vW" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/obj/effect/overlay/coconut,
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"wf" = (
+/obj/machinery/power/terminal,
+/obj/effect/turf_decal/box,
+/obj/structure/sign/poster/contraband/energy_swords{
+	pixel_x = 31
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/port_gen/pacman,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"wh" = (
+/obj/structure/flora/ash/garden/seaweed,
+/turf/open/water/beach/deep,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"wv" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = -14;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"wx" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/structure/table,
+/obj/item/organ/cyberimp/arm/esword,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"wz" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = -1
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort/jerry)
+"wC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"wK" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/small/directional/east,
+/obj/structure/table/glass,
+/obj/item/organ/heart/cybernetic/tier3,
+/obj/item/storage/box/syndie_kit/chemical{
+	pixel_x = 6
+	},
+/obj/item/scalpel/supermatter,
+/obj/item/clothing/neck/stethoscope{
+	pixel_x = 9;
+	pixel_y = -15
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"wO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"wU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"wZ" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/smg,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xc" = (
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xd" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-9"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort/jerry)
+"xe" = (
+/obj/structure/chair/sofa/right{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"xf" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/spline/fancy/transparent/grey,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"xg" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/rack,
+/obj/item/gun/ballistic/automatic/pistol/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"xj" = (
+/obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"xk" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 3;
+	pixel_y = 10
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xl" = (
+/obj/machinery/shower{
+	pixel_y = 19
+	},
+/obj/structure/curtain,
+/obj/item/bikehorn/rubberducky,
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"xm" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"xs" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"xz" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xM" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xS" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"xU" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "engine fuel pump"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"yg" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/gun/ballistic/automatic/pistol/tec9,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"yh" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Locker Room";
+	req_one_access = list(10,48)
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/borderfloor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"yk" = (
+/obj/structure/table/wood/poker,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c200{
+	pixel_x = 3;
+	pixel_y = -2
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"ym" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"yo" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"yt" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/light/small/directional/north,
+/obj/structure/table,
+/obj/item/toy/sword,
+/obj/item/storage/belt/military/snack,
+/obj/item/clothing/suit/armor/vest/syndie{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/clothing/head/helmet/operator{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"yy" = (
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"yA" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"yJ" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"yM" = (
+/obj/machinery/door/airlock/wood/glass,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"zl" = (
+/obj/structure/chair/sofa,
+/mob/living/simple_animal/hostile/syndicate,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"zp" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"zA" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"zG" = (
+/obj/structure/rack,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/item/kinetic_crusher/old,
+/obj/item/gun/energy/kinetic_accelerator/old,
+/obj/item/mining_scanner,
+/obj/item/mining_scanner,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"zS" = (
+/obj/structure/table,
+/obj/machinery/light/small/directional/south,
+/obj/item/toy/prize/deathripley{
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"zV" = (
+/obj/structure/curtain,
+/obj/structure/toilet,
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/window/reinforced/spawner/west,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"zW" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"zX" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ag" = (
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/glass,
+/obj/machinery/autolathe,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Aj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"AB" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"AE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"AG" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/microwave,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"AS" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"Bb" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Be" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust{
+	layer = 2.01
+	},
+/turf/open/floor/carpet/blue{
+	baseturfs = /turf/open/floor/plating/beach/sand
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Bj" = (
+/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/orange/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Bv" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"BH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/shower{
+	pixel_y = 19
+	},
+/obj/structure/curtain,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"BK" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"BO" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"BQ" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Cg" = (
+/obj/effect/decal/cleanable/oil,
+/obj/structure/closet/secure_closet/engineering_personal,
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/glasses/welding,
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/item/storage/toolbox/syndicate/empty,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Ch" = (
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ci" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Cv" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Cz" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"CB" = (
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"CN" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"CR" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"CS" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "syndiecrash";
+	name = "Blast Shutters"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"CT" = (
+/obj/structure/fluff/beach_umbrella{
+	pixel_x = -18;
+	pixel_y = 13
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"CV" = (
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Dc" = (
+/obj/effect/turf_decal/industrial/fire{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -16;
+	pixel_x = -12
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/portables_connector/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Dd" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/light/small/directional/east,
+/obj/structure/table/wood,
+/obj/item/codespeak_manual{
+	pixel_x = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Dl" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/table/glass,
+/obj/item/organ/brain,
+/obj/item/organ/heart{
+	pixel_y = 5;
+	pixel_x = 7
+	},
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
+/obj/item/reagent_containers/hypospray/combat{
+	pixel_y = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Do" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner,
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Dp" = (
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Dx" = (
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"DD" = (
+/obj/structure/table,
+/obj/machinery/light/small/directional/north,
+/obj/item/toy/plush/nukeplushie,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"DE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/mineral/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"DG" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"DP" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"DT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"DW" = (
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-6"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"DZ" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Eb" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/obj/effect/overlay/coconut,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Eh" = (
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ek" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"En" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Eo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"Ep" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Eq" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Et" = (
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/turf/closed/wall/mineral/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Ev" = (
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"EA" = (
+/obj/structure/cable,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "ruinsholo"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "ruinsbay"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"EF" = (
+/obj/structure/chair/stool/bar,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"EI" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2"
+	},
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"EQ" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"ES" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/research_notes/loot/genius,
+/obj/item/research_notes/loot/genius{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/circuitboard/mecha/durand/peripherals,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Fa" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Fd" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Dormitory"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Fe" = (
+/obj/structure/cable{
+	icon_state = "6-9"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Fm" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over,
+/mob/living/simple_animal/hostile/syndicate/melee/sword,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Fn" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/shotgun/toy/crossbow,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Ft" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Fu" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"FA" = (
+/obj/structure/chair/sofa/corner{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"FL" = (
+/obj/structure/flora/tree/palm{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"FO" = (
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"FS" = (
+/obj/structure/railing,
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Gb" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Gi" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 6;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"Go" = (
+/obj/structure/flora/tree/palm{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"GB" = (
+/obj/machinery/vending/dinnerware,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"GC" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/robustmore_drinkfoods{
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"GD" = (
+/obj/structure/chair/sofa/left,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"GG" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "syndiecrash";
+	name = "Blast Shutters"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"GI" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"GJ" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 9;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"GM" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Hg" = (
+/obj/structure/mecha_wreckage/mauler,
+/turf/open/floor/mech_bay_recharge_floor/airless,
+/area/ruin/jungle/syndifort)
+"Hi" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 3.9
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 1;
+	pixel_y = -1
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Hk" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort/jerry)
+"Hm" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Hq" = (
+/mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Ht" = (
+/obj/structure/table/wood/bar,
+/obj/item/kitchen/knife/butcher,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Hu" = (
+/obj/machinery/light/small/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/industrial/fire{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/closet{
+	anchored = 1;
+	icon_door = "eng_tool";
+	icon_state = "eng"
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate{
+	name = "syndicate toolbox";
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/stack/cable_coil/random,
+/obj/item/stack/cable_coil/random,
+/obj/item/stack/cable_coil/random,
+/obj/item/storage/belt/utility/chief{
+	name = "\improper Foreman's toolbelt"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Hy" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"HB" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/ranged/smg/space/stormtrooper,
+/obj/machinery/turretid{
+	pixel_x = -29;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"HF" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"HI" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"HK" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 4
+	},
+/turf/open/floor/engine/hull,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"HQ" = (
+/obj/machinery/rnd/server,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"HS" = (
+/obj/structure/flora/tree/palm{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/obj/effect/overlay/coconut,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"HW" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"HX" = (
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/obj/machinery/power/floodlight,
+/obj/structure/cable{
+	icon_state = "0-5"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ia" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ie" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"If" = (
+/obj/structure/fluff/fokoff_sign,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ii" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/catwalk/over,
+/obj/structure/fireaxecabinet{
+	dir = 8;
+	pixel_x = 32
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Ik" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Im" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Io" = (
+/obj/structure/cable{
+	icon_state = "1-10"
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ip" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Iq" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Iv" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Iy" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/water/beach/deep,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"IC" = (
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"IH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"IP" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/rust,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"IS" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/decal/cleanable/oil,
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 6
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"IY" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Jj" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Jl" = (
+/obj/machinery/mech_bay_recharge_port,
+/obj/effect/turf_decal/industrial/outline/red,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Jv" = (
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "Power Shack";
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"JC" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "scengine"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"JD" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"JS" = (
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"JU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Ka" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Kb" = (
+/obj/structure/cable{
+	icon_state = "1-10"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Kc" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ke" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Kf" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Ki" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -25
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Km" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood,
+/obj/item/clothing/under/syndicate/cybersun{
+	pixel_x = 4
+	},
+/obj/item/clothing/under/syndicate/cybersun{
+	pixel_x = -4
+	},
+/obj/item/clothing/head/soft/cybersun{
+	pixel_y = 5
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/carpet/purple,
+/area/ruin/jungle/syndifort)
+"Ku" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"Kv" = (
+/obj/structure/flora/ausbushes/stalkybush,
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"KD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"KN" = (
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"KO" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"KU" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Lb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Lc" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	desc = "A turret built with substandard parts and run down further with age. Still capable of delivering lethal lasers to the odd space carp, but not much else.";
+	dir = 8;
+	faction = list("Syndicate","pirate");
+	lethal_projectile = /obj/projectile/beam/weak/penetrator;
+	lethal_projectile_sound = 'sound/weapons/plasma_cutter.ogg';
+	name = "laser turret"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"Li" = (
+/obj/machinery/door/airlock/wood/glass{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Lw" = (
+/turf/open/floor/engine/hull,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Lx" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"LF" = (
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/scrubber,
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/button/door{
+	dir = 1;
+	id = "syndiecrash hyena";
+	name = "thruster doors";
+	pixel_y = -21
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"LI" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"LJ" = (
+/obj/structure/flora/tree/palm{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"LM" = (
+/obj/structure/table,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/item/modular_computer/laptop,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"LT" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/window/eastright{
+	name = "Engine Access"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "syndiecrash hyena"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"LW" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "syndiecrash kantatsu"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"LX" = (
+/obj/machinery/power/port_gen/pacman/super,
+/obj/effect/turf_decal/industrial/outline,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"LZ" = (
+/obj/structure/table,
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/item/storage/toolbox/syndicate/empty,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Md" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Mf" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Mi" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Mq" = (
+/obj/structure/sink{
+	pixel_x = 9;
+	pixel_y = 18
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"Mu" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/lightreplacer,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"Mv" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Mw" = (
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = -7
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"My" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"MA" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"MJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"MM" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"MN" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"MR" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 9;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"MS" = (
+/obj/machinery/light/small/directional/east,
+/obj/machinery/smartfridge/food,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Ne" = (
+/obj/structure/cable{
+	icon_state = "6-9"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Nf" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/window/eastleft{
+	name = "Engine Access"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "syndiecrash hyena"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Nj" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Nq" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/camera/autoname,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Nw" = (
+/obj/machinery/computer/rdconsole/robotics{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Ny" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"NJ" = (
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"NK" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"NQ" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"NS" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"NT" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Oi" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/footprints,
+/mob/living/simple_animal/hostile/cat_butcherer,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Oo" = (
+/obj/structure/safe/floor{
+	number_of_tumblers = 3
+	},
+/obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"Or" = (
+/obj/structure/table/wood/bar,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Ot" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Crew Quarters"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Oz" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"OC" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/floodlight,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"OG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/drinks/bottle/whiskey{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/storage/fancy/cigarettes/cigars/cohiba{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/lighter{
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/obj/structure/table/wood,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"OI" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"OL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"OP" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"OS" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Pd" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/comfy/teal{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort)
+"Pg" = (
+/obj/structure/table/optable,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/mob_spawn/human/corpse/syndicatestormtrooper,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Pj" = (
+/obj/structure/table/wood/fancy,
+/obj/item/pizzabox/meat,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Pv" = (
+/obj/machinery/light/directional/north,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Py" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Pz" = (
+/obj/machinery/computer/mech_bay_power_console/retro{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/outline/red,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"PD" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"PH" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"PM" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"PN" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"PP" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Qa" = (
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Qc" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/storage/box/drinkingglasses,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Qe" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/syndicate/melee/spacebattle,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"Qy" = (
+/obj/machinery/power/floodlight,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Qz" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/rust,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"QB" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/corner_techfloor_grid{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"QK" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
+	dir = 1
+	},
+/obj/machinery/light/directional/east,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"QM" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"QO" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"QQ" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/light/small/directional/east,
+/obj/item/storage/bag/tray,
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_y = 7;
+	pixel_x = 1
+	},
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/kitchen/rollingpin,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"QT" = (
+/obj/machinery/atmospherics/components/binary/pump/layer2{
+	dir = 4;
+	name = "Input to Air"
+	},
+/obj/machinery/atmospherics/components/binary/pump/layer4{
+	dir = 4;
+	name = "Input to Fuel"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"QU" = (
+/obj/structure/table,
+/obj/item/stack/sheet/mineral/plasma/twenty{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/wrench,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"QW" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning/corner,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "scengine"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Rb" = (
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Rq" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/item/clothing/mask/fakemoustache,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "syndiecrash kantatsu"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"RI" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"RM" = (
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable/yellow{
+	icon_state = "4-9"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"RY" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Sf" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"Sp" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/rack,
+/obj/structure/sign/poster/contraband/masked_men{
+	pixel_y = 32
+	},
+/obj/item/storage/box/syndie_kit/chameleon/broken,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Sr" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"St" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Sz" = (
+/obj/machinery/atmospherics/pipe/simple/green/hidden{
+	dir = 6
+	},
+/obj/machinery/atmospherics/components/binary/pump/layer4{
+	dir = 8;
+	name = "Input to Waste"
+	},
+/obj/effect/decal/cleanable/oil,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"SB" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"SC" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"SD" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"SG" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"SH" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"SN" = (
+/obj/structure/table/wood,
+/obj/item/storage/fancy/cigarettes/cigpack_carp{
+	pixel_y = 7;
+	pixel_x = 9
+	},
+/obj/item/lighter{
+	pixel_y = -4
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"SQ" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"SW" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Tf" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ty" = (
+/obj/structure/table/wood/bar,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Tz" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 6;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging."
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/jungle/syndifort/jerry)
+"TA" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"TB" = (
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"TL" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"TM" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"TQ" = (
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/obj/structure/cable{
+	icon_state = "1-10"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"TT" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"TV" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"TW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"TX" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"TY" = (
+/turf/open/floor/plating/rust,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ue" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Uh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/toilet{
+	dir = 8;
+	pixel_x = 8
+	},
+/obj/structure/curtain,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort)
+"Ul" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Ut" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Uv" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/corner/opaque/syndiered/border{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort/jerry)
+"UH" = (
+/obj/structure/flora/tree/palm{
+	icon_state = "palm2";
+	pixel_x = -1
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"UT" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"UU" = (
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Ve" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = -14;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Vj" = (
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Vl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Vm" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Vt" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Vu" = (
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Vv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Vz" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"VS" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"VT" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"VW" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 10;
+	pixel_y = 15
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"VX" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = -14;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Wi" = (
+/obj/structure/flora/ausbushes/palebush,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Wy" = (
+/turf/open/floor/plating/rust{
+	light_range = 2
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"WE" = (
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"WF" = (
+/obj/effect/decal/cleanable/oil/streak,
+/obj/effect/turf_decal/box,
+/obj/effect/turf_decal/spline/fancy/transparent/grey{
+	dir = 5
+	},
+/obj/structure/sign/poster/contraband/smoke{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"WM" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"WN" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/floodlight,
+/turf/open/floor/plating/wasteplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"WU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/item/gun/ballistic/automatic/pistol/APS,
+/turf/open/floor/wood,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"WW" = (
+/obj/effect/turf_decal/trimline/opaque/bar/filled/warning,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Xa" = (
+/obj/machinery/light/small/directional/north,
+/obj/machinery/smartfridge/chemistry/preloaded,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Xf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Xj" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/table/glass,
+/obj/item/documents/syndicate,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Xp" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Xz" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/syndifort)
+"XC" = (
+/obj/machinery/power/floodlight,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"XT" = (
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"XW" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Ym" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Yo" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Yw" = (
+/obj/machinery/power/floodlight,
+/obj/structure/cable,
+/turf/open/floor/plating/grass/beach/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"YD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/item/wrench/syndie,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"YE" = (
+/obj/machinery/light/small/directional/west,
+/obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"YH" = (
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet)
+"YM" = (
+/obj/structure/table/wood/bar,
+/obj/item/reagent_containers/food/snacks/meat/steak/chicken,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"YN" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"YP" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"YQ" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"YR" = (
+/obj/effect/turf_decal/radiation/white,
+/obj/effect/turf_decal/industrial/outline,
+/obj/effect/turf_decal/radiation/white,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/port_gen/pacman/mrs,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"YV" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/asteroid/sand,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"YZ" = (
+/obj/structure/cable,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 8;
+	id = "ruinsholo"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "ruinsbay"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Zb" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Zc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/circuitboard/mecha/gygax/main,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort)
+"Zd" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"Zl" = (
+/obj/structure/bed,
+/obj/structure/curtain/cloth/fancy,
+/obj/item/bedsheet/black,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"Zx" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash H"
+	})
+"Zz" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust{
+	layer = 2.01
+	},
+/turf/open/floor/carpet/blue{
+	baseturfs = /turf/open/floor/plating/beach/sand
+	},
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"ZB" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ZC" = (
+/obj/machinery/light/small/directional/south,
+/obj/structure/chair/comfy/teal{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ZI" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/turf/open/floor/plasteel/white,
+/area/ruin/jungle/syndifort{
+	name = "Syndicate Crash K"
+	})
+"ZJ" = (
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/turf/open/floor/wood/yew,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"ZY" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+
+(1,1,1) = {"
+Ev
+lV
+lV
+Ev
+lV
+lV
+iU
+lV
+lV
+xk
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+DP
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+nr
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+nr
+lV
+Ev
+lV
+lV
+DP
+Ev
+lV
+lV
+Ev
+lV
+Ev
+lV
+"}
+(2,1,1) = {"
+Ev
+lV
+xk
+lV
+DP
+lV
+lV
+lV
+Ip
+lV
+lV
+Dp
+Dp
+lV
+xk
+lV
+lV
+lV
+lV
+lV
+lV
+nr
+Ev
+Ev
+Ev
+Ev
+Ip
+Ev
+lV
+lV
+nr
+lV
+lV
+Ev
+Ev
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+nr
+nr
+lV
+Ev
+lV
+Ip
+lV
+lV
+lV
+lV
+"}
+(3,1,1) = {"
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+DP
+lV
+lV
+lV
+Dp
+sY
+Dp
+Dp
+lV
+lV
+lV
+xk
+lV
+lV
+Ev
+Ev
+Ft
+SW
+Ev
+dB
+Ev
+lV
+lV
+Dp
+TX
+lV
+PP
+lV
+lV
+Ev
+lV
+iU
+oj
+Ev
+lV
+lV
+PP
+Ev
+PP
+Ev
+lV
+lV
+iU
+lV
+DP
+"}
+(4,1,1) = {"
+lV
+DP
+xk
+lV
+lV
+iU
+lV
+lV
+lV
+Dp
+TX
+Wi
+bq
+bq
+TX
+Dp
+lV
+lV
+lV
+lV
+Ev
+Ip
+bq
+Ev
+Ev
+VX
+Ev
+Ev
+lV
+lV
+xk
+lV
+oj
+VW
+DP
+DP
+xk
+lV
+PP
+lV
+lV
+lV
+Eb
+lV
+DP
+lV
+lV
+lV
+iU
+iU
+lV
+lV
+"}
+(5,1,1) = {"
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Dp
+vr
+fk
+bq
+bq
+Dp
+lV
+Ev
+lV
+lV
+Ev
+Ev
+wv
+Ip
+bq
+Ev
+wv
+lV
+PP
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Ip
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+iU
+iU
+lV
+"}
+(6,1,1) = {"
+lV
+Ip
+lV
+DP
+lV
+DP
+lV
+lV
+lV
+lV
+lV
+Dp
+IY
+YN
+Dp
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+Ev
+fy
+Ev
+dB
+lV
+PP
+lV
+PM
+PM
+PM
+Ev
+Ev
+Ev
+lV
+lV
+lV
+PM
+PM
+PM
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+wh
+lV
+lV
+lV
+"}
+(7,1,1) = {"
+xk
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+DP
+lV
+lV
+iU
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+PM
+aJ
+PM
+UH
+wv
+lV
+lV
+lV
+Ev
+DP
+sH
+PM
+Ev
+lV
+lV
+PP
+lV
+lV
+lV
+iU
+iU
+xk
+Ev
+"}
+(8,1,1) = {"
+lV
+Ev
+lV
+xk
+iU
+lV
+iU
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+xk
+iU
+lV
+lV
+Ev
+lV
+nr
+iU
+lV
+lV
+lV
+UH
+Ip
+Ev
+Ev
+WE
+Ve
+Ev
+wv
+lV
+xk
+Ev
+Ev
+Ev
+Wy
+lv
+PM
+Ip
+lV
+PP
+lV
+lV
+lV
+iU
+lV
+iU
+lV
+lV
+"}
+(9,1,1) = {"
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+iU
+iU
+lV
+lV
+lV
+lV
+lV
+iU
+lV
+lV
+TX
+Dp
+Ev
+Ev
+HX
+Io
+Ev
+Ip
+Ev
+lV
+xk
+lV
+lV
+Ev
+Ev
+Ev
+DP
+oK
+DP
+Ev
+lV
+lV
+iU
+lV
+lV
+lV
+lV
+lV
+lV
+"}
+(10,1,1) = {"
+lV
+lV
+lV
+Ev
+Ev
+Ip
+Ev
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+DP
+Ev
+Ip
+Ev
+xc
+Ev
+lV
+Ev
+lV
+lV
+Ev
+Ev
+Ev
+lV
+lV
+lV
+Ev
+Ev
+OC
+Ev
+Ev
+lV
+lV
+PP
+lV
+Ev
+lV
+Kv
+lV
+Ev
+"}
+(11,1,1) = {"
+Ev
+xk
+Ev
+PM
+PM
+PM
+IY
+Ev
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+iU
+nr
+lV
+Ev
+Ev
+PM
+PM
+PM
+Dx
+Ev
+Ym
+iT
+iT
+iT
+uG
+iT
+iT
+iT
+Ym
+lV
+lV
+Ym
+xz
+Ev
+UH
+Ev
+lV
+PP
+lV
+lV
+lV
+lV
+DP
+lV
+"}
+(12,1,1) = {"
+lV
+lV
+Ev
+SQ
+MR
+TY
+bq
+DP
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+iU
+lV
+lV
+lV
+Ev
+Ev
+PM
+Sf
+of
+bq
+bq
+Ym
+QW
+JC
+JC
+CN
+JC
+LW
+Rq
+NS
+Ym
+Ym
+Ym
+DP
+Oz
+Ev
+Ev
+lV
+lV
+PP
+lV
+Ev
+lV
+lV
+Ev
+"}
+(13,1,1) = {"
+lV
+lV
+lV
+PM
+nd
+Ev
+Ev
+lV
+Ev
+Ev
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+Dp
+Ev
+Ev
+PM
+qO
+Dx
+bq
+bq
+Ym
+Nq
+rr
+rr
+LZ
+rr
+rr
+rr
+Ag
+cZ
+Cg
+Ym
+Ev
+QM
+fy
+Ev
+lV
+lV
+PP
+lV
+Ip
+Ev
+DP
+Ip
+"}
+(14,1,1) = {"
+Ev
+lV
+Ev
+DP
+Bb
+zX
+gC
+Ev
+Ev
+bq
+Ev
+lV
+Ev
+DP
+Ev
+lV
+Ev
+lV
+Ev
+Ev
+Ev
+Ev
+IY
+mW
+Ci
+bq
+IY
+bq
+zW
+qF
+vS
+Iv
+df
+no
+sq
+Im
+wU
+SD
+AB
+Ym
+yy
+Ev
+ZY
+fy
+Ev
+lV
+iU
+lV
+lV
+nU
+lV
+Ev
+"}
+(15,1,1) = {"
+lV
+lV
+lV
+lV
+nd
+Ev
+Ev
+lV
+lV
+Ev
+zA
+Ev
+Ev
+Vt
+lV
+lV
+lV
+Ev
+Ev
+Ev
+Ip
+Ev
+Ev
+Ev
+CV
+bq
+bq
+bq
+Et
+Rb
+QU
+xf
+aj
+rl
+bD
+Vz
+pc
+CB
+kG
+Ym
+an
+vW
+nd
+Ev
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+"}
+(16,1,1) = {"
+lV
+Ev
+lV
+lV
+nd
+hS
+hS
+hS
+hS
+hS
+Ev
+Ev
+lV
+lV
+iU
+lV
+PM
+PM
+PM
+Ev
+Ev
+Ev
+Ev
+xc
+Ev
+bq
+IY
+bq
+iq
+wf
+Cv
+IS
+Ym
+sy
+Ym
+WF
+ih
+uV
+Ym
+yy
+yy
+Ev
+nd
+Ev
+Ev
+lV
+PP
+DP
+Ev
+Ip
+lV
+lV
+"}
+(17,1,1) = {"
+lV
+lV
+lV
+Ev
+MA
+hS
+bY
+WU
+Lb
+hS
+Ev
+DP
+Ev
+lV
+lV
+lV
+PM
+Lc
+pF
+Ev
+Ev
+Ev
+Ev
+Nj
+Ev
+zW
+zW
+zW
+Ym
+Ym
+Ym
+Ym
+NS
+kh
+NS
+Ym
+Ym
+Ym
+nO
+EI
+fm
+Ip
+nd
+xS
+PM
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+"}
+(18,1,1) = {"
+Ev
+lV
+Ev
+Ip
+nd
+hS
+Ut
+Ut
+Ut
+hS
+Ev
+Ev
+lV
+nr
+lV
+Ev
+PM
+Ev
+IP
+rm
+pF
+bq
+bq
+nd
+zW
+zW
+Nw
+vz
+En
+Do
+aP
+Ym
+gD
+Ik
+fu
+ql
+PN
+Ym
+Ev
+od
+Sr
+yy
+TA
+Hk
+PM
+lV
+lV
+lV
+lV
+lV
+Ev
+Ip
+"}
+(19,1,1) = {"
+lV
+VW
+lV
+Ev
+nd
+hS
+Dd
+nf
+OG
+hS
+lV
+Ev
+lV
+lV
+lV
+Ev
+Ev
+Ip
+Ev
+Ev
+JD
+bq
+bq
+si
+zW
+Xa
+du
+En
+En
+cg
+ju
+Ym
+aG
+ZI
+wO
+fu
+HW
+Ym
+vP
+SN
+gM
+Ev
+XT
+PM
+SQ
+Mi
+mE
+lV
+lV
+Ev
+Ev
+Ev
+"}
+(20,1,1) = {"
+lV
+lV
+lV
+lV
+nd
+hS
+hS
+VS
+hS
+hS
+lV
+lV
+Ev
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+bq
+lR
+IY
+si
+zW
+Pg
+Oi
+ZB
+OI
+cg
+ZC
+Ym
+Sp
+Iq
+xe
+mB
+aD
+EA
+ki
+ki
+ZJ
+Kb
+rm
+lN
+Ev
+ki
+pM
+Ev
+Ev
+cA
+Ev
+lV
+"}
+(21,1,1) = {"
+Ev
+lV
+iU
+lV
+xz
+EQ
+hS
+hb
+hS
+Ev
+Ev
+Ev
+lV
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+Ev
+IY
+Fu
+OP
+zW
+pb
+PH
+En
+vF
+KD
+GC
+Ym
+qK
+vU
+NJ
+pQ
+Ny
+yM
+xM
+TQ
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+Ev
+Ev
+"}
+(22,1,1) = {"
+lV
+lV
+lV
+lV
+Ev
+DZ
+bu
+nd
+SC
+Ev
+Ev
+lV
+Ev
+lV
+nr
+lV
+nr
+Ev
+Ip
+Ev
+Ev
+FL
+bq
+nd
+zW
+zW
+Dl
+wK
+Xj
+QK
+jh
+Ot
+qq
+Zb
+fu
+Ul
+WW
+YZ
+ki
+ki
+Fe
+Dp
+Dp
+ki
+ki
+ki
+ki
+ki
+ki
+Ev
+nG
+lV
+"}
+(23,1,1) = {"
+lV
+Ev
+lV
+lV
+lV
+Ev
+xz
+si
+bq
+bq
+Ev
+Ev
+lV
+lV
+iU
+iU
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+nd
+Ev
+zW
+zW
+zW
+zW
+Ym
+Ym
+Ym
+Eq
+NJ
+wO
+Ul
+qg
+Ym
+nq
+ki
+Fa
+Py
+po
+xS
+xS
+ki
+Hi
+Ev
+If
+lV
+Ev
+lV
+"}
+(24,1,1) = {"
+lV
+lV
+lV
+lV
+lV
+Ev
+bq
+RY
+Ev
+bq
+Ev
+Ev
+Bv
+iU
+iU
+iU
+iU
+lV
+lV
+Ev
+Ev
+DP
+Ev
+Kc
+Mv
+Ev
+Ev
+Ev
+Ch
+Ch
+Ch
+af
+Ep
+NJ
+fu
+Ul
+fu
+Ym
+FO
+ki
+XW
+Dp
+Md
+xd
+xS
+Xp
+Zd
+lV
+lV
+Ev
+lV
+lV
+"}
+(25,1,1) = {"
+DP
+lV
+lV
+lV
+lV
+Ev
+Ev
+JD
+DP
+Ev
+Ev
+Ev
+Bv
+Nf
+sR
+LT
+Bv
+iU
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+Ne
+DP
+Ev
+DP
+Ch
+Ch
+Ym
+BQ
+YP
+YP
+xm
+id
+Ym
+Ka
+Ka
+ev
+YV
+MN
+xS
+xS
+lV
+lV
+Ev
+Kv
+lV
+lV
+lV
+"}
+(26,1,1) = {"
+Ev
+lV
+xk
+lV
+Ev
+Ip
+bq
+Qy
+Gb
+Ev
+DP
+bq
+Bv
+NT
+xU
+bG
+Bv
+eL
+Lw
+Lw
+Lw
+Lw
+HK
+Lw
+eL
+Ch
+Oz
+Ev
+Ch
+DP
+kE
+zW
+zW
+zW
+zW
+qp
+zW
+zW
+lV
+lV
+LJ
+Dp
+XC
+Dp
+lV
+Kv
+lV
+fy
+lV
+lV
+lV
+Kv
+"}
+(27,1,1) = {"
+lV
+lV
+lV
+Dp
+Ev
+Ev
+Ev
+bq
+xz
+Ev
+bq
+bq
+Bv
+Hu
+jQ
+ae
+Bv
+Bv
+Bv
+GG
+Bv
+Bv
+CS
+Bv
+Bv
+Bv
+PD
+Ch
+Ch
+Ev
+Ch
+Ch
+zW
+Fn
+Qa
+kV
+LM
+zW
+Kv
+lV
+lV
+Dp
+TX
+lV
+lV
+lV
+lV
+Ev
+Ip
+lV
+lV
+lV
+"}
+(28,1,1) = {"
+lV
+lV
+Ev
+PM
+PM
+Ev
+Ev
+Ev
+Ev
+eM
+SW
+bq
+Bv
+OS
+DW
+Sz
+YE
+LF
+Bv
+yg
+pH
+gT
+xg
+am
+am
+Bv
+gX
+Ch
+Ev
+Ev
+DP
+Ch
+zW
+Zl
+Qa
+Qa
+oE
+zW
+Kv
+iU
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+lV
+Ev
+fy
+lV
+lV
+"}
+(29,1,1) = {"
+lV
+xk
+Ev
+PM
+vo
+rm
+rm
+zX
+zX
+TL
+bq
+SW
+Bv
+Ue
+YD
+RM
+Bj
+UU
+lL
+cp
+BK
+HF
+Fm
+Zx
+Zx
+pD
+Qz
+Ch
+TY
+Ev
+TY
+Ch
+zW
+DD
+oS
+Qa
+zS
+zW
+lV
+wh
+lV
+lV
+lV
+Ev
+lV
+lV
+Ip
+Ev
+Ip
+Ev
+lV
+Ev
+"}
+(30,1,1) = {"
+lV
+lV
+Ev
+PM
+PM
+TY
+Ev
+Ev
+Ev
+bq
+NK
+bq
+Bv
+YR
+wC
+QT
+tN
+Dc
+Bv
+yt
+yo
+Hm
+cM
+Bv
+Bv
+Bv
+Bv
+Bv
+Ch
+bq
+Ev
+TY
+zW
+Zl
+Qa
+Qa
+Zl
+zW
+lV
+iU
+lV
+Kv
+lV
+lV
+lV
+Ev
+Ev
+HS
+lV
+Ev
+lV
+lV
+"}
+(31,1,1) = {"
+xk
+Ev
+DP
+bq
+Ev
+Ev
+Ev
+DP
+Ev
+Ev
+xz
+bq
+Bv
+Bv
+pu
+Ii
+gQ
+td
+Bv
+wx
+QB
+mp
+Hy
+Bv
+xl
+Ki
+vH
+Bv
+bq
+bq
+bq
+zW
+zW
+zW
+rB
+ik
+zW
+zW
+Kv
+lV
+lV
+Ev
+lV
+lV
+fy
+Ke
+lV
+lV
+xk
+Ip
+lV
+lV
+"}
+(32,1,1) = {"
+lV
+Ev
+Ev
+Ip
+Ev
+Ev
+Ev
+Ev
+Ev
+lV
+Ev
+NK
+bq
+eL
+Bv
+Bv
+Bv
+WM
+Bv
+Bv
+yh
+mT
+Bv
+Bv
+zV
+JU
+kU
+Bv
+bq
+bq
+bq
+bq
+bq
+zW
+zW
+zW
+zW
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+fy
+lV
+lV
+"}
+(33,1,1) = {"
+lV
+Ev
+bq
+Ev
+bq
+Ev
+Ev
+lV
+lV
+Ev
+Ev
+xz
+bq
+SW
+Bv
+FA
+mt
+bl
+ct
+uu
+Cz
+Pj
+SH
+Bv
+Bv
+vp
+Bv
+Bv
+bq
+bq
+bq
+bq
+FL
+SB
+Ev
+Ev
+Ev
+Ev
+Ev
+lV
+lV
+lV
+iU
+lV
+lV
+Dp
+My
+lV
+Ev
+lV
+lV
+lV
+"}
+(34,1,1) = {"
+lV
+Ev
+Ev
+Ev
+DP
+Ev
+lV
+lV
+lV
+lV
+lV
+Ev
+Oz
+bq
+Mf
+zl
+yk
+cm
+Aj
+IH
+Cz
+hY
+JS
+Bv
+Lx
+GI
+VT
+Bv
+bq
+bq
+bq
+bq
+DP
+Eh
+Ev
+Ev
+Ip
+Ip
+lV
+lV
+Ev
+lV
+iU
+iz
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Kv
+"}
+(35,1,1) = {"
+lV
+lV
+DP
+Ev
+Ev
+bq
+Ip
+lV
+iU
+Kv
+lV
+lV
+nd
+Ev
+Bv
+GD
+cx
+ct
+vs
+IH
+fQ
+TT
+fB
+Bv
+Vu
+OL
+KO
+ni
+LI
+SW
+bq
+Ev
+Ev
+Zz
+Be
+Ev
+Ev
+Ev
+Ev
+lV
+Ev
+lV
+lV
+iU
+lV
+lV
+lV
+lV
+lV
+oj
+lV
+lV
+"}
+(36,1,1) = {"
+lV
+lV
+Ev
+DP
+Ev
+bq
+Ev
+lV
+iU
+iU
+tp
+tW
+DG
+ki
+Bv
+Pv
+vs
+Aj
+IH
+TW
+hc
+ur
+oD
+Fd
+KO
+TM
+zG
+Bv
+JD
+bq
+Ev
+Ev
+Mw
+CT
+Ev
+Ev
+Dp
+Ev
+Ev
+Dp
+lV
+lV
+Kv
+lV
+lV
+oj
+lV
+Ev
+Kv
+lV
+lV
+lV
+"}
+(37,1,1) = {"
+lV
+Ev
+Ev
+bq
+Ev
+Ev
+lV
+Kv
+iU
+iU
+FS
+hK
+ki
+Ia
+gl
+Vv
+Vv
+Vv
+Vv
+Xf
+IH
+uL
+xj
+WM
+Bv
+Li
+Bv
+Bv
+Ev
+vg
+Ev
+Ev
+Zz
+Be
+bq
+bq
+Ev
+DP
+PM
+PM
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+YH
+"}
+(38,1,1) = {"
+Kv
+Ev
+Ev
+Ev
+IY
+Ev
+lV
+lV
+iU
+iU
+FS
+FO
+ki
+ki
+RI
+EF
+jY
+jY
+jY
+gp
+vs
+uL
+ix
+DE
+TV
+Cz
+TV
+RI
+Ev
+Jj
+Ev
+DP
+CT
+bq
+SW
+vN
+rm
+rm
+Gi
+PM
+Ev
+lV
+lV
+lV
+Kv
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+"}
+(39,1,1) = {"
+lV
+Ev
+Ip
+Ev
+DP
+Ev
+lV
+lV
+iU
+Kv
+Iy
+kP
+kP
+kP
+RI
+Or
+lO
+rd
+YM
+RI
+Li
+RI
+RI
+RI
+nw
+St
+lu
+RI
+Ev
+bq
+NQ
+rm
+zX
+hI
+iJ
+IY
+bq
+Ev
+PM
+PM
+Ev
+lV
+xk
+iU
+lV
+lV
+lV
+Kv
+oj
+lV
+Ev
+lV
+"}
+(40,1,1) = {"
+lV
+Ev
+DP
+FL
+bq
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+Kv
+lV
+RI
+vs
+vs
+ld
+CR
+Ie
+ct
+ct
+GB
+RI
+to
+Cz
+TV
+RI
+Ev
+Ev
+Ev
+bq
+bq
+QO
+SW
+SW
+bq
+IY
+Ev
+Ev
+lV
+lV
+lV
+iU
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+"}
+(41,1,1) = {"
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+Ev
+lV
+lV
+Ev
+lV
+iU
+lV
+RI
+TB
+vs
+Ty
+Ty
+Ht
+vs
+vs
+gK
+RI
+TV
+tC
+DE
+RI
+Ev
+bq
+DP
+bq
+IY
+bq
+eM
+bq
+bq
+Ev
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+"}
+(42,1,1) = {"
+lV
+Kv
+Ev
+PM
+PM
+bq
+Ev
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+RI
+eo
+vs
+YQ
+ct
+Vl
+ct
+MS
+RI
+RI
+RI
+RI
+RI
+Ev
+bq
+Ev
+Ev
+bq
+SW
+SW
+su
+zX
+Yw
+Ev
+Ev
+Ev
+lV
+lV
+iU
+iU
+iU
+Kv
+lV
+lV
+lV
+Kv
+lV
+Ev
+"}
+(43,1,1) = {"
+lV
+lV
+Ev
+PM
+GJ
+zX
+pF
+DP
+Ev
+Ev
+lV
+Ev
+Kv
+lV
+RI
+RI
+sk
+iV
+Qc
+QQ
+AG
+RI
+RI
+Ev
+lV
+Ev
+lV
+Ev
+bq
+Ev
+bq
+bq
+Ev
+bq
+JD
+bq
+bq
+Ev
+Ip
+Ev
+lV
+iU
+iU
+iz
+iU
+iU
+lV
+Ev
+lV
+lV
+lV
+lV
+"}
+(44,1,1) = {"
+lV
+Ev
+Ev
+PM
+UT
+bq
+JD
+bq
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+lV
+lV
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+Ev
+FL
+Ev
+bq
+Ev
+eM
+Ev
+DP
+Ev
+lV
+lV
+iU
+iU
+iU
+iU
+iU
+lV
+lV
+Ev
+lV
+lV
+lV
+"}
+(45,1,1) = {"
+lV
+Ev
+DP
+bq
+bq
+IY
+IY
+eM
+bq
+DP
+Ev
+Ev
+Ev
+lV
+lV
+Kv
+lV
+iU
+iU
+lV
+Ev
+lV
+lV
+Go
+lV
+Ev
+Ip
+Ev
+lV
+Dp
+Ev
+bq
+bq
+IY
+bq
+gX
+PM
+Ev
+lV
+Kv
+iU
+iU
+iU
+lV
+lV
+iz
+lV
+lV
+lV
+lV
+DP
+lV
+"}
+(46,1,1) = {"
+Kv
+Ev
+Ev
+bq
+bq
+bq
+bq
+BO
+ek
+bq
+Ev
+Ev
+Ev
+Ev
+Ev
+Ev
+lV
+lV
+iz
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+bq
+bq
+Ev
+Ip
+Ev
+DP
+bq
+SW
+bq
+Tz
+PM
+lV
+lV
+iU
+iU
+iU
+lV
+Ev
+lV
+iU
+lV
+oj
+lV
+lV
+lV
+lV
+"}
+(47,1,1) = {"
+lV
+Ev
+Ev
+IY
+IY
+bq
+bq
+WN
+bq
+sV
+xs
+Ev
+Ch
+Ch
+Ch
+Ev
+Ev
+lV
+lV
+lV
+lV
+Ev
+Ev
+lV
+Ev
+lV
+Ev
+Ev
+Ev
+Ev
+lV
+Ev
+bq
+SW
+UT
+PM
+PM
+lV
+iU
+iU
+iU
+lV
+Ip
+DP
+lV
+iU
+iU
+lV
+Ev
+lV
+lV
+Ev
+"}
+(48,1,1) = {"
+lV
+Ev
+Ip
+bq
+IY
+Ch
+Ch
+Ch
+Ch
+kE
+Ev
+lq
+Ch
+SB
+Ch
+Ch
+Ev
+lV
+lV
+Ev
+oj
+lV
+Ev
+lV
+Ev
+Dp
+Ev
+lV
+Kv
+Ev
+Ev
+Ev
+Ev
+bq
+bq
+Ev
+lV
+lV
+iU
+iU
+lV
+Ev
+KU
+Ev
+lV
+iU
+iU
+lV
+lV
+Ev
+lV
+lV
+"}
+(49,1,1) = {"
+lV
+lV
+Ev
+Ev
+bq
+yA
+yA
+yA
+yA
+yA
+Xz
+Jv
+Xz
+yA
+yA
+yA
+Ev
+Ev
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+Ev
+lV
+Ev
+bq
+Ev
+lV
+lV
+iU
+iU
+lV
+Ev
+DP
+Ev
+DP
+Ev
+iU
+iU
+lV
+lV
+lV
+lV
+lV
+"}
+(50,1,1) = {"
+lV
+lV
+lV
+Ev
+IY
+yA
+px
+hk
+LX
+yA
+me
+kw
+mO
+lQ
+co
+yA
+lV
+DP
+Ev
+lV
+lV
+Ev
+lV
+lV
+Ev
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+Ev
+Ev
+lV
+lV
+lV
+iz
+iU
+lV
+Ev
+Ip
+lV
+lV
+iU
+iU
+iz
+lV
+lV
+lV
+iU
+Kv
+"}
+(51,1,1) = {"
+lV
+iU
+lV
+Dp
+bq
+yA
+bW
+Ku
+AS
+yA
+Yo
+kw
+IC
+Yo
+Yo
+yA
+lW
+lW
+DP
+Ev
+lV
+lV
+Ev
+lV
+Ev
+lV
+Kv
+lV
+lV
+Ev
+Ev
+Ev
+Ev
+lV
+lV
+iU
+lV
+iU
+iU
+iU
+lV
+oj
+lV
+iU
+iU
+iU
+lV
+lV
+Ev
+lV
+lV
+lV
+"}
+(52,1,1) = {"
+lV
+lV
+lV
+Dp
+TX
+yA
+MJ
+KN
+vJ
+yA
+SG
+DT
+AE
+Yo
+hF
+bT
+Jl
+lW
+lV
+DP
+Ev
+Ev
+Ev
+Ev
+Ev
+lV
+lV
+Ev
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+iU
+Kv
+lV
+iU
+iU
+iz
+iU
+iU
+iU
+iU
+lV
+lV
+lV
+lV
+lV
+lV
+Ip
+"}
+(53,1,1) = {"
+lV
+lV
+Kv
+TX
+Dp
+yA
+Pd
+Ek
+Mu
+yA
+hF
+ym
+rG
+ES
+Yo
+Hq
+Hg
+lW
+lV
+lV
+Kv
+lV
+Ev
+Ev
+lV
+lV
+Ev
+bq
+SW
+Ev
+lV
+Kv
+lV
+lV
+lV
+lV
+lV
+lV
+iU
+iU
+iU
+iU
+iU
+iU
+lV
+lV
+lV
+Kv
+DP
+lV
+lV
+lV
+"}
+(54,1,1) = {"
+lV
+iU
+lV
+Dp
+Dp
+yA
+na
+dR
+cw
+th
+zp
+bN
+so
+Zc
+Yo
+MM
+Pz
+lW
+lV
+Kv
+lV
+lV
+Ev
+lV
+Kv
+Ev
+Ev
+bq
+Ev
+Ev
+lV
+lV
+Dp
+Dp
+bq
+Dp
+lV
+lV
+lV
+lV
+lV
+Kv
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+iU
+lV
+"}
+(55,1,1) = {"
+Kv
+lV
+oj
+lV
+Dp
+yA
+yA
+yA
+yA
+yA
+kw
+DT
+AE
+Yo
+Yo
+yA
+lW
+lW
+lV
+lV
+Ev
+lV
+Ev
+Ev
+Ev
+Ev
+bq
+Ev
+lV
+lV
+lV
+oj
+lV
+lV
+lV
+Dp
+YV
+lV
+lV
+lV
+iU
+lV
+iU
+lV
+lV
+Ev
+lV
+lV
+lV
+iU
+lV
+lV
+"}
+(56,1,1) = {"
+lV
+lV
+iU
+lV
+lV
+lW
+yJ
+fO
+jc
+nt
+xw
+Kf
+HQ
+sc
+dN
+yA
+lV
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+Ev
+Dp
+Ev
+lV
+DP
+bq
+lV
+Ev
+lV
+lV
+Ev
+lV
+IY
+Dp
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+iU
+Kv
+lV
+Ev
+"}
+(57,1,1) = {"
+lV
+lV
+lV
+lV
+lV
+lW
+Km
+tq
+dZ
+yA
+kw
+qY
+um
+um
+um
+um
+lV
+lV
+lV
+Ev
+lV
+lV
+Kv
+lV
+Ev
+lV
+wv
+Ev
+Ev
+bq
+lV
+lV
+Ev
+lV
+Ev
+lV
+lV
+Ev
+Dp
+bq
+IY
+lV
+lV
+Ev
+lV
+lV
+Ev
+lV
+iU
+lV
+lV
+lV
+"}
+(58,1,1) = {"
+lV
+iU
+lV
+iU
+lV
+lW
+bs
+iL
+Qe
+yA
+kw
+um
+HB
+jA
+Oo
+wz
+lV
+Kv
+lV
+lV
+lV
+oj
+lV
+bq
+Ev
+Ev
+bq
+Ev
+bq
+IY
+Kv
+lV
+Ev
+lV
+lV
+lV
+Ev
+Ev
+lV
+lV
+Ev
+DP
+lV
+lV
+lV
+Kv
+lV
+lV
+iU
+lV
+DP
+lV
+"}
+(59,1,1) = {"
+lV
+lV
+Kv
+lV
+lV
+lW
+Mq
+Eo
+cn
+yA
+kw
+um
+Uv
+mZ
+eG
+wz
+lV
+lV
+Ev
+Kv
+lV
+lV
+bq
+SW
+Ev
+lV
+Ev
+lV
+bq
+lV
+lV
+Ip
+Ev
+lV
+lV
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+oj
+lV
+DP
+"}
+(60,1,1) = {"
+lV
+iU
+oj
+Ev
+lV
+lW
+lW
+BH
+Uh
+yA
+Vm
+bF
+lJ
+bb
+qY
+um
+lV
+lV
+Ev
+Ev
+lV
+Ev
+bq
+Ev
+Ev
+Ev
+Go
+lV
+lV
+lV
+Ev
+lV
+lV
+Ev
+lV
+Ip
+lV
+lV
+lV
+lV
+iU
+iU
+iU
+lV
+Ip
+lV
+lV
+Ev
+lV
+iU
+lV
+lV
+"}
+(61,1,1) = {"
+lV
+Kv
+Ev
+lV
+Ip
+lV
+lW
+yA
+lW
+yA
+mJ
+um
+um
+um
+um
+lV
+lV
+lV
+lV
+Ev
+bq
+Ip
+Ev
+lV
+bq
+bq
+bq
+My
+Dp
+lV
+lV
+lV
+Ev
+lV
+DP
+lV
+lV
+Ev
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+"}
+(62,1,1) = {"
+lV
+lV
+PM
+PM
+Ev
+lV
+Ev
+Ev
+SB
+Vj
+Tf
+Ev
+SB
+Ev
+lV
+lV
+oj
+lV
+Ev
+Ev
+IY
+Ev
+Ev
+Ev
+Ev
+lV
+Ev
+mW
+bq
+Ev
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+dB
+lV
+Ev
+lV
+Ev
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+"}
+(63,1,1) = {"
+lV
+lV
+PM
+fU
+rm
+HI
+Ev
+lV
+xc
+Ev
+Ev
+DP
+Ev
+lV
+lV
+lV
+lV
+Ip
+bq
+Ev
+bq
+bq
+IY
+bq
+Ev
+Ev
+fy
+Ev
+mW
+bq
+lV
+Ev
+lV
+lV
+DP
+lV
+iU
+lV
+DP
+Ev
+lV
+Ip
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+"}
+(64,1,1) = {"
+lV
+oj
+PM
+PM
+PM
+Ev
+GM
+rm
+Tf
+Ev
+bq
+Ev
+lV
+Ev
+lV
+Ev
+Ev
+Ev
+lV
+Ev
+lV
+Ev
+bq
+bq
+Ev
+lV
+wZ
+lV
+lV
+bq
+lV
+lV
+Ev
+DP
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+lV
+oj
+lV
+Ev
+lV
+lV
+Ev
+"}
+(65,1,1) = {"
+lV
+lV
+lV
+lV
+lV
+lV
+Ev
+DP
+lV
+Ev
+DP
+IY
+Ev
+Ev
+Ev
+Ev
+dB
+lV
+lV
+lV
+lV
+lV
+lV
+eK
+lV
+lV
+Ev
+Ft
+lV
+lV
+DP
+lV
+lV
+Ev
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+iU
+VW
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+"}
+(66,1,1) = {"
+Ev
+lV
+lV
+Kv
+lV
+lV
+Kv
+lV
+lV
+lV
+Ev
+Ev
+Ev
+bq
+Ev
+Ev
+Ev
+lV
+lV
+lV
+Ev
+lV
+Kv
+lV
+bq
+lV
+Ev
+bq
+lV
+lV
+lV
+lV
+DP
+lV
+lV
+lV
+lV
+lV
+lV
+Dp
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+VW
+lV
+lV
+lV
+"}
+(67,1,1) = {"
+lV
+lV
+lV
+iU
+lV
+iU
+lV
+Kv
+iU
+lV
+Ev
+Ev
+lV
+Ev
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+Ev
+bq
+lV
+lV
+DP
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+iU
+lV
+lV
+lV
+Ev
+DP
+lV
+Kv
+lV
+lV
+lV
+lV
+lV
+DP
+Ev
+"}
+(68,1,1) = {"
+lV
+Ev
+oj
+lV
+Kv
+Go
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+DP
+lV
+lV
+DP
+lV
+lV
+lV
+DP
+lV
+Kv
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Kv
+lV
+DP
+Ev
+lV
+lV
+lV
+Ev
+lV
+Ev
+lV
+lV
+lV
+lV
+Ev
+lV
+lV
+Ev
+DP
+Ev
+"}
+(69,1,1) = {"
+Ev
+lV
+lV
+DP
+Ev
+lV
+lV
+Ev
+lV
+lV
+lV
+Ev
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+DP
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+lV
+Kv
+lV
+lV
+lV
+Ev
+DP
+lV
+Ev
+lV
+lV
+Ev
+lV
+lV
+Ev
+Ev
+lV
+lV
+lV
+lV
+DP
+Ev
+lV
+"}

@@ -494,8 +494,8 @@
 /obj/effect/turf_decal/corner/transparent/purple/mono,
 /obj/machinery/button/door{
 	dir = 1;
-	id = "warship_engines";
-	name = "Engine shutters";
+	id = "rt_wind_science";
+	name = "Windows";
 	pixel_y = -24
 	},
 /obj/item/stock_parts/cell/high/plus,
