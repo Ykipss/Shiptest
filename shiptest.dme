@@ -3470,6 +3470,8 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "mod_celadon\code\game\items\fuelcell.dm"
+#include "mod_celadon\code\game\objects\machinery\reactor.dm"
 #include "mod_celadon\code\game\objects\structures\eclipse_decoration.dm"
 #include "mod_celadon\code\modules\mob\dead\new_player\sprite_accessories\ipc.dm"
 // END_INCLUDE
