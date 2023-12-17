@@ -65,3 +65,9 @@
 	id = "beach_float_resort"
 	description = "A hidden paradise on the beach"
 	suffix = "beach_float_resort.dmm"
+
+/datum/map_template/ruin/beachplanet/syndiecrash
+	name = "Syndie fleet crash"
+	id = "beach_syndie_crash"
+	description = "Syndicate fleet crash site"
+	suffix = "beach_syndie_crash.dmm"

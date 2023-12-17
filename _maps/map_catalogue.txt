@@ -507,6 +507,11 @@ Find the key for using this catalogue in "map_catalogue_key.txt"
 		Size = (x = 38)(y = 52)(z = 1)
 		Tags = "No Combat", "Minor Loot", "Liveable"
 
+		File Name = "_maps\RandomRuins\BeachRuins\beach_syndie_crash.dmm"
+		Size = (x = 69)(y = 52)(z = 1)
+		Tags = ""Boss Combat Challenge", "Major Loot", "Antag Gear" 
+
+
 	Deprecated:
 		File Name = "_maps\RandomRuins\deprecated\jungle_surface_tumblr_sexyman.dmm"
 		Size = (x = 30)(y = 20)(z = 1)
