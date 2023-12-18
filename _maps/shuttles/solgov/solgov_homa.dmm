@@ -37,7 +37,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/mob/living/simple_animal/hostile/retaliate/goose,
+/mob/living/simple_animal/hostile/retaliate/goose{
+	name = "Khasir"
+	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
 	},
@@ -295,6 +297,7 @@
 /obj/machinery/airalarm/directional/east{
 	pixel_x = 30
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
 /turf/open/floor/plating,
 /area/ship/crew)
 "jr" = (
@@ -331,6 +334,10 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
+"jW" = (
+/obj/structure/sign/poster/contraband/ambrosia_vulgaris,
+/turf/closed/wall/mineral/wood,
+/area/ship/crew/canteen)
 "kg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -389,6 +396,7 @@
 	pixel_x = 11;
 	pixel_y = -17
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "lm" = (
@@ -965,6 +973,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Ca" = (
@@ -1020,9 +1029,6 @@
 /area/ship/bridge)
 "Fg" = (
 /obj/structure/closet/secure_closet/bar,
-/obj/item/gun/ballistic/automatic/assault/ak47,
-/obj/item/ammo_box/magazine/ak47,
-/obj/item/ammo_box/magazine/ak47,
 /turf/open/floor/plating,
 /area/ship/crew)
 "FI" = (
@@ -1143,6 +1149,9 @@
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
+"Ik" = (
+/turf/closed/wall/r_wall/rust,
+/area/ship/engineering)
 "Iu" = (
 /obj/machinery/light_switch{
 	dir = 4;
@@ -1156,7 +1165,11 @@
 /turf/open/space/basic,
 /area/ship/cargo)
 "Jk" = (
-/turf/open/floor/carpet/green,
+/obj/machinery/hydroponics/soil,
+/obj/item/seeds/ambrosia,
+/obj/item/seeds/ambrosia,
+/obj/item/seeds/ambrosia,
+/turf/open/floor/plating/dirt,
 /area/ship/bridge)
 "Jr" = (
 /obj/structure/catwalk,
@@ -1182,6 +1195,9 @@
 	pixel_x = -8;
 	pixel_y = 9
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "JP" = (
@@ -1276,10 +1292,14 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
+"Lz" = (
+/turf/closed/wall/r_wall/rust,
+/area/ship/security/armory)
 "LC" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden{
 	dir = 5
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
 /turf/open/floor/plating,
 /area/ship/crew)
 "LG" = (
@@ -1338,6 +1358,9 @@
 	dir = 8;
 	pixel_x = 30
 	},
+/obj/item/disk/design_disk/ammo_n762,
+/obj/item/disk/design_disk/ammo_1911,
+/obj/item/disk/design_disk/ammo_c10mm,
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "MA" = (
@@ -1434,6 +1457,7 @@
 /area/ship/crew)
 "RN" = (
 /obj/structure/catwalk,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "RO" = (
@@ -1455,6 +1479,8 @@
 	pixel_y = 20;
 	pixel_x = -12
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia,
 /turf/open/floor/plating,
 /area/ship/crew)
 "Sh" = (
@@ -1743,6 +1769,9 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
+"ZT" = (
+/turf/closed/wall/r_wall/rust,
+/area/ship/bridge)
 
 (1,1,1) = {"
 SR
@@ -1812,7 +1841,7 @@ ad
 ad
 ZA
 SR
-Ae
+Ik
 TP
 BI
 TP
@@ -1829,7 +1858,7 @@ SR
 SR
 Cm
 KZ
-kU
+ZT
 Mc
 ij
 Ju
@@ -1861,7 +1890,7 @@ zE
 VT
 yl
 AY
-hs
+jW
 mS
 LC
 AJ
@@ -2170,7 +2199,7 @@ SR
 SR
 SR
 tk
-QH
+Lz
 HS
 tk
 SR

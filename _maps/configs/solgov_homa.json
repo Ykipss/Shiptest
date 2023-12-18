@@ -4,7 +4,8 @@
 	"prefix": "EUSF",
 	"namelists": [
 		"SPACE",
-		"SOLGOV"
+		"SOLGOV",
+		"WEAPONS"
 	],
 	"map_short_name": "Homa-class",
 	"map_path": "_maps/shuttles/solgov/solgov_homa.dmm",
@@ -17,20 +18,20 @@
 	"limit": 1,
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/captain/aipirate",
+			"outfit": "/datum/outfit/job/assistant",
 			"officer": true,
 			"slots": 1
 		},
 		"Ship Engineer-Miner": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/assistant",
 			"slots": 2
 		},
 		"Ship's Doctor": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/assistant",
 			"slots": 1
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/assistant",
 			"slots" : 2
 		}
 	},
