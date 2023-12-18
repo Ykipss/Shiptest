@@ -53,10 +53,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"an" = (
-/obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/plating/grass/beach,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "aD" = (
 /obj/effect/turf_decal/trimline/opaque/bar/filled/warning,
 /obj/structure/cable{
@@ -397,7 +393,7 @@
 /obj/structure/flora/ausbushes/sparsegrass{
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "eG" = (
 /obj/machinery/fax,
@@ -438,7 +434,7 @@
 	layer = 3.1
 	},
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "fu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -478,7 +474,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/ruin/jungle/syndifort/jerry)
 "gl" = (
 /obj/machinery/door/airlock/wood/glass,
@@ -523,7 +519,7 @@
 	dir = 1
 	},
 /obj/structure/destructible/tribal_torch/lit,
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "gQ" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible/layer2{
@@ -1124,7 +1120,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/structure/table/wood,
 /obj/item/binoculars,
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "nr" = (
 /obj/structure/flora/ausbushes/stalkybush{
@@ -1253,7 +1249,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "pu" = (
 /obj/effect/turf_decal/radiation/white,
@@ -1734,12 +1730,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash K"
 	})
-"vg" = (
-/obj/structure/cable{
-	icon_state = "4-9"
-	},
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "vo" = (
 /obj/machinery/porta_turret/syndicate/pod{
 	name = "sentry gun";
@@ -1766,7 +1756,7 @@
 /obj/structure/flora/tree/chapel{
 	name = "Дубовое"
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "vs" = (
 /turf/open/floor/wood,
@@ -1863,7 +1853,7 @@
 	pixel_x = -1
 	},
 /obj/effect/overlay/coconut,
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "wf" = (
 /obj/machinery/power/terminal,
@@ -2081,10 +2071,6 @@
 	},
 /turf/open/floor/wood/yew,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"xS" = (
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "xU" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
@@ -2187,9 +2173,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"yy" = (
-/turf/open/floor/plating/grass/beach,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "yA" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/jungle/syndifort)
@@ -2600,9 +2583,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash K"
 	})
-"Dp" = (
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "Dx" = (
 /obj/structure/cable{
 	icon_state = "5-8"
@@ -2768,7 +2748,7 @@
 /obj/structure/flora/tree/palm{
 	icon_state = "palm2"
 	},
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "EQ" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -2790,7 +2770,7 @@
 	dir = 1
 	},
 /obj/structure/destructible/tribal_torch/lit,
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Fd" = (
 /obj/structure/cable{
@@ -3304,12 +3284,6 @@
 	},
 /turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"Jj" = (
-/obj/structure/cable{
-	icon_state = "6-8"
-	},
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "Jl" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/effect/turf_decal/industrial/outline/red,
@@ -3382,7 +3356,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Kb" = (
 /obj/structure/cable{
@@ -3559,7 +3533,7 @@
 /obj/structure/flora/ausbushes/sparsegrass{
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "LM" = (
 /obj/structure/table,
@@ -3686,10 +3660,6 @@
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"My" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "MA" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3716,7 +3686,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "MR" = (
 /obj/machinery/porta_turret/syndicate/pod{
@@ -4003,12 +3973,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"Py" = (
-/obj/structure/cable{
-	icon_state = "2-9"
-	},
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "Pz" = (
 /obj/machinery/computer/mech_bay_power_console/retro{
 	dir = 1
@@ -4304,7 +4268,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "St" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4474,12 +4438,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"TX" = (
-/obj/structure/flora/ausbushes/sparsegrass{
-	pixel_y = 2
-	},
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "TY" = (
 /turf/open/floor/plating/rust,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -4759,7 +4717,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/sand,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Ym" = (
 /turf/closed/wall/mineral/plastitanium,
@@ -4822,10 +4780,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"YN" = (
-/obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "YP" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4852,10 +4806,6 @@
 /area/ruin/jungle/syndifort{
 	name = "Syndicate Crash H"
 	})
-"YV" = (
-/obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/plating/asteroid/sand,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "YZ" = (
 /obj/structure/cable,
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
@@ -5044,8 +4994,8 @@ lV
 Ip
 lV
 lV
-Dp
-Dp
+Ev
+Ev
 lV
 xk
 lV
@@ -5098,10 +5048,10 @@ DP
 lV
 lV
 lV
-Dp
+Ev
 sY
-Dp
-Dp
+Ev
+Ev
 lV
 lV
 lV
@@ -5117,8 +5067,8 @@ dB
 Ev
 lV
 lV
-Dp
-TX
+Ev
+DP
 lV
 PP
 lV
@@ -5150,13 +5100,13 @@ iU
 lV
 lV
 lV
-Dp
-TX
+Ev
+DP
 Wi
 bq
 bq
-TX
-Dp
+DP
+Ev
 lV
 lV
 lV
@@ -5205,12 +5155,12 @@ lV
 lV
 lV
 lV
-Dp
+Ev
 vr
 fk
 bq
 bq
-Dp
+Ev
 lV
 Ev
 lV
@@ -5260,10 +5210,10 @@ lV
 lV
 lV
 lV
-Dp
+Ev
 IY
-YN
-Dp
+nG
+Ev
 lV
 lV
 lV
@@ -5434,8 +5384,8 @@ lV
 iU
 lV
 lV
-TX
-Dp
+DP
+Ev
 Ev
 Ev
 HX
@@ -5647,7 +5597,7 @@ lV
 lV
 lV
 lV
-Dp
+Ev
 Ev
 Ev
 PM
@@ -5721,7 +5671,7 @@ wU
 SD
 AB
 Ym
-yy
+bq
 Ev
 ZY
 fy
@@ -5775,7 +5725,7 @@ pc
 CB
 kG
 Ym
-an
+SW
 vW
 nd
 Ev
@@ -5828,8 +5778,8 @@ WF
 ih
 uV
 Ym
-yy
-yy
+bq
+bq
 Ev
 nd
 Ev
@@ -5886,7 +5836,7 @@ EI
 fm
 Ip
 nd
-xS
+PM
 PM
 lV
 lV
@@ -5938,7 +5888,7 @@ Ym
 Ev
 od
 Sr
-yy
+bq
 TA
 Hk
 PM
@@ -6154,8 +6104,8 @@ YZ
 ki
 ki
 Fe
-Dp
-Dp
+Ev
+Ev
 ki
 ki
 ki
@@ -6208,10 +6158,10 @@ Ym
 nq
 ki
 Fa
-Py
+GM
 po
-xS
-xS
+PM
+PM
 ki
 Hi
 Ev
@@ -6262,10 +6212,10 @@ Ym
 FO
 ki
 XW
-Dp
+Ev
 Md
 xd
-xS
+PM
 Xp
 Zd
 lV
@@ -6316,10 +6266,10 @@ Ym
 Ka
 Ka
 ev
-YV
+Ip
 MN
-xS
-xS
+PM
+PM
 lV
 lV
 Ev
@@ -6370,9 +6320,9 @@ zW
 lV
 lV
 LJ
-Dp
+Ev
 XC
-Dp
+Ev
 lV
 Kv
 lV
@@ -6386,7 +6336,7 @@ Kv
 lV
 lV
 lV
-Dp
+Ev
 Ev
 Ev
 Ev
@@ -6424,8 +6374,8 @@ zW
 Kv
 lV
 lV
-Dp
-TX
+Ev
+DP
 lV
 lV
 lV
@@ -6752,8 +6702,8 @@ lV
 iU
 lV
 lV
-Dp
-My
+Ev
+fy
 lV
 Ev
 lV
@@ -6905,10 +6855,10 @@ Mw
 CT
 Ev
 Ev
-Dp
 Ev
 Ev
-Dp
+Ev
+Ev
 lV
 lV
 Kv
@@ -6952,7 +6902,7 @@ Li
 Bv
 Bv
 Ev
-vg
+Oz
 Ev
 Ev
 Zz
@@ -7006,7 +6956,7 @@ Cz
 TV
 RI
 Ev
-Jj
+xz
 Ev
 DP
 CT
@@ -7384,7 +7334,7 @@ Ev
 Ip
 Ev
 lV
-Dp
+Ev
 Ev
 bq
 bq
@@ -7542,7 +7492,7 @@ lV
 Ev
 lV
 Ev
-Dp
+Ev
 Ev
 lV
 Kv
@@ -7682,7 +7632,7 @@ Kv
 lV
 iU
 lV
-Dp
+Ev
 bq
 yA
 bW
@@ -7736,8 +7686,8 @@ lV
 lV
 lV
 lV
-Dp
-TX
+Ev
+DP
 yA
 MJ
 KN
@@ -7790,8 +7740,8 @@ Ip
 lV
 lV
 Kv
-TX
-Dp
+DP
+Ev
 yA
 Pd
 Ek
@@ -7844,8 +7794,8 @@ lV
 lV
 iU
 lV
-Dp
-Dp
+Ev
+Ev
 yA
 na
 dR
@@ -7873,10 +7823,10 @@ Ev
 Ev
 lV
 lV
-Dp
-Dp
+Ev
+Ev
 bq
-Dp
+Ev
 lV
 lV
 lV
@@ -7899,7 +7849,7 @@ Kv
 lV
 oj
 lV
-Dp
+Ev
 yA
 yA
 yA
@@ -7930,8 +7880,8 @@ oj
 lV
 lV
 lV
-Dp
-YV
+Ev
+Ip
 lV
 lV
 lV
@@ -7974,7 +7924,7 @@ Ev
 lV
 lV
 Ev
-Dp
+Ev
 Ev
 lV
 DP
@@ -7986,7 +7936,7 @@ lV
 Ev
 lV
 IY
-Dp
+Ev
 lV
 lV
 lV
@@ -8041,7 +7991,7 @@ Ev
 lV
 lV
 Ev
-Dp
+Ev
 bq
 IY
 lV
@@ -8246,8 +8196,8 @@ lV
 bq
 bq
 bq
-My
-Dp
+fy
+Ev
 lV
 lV
 lV
@@ -8528,7 +8478,7 @@ lV
 lV
 lV
 lV
-Dp
+Ev
 lV
 lV
 lV
