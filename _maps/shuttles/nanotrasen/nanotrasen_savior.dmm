@@ -709,12 +709,6 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
-"jO" = (
-/obj/machinery/airalarm/directional/east{
-	pixel_x = 24
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering)
 "jW" = (
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
@@ -1264,6 +1258,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"rB" = (
+/obj/machinery/airalarm/directional/east,
+/turf/template_noop,
+/area/template_noop)
 "rD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1796,6 +1794,7 @@
 	dir = 8;
 	heat_capacity = 500;
 	name = "thermo-electric cooler";
+	piping_layer = 5;
 	layer = 5
 	},
 /obj/machinery/light/dim/directional/north,
@@ -1969,6 +1968,12 @@
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/starboard)
+"zV" = (
+/obj/machinery/airalarm/directional/east{
+	pixel_x = 24
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/engineering)
 "zX" = (
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/mask/breath,
@@ -4326,7 +4331,7 @@ Jz
 (3,1,1) = {"
 Jz
 Jz
-Jz
+rB
 Jz
 bY
 Vf
@@ -4478,7 +4483,7 @@ Vf
 Vf
 Pj
 Vf
-jO
+zV
 Vf
 GR
 GR
