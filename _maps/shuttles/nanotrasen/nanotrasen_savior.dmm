@@ -1380,7 +1380,7 @@
 	},
 /obj/structure/closet/firecloset/wall{
 	dir = 8;
-	pixel_x = 36
+	pixel_x = 28
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
@@ -1628,6 +1628,9 @@
 /obj/machinery/atmospherics/components/binary/pump/layer4{
 	dir = 1
 	},
+/obj/structure/closet/firecloset/wall{
+	pixel_y = 28
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "vi" = (
@@ -1789,8 +1792,7 @@
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 8;
 	heat_capacity = 500;
-	name = "thermo-electric cooler";
-	layer = 5
+	name = "thermo-electric cooler"
 	},
 /obj/machinery/light/dim/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -1886,18 +1888,12 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/starboard)
 "yU" = (
-/obj/machinery/airalarm/directional/east{
-	pixel_x = 22
-	},
+/obj/machinery/airalarm/directional/east,
 /obj/effect/decal/cleanable/oil,
 /obj/structure/cable{
 	icon_state = "1-10"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/closet/firecloset/wall{
-	dir = 8;
-	pixel_x = 36
-	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "zi" = (
@@ -2747,7 +2743,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/waste/trash,
-/obj/machinery/atmospherics/components/unary/passive_vent/layer4{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/engine/airless,
@@ -2989,12 +2985,6 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/crewtwo)
-"ON" = (
-/obj/machinery/airalarm/directional/east{
-	pixel_x = 24
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering)
 "OU" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 4
@@ -4478,7 +4468,7 @@ Vf
 Vf
 Pj
 Vf
-ON
+Vf
 Vf
 GR
 GR
