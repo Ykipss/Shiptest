@@ -263,6 +263,9 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	"NanoTrasen" = list(
 		"NTSV",
 	),
+	"Elisium" = list(
+		"EUSF",
+	),
 ))
 
 /proc/ship_prefix_to_faction(prefix)

@@ -957,7 +957,6 @@
 "fb" = (
 /obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/suit/hooded/coat/inteq,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq,
 /obj/item/radio/headset/inteq,
 /obj/item/radio/headset/inteq,
@@ -7085,7 +7084,6 @@
 /obj/item/radio/headset/inteq,
 /obj/item/radio/headset/inteq,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq,
-/obj/item/clothing/suit/hooded/coat/inteq,
 /obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/mask/gas/sechailer/inteq,
