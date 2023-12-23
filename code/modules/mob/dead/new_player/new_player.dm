@@ -319,7 +319,7 @@
 		spawn_point.join_player_here(character)
 		var/atom/movable/screen/splash/Spl = new(character.client, TRUE)
 		Spl.Fade(TRUE)
-		character.playsound_local(get_turf(character), 'sound/voice/ApproachingTG.ogg', 25)
+		character.playsound_local(get_turf(character), 'sound/voice/welcome.ogg', 25)
 
 		character.update_parallax_teleport()
 
