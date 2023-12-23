@@ -240,15 +240,15 @@
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "nJ" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "0-1"
+/obj/machinery/light/directional/south{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
 	},
 /obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = -5
+	dir = 1;
+	pixel_y = -20
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/cryo)
@@ -391,11 +391,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"tT" = (
-/obj/structure/catwalk,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/external)
 "uH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
@@ -731,15 +726,8 @@
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "Fu" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/bridge)
+/area/ship/crew/cryo)
 "Gd" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -835,31 +823,15 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Ku" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/power/terminal{
-	dir = 1
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4;
+	set_dir_on_move = 4
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/button/door{
-	name = "Cargo Doors";
-	id = "Iron_maiden_cargo";
-	dir = 4;
-	pixel_x = -20;
-	req_access_txt = "147"
-	},
-/obj/machinery/button/shieldwallgen{
-	dir = 1;
-	id = "cepheus_cargo_holo";
-	pixel_x = -20;
-	pixel_y = 12
-	},
-/obj/effect/turf_decal/corner/opaque/inteqbrown/border{
-	dir = 9
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
 "Le" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -931,6 +903,14 @@
 	name = "uniform closet";
 	pixel_y = 28
 	},
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/cryo)
 "MP" = (
@@ -1194,14 +1174,13 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "UQ" = (
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 4
+/obj/machinery/light/directional/south,
+/obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "0-1"
 	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
+/turf/open/floor/plasteel/patterned/grid,
+/area/ship/crew/cryo)
 "UU" = (
 /obj/effect/turf_decal/corner/opaque/inteqbrown/border,
 /obj/structure/closet/wall/red{
@@ -1375,7 +1354,7 @@
 /obj/structure/catwalk,
 /obj/structure/grille,
 /turf/open/floor/engine/hull/reinforced,
-/area/ship/crew/cryo)
+/area/ship/external)
 "YZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1402,23 +1381,33 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "ZZ" = (
-/obj/machinery/light/directional/south{
-	pixel_x = 32
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/power/terminal{
+	dir = 1
 	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
-/turf/open/floor/plasteel/patterned/grid,
-/area/ship/crew/cryo)
+/obj/machinery/button/door{
+	name = "Cargo Doors";
+	id = "Iron_maiden_cargo";
+	dir = 4;
+	pixel_x = -20;
+	req_access_txt = "147"
+	},
+/obj/effect/turf_decal/corner/opaque/inteqbrown/border{
+	dir = 9
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 4;
+	id = "cepheus_cargo_holo";
+	pixel_x = -20;
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/cargo)
 
 (1,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Cp
 Cp
@@ -1435,11 +1424,6 @@ Cp
 "}
 (2,1,1) = {"
 Cp
-Cp
-Cp
-Cp
-Cp
-Cp
 Kq
 Le
 VP
@@ -1452,15 +1436,8 @@ wb
 Le
 Kq
 Cp
-Cp
-Cp
 "}
 (3,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 MP
 VA
@@ -1474,19 +1451,12 @@ hb
 VA
 MP
 Cp
-Cp
-Cp
 "}
 (4,1,1) = {"
 Cp
-Cp
-Cp
-Cp
-Cp
-Cp
 hb
 Tg
-Ku
+ZZ
 lB
 tk
 Sx
@@ -1496,15 +1466,8 @@ yC
 On
 hb
 Cp
-Cp
-Cp
 "}
 (5,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 vI
 hb
@@ -1518,15 +1481,8 @@ Ll
 hb
 vI
 Cp
-Cp
-Cp
 "}
 (6,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 vI
 hb
@@ -1540,15 +1496,8 @@ ze
 hb
 vI
 Cp
-Cp
-Cp
 "}
 (7,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 vI
 hb
@@ -1562,15 +1511,8 @@ xA
 hb
 vI
 Cp
-Cp
-Cp
 "}
 (8,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 vI
 hb
@@ -1584,15 +1526,8 @@ UU
 hb
 vI
 Cp
-Cp
-Cp
 "}
 (9,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 vI
 hb
@@ -1606,15 +1541,8 @@ zc
 hb
 vI
 Cp
-Cp
-Cp
 "}
 (10,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Le
 hb
@@ -1628,15 +1556,8 @@ UU
 hb
 Le
 Cp
-Cp
-Cp
 "}
 (11,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Kq
 hb
@@ -1650,15 +1571,8 @@ wz
 hb
 Kq
 Cp
-Cp
-Cp
 "}
 (12,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Le
 bX
@@ -1672,15 +1586,8 @@ bX
 bX
 Le
 Cp
-Cp
-Cp
 "}
 (13,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 wq
 Bq
 MV
@@ -1690,19 +1597,12 @@ dx
 Vj
 Kj
 je
-nJ
+UQ
 gD
 JU
 Cp
-Cp
-Cp
 "}
 (14,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 bX
 bX
@@ -1716,15 +1616,8 @@ gd
 bX
 bX
 Cp
-Cp
-Cp
 "}
 (15,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Vk
 CO
@@ -1738,15 +1631,8 @@ BR
 bX
 vI
 Cp
-Cp
-Cp
 "}
 (16,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Vk
 UC
@@ -1756,19 +1642,12 @@ kT
 vL
 CO
 MM
-ZZ
+nJ
 bX
 Yi
 Cp
-Cp
-Cp
 "}
 (17,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 CO
 CO
@@ -1780,20 +1659,13 @@ CO
 Qj
 cc
 bX
-MP
-Cp
-Cp
+bX
 Cp
 "}
 (18,1,1) = {"
 Cp
-Cp
-Cp
-Cp
-Cp
-Cp
 yX
-UQ
+Ku
 QG
 dB
 CO
@@ -1802,17 +1674,10 @@ CO
 bX
 bX
 bX
-tT
-Cp
-Cp
+yX
 Cp
 "}
 (19,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Kq
 yX
@@ -1823,20 +1688,11 @@ CO
 CO
 bX
 Fu
-tT
+yX
 Kq
-Cp
-Cp
 Cp
 "}
 (20,1,1) = {"
-Cp
-Cp
-Cp
-Cp
-Cp
-Cp
-Cp
 Cp
 Cp
 Cp
