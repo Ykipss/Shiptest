@@ -2810,7 +2810,6 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/assistant,
-/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
