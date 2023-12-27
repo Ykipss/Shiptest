@@ -526,15 +526,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew)
-"qq" = (
-/obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 4;
-	height = 15;
-	width = 6
-	},
-/turf/open/floor/plating,
-/area/ship/external/dark)
 "qv" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/components/unary/shuttle/heater{
@@ -1894,7 +1885,7 @@ jH
 UL
 vg
 wq
-qq
+MA
 SR
 "}
 (7,1,1) = {"
@@ -2050,7 +2041,7 @@ cW
 Jr
 RN
 Ra
-qq
+MA
 SR
 "}
 (13,1,1) = {"
