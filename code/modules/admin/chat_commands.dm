@@ -111,11 +111,11 @@
 	last_tgs_check = rtod
 
 	var/datum/tgs_chat_embed/structure/embed = new()
-	embed.title = "Состояние сервера"
+	embed.title = "Состояние сервера:"
 	embed.colour = COLOR_DARK_CYAN
 
 	embed.fields = list()
-	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "Раунд #[GLOB.round_id]" : "Не запущен"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "[GLOB.round_id]" : "Не запущен"]")
 	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "[length(GLOB.player_list) || "отсутствуют"]")
 	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", "[length(GLOB.admins) || "отсутствуют"]")
 	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME)
