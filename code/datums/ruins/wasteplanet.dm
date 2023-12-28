@@ -67,3 +67,9 @@
 	description = "A military base formerly used for staging 4 mechs and crew. God knows what's in it now."
 	id = "abandoned_mechbay"
 	suffix = "wasteplanet_abandoned_mechbay.dmm"
+
+/datum/map_template/ruin/wasteplanet/customs_post
+	name = "Customs post"
+	description = "Customs post damaged by terrorist attack"
+	id = "customs_post"
+	suffix = "wasteplanet_customs_post.dmm"
