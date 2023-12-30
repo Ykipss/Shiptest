@@ -745,6 +745,11 @@ DEFINE_BITFIELD(turret_flags, list(
 	lethal_projectile_sound = 'sound/weapons/laser.ogg'
 	desc = "An energy blaster auto-turret."
 
+/obj/machinery/porta_turret/syndicate/energy/inteq
+	mode = TURRET_STUN
+	req_access = list(ACCESS_INTEQ_GENERAL)
+	faction = list(ROLE_INTEQ)
+
 /obj/machinery/porta_turret/syndicate/energy/heavy
 	icon_state = "standard_lethal"
 	base_icon_state = "standard"
