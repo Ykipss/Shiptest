@@ -46,7 +46,7 @@
 
 /obj/item/melee/sabre
 	name = "officer's sabre"
-	desc = "Элегантное оружее, его мономолекулярное лезвие способно с легкостью проникат ьсквозь плоть и кости."
+	desc = "Элегантное оружее, его мономолекулярное лезвие способно с легкостью проникать сквозь плоть и кости."
 	icon_state = "sabre"
 	item_state = "sabre"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'

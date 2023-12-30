@@ -55,7 +55,7 @@
 		return
 	last_tgs_check = rtod
 	var/server = CONFIG_GET(string/server)
-	return "[GLOB.round_id ? "Раунд #[GLOB.round_id]: " : ""][GLOB.clients.len] игроков, Игровой режим: [GLOB.master_mode]; Раунд [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
+	return "[GLOB.round_id ? "Раунд #[GLOB.round_id]: " : ""][GLOB.clients.len] игроков, Игровой режим: [GLOB.master_mode]; Раунд [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "byond://celadon.pro:1337"]"
 
 /datum/tgs_chat_command/ahelp
 	name = "ahelp"
