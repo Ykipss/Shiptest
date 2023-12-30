@@ -705,13 +705,7 @@
 "yX" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "zc" = (
@@ -771,7 +765,7 @@
 	},
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -1033,13 +1027,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/cryo)
 "MP" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "MV" = (

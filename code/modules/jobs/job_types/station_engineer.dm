@@ -74,11 +74,11 @@
 	id = /obj/item/card/id/inteq/afr
 
 /datum/outfit/job/engineer/inteq/cardacces/post_equip(mob/living/carbon/human/H)
-	H.faction |= list("PlayerInteQ")
+	H.faction |= list("InteQ")
 
 	var/obj/item/card/id/I = H.wear_id
 	I.registered_name = pick(GLOB.commando_names)
-	I.access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACESS_INTEQ_GENERAL)
+	I.access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL)
 	I.update_label()
 /datum/outfit/job/engineer/pirate
 	name = "Ship's Engineer (Pirate)"
