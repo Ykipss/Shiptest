@@ -13,15 +13,9 @@
 			break
 	if(!active_admins)
 		SSticker.Reboot("Restart requested from the discord.", "discord")
-<<<<<<< HEAD
-		return "Запущен перезапуск..."
-	else
-		return "На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!"
-=======
 		return new /datum/tgs_message_content("Запущен перезапуск...")
 	else
 		return new /datum/tgs_message_content("На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!")
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 
 /datum/tgs_chat_command/join
 	name = "join"
@@ -49,15 +43,6 @@
 	if(rtod - last_tgs_status < TGS_STATUS_THROTTLE)
 		return new /datum/tgs_message_content("Please wait a few seconds before using this command again.")
 	last_tgs_status = rtod
-<<<<<<< HEAD
-	var/list/adm = get_admin_counts()
-	var/list/allmins = adm["total"]
-	var/status = "Администраторы: [allmins.len] (Активные: [english_list(adm["present"])] AFK: [english_list(adm["afk"])] Скрытые: [english_list(adm["stealth"])] Пропущенные: [english_list(adm["noflags"])]). "
-	status += "Игроки: [GLOB.clients.len] (Активные: [get_active_player_count(0,1,0)]). Режим: [SSticker.mode ? SSticker.mode.name : "Не запущен."]."
-	for(var/c in GLOB.clients)
-		var/client/C = c
-		status += "\n[C.key]"
-=======
 
 	var/datum/tgs_chat_embed/structure/embed = new()
 	embed.title = "Server Admin Status"
@@ -81,7 +66,6 @@
 	var/datum/tgs_message_content/status = new()
 	status.embed = embed
 
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 	return status
 
 /datum/tgs_chat_command/subsystems
@@ -125,10 +109,6 @@
 	if(rtod - last_tgs_check < TGS_STATUS_THROTTLE)
 		return new /datum/tgs_message_content("Please wait a few seconds before using this command again.")
 	last_tgs_check = rtod
-<<<<<<< HEAD
-	var/server = CONFIG_GET(string/server)
-	return "[GLOB.round_id ? "Раунд #[GLOB.round_id]: " : ""][GLOB.clients.len] игроков, Игровой режим: [GLOB.master_mode]; Раунд [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "byond://celadon.pro:1337"]"
-=======
 
 	var/datum/tgs_chat_embed/structure/embed = new()
 	embed.title = "Состояние сервера"
@@ -148,7 +128,6 @@
 	status.embed = embed
 
 	return status
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 
 /datum/tgs_chat_command/ahelp
 	name = "ahelp"
@@ -158,11 +137,7 @@
 /datum/tgs_chat_command/ahelp/Run(datum/tgs_chat_user/sender, params)
 	var/list/all_params = splittext(params, " ")
 	if(all_params.len < 2)
-<<<<<<< HEAD
-		return "Неверные параметры."
-=======
 		return new /datum/tgs_message_content("Неверные параметры.")
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 	var/target = all_params[1]
 	all_params.Cut(1, 2)
 	var/id = text2num(target)
@@ -171,11 +146,7 @@
 		if(AH)
 			target = AH.initiator_ckey
 		else
-<<<<<<< HEAD
-			return "Тикет #[id] не найден!"
-=======
 			return new /datum/tgs_message_content("Тикет #[id] не найден!")
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 	var/res = TgsPm(target, all_params.Join(" "), sender.friendly_name)
 	if(res != "Message Successful")
 		return new /datum/tgs_message_content(res)
@@ -220,11 +191,7 @@ GLOBAL_LIST(round_end_notifiees)
 	if(!SSticker.IsRoundInProgress() && SSticker.HasRoundStarted())
 		return "[sender.mention], раунд уже закончился!"
 	LAZYSET(GLOB.round_end_notifiees, sender.mention, TRUE)
-<<<<<<< HEAD
-	return "Я дам знать, [sender.mention], когда закончится раунд."
-=======
 	return new /datum/tgs_message_content( "Я оповещу, [sender.mention], когда закончится раунд.")
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 
 /datum/tgs_chat_command/sdql
 	name = "sdql"
@@ -262,11 +229,7 @@ GLOBAL_LIST(round_end_notifiees)
 /datum/tgs_chat_command/reload_admins/Run(datum/tgs_chat_user/sender, params)
 	ReloadAsync()
 	log_admin("[sender.friendly_name] reloaded admins via chat command.")
-<<<<<<< HEAD
-	return "Администраторы перезагружены."
-=======
 	return new /datum/tgs_message_content("Администраторы перезагружены.")
->>>>>>> 35406f91c0 (TGS Support Updates (#2552))
 
 /datum/tgs_chat_command/reload_admins/proc/ReloadAsync()
 	set waitfor = FALSE
