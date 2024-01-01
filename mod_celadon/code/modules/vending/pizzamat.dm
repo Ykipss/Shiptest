@@ -6,7 +6,7 @@
 	icon = 'mod_celadon/icons/obj/vending/pizzamat.dmi'
 	icon_state = "pizzamat"
 	products = list(
-		/obj/item/reagent_containers/food/snacks/pizzaslice/meat/rinmeat = 3,
+		/obj/item/reagent_containers/food/snacks/pizza/meat/rinmeat = 3,
 		/obj/item/reagent_containers/food/snacks/pizza/margherita = 3,
 		/obj/item/reagent_containers/food/snacks/pizza/sassysage = 3,
 		/obj/item/reagent_containers/food/snacks/pizza/pineapple/rinapple = 3)
