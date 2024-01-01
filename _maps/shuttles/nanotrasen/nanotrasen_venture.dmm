@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aG" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 4
+	},
+/area/ship/bridge)
 "bG" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -18,6 +26,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "eg" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/stairs{
 	dir = 4
 	},
@@ -153,6 +167,9 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light/floor,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "nl" = (
@@ -204,16 +221,19 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/stairs{
 	dir = 1
 	},
 /area/ship/bridge)
 "qw" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/power/shuttle/engine/electric/tech1{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -239,11 +259,11 @@
 /obj/item/stock_parts/cell/gun,
 /obj/item/kitchen/knife/combat/survival,
 /obj/item/clothing/suit/jacket/miljacket,
-/obj/item/clothing/head/beret/lt,
 /obj/item/storage/backpack/messenger/com,
 /obj/item/storage/backpack/duffelbag/captain,
 /obj/item/gun/energy/disabler,
 /obj/item/circuitboard/machine/fax,
+/obj/item/clothing/head/beret/captain,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uk" = (
@@ -365,7 +385,15 @@
 	dir = 4;
 	id = "venture_front"
 	},
-/obj/structure/fans/tiny,
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 1;
+	id = "venture_exit";
+	locked = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "CF" = (
@@ -413,6 +441,9 @@
 /obj/machinery/vending/snack/random,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -554,6 +585,12 @@
 	pixel_x = -21;
 	pixel_y = -6
 	},
+/obj/machinery/button/shieldwallgen{
+	dir = 4;
+	pixel_y = 16;
+	pixel_x = -20;
+	id = "venture_exit"
+	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
@@ -582,9 +619,15 @@
 	dir = 4;
 	id = "venture_front"
 	},
-/obj/structure/fans/tiny,
 /obj/docking_port/mobile{
 	dir = 8
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	id = "venture_exit";
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -603,7 +646,7 @@
 	dir = 4
 	},
 /obj/item/paper{
-	default_raw_text = <p>План на сегодня:<br>1. Добыть 100 урана или 200 листов плазмы<br>2. Выпить пива<br>3. Не умереть<br>4. Покинуть сектор и доставить на основной корабль.<br>5. Профит</p>
+	default_raw_text = <p>Планнасегодня:<br>1.Добыть100уранаили200листовплазмы<br>2.Выпитьпива<br>3.Неумереть<br>4.Покинутьсекторидоставитьнаосновнойкорабль.<br>5.Профит</p>
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -742,7 +785,7 @@ IP
 Kn
 Fi
 is
-eg
+aG
 eg
 GE
 JB
