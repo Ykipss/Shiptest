@@ -1,10 +1,9 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Homa-class Miner Hamster",
-	"prefix": "ISV",
+	"prefix": "EUSM",
 	"namelists": [
 		"SPACE",
-		"SOLGOV",
 		"WEAPONS"
 	],
 	"map_short_name": "Homa-class",
