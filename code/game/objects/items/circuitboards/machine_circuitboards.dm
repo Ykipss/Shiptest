@@ -651,6 +651,7 @@
 		/obj/machinery/vending/sustenance = "Sustenance Vendor",
 		/obj/machinery/vending/dinnerware = "Plasteel Chef's Dinnerware Vendor",
 		/obj/machinery/vending/cart = "PTech",
+		/obj/machinery/vending/pizzamat = "PizzaMat Rin'Daar&Co",
 		/obj/machinery/vending/robotics = "Robotech Deluxe",
 		/obj/machinery/vending/engineering = "Robco Tool Maker",
 		/obj/machinery/vending/sovietsoda = "BODA",
