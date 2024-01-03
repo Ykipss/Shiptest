@@ -52,7 +52,7 @@
 	},
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "ap" = (
@@ -81,9 +81,14 @@
 /obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/clothing/shoes/combat,
 /obj/item/shield/riot/tele,
+/obj/item/clothing/accessory/holster,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/gun/ballistic/revolver/horizonx,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "aq" = (
@@ -193,7 +198,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/pet/mothroach{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/security/prison)
@@ -1056,7 +1061,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -1136,9 +1141,6 @@
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
-"gn" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "gr" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -1166,13 +1168,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "gy" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "gF" = (
@@ -1202,13 +1198,7 @@
 /area/ship/maintenance/central)
 "gG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "gJ" = (
@@ -1301,15 +1291,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/communications)
 "hb" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
+/obj/structure/chair/comfy/brown{
+	dir = 4
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/turf/open/floor/carpet/black,
+/area/ship/crew/dorm)
 "hc" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
 	dir = 6
@@ -1417,7 +1403,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/rack,
-/obj/item/gun/energy/laser,
+/obj/item/gun/energy/laser/e10,
 /turf/open/floor/plating{
 	explosion_block = 7
 	},
@@ -1609,13 +1595,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "iW" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 6;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "jd" = (
@@ -1654,16 +1634,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ship/engineering/communications)
-"jA" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "jC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -2654,7 +2624,7 @@
 "qe" = (
 /obj/machinery/airalarm/directional/north,
 /mob/living/simple_animal/mouse{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
@@ -2719,18 +2689,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"qE" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "qI" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2811,18 +2769,6 @@
 	explosion_block = 7
 	},
 /area/ship/security/armory)
-"rz" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 6;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "rA" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 5
@@ -2994,18 +2940,15 @@
 	},
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/p16/g36drum,
+/obj/item/ammo_box/magazine/p16,
+/obj/item/ammo_box/magazine/m12g/small,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
 	},
 /area/ship/security/armory)
 "sm" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3"
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal{
 	explosion_block = 5
 	},
@@ -3295,7 +3238,7 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/mouse/white{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -3374,7 +3317,7 @@
 /obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/computer/helm/viewscreen/directional/west,
 /mob/living/simple_animal/crab{
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	name = "Rat King"
 	},
 /obj/structure/bed/dogbed/runtime{
@@ -3495,7 +3438,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -3546,15 +3489,6 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
-"vU" = (
-/obj/machinery/porta_turret/ship/weak{
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "vX" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -3724,7 +3658,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/brown{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4097,8 +4031,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/ai{
+	density = 0;
+	faction = list("InteQ");
+	layer = 3.6
+	},
 /turf/open/floor/plating,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "yG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -4278,9 +4217,11 @@
 /obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/clothing/shoes/combat,
 /obj/item/shield/riot/tele,
+/obj/item/clothing/accessory/holster,
+/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
+/obj/item/ammo_box/magazine/m45,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "zM" = (
@@ -4437,6 +4378,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "147;148"
 	},
+/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -4582,7 +4524,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/brown{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4815,16 +4757,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ship/cargo)
-"Cc" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "Cd" = (
 /obj/machinery/vending/snack/random,
 /obj/structure/disposalpipe/segment{
@@ -5044,6 +4976,7 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/automatic/smg/inteq,
+/obj/item/gun/ballistic/shotgun/bulldog/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -5175,7 +5108,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5279,7 +5212,7 @@
 /obj/effect/spawner/lootdrop/donkpockets,
 /obj/effect/spawner/lootdrop/donkpockets,
 /mob/living/simple_animal/mouse{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5653,9 +5586,6 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/hatchet/wooden,
 /obj/item/lighter/greyscale,
-/obj/structure/chair/wood{
-	dir = 1
-	},
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "GE" = (
@@ -5724,6 +5654,7 @@
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/storage/box/prisoner,
 /obj/item/gun/ballistic/automatic/pistol/m1911,
+/obj/item/ammo_box/magazine/m45,
 /obj/item/ammo_box/magazine/m45,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
@@ -6219,7 +6150,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -6564,6 +6495,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/light/small/directional/east,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
 "LY" = (
@@ -6859,7 +6791,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -6985,18 +6917,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"ON" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "OO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -7114,18 +7034,6 @@
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
-"PB" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "PC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7431,14 +7339,9 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Rb" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/obj/machinery/porta_turret/syndicate/energy/inteq,
+/obj/machinery/porta_turret/syndicate/energy/inteq,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "Rg" = (
 /obj/machinery/vending/boozeomat,
@@ -8247,6 +8150,10 @@
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/m45,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "XK" = (
@@ -8488,7 +8395,9 @@
 	pixel_x = -5
 	},
 /obj/machinery/air_sensor/atmos/toxin_tank,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/plasma{
+	initial_gas_mix = "plasma=199999;TEMP=193.15"
+	},
 /area/ship/engineering/atmospherics)
 "Yt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8708,7 +8617,7 @@
 	pixel_y = 4
 	},
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -8796,11 +8705,11 @@ Vx
 Vx
 wB
 fn
-qE
+sm
 mW
 fO
 mW
-ON
+sm
 Vx
 Vx
 Vx
@@ -8812,11 +8721,11 @@ Vx
 Vx
 Vx
 Vx
-PB
+sm
 Jy
 tF
 Jy
-ON
+sm
 fn
 wB
 Vx
@@ -8830,7 +8739,7 @@ Vx
 Vx
 Vx
 fn
-fO
+sm
 fO
 WZ
 qD
@@ -8852,7 +8761,7 @@ ys
 Ld
 Wc
 tF
-tF
+sm
 fn
 Vx
 Vx
@@ -9062,7 +8971,7 @@ tF
 tF
 tF
 tF
-rz
+sm
 fn
 Vx
 Vx
@@ -9289,7 +9198,7 @@ Vx
 fn
 DR
 TT
-IV
+hb
 OZ
 rP
 xW
@@ -9322,7 +9231,7 @@ Vx
 Vx
 Vx
 fn
-eL
+Rb
 eL
 Bm
 GD
@@ -9340,7 +9249,7 @@ vX
 VI
 ex
 MR
-MR
+gy
 fn
 Vx
 Vx
@@ -9813,7 +9722,7 @@ Vx
 Vx
 Vx
 fn
-fP
+gy
 fP
 fP
 fP
@@ -9829,7 +9738,7 @@ ml
 ml
 ml
 ml
-ml
+gy
 fn
 Vx
 Vx
@@ -10121,7 +10030,7 @@ Vx
 "}
 (40,1,1) = {"
 Vx
-jA
+iW
 mW
 mW
 gy
@@ -10148,10 +10057,10 @@ dp
 Sy
 mR
 dp
-hb
+gy
 mW
 mW
-Rb
+iW
 Vx
 "}
 (41,1,1) = {"
@@ -10226,7 +10135,7 @@ Vx
 "}
 (43,1,1) = {"
 Vx
-HW
+iW
 CM
 wW
 wW
@@ -10331,7 +10240,7 @@ Vx
 "}
 (46,1,1) = {"
 Vx
-gn
+pD
 Yu
 Uj
 Me
@@ -10361,7 +10270,7 @@ sR
 Dg
 Dg
 Dg
-gn
+iW
 Vx
 "}
 (47,1,1) = {"
@@ -10577,7 +10486,7 @@ Vx
 (53,1,1) = {"
 Vx
 Vx
-Cc
+iW
 pD
 pD
 xA
@@ -10656,7 +10565,7 @@ gG
 tI
 lN
 lN
-vU
+iW
 Br
 VP
 VP
@@ -10666,7 +10575,7 @@ VP
 VP
 VP
 Br
-vU
+iW
 Tc
 Tc
 Tb
