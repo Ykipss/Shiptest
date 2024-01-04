@@ -1,0 +1,1100 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bk" = (
+/obj/effect/decal/cleanable/garbage,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"bA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glitter,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"cr" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor3-old"
+	},
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"dB" = (
+/obj/item/clothing/head/helmet/police,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gib1-old"
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"dV" = (
+/turf/closed/wall/r_wall,
+/area/overmap_encounter/planetoid/cave/explored)
+"dZ" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor7-old"
+	},
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"fJ" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/flashlight/lamp{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/obj/item/stamp/denied{
+	pixel_y = 3;
+	pixel_x = 3
+	},
+/obj/item/stamp,
+/obj/machinery/button{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"gW" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"hr" = (
+/turf/closed/wall/r_wall/rust,
+/area/overmap_encounter/planetoid/cave/explored)
+"in" = (
+/obj/machinery/light/built/directional/east,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"iT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun/ballistic/automatic/zip_pistol{
+	spawnwithmagazine = 0
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"jk" = (
+/obj/item/clothing/head/helmet/police,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"js" = (
+/obj/machinery/power/floodlight,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"jI" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"lh" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor6-old"
+	},
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"nn" = (
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/obj/machinery/light/broken/directional/west,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"oF" = (
+/obj/effect/spawner/lootdrop/waste/trash,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"po" = (
+/turf/closed/wall/r_wall/rust,
+/area/ruin/unpowered)
+"qR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/overmap_encounter/planetoid/cave/explored)
+"qY" = (
+/obj/structure/closet/crate/bin{
+	icon_state = "largebinopen";
+	opened = 1
+	},
+/obj/effect/spawner/lootdrop/waste/trash,
+/obj/effect/spawner/lootdrop/waste/trash,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"rO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/overmap_encounter/planetoid/cave/explored)
+"sd" = (
+/obj/machinery/light/small/broken/directional/west,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/glitter,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"sw" = (
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/wasteplanet/explored)
+"sF" = (
+/obj/structure/girder,
+/turf/open/floor/plating,
+/area/overmap_encounter/planetoid/cave/explored)
+"tB" = (
+/obj/structure/filingcabinet/double,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"uj" = (
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"wo" = (
+/turf/closed/mineral/random/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"yQ" = (
+/turf/closed/wall,
+/area/overmap_encounter/planetoid/cave/explored)
+"zs" = (
+/obj/effect/turf_decal/industrial/hatch,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"zB" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"zC" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/stairs{
+	icon = 'icons/obj/stairs.dmi';
+	dir = 8
+	},
+/area/ruin/unpowered)
+"AK" = (
+/obj/machinery/light/small/broken/directional/south,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor3-old"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"DT" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gib1-old"
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"Fu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"Gc" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/stairs{
+	icon = 'icons/obj/stairs.dmi';
+	dir = 4
+	},
+/area/ruin/unpowered)
+"Gv" = (
+/turf/closed/wall/r_wall,
+/area/ruin/unpowered)
+"Hw" = (
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"IZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/overmap_encounter/planetoid/cave/explored)
+"Jx" = (
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken/directional/east,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"KA" = (
+/turf/open/floor/plating,
+/area/overmap_encounter/planetoid/cave/explored)
+"KY" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor/shutters,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"Lo" = (
+/obj/structure/girder,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/overmap_encounter/planetoid/cave/explored)
+"Lz" = (
+/obj/effect/spawner/lootdrop/waste/trash,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"LD" = (
+/obj/structure/safe,
+/obj/item/gun/ballistic/automatic/sniper_rifle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"MW" = (
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"Nk" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/overmap_encounter/planetoid/cave/explored)
+"OI" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor7-old"
+	},
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"Qw" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"QM" = (
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"QY" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+"RQ" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"Sk" = (
+/obj/machinery/light/broken/directional/west,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"Su" = (
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/wasteplanet/explored)
+"Ty" = (
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement,
+/area/overmap_encounter/planetoid/cave/explored)
+"Wg" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/cave/explored)
+"Zo" = (
+/obj/effect/decal/cleanable/glass,
+/obj/machinery/light/small/built/directional/east,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gib1-old"
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
+
+(1,1,1) = {"
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+"}
+(2,1,1) = {"
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+"}
+(3,1,1) = {"
+yQ
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+Su
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+wo
+"}
+(4,1,1) = {"
+wo
+sw
+sw
+sw
+sw
+Su
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+yQ
+"}
+(5,1,1) = {"
+wo
+wo
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+sw
+wo
+wo
+"}
+(6,1,1) = {"
+wo
+wo
+MW
+Hw
+MW
+MW
+MW
+MW
+Hw
+MW
+MW
+MW
+MW
+MW
+Hw
+MW
+MW
+MW
+MW
+yQ
+wo
+"}
+(7,1,1) = {"
+wo
+wo
+Hw
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+wo
+wo
+"}
+(8,1,1) = {"
+wo
+yQ
+Hw
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+wo
+wo
+"}
+(9,1,1) = {"
+wo
+wo
+MW
+Hw
+MW
+MW
+Hw
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+Hw
+MW
+wo
+wo
+"}
+(10,1,1) = {"
+wo
+wo
+MW
+Hw
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+Hw
+Hw
+MW
+MW
+wo
+yQ
+"}
+(11,1,1) = {"
+wo
+wo
+Hw
+Hw
+MW
+Lz
+MW
+MW
+MW
+Hw
+Hw
+MW
+MW
+Qw
+Ty
+Hw
+MW
+Hw
+MW
+wo
+wo
+"}
+(12,1,1) = {"
+wo
+wo
+wo
+oF
+bk
+Qw
+MW
+Hw
+Hw
+Hw
+MW
+MW
+QM
+Qw
+Ty
+Hw
+Hw
+Hw
+MW
+wo
+wo
+"}
+(13,1,1) = {"
+yQ
+wo
+wo
+MW
+oF
+MW
+Hw
+Qw
+MW
+Hw
+MW
+Hw
+QM
+MW
+Ty
+Hw
+Hw
+MW
+wo
+wo
+wo
+"}
+(14,1,1) = {"
+wo
+wo
+wo
+qY
+Hw
+MW
+Hw
+MW
+Hw
+MW
+Hw
+Hw
+Ty
+Hw
+MW
+MW
+Hw
+MW
+yQ
+wo
+wo
+"}
+(15,1,1) = {"
+wo
+wo
+wo
+MW
+MW
+cr
+Hw
+Qw
+Hw
+Hw
+MW
+Hw
+Ty
+Qw
+Ty
+Hw
+MW
+Hw
+wo
+wo
+wo
+"}
+(16,1,1) = {"
+wo
+yQ
+MW
+MW
+MW
+dB
+Hw
+Qw
+Qw
+MW
+MW
+Hw
+QM
+Wg
+MW
+Hw
+Hw
+Hw
+wo
+wo
+yQ
+"}
+(17,1,1) = {"
+wo
+wo
+MW
+MW
+OI
+Hw
+RQ
+MW
+MW
+RQ
+Hw
+Hw
+in
+jk
+Jx
+MW
+Hw
+MW
+wo
+wo
+wo
+"}
+(18,1,1) = {"
+wo
+wo
+zs
+zs
+zs
+MW
+MW
+MW
+MW
+MW
+zs
+po
+po
+Gc
+po
+po
+Gv
+Gv
+wo
+wo
+wo
+"}
+(19,1,1) = {"
+wo
+wo
+wo
+zs
+zs
+zs
+MW
+MW
+MW
+zs
+zs
+po
+sd
+bA
+po
+tB
+LD
+Gv
+wo
+wo
+wo
+"}
+(20,1,1) = {"
+wo
+wo
+wo
+dV
+hr
+hr
+qR
+rO
+qR
+sF
+hr
+po
+uj
+bA
+KY
+DT
+AK
+Gv
+wo
+yQ
+wo
+"}
+(21,1,1) = {"
+wo
+wo
+wo
+KA
+hr
+hr
+Lo
+IZ
+Nk
+hr
+hr
+po
+iT
+uj
+po
+fJ
+uj
+po
+wo
+wo
+wo
+"}
+(22,1,1) = {"
+wo
+wo
+wo
+zs
+MW
+zs
+zs
+MW
+MW
+zs
+zs
+po
+Zo
+zB
+Fu
+QY
+uj
+Gv
+wo
+wo
+wo
+"}
+(23,1,1) = {"
+wo
+wo
+wo
+MW
+zs
+MW
+zs
+MW
+MW
+MW
+zs
+po
+po
+zC
+po
+po
+po
+po
+wo
+wo
+wo
+"}
+(24,1,1) = {"
+yQ
+wo
+wo
+MW
+MW
+MW
+MW
+Qw
+Qw
+MW
+MW
+Hw
+nn
+MW
+Sk
+MW
+Hw
+jI
+wo
+wo
+wo
+"}
+(25,1,1) = {"
+wo
+wo
+jI
+Hw
+MW
+MW
+Hw
+Qw
+MW
+Qw
+Qw
+Hw
+QM
+MW
+jI
+Hw
+MW
+MW
+js
+wo
+wo
+"}
+(26,1,1) = {"
+wo
+wo
+MW
+MW
+MW
+Hw
+Hw
+jI
+Qw
+Qw
+MW
+MW
+QM
+Qw
+QM
+Hw
+MW
+Hw
+MW
+yQ
+wo
+"}
+(27,1,1) = {"
+wo
+js
+MW
+MW
+Hw
+MW
+Hw
+MW
+Qw
+MW
+MW
+Hw
+Ty
+Hw
+QM
+MW
+Hw
+Hw
+gW
+wo
+wo
+"}
+(28,1,1) = {"
+wo
+MW
+MW
+MW
+MW
+Hw
+Hw
+Hw
+Hw
+Qw
+jI
+MW
+MW
+Qw
+MW
+Hw
+MW
+Hw
+MW
+wo
+wo
+"}
+(29,1,1) = {"
+wo
+MW
+MW
+Hw
+MW
+Hw
+MW
+Hw
+Hw
+Qw
+MW
+MW
+MW
+MW
+MW
+MW
+Hw
+Hw
+wo
+wo
+wo
+"}
+(30,1,1) = {"
+wo
+gW
+MW
+MW
+Hw
+MW
+lh
+MW
+MW
+Qw
+Qw
+Hw
+QM
+MW
+MW
+MW
+MW
+Hw
+wo
+wo
+yQ
+"}
+(31,1,1) = {"
+yQ
+wo
+MW
+MW
+jI
+wo
+wo
+yQ
+wo
+gW
+dZ
+MW
+MW
+MW
+jI
+wo
+wo
+yQ
+wo
+wo
+wo
+"}
+(32,1,1) = {"
+wo
+wo
+wo
+wo
+yQ
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+yQ
+"}
+(33,1,1) = {"
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+yQ
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+"}
+(34,1,1) = {"
+wo
+wo
+yQ
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+"}

@@ -180,3 +180,9 @@
 	suffix = "spacemall.dmm"
 	name = "Space Mall"
 	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."
+	
+/datum/map_template/ruin/space/abandoned_ship_criminal
+	id = "abandoned_ship_criminal"
+	suffix = "abandoned_ship_criminal.dmm"
+	name = "Abandoned ship criminal"
+	description = "Two criminals and several bloody footprints...It seems that someone has big problems!"

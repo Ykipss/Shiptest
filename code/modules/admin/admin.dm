@@ -225,84 +225,84 @@
 		to_chat(usr, "Error: you are not an admin!", confidential = TRUE)
 		return
 	var/dat
-	dat = text("<HEAD><TITLE>Admin Newscaster</TITLE></HEAD><H3>Admin Newscaster Unit</H3>")
+	dat = text("<HEAD><meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/><TITLE>Griffon Inc</TITLE></HEAD><H3>Панель администратора сети Griffon</H3>")
 
 	switch(admincaster_screen)
 		if(0)
-			dat += "Welcome to the admin newscaster.<BR> Here you can add, edit and censor every newspiece on the network."
-			dat += "<BR>Feed channels and stories entered through here will be uneditable and handled as official news by the rest of the units."
-			dat += "<BR>Note that this panel allows full freedom over the news network, there are no constrictions except the few basic ones. Don't break things!</FONT>"
+			dat += "Добро пожаловать в административную панель сети Griffon.<BR> Здесь вы можете добавлять, редактировать и подвергать цензуре каждую новость в сети."
+			dat += "<BR>Новостные каналы и посты, отображённые здесь, будут недоступны для редактирования и будут отображаться как официальные новости."
+			dat += "<BR>Обратите внимание, что эта панель предоставляет полную свободу в новостной сети, здесь нет никаких ограничений, кроме нескольких основных. Не сломайте нашу систему Griffon!</FONT>"
 			if(GLOB.news_network.wanted_issue.active)
-				dat+= "<HR><A href='?src=[REF(src)];[HrefToken()];ac_view_wanted=1'>Read Wanted Issue</A>"
-			dat+= "<HR><BR><A href='?src=[REF(src)];[HrefToken()];ac_create_channel=1'>Create Feed Channel</A>"
-			dat+= "<BR><A href='?src=[REF(src)];[HrefToken()];ac_view=1'>View Feed Channels</A>"
-			dat+= "<BR><A href='?src=[REF(src)];[HrefToken()];ac_create_feed_story=1'>Submit new Feed story</A>"
-			dat+= "<BR><BR><A href='?src=[REF(usr)];[HrefToken()];mach_close=newscaster_main'>Exit</A>"
+				dat+= "<HR><A href='?src=[REF(src)];[HrefToken()];ac_view_wanted=1'>Ознакомиться с активным розыском</A>"
+			dat+= "<HR><BR><A href='?src=[REF(src)];[HrefToken()];ac_create_channel=1'>Cоздать новостной канал</A>"
+			dat+= "<BR><A href='?src=[REF(src)];[HrefToken()];ac_view=1'>Ознакомиться с лентами каналов</A>"
+			dat+= "<BR><A href='?src=[REF(src)];[HrefToken()];ac_create_feed_story=1'>Создать новый пост</A>"
+			dat+= "<BR><BR><A href='?src=[REF(usr)];[HrefToken()];mach_close=newscaster_main'>Проверка IQ</A>"
 			var/wanted_already = 0
 			if(GLOB.news_network.wanted_issue.active)
 				wanted_already = 1
-			dat+="<HR><B>Feed Security functions:</B><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_wanted=1'>[(wanted_already) ? ("Manage") : ("Publish")] \"Wanted\" Issue</A>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_censor_story=1'>Censor Feed Stories</A>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_censor_channel=1'>Mark Feed Channel with Nanotrasen D-Notice (disables and locks the channel).</A>"
-			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_set_signature=1'>The newscaster recognises you as:<BR> <FONT COLOR='green'>[src.admin_signature]</FONT></A>"
+			dat+="<HR><B>Модуль безопасности сети Griffon:</B><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_wanted=1'>[(wanted_already) ? ("Настроить") : ("Объявить")] \"Розыск\"</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_censor_story=1'>Цензура новостей</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_menu_censor_channel=1'>Установить метку D-Notice <BR>(отключает и блокирует каналы).</A>"
+			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_set_signature=1'>Вы были успешно зарегистрированы под именем:<BR> <FONT COLOR='green'>[src.admin_signature]</FONT></A>"
 		if(1)
-			dat+= "Feed Channels<HR>"
+			dat+= "Доступные каналы в вашем секторе:<HR>"
 			if(!length(GLOB.news_network.network_channels))
-				dat+="<I>No active channels found...</I>"
+				dat+="<I>Активные каналы не найдены...</I>"
 			else
 				for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
 					if(CHANNEL.is_admin_channel)
 						dat+="<B><FONT style='BACKGROUND-COLOR: LightGreen'><A href='?src=[REF(src)];ac_show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A></FONT></B><BR>"
 					else
 						dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR></B>"
-			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_refresh=1'>Refresh</A>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Back</A>"
+			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_refresh=1'>Обновить</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Назад</A>"
 		if(2)
-			dat+="Creating new Feed Channel..."
-			dat+="<HR><B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_name=1'>Channel Name</A>:</B> [src.admincaster_feed_channel.channel_name]<BR>"
-			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_signature=1'>Channel Author</A>:</B> <FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
-			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_lock=1'>Will Accept Public Feeds</A>:</B> [(src.admincaster_feed_channel.locked) ? ("NO") : ("YES")]<BR><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_new_channel=1'>Submit</A><BR><BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Cancel</A><BR>"
+			dat+="Регистрация нового канала:"
+			dat+="<HR><B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_name=1'>Название канала</A>:</B> [src.admincaster_feed_channel.channel_name]<BR>"
+			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_signature=1'>Автор канала:</A>:</B> <FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
+			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_lock=1'>Будет ли канал являться публичным?</A></B> [(src.admincaster_feed_channel.locked) ? ("Нет") : ("Да")]<BR><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_new_channel=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Отменить</A><BR>"
 		if(3)
-			dat+="Creating new Feed Message..."
-			dat+="<HR><B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_receiving=1'>Receiving Channel</A>:</B> [src.admincaster_feed_channel.channel_name]<BR>" //MARK
-			dat+="<B>Message Author:</B> <FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
-			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_new_message=1'>Message Body</A>:</B> [src.admincaster_feed_message.returnBody(-1)] <BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_new_message=1'>Submit</A><BR><BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Cancel</A><BR>"
+			dat+="Публикация нового поста:"
+			dat+="<HR><B><A href='?src=[REF(src)];[HrefToken()];ac_set_channel_receiving=1'>Выбранный канал</A>:</B> [src.admincaster_feed_channel.channel_name]<BR>" //MARK
+			dat+="<B>Автор сообщения:</B> <FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
+			dat+="<B><A href='?src=[REF(src)];[HrefToken()];ac_set_new_message=1'>Сообщение</A>:</B> [src.admincaster_feed_message.returnBody(-1)] <BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_new_message=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Отмена</A><BR>"
 		if(4)
-			dat+="Feed story successfully submitted to [src.admincaster_feed_channel.channel_name].<BR><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+			dat+="Новый пост успешно загружен ​​на канал '[src.admincaster_feed_channel.channel_name]'.<BR><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(5)
-			dat+="Feed Channel [src.admincaster_feed_channel.channel_name] created successfully.<BR><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+			dat+="Канал '[src.admincaster_feed_channel.channel_name]' успешно создан.<BR><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(6)
-			dat+="<B><FONT COLOR='maroon'>ERROR: Could not submit Feed story to Network.</B></FONT><HR><BR>"
+			dat+="<B><FONT COLOR='maroon'>ОШИБКА: Не удалось отправить новый пост в сеть.</B></FONT><HR><BR>"
 			if(src.admincaster_feed_channel.channel_name=="")
-				dat+="<FONT COLOR='maroon'>Invalid receiving channel name.</FONT><BR>"
+				dat+="<FONT COLOR='maroon'>ОШИБКА: Неверное имя для канала.</FONT><BR>"
 			if(src.admincaster_feed_message.returnBody(-1) == "" || src.admincaster_feed_message.returnBody(-1) == "REDACTED")
-				dat+="<FONT COLOR='maroon'>Invalid message body.</FONT><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[3]'>Return</A><BR>"
+				dat+="<FONT COLOR='maroon'>ОШИБКА: Недопустимое сообщение.</FONT><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[3]'>Вернуться</A><BR>"
 		if(7)
-			dat+="<B><FONT COLOR='maroon'>ERROR: Could not submit Feed Channel to Network.</B></FONT><HR><BR>"
+			dat+="<B><FONT COLOR='maroon'>ОШИБКА: Не удалось создать канал в сети Griffon.</B></FONT><HR><BR>"
 			if(src.admincaster_feed_channel.channel_name =="" || src.admincaster_feed_channel.channel_name == "REDACTED")
-				dat+="<FONT COLOR='maroon'>Invalid channel name.</FONT><BR>"
+				dat+="<FONT COLOR='maroon'>Неверное имя для канала.</FONT><BR>"
 			var/check = 0
 			for(var/datum/newscaster/feed_channel/FC in GLOB.news_network.network_channels)
 				if(FC.channel_name == src.admincaster_feed_channel.channel_name)
 					check = 1
 					break
 			if(check)
-				dat+="<FONT COLOR='maroon'>Channel name already in use.</FONT><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[2]'>Return</A><BR>"
+				dat+="<FONT COLOR='maroon'>Название канала уже используется.</FONT><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[2]'>Вернуться</A><BR>"
 		if(9)
-			dat+="<B>[admincaster_feed_channel.channel_name]: </B><FONT SIZE=1>created by: <FONT COLOR='maroon'>[admincaster_feed_channel.returnAuthor(-1)]</FONT></FONT><HR>"
+			dat+="<B>[admincaster_feed_channel.channel_name]: </B><FONT SIZE=1>Автор: <FONT COLOR='maroon'>[admincaster_feed_channel.returnAuthor(-1)]</FONT></FONT><HR>"
 			if(src.admincaster_feed_channel.censored)
-				dat+="<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with a Nanotrasen D-Notice.<BR>"
-				dat+="No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>"
+				dat+="<I><FONT COLOR='red'><B>ВНИМАНИЕ: </B></FONT>Этот канал был признан угрожающим благополучию сектора и отмечен меткой 'D-Notice' администрацией информационной сети Griffon.<BR>"
+				dat+="Под действием метки 'D-Notice' дальнейший просмотр канала и добавление новых постов запрещено.</FONT></I><BR><BR>"
 			else
 				if(!length(src.admincaster_feed_channel.messages))
-					dat+="<I>No feed messages found in channel...</I><BR>"
+					dat+="<I>В канале не найдено каких-либо постов...</I><BR>"
 				else
 					var/i = 0
 					for(var/datum/newscaster/feed_message/MESSAGE in src.admincaster_feed_channel.messages)
@@ -311,110 +311,110 @@
 						if(MESSAGE.img)
 							usr << browse_rsc(MESSAGE.img, "tmp_photo[i].png")
 							dat+="<img src='tmp_photo[i].png' width = '180'><BR><BR>"
-						dat+="<FONT SIZE=1>Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
+						dat+="<FONT SIZE=1>Автор: <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
 						dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]:<br>"
 						for(var/datum/newscaster/feed_comment/comment in MESSAGE.comments)
 							dat+="[comment.body]<br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
 						dat+="<br>"
-			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_refresh=1'>Refresh</A>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[1]'>Back</A>"
+			dat+="<BR><HR><A href='?src=[REF(src)];[HrefToken()];ac_refresh=1'>Обновить</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[1]'>Вернуться</A>"
 		if(10)
-			dat+="<B>Nanotrasen Feed Censorship Tool</B><BR>"
-			dat+="<FONT SIZE=1>NOTE: Due to the nature of news Feeds, total deletion of a Feed Story is not possible.<BR>"
-			dat+="Keep in mind that users attempting to view a censored feed will instead see the REDACTED tag above it.</FONT>"
-			dat+="<HR>Select Feed channel to get Stories from:<BR>"
+			dat+="<B>Инструмент цензуры каналов:</B><BR>"
+			dat+="<I><FONT SIZE=2>ПРИМЕЧАНИЕ: Из-за технических работ полное удаление каналов невозможно.<BR>"
+			dat+="Имейте в виду, что пользователи, пытающиеся просмотреть цензурированный канал, вместо канала увидят \[REDACTED\] тег над ним.</FONT></I>"
+			dat+="<HR>Выберите канал, чтобы ознакомиться с лентой:<BR>"
 			if(!length(GLOB.news_network.network_channels))
-				dat+="<I>No feed channels found active...</I><BR>"
+				dat+="<I>Активные каналы не найдены...</I><BR>"
 			else
 				for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
 					dat+="<A href='?src=[REF(src)];[HrefToken()];ac_pick_censor_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Cancel</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Отмена</A>"
 		if(11)
-			dat+="<B>Nanotrasen D-Notice Handler</B><HR>"
-			dat+="<FONT SIZE=1>A D-Notice is to be bestowed upon the channel if the handling Authority deems it as harmful for the station's"
-			dat+="morale, integrity or disciplinary behaviour. A D-Notice will render a channel unable to be updated by anyone, without deleting any feed"
-			dat+="stories it might contain at the time. You can lift a D-Notice if you have the required access at any time.</FONT><HR>"
+			dat+="<B>Модуль D-Notice:</B><HR>"
+			dat+="<I><FONT SIZE=2>Метка D-Notice должна быть прикреплена к каналу, если администрация сочтет его запрещённым для сектора. "
+			dat+="D-Notice сделает канал недоступным для обновления кем-либо, но без удаления самого канала. "
+			dat+="Вы можете отменить D-Notice, если у вас есть необходимый доступ, в любое время.</FONT></I><HR>"
 			if(!length(GLOB.news_network.network_channels))
-				dat+="<I>No feed channels found active...</I><BR>"
+				dat+="<I>Активные каналы не найдены...</I><BR>"
 			else
 				for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
 					dat+="<A href='?src=[REF(src)];[HrefToken()];ac_pick_d_notice=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
 
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Back</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A>"
 		if(12)
-			dat+="<B>[src.admincaster_feed_channel.channel_name]: </B><FONT SIZE=1> created by: <FONT COLOR='maroon'>[src.admincaster_feed_channel.returnAuthor(-1)]</FONT> </FONT><BR>"
-			dat+="<FONT SIZE=2><A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_author=[REF(src.admincaster_feed_channel)]'>[(src.admincaster_feed_channel.authorCensor) ? ("Undo Author censorship") : ("Censor channel Author")]</A></FONT><HR>"
+			dat+="<B>[src.admincaster_feed_channel.channel_name]: </B><FONT SIZE=1> Автор: <FONT COLOR='maroon'>[src.admincaster_feed_channel.returnAuthor(-1)]</FONT> </FONT><BR>"
+			dat+="<FONT SIZE=2><A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_author=[REF(src.admincaster_feed_channel)]'>[(src.admincaster_feed_channel.authorCensor) ? ("Отменить цензуру автора") : ("Скрыть имя автора")]</A></FONT><HR>"
 
 			if(!length(src.admincaster_feed_channel.messages))
-				dat+="<I>No feed messages found in channel...</I><BR>"
+				dat+="<I>В канале не найдено постов...</I><BR>"
 			else
 				for(var/datum/newscaster/feed_message/MESSAGE in src.admincaster_feed_channel.messages)
-					dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
-					dat+="<FONT SIZE=2><A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Undo story censorship") : ("Censor story")]</A>  -  <A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Undo Author Censorship") : ("Censor message Author")]</A></FONT><BR>"
-					dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='?src=[REF(src)];[HrefToken()];ac_lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Unlock" : "Lock"]</a><br>"
+					dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>Автор: <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
+					dat+="<FONT SIZE=2><A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Отменить цензуру сообщения") : ("Заблокировать сообщение")]</A>  -  <A href='?src=[REF(src)];[HrefToken()];ac_censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Отменить цензуру имени автора") : ("Скрыть имя автора")]</A></FONT><BR>"
+					dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='?src=[REF(src)];[HrefToken()];ac_lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Разблокированы" : "Заблокированы"]</a><br>"
 					for(var/datum/newscaster/feed_comment/comment in MESSAGE.comments)
 						dat+="[comment.body] <a href='?src=[REF(src)];[HrefToken()];ac_del_comment=[REF(comment)];ac_del_comment_msg=[REF(MESSAGE)]'>X</a><br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[10]'>Back</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[10]'>Вернуться</A>"
 		if(13)
-			dat+="<B>[src.admincaster_feed_channel.channel_name]: </B><FONT SIZE=1> created by: <FONT COLOR='maroon'>[src.admincaster_feed_channel.returnAuthor(-1)]</FONT> </FONT><BR>"
-			dat+="Channel messages listed below. If you deem them dangerous to the station, you can <A href='?src=[REF(src)];[HrefToken()];ac_toggle_d_notice=[REF(src.admincaster_feed_channel)]'>Bestow a D-Notice upon the channel</A>.<HR>"
+			dat+="<B>[src.admincaster_feed_channel.channel_name]: </B><FONT SIZE=1> Автор: <FONT COLOR='maroon'>[src.admincaster_feed_channel.returnAuthor(-1)]</FONT> </FONT><BR>"
+			dat+="Если вы считаете cообщения канала, что перечислены ниже, опасными для сектора, вы можете <A href='?src=[REF(src)];[HrefToken()];ac_toggle_d_notice=[REF(src.admincaster_feed_channel)]'>редактировать метку D-Notice для этого канала</A>.<HR>"
 			if(src.admincaster_feed_channel.censored)
-				dat+="<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with a Nanotrasen D-Notice.<BR>"
-				dat+="No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>"
+				dat+="<FONT COLOR='red'><B>ВНИМАНИЕ: </B></FONT>Этот канал был признан угрожающим благополучию сектора и отмечен меткой D-Notice администрацией Griffon.<BR>"
+				dat+="Под действием метки D-Notice дальнейшее добавление новых постов запрещено.</FONT><BR><BR>"
 			else
 				if(!length(src.admincaster_feed_channel.messages))
-					dat+="<I>No feed messages found in channel...</I><BR>"
+					dat+="<I>В канале не найдено постов...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_message/MESSAGE in src.admincaster_feed_channel.messages)
-						dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
+						dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>Автор: <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT></FONT><BR>"
 			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[11]'>Back</A>"
 		if(14)
-			dat+="<B>Wanted Issue Handler:</B>"
+			dat+="<B>Модуль безопасности:</B>"
 			var/wanted_already = 0
 			var/end_param = 1
 			if(GLOB.news_network.wanted_issue.active)
 				wanted_already = 1
 				end_param = 2
 			if(wanted_already)
-				dat+="<FONT SIZE=2><BR><I>A wanted issue is already in Feed Circulation. You can edit or cancel it below.</FONT></I>"
+				dat+="<FONT SIZE=2><BR><I>Преступник уже объявлен в новостных каналах. Вы можете отредактировать или отменить ориентировку ниже.</FONT></I>"
 			dat+="<HR>"
-			dat+="<A href='?src=[REF(src)];[HrefToken()];ac_set_wanted_name=1'>Criminal Name</A>: [src.admincaster_wanted_message.criminal] <BR>"
-			dat+="<A href='?src=[REF(src)];[HrefToken()];ac_set_wanted_desc=1'>Description</A>: [src.admincaster_wanted_message.body] <BR>"
+			dat+="<A href='?src=[REF(src)];[HrefToken()];ac_set_wanted_name=1'>Имя цели</A>: [src.admincaster_wanted_message.criminal] <BR>"
+			dat+="<A href='?src=[REF(src)];[HrefToken()];ac_set_wanted_desc=1'>Описание</A>: [src.admincaster_wanted_message.body] <BR>"
 			if(wanted_already)
-				dat+="<B>Wanted Issue created by:</B><FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT><BR>"
+				dat+="<B>Розыск был объявлен пользователем:</B><FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT><BR>"
 			else
-				dat+="<B>Wanted Issue will be created under prosecutor:</B><FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_wanted=[end_param]'>[(wanted_already) ? ("Edit Issue") : ("Submit")]</A>"
+				dat+="<B>Розыск будет объявлен пользователем:</B><FONT COLOR='green'>[src.admin_signature]</FONT><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_submit_wanted=[end_param]'>[(wanted_already) ? ("Редактировать цель") : ("Подтвердить")]</A>"
 			if(wanted_already)
-				dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_cancel_wanted=1'>Take down Issue</A>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Cancel</A>"
+				dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_cancel_wanted=1'>Отменить розыск</A>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Отмена</A>"
 		if(15)
-			dat+="<FONT COLOR='green'>Wanted issue for [src.admincaster_wanted_message.criminal] is now in Network Circulation.</FONT><BR><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+			dat+="<FONT COLOR='green'>Розыск на '[src.admincaster_wanted_message.criminal]' был успешно опубликован на первых строчках сети Griffon.</FONT><BR><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(16)
-			dat+="<B><FONT COLOR='maroon'>ERROR: Wanted Issue rejected by Network.</B></FONT><HR><BR>"
+			dat+="<B><FONT COLOR='maroon'>ERROR: Розыск был отменён сетью Griffon.</B></FONT><HR><BR>"
 			if(src.admincaster_wanted_message.criminal =="" || src.admincaster_wanted_message.criminal == "REDACTED")
-				dat+="<FONT COLOR='maroon'>Invalid name for person wanted.</FONT><BR>"
+				dat+="<FONT COLOR='maroon'>Неверное имя разыскиваемого.</FONT><BR>"
 			if(src.admincaster_wanted_message.body == "" || src.admincaster_wanted_message.body == "REDACTED")
-				dat+="<FONT COLOR='maroon'>Invalid description.</FONT><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+				dat+="<FONT COLOR='maroon'>Неверное описание.</FONT><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(17)
-			dat+="<B>Wanted Issue successfully deleted from Circulation</B><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+			dat+="<B>Розыск успешно был удалён с сети Griffon</B><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(18)
-			dat+="<B><FONT COLOR ='maroon'>-- STATIONWIDE WANTED ISSUE --</B></FONT><BR><FONT SIZE=2>Submitted by: <FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT></FONT><HR>"
-			dat+="<B>Criminal</B>: [GLOB.news_network.wanted_issue.criminal]<BR>"
-			dat+="<B>Description</B>: [GLOB.news_network.wanted_issue.body]<BR>"
-			dat+="<B>Photo:</B>: "
+			dat+="<B><FONT COLOR ='maroon'>-- ОБЪЯВЛЕН РОЗЫСК --</B></FONT><BR><FONT SIZE=2>Утверждено: <FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT></FONT><HR>"
+			dat+="<B>Цель</B>: [GLOB.news_network.wanted_issue.criminal]<BR>"
+			dat+="<B>Описание</B>: [GLOB.news_network.wanted_issue.body]<BR>"
+			dat+="<B>Прикреплённые материалы:</B>: "
 			if(GLOB.news_network.wanted_issue.img)
 				usr << browse_rsc(GLOB.news_network.wanted_issue.img, "tmp_photow.png")
 				dat+="<BR><img src='tmp_photow.png' width = '180'>"
 			else
-				dat+="None"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Back</A><BR>"
+				dat+="Отсутствуют"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		if(19)
-			dat+="<FONT COLOR='green'>Wanted issue for [src.admincaster_wanted_message.criminal] successfully edited.</FONT><BR><BR>"
-			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Return</A><BR>"
+			dat+="<FONT COLOR='green'>Розыск для '[src.admincaster_wanted_message.criminal]' успешно отредактирован.</FONT><BR><BR>"
+			dat+="<BR><A href='?src=[REF(src)];[HrefToken()];ac_setScreen=[0]'>Вернуться</A><BR>"
 		else
 			dat+="I'm sorry to break your immersion. This shit's bugged. Report this bug to Agouri, polyxenitopalidou@gmail.com"
 

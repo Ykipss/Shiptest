@@ -52,7 +52,7 @@
 	},
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "ap" = (
@@ -81,9 +81,14 @@
 /obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/clothing/shoes/combat,
 /obj/item/shield/riot/tele,
+/obj/item/clothing/accessory/holster,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/gun/ballistic/revolver/horizonx,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "aq" = (
@@ -193,7 +198,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/pet/mothroach{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/security/prison)
@@ -629,7 +634,7 @@
 /area/ship/crew/canteen/kitchen)
 "cM" = (
 /obj/machinery/door/airlock/security/glass{
-	req_access_txt = "147;148;2";
+	req_access_txt = "147;148";
 	name = "Карцер"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1027,6 +1032,10 @@
 /obj/item/clothing/head/helmet/inteq,
 /obj/item/clothing/head/helmet/inteq,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
+/obj/item/card/id/inteq/maas,
+/obj/item/card/id/inteq/enfco,
+/obj/item/card/id/inteq/enfco,
+/obj/item/card/id/inteq/vanguard,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fx" = (
@@ -1034,7 +1043,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/security{
-	req_access_txt = "147;148;3";
+	req_access_txt = "147;148";
 	name = "Armory"
 	},
 /obj/machinery/door/poddoor/shutters{
@@ -1056,7 +1065,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -1137,8 +1146,11 @@
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "gn" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
+/obj/structure/chair/comfy/brown{
+	dir = 4
+	},
+/turf/open/floor/carpet/black,
+/area/ship/crew/dorm)
 "gr" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -1166,13 +1178,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "gy" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "gF" = (
@@ -1202,13 +1208,7 @@
 /area/ship/maintenance/central)
 "gG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "gJ" = (
@@ -1277,7 +1277,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/security{
-	req_access_txt = "147;148;2";
+	req_access_txt = "147;148";
 	name = "Бриг"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -1300,16 +1300,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/communications)
-"hb" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "hc" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
 	dir = 6
@@ -1417,7 +1407,8 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/rack,
-/obj/item/gun/energy/laser,
+/obj/item/gun/energy/laser/e10,
+/obj/item/stock_parts/cell/gun,
 /turf/open/floor/plating{
 	explosion_block = 7
 	},
@@ -1608,16 +1599,6 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
-"iW" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 6;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "jd" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1654,16 +1635,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ship/engineering/communications)
-"jA" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "jC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -1708,7 +1679,7 @@
 "jR" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "prisoner";
-	req_access_txt = "147;2"
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/turf_decal/corner/opaque/brown{
@@ -2423,7 +2394,7 @@
 /obj/machinery/button/door{
 	name = "Локдаун брига";
 	id = "Brig";
-	req_access_txt = "147;148;3";
+	req_access_txt = "147;148";
 	pixel_x = -9
 	},
 /turf/open/floor/plasteel/dark,
@@ -2640,7 +2611,7 @@
 /area/ship/security/prison)
 "qd" = (
 /obj/machinery/door/airlock/security/glass{
-	req_access_txt = "147;148;2";
+	req_access_txt = "147;148";
 	name = "Камера содержания"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2654,7 +2625,7 @@
 "qe" = (
 /obj/machinery/airalarm/directional/north,
 /mob/living/simple_animal/mouse{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
@@ -2678,7 +2649,7 @@
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/gun/ballistic/automatic/pistol/commissar{
 	desc = "A Nanotrasen-issue handgun, modified to further enhance it's effectiveness in troop discipline.There seems to be a small speaker screwed to the side."
@@ -2719,18 +2690,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"qE" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "qI" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2812,16 +2771,9 @@
 	},
 /area/ship/security/armory)
 "rz" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 6;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
+/obj/machinery/porta_turret/syndicate/energy/inteq,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "rA" = (
 /obj/effect/turf_decal/siding/thinplating{
@@ -2904,13 +2856,13 @@
 	pixel_y = 22;
 	name = "Внешние створки брига";
 	id = "Brig_exit";
-	req_access_txt = "147;148;2"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/button/shieldwallgen{
 	pixel_x = 10;
 	pixel_y = 20;
 	id = "Hamm_down_ex";
-	req_access_txt = "147;148;2"
+	req_access_txt = "147;148"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2994,22 +2946,13 @@
 	},
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/p16/g36drum,
+/obj/item/ammo_box/magazine/p16,
+/obj/item/ammo_box/magazine/m12g/small,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
 	},
 /area/ship/security/armory)
-"sm" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
-/area/ship/bridge)
 "sn" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3036,7 +2979,7 @@
 	dir = 8
 	},
 /obj/machinery/vending/security/wall{
-	req_access = "147;148;3";
+	req_access_txt = "147;148";
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/dark,
@@ -3076,7 +3019,7 @@
 "sR" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "prisoner";
-	req_access_txt = "147;2"
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/turf_decal/corner/opaque/brown{
@@ -3295,7 +3238,7 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/mouse/white{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -3321,7 +3264,7 @@
 /area/ship/engineering/communications)
 "uv" = (
 /obj/structure/closet/secure_closet/medical3{
-	req_access_txt = "147;45";
+	req_access_txt = "147";
 	req_access = null
 	},
 /obj/item/clothing/suit/armor/inteq/corpsman,
@@ -3374,7 +3317,7 @@
 /obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/computer/helm/viewscreen/directional/west,
 /mob/living/simple_animal/crab{
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	name = "Rat King"
 	},
 /obj/structure/bed/dogbed/runtime{
@@ -3495,7 +3438,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -3547,12 +3490,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "vU" = (
-/obj/machinery/porta_turret/ship/weak{
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "vX" = (
@@ -3724,7 +3662,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/brown{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4097,8 +4035,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/ai{
+	density = 0;
+	faction = list("InteQ");
+	layer = 3.6
+	},
 /turf/open/floor/plating,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "yG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -4278,9 +4221,11 @@
 /obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/clothing/shoes/combat,
 /obj/item/shield/riot/tele,
+/obj/item/clothing/accessory/holster,
+/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
+/obj/item/ammo_box/magazine/m45,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "zM" = (
@@ -4394,7 +4339,7 @@
 	},
 /obj/structure/closet/secure_closet{
 	icon_state = "prisoner";
-	req_access_txt = "147;2"
+	req_access_txt = "147"
 	},
 /obj/item/bedsheet/random,
 /obj/item/clothing/under/rank/prisoner/skirt,
@@ -4415,7 +4360,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
@@ -4437,6 +4382,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "147;148"
 	},
+/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -4582,7 +4528,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/brown{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4729,7 +4675,7 @@
 "BF" = (
 /obj/structure/closet/secure_closet/medical2{
 	req_access = null;
-	req_access_txt = "147;45"
+	req_access_txt = "147"
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/white,
@@ -4815,16 +4761,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ship/cargo)
-"Cc" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "Cd" = (
 /obj/machinery/vending/snack/random,
 /obj/structure/disposalpipe/segment{
@@ -4972,7 +4908,6 @@
 	pixel_y = 29
 	},
 /obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "Dw" = (
@@ -5044,6 +4979,7 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/automatic/smg/inteq,
+/obj/item/gun/ballistic/shotgun/bulldog/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -5067,7 +5003,7 @@
 "DM" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "Brig_arm"
@@ -5129,7 +5065,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
@@ -5175,7 +5111,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5206,14 +5142,14 @@
 	name = "Карцер";
 	pixel_x = 10;
 	pixel_y = -20;
-	req_access_txt = "147;148;2"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Hamm_cell2";
 	name = "Общая камера";
 	pixel_y = -20;
-	req_access_txt = "147;148;2";
+	req_access_txt = "147;148";
 	pixel_x = -10
 	},
 /turf/open/floor/plasteel/dark,
@@ -5279,7 +5215,7 @@
 /obj/effect/spawner/lootdrop/donkpockets,
 /obj/effect/spawner/lootdrop/donkpockets,
 /mob/living/simple_animal/mouse{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5541,6 +5477,7 @@
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb,
+/obj/item/grenade/frag,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -5653,9 +5590,6 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/hatchet/wooden,
 /obj/item/lighter/greyscale,
-/obj/structure/chair/wood{
-	dir = 1
-	},
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "GE" = (
@@ -5700,14 +5634,14 @@
 	can_be_unanchored = 1;
 	icon_state = "warden";
 	name = "master at arms' locker";
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/light/directional/north,
 /obj/machinery/button/door{
 	pixel_y = 22;
 	name = "Оружейная брига";
 	id = "Brig_arm";
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
@@ -5725,10 +5659,21 @@
 /obj/item/storage/box/prisoner,
 /obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/item/ammo_box/magazine/m45,
+/obj/item/ammo_box/magazine/m45,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
 "GR" = (
 /obj/machinery/airalarm/directional/south,
+/obj/structure/closet/crate/secure/weapon{
+	req_access_txt = "147;148"
+	},
+/obj/item/ammo_box/c38_box,
+/obj/item/paper{
+	name = "Scrape paper";
+	default_raw_text = "old but gold"
+	},
+/obj/item/gun/ballistic/shotgun/winchester,
+/obj/item/gun/ballistic/shotgun/winchester/mk1,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Ha" = (
@@ -6047,7 +5992,7 @@
 "IG" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null;
-	req_access_txt = "147;45"
+	req_access_txt = "147"
 	},
 /obj/item/clothing/suit/armor/inteq/corpsman,
 /obj/item/clothing/suit/armor/inteq/corpsman,
@@ -6219,7 +6164,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -6564,6 +6509,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/light/small/directional/east,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
 "LY" = (
@@ -6859,7 +6805,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/porta_turret/ai{
 	density = 0;
-	faction = list("PlayerInteQ");
+	faction = list("InteQ");
 	layer = 3.6
 	},
 /turf/open/floor/plating,
@@ -6919,14 +6865,6 @@
 	name = "weapons locker";
 	req_access_txt = "147;148"
 	},
-/obj/item/gun/ballistic/shotgun/winchester,
-/obj/item/gun/ballistic/shotgun/winchester,
-/obj/item/gun/ballistic/shotgun/winchester,
-/obj/item/paper{
-	name = "Scrape paper";
-	default_raw_text = "old but gold"
-	},
-/obj/item/ammo_box/c38_box,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -6984,18 +6922,6 @@
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"ON" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	explosion_block = 5
-	},
 /area/ship/bridge)
 "OO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -7057,7 +6983,7 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/security{
-	req_access_txt = "147;148;2";
+	req_access_txt = "147;148";
 	name = "Бриг"
 	},
 /turf/open/floor/plasteel/dark,
@@ -7115,13 +7041,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "PB" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 9;
-	faction = list("PlayerInteQ");
-	req_access = null;
-	req_access_txt = "147;148;3";
-	max_integrity = 200
-	},
+/obj/machinery/porta_turret/syndicate/energy/inteq,
 /turf/closed/wall/mineral/plastitanium/nodiagonal{
 	explosion_block = 5
 	},
@@ -7294,7 +7214,7 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/gun/energy/disabler,
 /obj/item/gun/energy/disabler,
@@ -7430,16 +7350,6 @@
 /obj/machinery/pipedispenser,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"Rb" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10;
-	faction = list("PlayerInteQ");
-	req_access_txt = "147;148;3";
-	req_access = null;
-	max_integrity = 200
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "Rg" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/plastic,
@@ -7869,7 +7779,7 @@
 	},
 /obj/machinery/door/airlock/highsecurity{
 	explosion_block = 7;
-	req_access_txt = "147;148;3";
+	req_access_txt = "147;148";
 	name = "Укрепленная оружейная"
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -7892,7 +7802,7 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/storage/toolbox/ammo/c10mm,
@@ -8242,11 +8152,20 @@
 "XD" = (
 /obj/effect/turf_decal/box/white,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;148;3"
+	req_access_txt = "147;148"
 	},
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/co9mm,
+/obj/item/ammo_box/magazine/m45,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/m45,
+/obj/item/ammo_box/magazine/p16/g36,
+/obj/item/ammo_box/magazine/p16/g36sh,
+/obj/item/ammo_box/magazine/p16/g36sh,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "XK" = (
@@ -8488,7 +8407,9 @@
 	pixel_x = -5
 	},
 /obj/machinery/air_sensor/atmos/toxin_tank,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/plasma{
+	initial_gas_mix = "plasma=199999;TEMP=193.15"
+	},
 /area/ship/engineering/atmospherics)
 "Yt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8708,7 +8629,7 @@
 	pixel_y = 4
 	},
 /mob/living/simple_animal/mouse/gray{
-	faction = list("PlayerInteQ")
+	faction = list("InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -8796,11 +8717,11 @@ Vx
 Vx
 wB
 fn
-qE
+PB
 mW
 fO
 mW
-ON
+PB
 Vx
 Vx
 Vx
@@ -8816,7 +8737,7 @@ PB
 Jy
 tF
 Jy
-ON
+PB
 fn
 wB
 Vx
@@ -8830,7 +8751,7 @@ Vx
 Vx
 Vx
 fn
-fO
+PB
 fO
 WZ
 qD
@@ -8852,7 +8773,7 @@ ys
 Ld
 Wc
 tF
-tF
+PB
 fn
 Vx
 Vx
@@ -9040,7 +8961,7 @@ Vx
 Vx
 Vx
 fn
-sm
+PB
 fO
 fO
 fO
@@ -9062,7 +8983,7 @@ tF
 tF
 tF
 tF
-rz
+PB
 fn
 Vx
 Vx
@@ -9289,7 +9210,7 @@ Vx
 fn
 DR
 TT
-IV
+gn
 OZ
 rP
 xW
@@ -9322,7 +9243,7 @@ Vx
 Vx
 Vx
 fn
-eL
+rz
 eL
 Bm
 GD
@@ -9340,7 +9261,7 @@ vX
 VI
 ex
 MR
-MR
+gy
 fn
 Vx
 Vx
@@ -9813,7 +9734,7 @@ Vx
 Vx
 Vx
 fn
-fP
+gy
 fP
 fP
 fP
@@ -9829,7 +9750,7 @@ ml
 ml
 ml
 ml
-ml
+gy
 fn
 Vx
 Vx
@@ -10121,7 +10042,7 @@ Vx
 "}
 (40,1,1) = {"
 Vx
-jA
+vU
 mW
 mW
 gy
@@ -10148,10 +10069,10 @@ dp
 Sy
 mR
 dp
-hb
+gy
 mW
 mW
-Rb
+vU
 Vx
 "}
 (41,1,1) = {"
@@ -10226,7 +10147,7 @@ Vx
 "}
 (43,1,1) = {"
 Vx
-HW
+vU
 CM
 wW
 wW
@@ -10331,7 +10252,7 @@ Vx
 "}
 (46,1,1) = {"
 Vx
-gn
+pD
 Yu
 Uj
 Me
@@ -10361,7 +10282,7 @@ sR
 Dg
 Dg
 Dg
-gn
+vU
 Vx
 "}
 (47,1,1) = {"
@@ -10577,7 +10498,7 @@ Vx
 (53,1,1) = {"
 Vx
 Vx
-Cc
+vU
 pD
 pD
 xA
@@ -10605,7 +10526,7 @@ Ig
 kw
 Tb
 Tb
-iW
+vU
 Vx
 Vx
 "}
@@ -10670,7 +10591,7 @@ vU
 Tc
 Tc
 Tb
-iW
+vU
 Vx
 Vx
 Vx

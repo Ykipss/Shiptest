@@ -170,7 +170,7 @@
 	id = /obj/item/card/id/inteq/vanguard
 
 /datum/outfit/job/captain/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
-	H.faction |= list("PlayerInteQ")
+	H.faction |= list("InteQ")
 
 	var/obj/item/card/id/I = H.wear_id
 	I.registered_name = pick(GLOB.commando_names)

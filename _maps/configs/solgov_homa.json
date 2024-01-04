@@ -4,7 +4,6 @@
 	"prefix": "EUSF",
 	"namelists": [
 		"SPACE",
-		"SOLGOV",
 		"WEAPONS"
 	],
 	"map_short_name": "Homa-class",
@@ -36,5 +35,5 @@
 		}
 	},
 
-	"enabled": false
+	"enabled": true
 }

@@ -225,11 +225,11 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 	id = /obj/item/card/id/inteq/enf
 
 /datum/outfit/job/security/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
-	H.faction |= list("PlayerInteQ")
+	H.faction |= list("InteQ")
 
 	var/obj/item/card/id/I = H.wear_id
 	I.registered_name = pick(GLOB.commando_names)
-	I.access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACESS_INTEQ_GENERAL, ACESS_INTEQ_SECURITY)
+	I.access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL, ACCESS_INTEQ_SECURITY)
 	I.update_label()
 
 /datum/outfit/job/security/nanotrasen

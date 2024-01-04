@@ -13,16 +13,24 @@
 			break
 	if(!active_admins)
 		SSticker.Reboot("Restart requested from the discord.", "discord")
-		return "Запущен перезапуск..."
+		return new /datum/tgs_message_content("Запущен перезапуск...")
 	else
-		return "На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!"
+		return new /datum/tgs_message_content("На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!")
 
 /datum/tgs_chat_command/join
 	name = "join"
 	help_text = "Покажет ссылку для подключения к игре."
 
 /datum/tgs_chat_command/join/Run(datum/tgs_chat_user/sender, params)
-	return "<[world.internet_address]:[world.port]>"
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "Join Server"
+	embed.colour = COLOR_DARK_CYAN
+	embed.description = "Enter this URL into the BYOND pager to join the server: byond://[world.internet_address]:[world.port]"
+
+	var/datum/tgs_message_content/join = new()
+	join.embed = embed
+
+	return join
 
 /datum/tgs_chat_command/tgsstatus
 	name = "status"
@@ -33,16 +41,63 @@
 /datum/tgs_chat_command/tgsstatus/Run(datum/tgs_chat_user/sender, params)
 	var/rtod = REALTIMEOFDAY
 	if(rtod - last_tgs_status < TGS_STATUS_THROTTLE)
-		return
+		return new /datum/tgs_message_content("Please wait a few seconds before using this command again.")
 	last_tgs_status = rtod
-	var/list/adm = get_admin_counts()
-	var/list/allmins = adm["total"]
-	var/status = "Администраторы: [allmins.len] (Активные: [english_list(adm["present"])] AFK: [english_list(adm["afk"])] Скрытые: [english_list(adm["stealth"])] Пропущенные: [english_list(adm["noflags"])]). "
-	status += "Игроки: [GLOB.clients.len] (Активные: [get_active_player_count(0,1,0)]). Режим: [SSticker.mode ? SSticker.mode.name : "Не запущен."]."
-	for(var/c in GLOB.clients)
-		var/client/C = c
-		status += "\n[C.key]"
+
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "Server Admin Status"
+	embed.colour = COLOR_DARK_CYAN
+
+	embed.fields = list()
+	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "Раунд #[GLOB.round_id]" : "Не запущен"]\n[station_name()]\n[length(SSovermap.controlled_ships)] кораблей")
+	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", tgsadminwho())
+	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "Всего: [length(GLOB.clients)]\nАктивных: [get_active_player_count(FALSE, TRUE, FALSE)]\nЖивых: [get_active_player_count(TRUE, TRUE, TRUE)]")
+
+	embed.fields += new /datum/tgs_chat_embed/field("Тикеты", "Активных: [length(GLOB.ahelp_tickets.active_tickets)]\nВыполненых: [length(GLOB.ahelp_tickets.resolved_tickets)]\nЗакрытых: [length(GLOB.ahelp_tickets.closed_tickets)]")
+	embed.fields += new /datum/tgs_chat_embed/field("Interviews", "Open: [length(GLOB.interviews.open_interviews) - length(GLOB.interviews.interview_queue)]\nSubmitted: [length(GLOB.interviews.interview_queue)]\nClosed: [length(GLOB.interviews.closed_interviews)]")
+
+	embed.fields += new /datum/tgs_chat_embed/field("Режим", "[SSticker.mode ? SSticker.mode.name : "Не запущен"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME)
+	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
+
+	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)
+		field.is_inline = TRUE
+
+	var/datum/tgs_message_content/status = new()
+	status.embed = embed
+
 	return status
+
+/datum/tgs_chat_command/subsystems
+	name = "subsystems"
+	help_text = "Gets the status of the server subsystems"
+	admin_only = TRUE
+	var/last_tgs_subsystems = 0
+
+/datum/tgs_chat_command/subsystems/Run(datum/tgs_chat_user/sender, params)
+	var/rtod = REALTIMEOFDAY
+	if(rtod - last_tgs_subsystems < TGS_STATUS_THROTTLE)
+		return new /datum/tgs_message_content("Please wait a few seconds before using this command again.")
+	last_tgs_subsystems = rtod
+
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "Server Subsystems"
+	embed.colour = COLOR_DARK_CYAN
+
+	embed.description = Master.stat_entry()
+
+	embed.fields = list()
+	for(var/datum/controller/subsystem/sub_system as anything in Master.subsystems)
+		if(params && !findtext(sub_system.name, params))
+			continue
+		var/datum/tgs_chat_embed/field/sub_system_entry = new ("\[[sub_system.state_letter()]] [sub_system.name]", sub_system.stat_entry())
+		sub_system_entry.is_inline = TRUE
+		embed.fields += sub_system_entry
+
+	var/datum/tgs_message_content/subsystems = new()
+	subsystems.embed = embed
+
+	return subsystems
 
 /datum/tgs_chat_command/tgscheck
 	name = "check"
@@ -52,10 +107,27 @@
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
 	var/rtod = REALTIMEOFDAY
 	if(rtod - last_tgs_check < TGS_STATUS_THROTTLE)
-		return
+		return new /datum/tgs_message_content("Please wait a few seconds before using this command again.")
 	last_tgs_check = rtod
-	var/server = CONFIG_GET(string/server)
-	return "[GLOB.round_id ? "Раунд #[GLOB.round_id]: " : ""][GLOB.clients.len] игроков, Игровой режим: [GLOB.master_mode]; Раунд [SSticker.HasRoundStarted() ? (SSticker.IsRoundInProgress() ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
+
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "Состояние сервера:"
+	embed.colour = COLOR_DARK_CYAN
+
+	embed.fields = list()
+	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "[GLOB.round_id]" : "Не запущен"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "[length(GLOB.player_list) || "отсутствуют"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", "[length(GLOB.admins) || "отсутствуют"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME)
+	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
+
+	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)
+		field.is_inline = TRUE
+
+	var/datum/tgs_message_content/status = new()
+	status.embed = embed
+
+	return status
 
 /datum/tgs_chat_command/ahelp
 	name = "ahelp"
@@ -65,7 +137,7 @@
 /datum/tgs_chat_command/ahelp/Run(datum/tgs_chat_user/sender, params)
 	var/list/all_params = splittext(params, " ")
 	if(all_params.len < 2)
-		return "Неверные параметры."
+		return new /datum/tgs_message_content("Неверные параметры.")
 	var/target = all_params[1]
 	all_params.Cut(1, 2)
 	var/id = text2num(target)
@@ -74,10 +146,10 @@
 		if(AH)
 			target = AH.initiator_ckey
 		else
-			return "Тикет #[id] не найден!"
+			return new /datum/tgs_message_content("Тикет #[id] не найден!")
 	var/res = TgsPm(target, all_params.Join(" "), sender.friendly_name)
 	if(res != "Message Successful")
-		return res
+		return new /datum/tgs_message_content(res)
 
 /datum/tgs_chat_command/namecheck
 	name = "namecheck"
@@ -87,10 +159,10 @@
 /datum/tgs_chat_command/namecheck/Run(datum/tgs_chat_user/sender, params)
 	params = trim(params)
 	if(!params)
-		return "Insufficient parameters"
+		return new /datum/tgs_message_content("Please specify a target.")
 	log_admin("Chat Name Check: [sender.friendly_name] on [params]")
 	message_admins("Name checking [params] from [sender.friendly_name]")
-	return keywords_lookup(params, 1)
+	return new /datum/tgs_message_content(keywords_lookup(params, TRUE))
 
 /datum/tgs_chat_command/adminwho
 	name = "adminwho"
@@ -98,7 +170,15 @@
 	admin_only = TRUE
 
 /datum/tgs_chat_command/adminwho/Run(datum/tgs_chat_user/sender, params)
-	return tgsadminwho()
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "Admins"
+	embed.colour = COLOR_DARK_CYAN
+	embed.description = tgsadminwho() || "No admins online."
+
+	var/datum/tgs_message_content/adminwho = new()
+	adminwho.embed = embed
+
+	return adminwho
 
 GLOBAL_LIST(round_end_notifiees)
 
@@ -111,7 +191,7 @@ GLOBAL_LIST(round_end_notifiees)
 	if(!SSticker.IsRoundInProgress() && SSticker.HasRoundStarted())
 		return "[sender.mention], раунд уже закончился!"
 	LAZYSET(GLOB.round_end_notifiees, sender.mention, TRUE)
-	return "Я дам знать, [sender.mention], когда закончится раунд."
+	return new /datum/tgs_message_content( "Я оповещу, [sender.mention], когда закончится раунд.")
 
 /datum/tgs_chat_command/sdql
 	name = "sdql"
@@ -120,15 +200,26 @@ GLOBAL_LIST(round_end_notifiees)
 
 /datum/tgs_chat_command/sdql/Run(datum/tgs_chat_user/sender, params)
 	if(GLOB.AdminProcCaller)
-		return "Unable to run query, another admin proc call is in progress. Try again later."
+		return new /datum/tgs_message_content("Unable to run query, another admin proc call is in progress. Try again later.")
 	GLOB.AdminProcCaller = "CHAT_[sender.friendly_name]"	//_ won't show up in ckeys so it'll never match with a real admin
 	var/list/results = world.SDQL2_query(params, GLOB.AdminProcCaller, GLOB.AdminProcCaller)
 	GLOB.AdminProcCaller = null
 	if(!results)
-		return "Query produced no output"
+		return new /datum/tgs_message_content("Query produced no output.")
 	var/list/text_res = results.Copy(1, 3)
 	var/list/refs = results.len > 3 ? results.Copy(4) : null
-	. = "[text_res.Join("\n")][refs ? "\nRefs: [refs.Join(" ")]" : ""]"
+
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "SDQL Query Results"
+	embed.colour = COLOR_DARK_CYAN
+	embed.description = text_res.Join("\n") || "No results."
+	embed.fields = list()
+	embed.fields += new /datum/tgs_chat_embed/field("Refs", refs ? refs.Join("\n") : "None")
+
+	var/datum/tgs_message_content/sdql = new()
+	sdql.embed = embed
+
+	return sdql
 
 /datum/tgs_chat_command/reload_admins
 	name = "reload_admins"
@@ -138,8 +229,60 @@ GLOBAL_LIST(round_end_notifiees)
 /datum/tgs_chat_command/reload_admins/Run(datum/tgs_chat_user/sender, params)
 	ReloadAsync()
 	log_admin("[sender.friendly_name] reloaded admins via chat command.")
-	return "Администраторы перезагружены."
+	return new /datum/tgs_message_content("Администраторы перезагружены.")
 
 /datum/tgs_chat_command/reload_admins/proc/ReloadAsync()
 	set waitfor = FALSE
 	load_admins()
+
+/datum/tgs_chat_command/manifest
+	name = "manifest"
+	help_text = "Displays the current crew manifest"
+
+/datum/tgs_chat_command/manifest/Run(datum/tgs_chat_user/sender, params)
+	var/list/manifest = SSovermap.get_manifest()
+
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.title = "__Crew Manifest:__"
+	embed.colour = COLOR_DARK_CYAN
+
+	if(!length(manifest))
+		embed.description = "No crew manifest available."
+	else
+		embed.fields = list()
+		for(var/ship in manifest)
+			var/list/entries = manifest[ship]
+			var/list/ship_entries = list()
+			for(var/entry in entries)
+				var/list/entry_list = entry
+				ship_entries += "[entry_list["name"]]: [entry_list["rank"]]"
+
+			var/datum/tgs_chat_embed/field/ship_field = new(ship, ship_entries.Join("\n"))
+			ship_field.is_inline = TRUE
+			embed.fields += ship_field
+
+	var/datum/tgs_message_content/manifest_content = new()
+	manifest_content.embed = embed
+
+	return manifest_content
+
+/datum/tgs_chat_command/who
+	name = "who"
+	help_text = "Displays the current player list"
+
+/datum/tgs_chat_command/who/Run(datum/tgs_chat_user/sender, params)
+	var/datum/tgs_chat_embed/structure/embed = new()
+	embed.colour = COLOR_DARK_CYAN
+
+	if(!length(GLOB.clients))
+		embed.title = "__Players:__"
+		embed.description = "No players online."
+	else
+		embed.title = "__Players ([length(GLOB.clients)]):__"
+		for(var/client/player as anything in GLOB.clients)
+			embed.description += "[player.ckey]\n"
+
+	var/datum/tgs_message_content/who = new()
+	who.embed = embed
+
+	return who
