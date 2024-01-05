@@ -42,10 +42,10 @@ var/timer = 20
 	set category = "Эмоции"
 	emote_with_delay("clap", timer)
 
-/mob/living/carbon/human/verb/emote_crack()
-	set name = "> Хрустнуть костяшками"
-	set category = "Эмоции"
-	emote_with_delay("crack", timer)
+// /mob/living/carbon/human/verb/emote_crack()
+// 	set name = "> Хрустнуть костяшками"
+// 	set category = "Эмоции"
+// 	emote_with_delay("crack", timer)
 
 /mob/living/carbon/human/verb/emote_cross()
 	set name = "~ Скрестить руки"
@@ -75,7 +75,7 @@ var/timer = 20
 /mob/living/carbon/human/verb/dance()
 	set name = "~ Танцевать "
 	set category = "Эмоции"
-	emote_with_delay("blink_r", timer)
+	emote_with_delay("dance", timer)
 
 /mob/living/carbon/human/verb/emote_drool()
 	set name = "~ Пускать слюни"

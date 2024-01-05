@@ -283,10 +283,10 @@
 			'sound/voice/human_male_warcry_9.ogg')
 	if(ismoth(H))
 		if(prob(3))
-			message = "издаёт вдохновляющий рык!"
+			message = "издаёт вдохновляющий крик!"
 			return 'sound/voice/alastor_attack1-attackvoice.ogg'
 		else
-			message = "агрессивно взмахивает крыльями!"
+			message = "издаёт вдохновляющий крик!"
 			return pick(
 			'sound/voice/alastor_wing1.ogg',
 			'sound/voice/alastor_wing1_2.ogg',
