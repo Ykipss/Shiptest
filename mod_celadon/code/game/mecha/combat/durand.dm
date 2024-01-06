@@ -1,5 +1,5 @@
 /obj/mecha/combat/durand/dark
-	desc = "Боевой экзоскелет используемый Синдикатом."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РЎРёРЅРґРёРєР°С‚РѕРј."
 	name = "\improper Black Durand"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "darkdurand"
@@ -7,7 +7,7 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/ares
-	desc = "Боевой экзоскелет используемый Интеком."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РРЅС‚РµРєРѕРј."
 	name = "\improper Ares"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "ares"
@@ -15,17 +15,17 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/zeus
-	desc = "Боевой экзоскелет используемый СолГовом."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РЎРѕР»Р“РѕРІРѕРј."
 	name = "\improper Zeus"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "zeus"
 	wreckage = /obj/structure/mecha_wreckage/durand/zeus
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
-//раскраска для всех
+//СЂР°СЃРєСЂР°СЃРєР° РґР»СЏ РІСЃРµС…
 
 /obj/mecha/combat/durand/old
-	desc = "Боевой экзоскелет ."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ ."
 	name = "\improper Old Durand"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "old_durand"
@@ -33,7 +33,7 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/shire
-	desc = "Боевой экзоскелет ."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ ."
 	name = "\improper Shire"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "shire"
@@ -41,7 +41,7 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/sarathi
-	desc = "Боевой экзоскелет."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ ."
 	name = "\improper Sarathi Durand"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "sarathi"
@@ -49,7 +49,7 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/dollhouse
-	desc = "Боевой экзоскелет."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ ."
 	name = "\improper Dollhouse "
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "dollhouse"
@@ -57,7 +57,7 @@
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 /obj/mecha/combat/durand/executor
-	desc = "Боевой экзоскелет."
+	desc = "Р‘РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ ."
 	name = "\improper Executor"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "executor"

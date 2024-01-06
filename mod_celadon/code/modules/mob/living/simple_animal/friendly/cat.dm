@@ -1,4 +1,3 @@
-//синдикишка когд-нибудь тут будет
 /mob/living/simple_animal/pet/cat/syndie
 	icon = 'mod_celadon/icons/mob/pets.dmi'
 	name = "SyndiCat"

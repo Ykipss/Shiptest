@@ -1,5 +1,5 @@
 /obj/mecha/combat/gygax/black
-	desc = "Легкий экзоскелет, перекрашенный в чёрный цвет. Похоже, что эта модель принадлежит Синдикату."
+	desc = "Р›РµРіРєРёР№ СЌРєР·РѕСЃРєРµР»РµС‚, РїРµСЂРµРєСЂР°С€РµРЅРЅС‹Р№ РІ С‡С‘СЂРЅС‹Р№ С†РІРµС‚. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СЌС‚Р° РјРѕРґРµР»СЊ РїСЂРёРЅР°РґР»РµР¶РёС‚ РЎРёРЅРґРёРєР°С‚Сѓ."
 	name = "\improper Black Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "gygax_black"
@@ -13,7 +13,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/nt
-	desc = "Легкий экзоскелет, перекрашенный. Похоже, что эта модель принадлежит НаноТрейзен."
+	desc = "Р›РµРіРєРёР№ СЌРєР·РѕСЃРєРµР»РµС‚, РїРµСЂРµРєСЂР°С€РµРЅРЅС‹Р№. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СЌС‚Р° РјРѕРґРµР»СЊ РїСЂРёРЅР°РґР»РµР¶РёС‚ РќР°РЅРѕРўСЂРµР№Р·РµРЅ."
 	name = "\improper NanoTrasen Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "ntgygax"
@@ -27,7 +27,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/hermes
-	desc = "Легкий экзоскелет, перекрашенный. Похоже, что эта модель принадлежит Интеку."
+	desc = "Р›РµРіРєРёР№ СЌРєР·РѕСЃРєРµР»РµС‚, РїРµСЂРµРєСЂР°С€РµРЅРЅС‹Р№. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СЌС‚Р° РјРѕРґРµР»СЊ РїСЂРёРЅР°РґР»РµР¶РёС‚ РРЅС‚РµРєСѓ."
 	name = "\improper Hermes Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "hermes"
@@ -40,10 +40,10 @@
 	wreckage = /obj/structure/mecha_wreckage/gygax/hermes
 	max_equip = 3
 
-//раскраски для всех
+//СЂР°СЃРєСЂР°СЃРєР° РґР»СЏ РІСЃРµС…
 
 /obj/mecha/combat/gygax/white
-	desc = "Легкий экзоскелет, перекрашенный. Похоже, что у этой модели есть некоторые модификации."
+	desc = ""Р›РµРіРєРёР№ СЌРєР·РѕСЃРєРµР»РµС‚, РїРµСЂРµРєСЂР°С€РµРЅРЅС‹Р№. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ Сѓ СЌС‚РѕР№ РјРѕРґРµР»Рё РµСЃС‚СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ РјРѕРґРёС„РёРєР°С†РёРё."
 	name = "\improper White Spirit Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "gygax_white"
@@ -57,7 +57,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/proto
-	desc = "Прототип лёгкого экзоскелета.."
+	desc = "РџСЂРѕС‚РѕС‚РёРї Р»С‘РіРєРѕРіРѕ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р°.."
 	name = "\improper Prototype Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "proto"
@@ -71,7 +71,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/alt
-	desc = "Алтерьнативная модель лёгкого экзоскелета.."
+	desc = "РђР»С‚РµСЂСЊРЅР°С‚РёРІРЅР°СЏ РјРѕРґРµР»СЊ Р»С‘РіРєРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р°.."
 	name = "\improper Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "gygax_alt"
@@ -85,7 +85,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/pobeda
-	desc = "Алтерьнативная модель лёгкого экзоскелета, окрашенная в зелёный цвет и имеющая красную звезду. К чему бы это?"
+	desc = "РђР»С‚РµСЂСЊРЅР°С‚РёРІРЅР°СЏ РјРѕРґРµР»СЊ Р»С‘РіРєРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р°, РѕРєСЂР°С€РµРЅРЅР°СЏ РІ Р·РµР»С‘РЅС‹Р№ С†РІРµС‚ Рё РёРјРµСЋС‰Р°СЏ РєСЂР°СЃРЅСѓСЋ Р·РІРµР·РґСѓ. Рљ С‡РµРјСѓ Р±С‹ СЌС‚Рѕ?"
 	name = "\improper Pobeda"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "pobeda"
@@ -99,7 +99,7 @@
 	max_equip = 3
 
 /obj/mecha/combat/gygax/medgax
-	desc = "Алтерьнативная модель лёгкого экзоскелета, окрашенная в белый цвет."
+	desc = "Looks like White Spirit."
 	name = "\improper White Spirit"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "medgax"

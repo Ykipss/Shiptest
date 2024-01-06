@@ -1,8 +1,6 @@
-//фракционки
-
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/murdysseus
 	name = "Murdysseus Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Одиссея в медицинский экзоскелет Синдиката."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ РћРґРёСЃСЃРµСЏ РІ РјРµРґРёС†РёРЅСЃРєРёР№ СЌРєР·РѕСЃРєРµР»РµС‚ РЎРёРЅРґРёРєР°С‚Р°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "syndieupg"
 	source_mech = list(/obj/mecha/medical/odysseus)
@@ -10,7 +8,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/duranddark
 	name = "Dark Durand Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда в специализированный боевой экзоскелет Синдиката."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РЎРёРЅРґРёРєР°С‚Р°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "syndiecombatupg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -18,7 +16,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxblack
 	name = "Black Gygax Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет Синдиката."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РЎРёРЅРґРёРєР°С‚Р°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "syndiecombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -26,7 +24,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt
 	name = "NT Gygax Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет НаноТрейзен."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РќР°РЅРѕРўСЂРµР№Р·РµРЅ."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ntcombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -34,7 +32,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/hermes
 	name = "Hermes Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет Интек."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РРЅС‚РµРє."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "intequpg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -42,7 +40,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/ares
 	name = "Ares Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда в специализированный боевой экзоскелет Интека."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РРЅС‚РµРєР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "intequpg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -50,17 +48,17 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/zeus
 	name = "Zeus Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда в специализированный боевой экзоскелет Солгов."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚ РЎРѕР»Р¤РµРґ."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "solgovupg"
 	source_mech = list(/obj/mecha/combat/durand)
 	result_mech = /obj/mecha/combat/durand/zeus
 
-//блядские рипли
+//СЂРёРїР»Рё
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/flames_red
 	name = "Flames RedConversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р РёРїР»Рё."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ripleypubupg"
 	source_mech = list(/obj/mecha/medical/odysseus)
@@ -68,7 +66,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/earth
 	name = "Ripley Earth Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р РёРїР»Рё."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ripleypubupg"
 	source_mech = list(/obj/mecha/working/ripley/mkii)
@@ -76,7 +74,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/titan
 	name = "Titan Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р РёРїР»Рё."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ripleypubupg"
 	source_mech = list(/obj/mecha/working/ripley/mkii)
@@ -84,7 +82,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley_zairjah
 	name = "Zairjah Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р РёРїР»Рё."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ripleypubupg"
 	source_mech = list(/obj/mecha/working/ripley/mkii)
@@ -93,17 +91,17 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/aluminizer
 	name = "Aluminizer Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р РёРїР»Рё."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "ripleypubupg"
 	source_mech = list(/obj/mecha/working/ripley/mkii)
 	result_mech = /obj/mecha/working/ripley/mkii/aluminizer
 
-//блядские гигаксы
+//РіРёРіРё Р·Р° С€Р°РіРё
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxwhite
 	name = "White Gygax Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "whitecombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -111,7 +109,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/proto
 	name = "Prototype Gygax Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "protoupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -119,7 +117,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/alt
 	name = "Alternative Gygax Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "protoupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -127,7 +125,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/pobeda
 	name = "Pobeda Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "pobedaupg"
 	source_mech = list(/obj/mecha/combat/gygax)
@@ -135,17 +133,17 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/medgax
 	name = "White Spirit Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Гигакса в специализированный экзоскелет боевой экзоскелет."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р“РёРіР°РєСЃР° РІ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Р№ СЌРєР·РѕСЃРєРµР»РµС‚ Р±РѕРµРІРѕР№ СЌРєР·РѕСЃРєРµР»РµС‚."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "whitecombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
 	result_mech = /obj/mecha/combat/gygax/medgax
 
-//дюранды
+//РґСЋСЂР°
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/old
 	name = "Old Durand Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "durandupg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -153,7 +151,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/shire
 	name = "Shire Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "durandupg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -161,7 +159,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/sarathi
 	name = "Sarathi Durand Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "durandupg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -169,7 +167,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/dollhouse
 	name = "Dollhouse Durand Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "durandupg"
 	source_mech = list(/obj/mecha/combat/durand)
@@ -177,7 +175,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/executor
 	name = "Executor Conversion Kit"
-	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда."
+	desc = "РР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РЅР° Р·Р°РєР°Р· РєРѕРјРїР»РµРєС‚ РґР»СЏ РїРµСЂРµРѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±РѕРµРІРѕРіРѕ СЌРєР·РѕСЃРєРµР»РµС‚Р° Р”СЋСЂР°РЅРґР°."
 	icon = 'mod_celadon/icons/mecha/mecha_equipment.dmi'
 	icon_state = "durandupg"
 	source_mech = list(/obj/mecha/combat/durand)

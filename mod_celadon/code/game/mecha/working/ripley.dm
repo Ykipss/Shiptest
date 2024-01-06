@@ -1,4 +1,3 @@
-//блядские рипли
 /obj/mecha/working/ripley/mkii/flames_red
 	desc = "Autonomous Power Loader Unit MK-II. This prototype Ripley is refitted with a pressurized cabin, trading its prior speed for atmospheric protection"
 	name = "\improper APLU MK-II Flames Red\"Ripley\""
