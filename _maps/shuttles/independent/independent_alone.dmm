@@ -1,10 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "bd" = (
-/obj/item/stack/sheet/mineral/plasma/fifty,
-/obj/machinery/power/port_gen/pacman,
-/obj/effect/turf_decal/box/white,
-/obj/structure/cable/yellow,
-/turf/open/floor/plating,
+/obj/structure/crate_shelf,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "cl" = (
 /obj/structure/grille,
@@ -19,20 +17,17 @@
 /obj/machinery/computer/helm{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "dJ" = (
-/obj/machinery/firealarm/directional/west,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"eE" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"fg" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/light/directional/west,
+/obj/structure/tank_dispenser/oxygen,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/spawner{
+	dir = 1
 	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fC" = (
@@ -44,14 +39,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "fY" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/ship/engineering)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "hw" = (
 /turf/template_noop,
 /area/template_noop)
@@ -62,37 +55,46 @@
 /obj/structure/cable,
 /obj/structure/closet/wall{
 	dir = 1;
-	name = "Radio Closet";
+	name = "Tools";
 	pixel_y = -30
 	},
-/obj/item/gps,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/firstaid/advanced,
 /obj/item/storage/firstaid/medical,
 /obj/item/storage/belt/utility/full,
-/obj/effect/decal/cleanable/greenglow,
+/obj/machinery/autolathe,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/flashlight,
+/obj/item/extinguisher,
+/obj/item/clothing/head/welding,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/metal/five,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "jd" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/obj/item/kirbyplants/random,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "je" = (
-/obj/machinery/light/directional/east,
 /obj/machinery/microwave,
 /obj/structure/table,
-/obj/machinery/newscaster/directional/north,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "kC" = (
-/obj/effect/decal/cleanable/ash,
+/obj/item/kirbyplants/random,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -23
+	},
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "lk" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
@@ -103,129 +105,125 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "ll" = (
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
+"ma" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel,
+/area/ship/bridge)
 "oR" = (
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/light/directional/west,
-/obj/structure/table,
 /obj/effect/decal/cleanable/cobweb,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/mob/living/simple_animal/pet/mothroach,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pn" = (
 /obj/machinery/power/smes/engineering,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/effect/decal/cleanable/sprayweb,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-6"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "pz" = (
 /turf/closed/wall/r_wall,
 /area/ship/bridge)
-"qt" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/tank_dispenser/oxygen,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "qR" = (
-/obj/machinery/computer/cryopod/directional/south,
-/obj/machinery/cryopod{
-	dir = 1
-	},
-/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/greenglow{
 	color = "#808080"
 	},
-/turf/open/floor/plasteel/dark,
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/obj/machinery/computer/cryopod/directional/west,
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/ship/bridge)
+"ry" = (
+/obj/structure/closet/crate/trashcart,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/waste/trash,
+/obj/effect/spawner/lootdrop/waste/trash,
+/obj/effect/spawner/lootdrop/waste/trash,
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "tK" = (
-/obj/machinery/autolathe,
-/obj/machinery/light/directional/east,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"uk" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
+/obj/item/soap,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/mop,
+/obj/item/reagent_containers/glass/bucket,
+/obj/structure/closet/wall{
+	dir = 1;
+	name = "Cleaning tools";
+	pixel_y = -30
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/shower{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating,
+/obj/structure/curtain,
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
 /area/ship/bridge)
 "ut" = (
 /obj/machinery/computer/cargo/express{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "vw" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable/yellow{
-	icon_state = "1-2"
+	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/wrapping,
+/obj/structure/cable{
+	icon_state = "9-10"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "wd" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/item/radio/intercom/wideband/directional/south,
+/turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "xO" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
-/obj/effect/decal/cleanable/garbage,
+/obj/machinery/power/port_gen/pacman,
+/obj/item/stack/sheet/mineral/plasma/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "zu" = (
 /obj/machinery/light/directional/west,
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/window/reinforced/spawner{
+	dir = 1
 	},
-/obj/item/trash/can,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"Bp" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light/directional/east,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "CA" = (
 /obj/machinery/light/directional/east,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/ship/bridge)
-"Fq" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating,
+/obj/machinery/door/window/brigdoor/northright,
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "FY" = (
 /obj/machinery/power/shuttle/engine/electric{
@@ -235,74 +233,50 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "Gr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "Gt" = (
-/obj/structure/closet,
-/obj/item/areaeditor/shuttle,
-/obj/item/clothing/head/welding,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/extinguisher,
-/obj/item/flashlight,
-/obj/item/pen/survival,
 /obj/item/storage/cans/sixbeer,
-/obj/effect/decal/cleanable/plastic,
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets/donkpocketpizza,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/machinery/light_switch{
-	pixel_y = 23
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/wall{
+	pixel_y = 30
 	},
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"GR" = (
-/turf/closed/wall/r_wall,
-/area/ship/engineering)
-"Hk" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/confetti,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "Hy" = (
 /obj/machinery/holopad/emergency,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "HH" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/ash,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Jb" = (
 /obj/structure/fans/tiny,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/maintenance_hatch{
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "Ou" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "OZ" = (
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -311,21 +285,19 @@
 	dir = 4;
 	name = "Helm"
 	},
-/obj/effect/decal/cleanable/blood/old{
-	color = "#808080"
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "So" = (
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "5-8"
 	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/item/trash/semki,
-/turf/open/floor/plating,
-/area/ship/engineering)
+/turf/open/floor/plasteel,
+/area/ship/bridge)
+"SC" = (
+/obj/item/trash/chips,
+/mob/living/simple_animal/hostile/cockroach,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "Ta" = (
 /obj/docking_port{
 	dwidth = 15;
@@ -342,34 +314,31 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/light_switch{
-	pixel_y = 23
-	},
 /obj/structure/rack,
-/obj/item/extinguisher,
-/obj/item/flashlight,
 /obj/item/pickaxe/drill,
 /obj/item/shovel,
-/obj/item/soap,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/storage/bag/ore,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "UL" = (
-/obj/machinery/suit_storage_unit/standard_unit,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = -10
+	},
+/obj/structure/mirror{
+	pixel_y = -30
+	},
+/obj/machinery/door/window/northright,
+/turf/open/floor/plasteel/freezer,
 /area/ship/bridge)
 "VL" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/ship/engineering)
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "VO" = (
 /obj/machinery/button/door{
 	dir = 8;
@@ -378,50 +347,63 @@
 	pixel_x = 25;
 	pixel_y = 5
 	},
-/obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/chem_pile,
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/areaeditor/shuttle,
+/obj/item/gps{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/pen/survival,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 24;
+	pixel_y = -4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "VY" = (
-/obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/blood/old{
-	color = "#808080"
+/obj/machinery/suit_storage_unit/standard_unit,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/firealarm/directional/east,
+/obj/structure/window/reinforced/spawner{
+	dir = 1
 	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wp" = (
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
 	},
-/obj/item/trash/boritos,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/railing,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "WS" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/machinery/newscaster/directional/north,
+/turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "YD" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/firealarm/directional/east,
 /obj/machinery/light/directional/east,
-/obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel,
-/area/ship/engineering)
+/area/ship/bridge)
 "Zv" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/maintenance_hatch{
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/bridge)
 "ZI" = (
 /obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced,
@@ -452,74 +434,74 @@ hw
 "}
 (2,1,1) = {"
 hw
-GR
+pz
 hw
-GR
+pz
 Ta
 hw
-GR
+pz
 hw
-GR
+pz
 hw
 "}
 (3,1,1) = {"
 hw
-GR
+pz
 FY
-GR
+pz
 Zv
 Jb
-GR
+pz
 FY
-GR
+pz
 hw
 "}
 (4,1,1) = {"
 hw
-GR
+pz
 lk
 kC
-ll
+ma
 Gr
-ll
+jd
 lk
-GR
+pz
 hw
 "}
 (5,1,1) = {"
 hw
-GR
+pz
 TU
-Bp
+YD
 fC
 Ou
 YD
 hO
-GR
+pz
 hw
 "}
 (6,1,1) = {"
 hw
-GR
-GR
-GR
+pz
+pz
+pz
 VL
 fY
-GR
-GR
-GR
+pz
+pz
+pz
 hw
 "}
 (7,1,1) = {"
 hw
-GR
+pz
 pn
 Wp
 So
-Hk
+ry
 zu
-qt
-GR
+bd
+pz
 hw
 "}
 (8,1,1) = {"
@@ -527,8 +509,8 @@ hw
 pz
 xO
 vw
-Fq
-uk
+ll
+ll
 CA
 bd
 pz
@@ -551,8 +533,8 @@ hw
 pz
 oR
 HH
-fg
-jd
+OZ
+OZ
 dJ
 qR
 pz
@@ -562,7 +544,7 @@ hw
 hw
 pz
 Gt
-eE
+SC
 Rc
 Hy
 OZ
