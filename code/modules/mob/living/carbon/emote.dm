@@ -3,7 +3,7 @@
 
 /datum/emote/living/carbon/airguitar
 	key = "airguitar"
-	message = "is strumming the air and headbanging like a safari chimp."
+	message = "делает невероятный запил на воображаемой гитаре!"
 	hands_use_check = TRUE
 
 /// The time it takes for the blink to be removed
@@ -11,7 +11,7 @@
 /datum/emote/living/carbon/blink
 	key = "blink"
 	key_third_person = "blinks"
-	message = "blinks."
+	message = "моргает."
 	/// Timer for the blink to wear off
 	var/blink_timer = TIMER_ID_NULL
 
@@ -37,12 +37,12 @@
 
 /datum/emote/living/carbon/blink_r
 	key = "blink_r"
-	message = "blinks rapidly."
+	message = "быстро моргает."
 
 /datum/emote/living/carbon/clap
 	key = "clap"
 	key_third_person = "claps"
-	message = "claps."
+	message = "хлопает."
 	muzzle_ignore = TRUE
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
@@ -61,7 +61,7 @@
 /datum/emote/living/carbon/crack
 	key = "crack"
 	key_third_person = "cracks"
-	message = "cracks their knuckles."
+	message = "хрустит костяшками пальцев."
 	sound = 'sound/misc/knuckles.ogg'
 	cooldown = 6 SECONDS
 
@@ -73,14 +73,14 @@
 /datum/emote/living/carbon/gnarl
 	key = "gnarl"
 	key_third_person = "gnarls"
-	message = "gnarls and shows its teeth..."
+	message = "рычит и скалит зубы..."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey)
 
 /datum/emote/living/carbon/moan
 	key = "moan"
 	key_third_person = "moans"
-	message = "moans!"
-	message_mime = "appears to moan!"
+	message = "стонет!"
+	message_mime = "кажется стонет"
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/roll
@@ -93,14 +93,14 @@
 /datum/emote/living/carbon/scratch
 	key = "scratch"
 	key_third_person = "scratches"
-	message = "scratches."
+	message = "царапает."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/screech
 	key = "screech"
 	key_third_person = "screeches"
-	message = "screeches."
+	message = "издаёт дикий визг."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 
 /datum/emote/living/carbon/sign
@@ -118,19 +118,19 @@
 /datum/emote/living/carbon/sign/signal
 	key = "signal"
 	key_third_person = "signals"
-	message_param = "raises %t fingers."
+	message_param = "показывает %t пальцев."
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/tail
 	key = "tail"
-	message = "waves their tail."
+	message = "машет хвостом."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 
 /datum/emote/living/carbon/wink
 	key = "wink"
 	key_third_person = "winks"
-	message = "winks."
+	message = "подмигивает."
 
 /datum/emote/living/carbon/circle
 	key = "circle"
@@ -161,10 +161,10 @@
 		return
 	var/obj/item/slapper/N = new(user)
 	if(user.put_in_hands(N))
-		to_chat(user, "<span class='notice'>You ready your slapping hand.</span>")
+		to_chat(user, "<span class='notice'>Вы приготовили свою руку для пощечины.</span>")
 	else
 		qdel(N)
-		to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>")
+		to_chat(user, "<span class='warning'>В текущем состоянии ты не можешь дать пощечину.</span>")
 
 /datum/emote/living/carbon/noogie
 	key = "noogie"
@@ -273,7 +273,7 @@
 
 /obj/item/slapper
 	name = "slapper"
-	desc = "This is how real men fight."
+	desc = "Именно так дерутся настоящие мужчины."
 	icon_state = "latexballon"
 	item_state = "nothing"
 	force = 0
@@ -292,12 +292,12 @@
 	user.do_attack_animation(M)
 
 	var/slap_volume = 50
-	var/datum/status_effect/offering/kiss_check = M.has_status_effect(STATUS_EFFECT_OFFERING)
+	var/datum/status_effect/offering/kiss_check = M.has_status_effect(/datum/status_effect/offering)
 	if(kiss_check && istype(kiss_check.offered_item, /obj/item/kisser) && (user in kiss_check.possible_takers))
-		user.visible_message(span_danger("[user] scoffs at [M]'s advance, winds up, and smacks [M.p_them()] hard to the ground!"),
-			span_notice("The nerve! You wind back your hand and smack [M] hard enough to knock [M.p_them()] over!"),
-			span_hear("You hear someone get the everloving shit smacked out of them!"), ignored_mobs = M)
-		to_chat(M, span_userdanger("You see [user] scoff and pull back [user.p_their()] arm, then suddenly you're on the ground with an ungodly ringing in your ears!"))
+		user.visible_message(span_danger("[user] издевается над [M]'s, заставляя [M.p_them()] с грохотом упасть на землю!"),
+			span_notice("Нервы! Ты отводишь руку и шлепаешь [M] достаточно сильно, чтобы опрокинуть [M.p_them()]!"),
+			span_hear("Вы слышите как кого-то шлёпают!"), ignored_mobs = M)
+		to_chat(M, span_userdanger("Ты видишь как усмехается [user] и отводишь руку [user.p_their()], иначе рискуешь оказаться на земле с безбожным звоном в ушах!"))
 		slap_volume = 120
 		SEND_SOUND(M, sound('sound/weapons/flash_ring.ogg'))
 		shake_camera(M, 2, 2)
@@ -305,13 +305,13 @@
 		M.confused += 7
 		M.adjustStaminaLoss(40)
 	else if(user.zone_selected == BODY_ZONE_HEAD || user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
-		user.visible_message(span_danger("[user] slaps [M] in the face!"),
-			span_notice("You slap [M] in the face!"),
-			span_hear("You hear a slap."))
+		user.visible_message(span_danger("[user] ударяет пощёчиной [M] по лицу!"),
+			span_notice("Ты шлепаешь [M] по лицу!"),
+			span_hear("Вы слышите пощёчину."))
 	else
-		user.visible_message(span_danger("[user] slaps [M]!"),
-			span_notice("You slap [M]!"),
-			span_hear("You hear a slap."))
+		user.visible_message(span_danger("[user] шлёпает [M]!"),
+			span_notice("Ты шлёпаешь [M]!"),
+			span_hear("Вы слышите пощечину."))
 	playsound(M, 'sound/weapons/slap.ogg', slap_volume, TRUE, -1)
 	return
 
@@ -325,7 +325,7 @@
 
 	offerer.visible_message(span_notice("[offerer] raises [offerer.p_their()] arm, looking for a high-five!"), \
 		span_notice("You post up, looking for a high-five!"), null, 2)
-	offerer.apply_status_effect(STATUS_EFFECT_OFFERING, src, /atom/movable/screen/alert/give/highfive)
+	offerer.apply_status_effect(/datum/status_effect/offering, src, /atom/movable/screen/alert/give/highfive)
 
 /// Yeah broh! This is where we do the high-fiving (or high-tenning :o)
 /obj/item/slapper/on_offer_taken(mob/living/carbon/offerer, mob/living/carbon/taker)
@@ -363,7 +363,7 @@
 
 
 /obj/item/kisser
-	name = "kiss"
+	name = "поцелуй"
 	desc = "I want you all to know, everyone and anyone, to seal it with a kiss."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "heart"
@@ -379,7 +379,7 @@
 /obj/item/kisser/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
 	var/obj/projectile/blown_kiss = new kiss_type(get_turf(user))
-	user.visible_message("<b>[user]</b> blows \a [blown_kiss] at [target]!", span_notice("You blow \a [blown_kiss] at [target]!"))
+	user.visible_message("<b>[user]</b> посылает воздушный поцелуй в сторону [target]!", span_notice("Ты посылаешь воздушный поцелуй в сторону [target]!"))
 
 	//Shooting Code:
 	blown_kiss.original = target
@@ -397,7 +397,7 @@
 	cheek_kiss = (offerer.zone_selected != BODY_ZONE_PRECISE_MOUTH)
 	offerer.visible_message(span_notice("[offerer] leans in slightly, offering a kiss[cheek_kiss ? " on the cheek" : ""]!"),
 		span_notice("You lean in slightly, indicating you'd like to offer a kiss[cheek_kiss ? " on the cheek" : ""]!"), null, 2)
-	offerer.apply_status_effect(STATUS_EFFECT_OFFERING, src)
+	offerer.apply_status_effect(/datum/status_effect/offering, src)
 	return TRUE
 
 /obj/item/kisser/on_offer_taken(mob/living/carbon/offerer, mob/living/carbon/taker)
@@ -474,21 +474,21 @@
 	var/roll = rand(1, 3)
 	switch(roll)
 		if(1)
-			other_msg = "stumbles slightly, turning a bright red!"
-			self_msg = "You lose control of your limbs for a moment as your blood rushes to your face, turning it bright red!"
+			other_msg = "слегка спотыкается, становясь ярко-красным!"
+			self_msg = "Вы на мгновение теряете контроль над своими конечностями, когда кровь приливает к лицу, делая его ярко-красным!"
 			living_target.confused += (rand(5, 10))
 		if(2)
-			other_msg = "stammers softly for a moment before choking on something!"
-			self_msg = "You feel your tongue disappear down your throat as you fight to remember how to make words!"
-			addtimer(CALLBACK(living_target, TYPE_PROC_REF(/atom/movable, say), pick("Uhhh...", "O-oh, uhm...", "I- uhhhhh??", "You too!!", "What?")), rand(0.5 SECONDS, 1.5 SECONDS))
+			other_msg = "тихо заикается на мгновение, прежде чем что-то сказать!"
+			self_msg = "Вы чувствуете, как ваш язык исчезает в горле, пока вы пытаетесь вспомнить, как произносить слова!"
+			addtimer(CALLBACK(living_target, TYPE_PROC_REF(/atom/movable, say), pick("Ухх...", "О-ох, хм...", "Я- ухххх..", "Что?")), rand(0.5 SECONDS, 1.5 SECONDS))
 			living_target.stuttering += rand(5, 15)
 		if(3)
-			other_msg = "locks up with a stunned look on [living_target.p_their()] face, staring at [firer ? firer : "the ceiling"]!"
-			self_msg = "Your brain completely fails to process what just happened, leaving you rooted in place staring at [firer ? "[firer]" : "the ceiling"] for what feels like an eternity!"
+			other_msg = "пытается откинуть взгляд, при виде [living_target.p_their()], глядя на [firer ? firer : "потолок"]!"
+			self_msg = "Твой мозг совершенно не в состоянии обработать то, что только что произошло. Ты застываешь на месте, глядя на [firer ? "[firer]" : "потолок"] с ощущением что прошла вечность!"
 			living_target.face_atom(firer)
 			living_target.Stun(rand(3 SECONDS, 8 SECONDS))
 
-	living_target.visible_message("<b>[living_target]</b> [other_msg]", "<span class='userdanger'>Whoa! [self_msg]<span>")
+	living_target.visible_message("<b>[living_target]</b> [other_msg]", "<span class='userdanger'>Ого! [self_msg]<span>")
 
 /obj/projectile/kiss/on_hit(atom/target, blocked, pierce_hit)
 	def_zone = BODY_ZONE_HEAD // let's keep it PG, people

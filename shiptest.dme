@@ -2136,6 +2136,7 @@
 #include "code\modules\food_and_drinks\food\snacks\dough.dm"
 #include "code\modules\food_and_drinks\food\snacks\meat.dm"
 #include "code\modules\food_and_drinks\kitchen_machinery\big_mortar.dm"
+#include "code\modules\food_and_drinks\kitchen_machinery\coffeemaker.dm"
 #include "code\modules\food_and_drinks\kitchen_machinery\cutting_board.dm"
 #include "code\modules\food_and_drinks\kitchen_machinery\deep_fryer.dm"
 #include "code\modules\food_and_drinks\kitchen_machinery\food_cart.dm"
@@ -3476,4 +3477,5 @@
 #include "mod_celadon\code\modules\mob\dead\new_player\sprite_accessories\ipc.dm"
 #include "mod_celadon\code\modules\projectiles\guns\ballistic\revolver.dm"
 #include "mod_celadon\code\modules\vending\pizzamat.dm"
+#include "mod_celadon\code\modules\mob\emote_panel.dm"
 // END_INCLUDE

@@ -100,6 +100,7 @@
 	pixel_x = -3
 	},
 /obj/item/stack/sheet/mineral/plastitanium/twenty,
+/obj/item/choice_beacon/rnd,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "gd" = (
@@ -208,7 +209,7 @@
 	},
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;3"
+	req_access_txt = "147"
 	},
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb,
@@ -401,6 +402,9 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/kitchen/knife/combat,
+/obj/item/card/id/inteq/vanguard,
+/obj/item/card/id/inteq/enfco,
+/obj/item/card/id/inteq/maas,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "qh" = (
@@ -607,7 +611,7 @@
 	},
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;3"
+	req_access_txt = "147"
 	},
 /obj/item/ammo_box/a556_box,
 /obj/item/ammo_box/a556_box,
@@ -810,7 +814,7 @@
 /obj/effect/turf_decal/box,
 /obj/effect/turf_decal/trimline/opaque/solgovgold/arrow_cw,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;3"
+	req_access_txt = "147"
 	},
 /obj/item/ammo_box/magazine/p16/g36sh,
 /obj/item/ammo_box/magazine/p16/g36sh,
@@ -1261,7 +1265,7 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;3"
+	req_access_txt = "147"
 	},
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq,
 /obj/item/gun/ballistic/automatic/smg/inteq,
@@ -1489,7 +1493,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/arrow_cw,
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate/secure/weapon{
-	req_access_txt = "147;3"
+	req_access_txt = "147"
 	},
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/c9mm,

@@ -663,7 +663,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "bA" = (
-/obj/machinery/computer/piratepad_control,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -710,7 +709,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "bI" = (
-/obj/machinery/piratepad,
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -961,7 +959,6 @@
 /area/ship/crew/dorm)
 "ch" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/vest/russian,
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/head/beret/mining,
 /obj/item/clothing/head/beret/black,
@@ -1530,7 +1527,6 @@
 /area/ship/bridge)
 "du" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/vest/lieutenant,
 /obj/item/clothing/head/beret/grey,
 /obj/item/clothing/head/beret/mining,
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier,

@@ -28,6 +28,7 @@
 /datum/emote/flip
 	key = "flip"
 	key_third_person = "flips"
+	message = "делает кувырок!"
 	hands_use_check = TRUE
 	mob_type_allowed_typecache = list(/mob/living, /mob/dead/observer)
 	mob_type_ignore_stat_typecache = list(/mob/dead/observer)
@@ -48,15 +49,15 @@
 		if(prob(20))
 			flippy_mcgee.Knockdown(1 SECONDS)
 			flippy_mcgee.visible_message(
-				"<span class='notice'>[flippy_mcgee] attempts to do a flip and falls over, what a doofus!</span>",
-				"<span class='notice'>You attempt to do a flip while still off balance from the last flip and fall down!</span>"
+				"<span class='notice'>[flippy_mcgee] пытается сделать сальто и падает. Какая неудача!</span>",
+				"<span class='notice'>Вы пытаетесь сделать сальто, однако теряете своё равновесие и падаете!</span>"
 			)
 			if(prob(50))
 				flippy_mcgee.adjustBruteLoss(1)
 		else
 			flippy_mcgee.visible_message(
-				"<span class='notice'>[flippy_mcgee] stumbles a bit after their flip.</span>",
-				"<span class='notice'>You stumble a bit from still being off balance from your last flip.</span>"
+				"<span class='notice'>[flippy_mcgee] немного спотыкается после такого сальто.</span>",
+				"<span class='notice'>Вы немного спотыкаетесь из-за того, что теряете равновесие после последнего переворота..</span>"
 			)
 
 /datum/emote/spin
