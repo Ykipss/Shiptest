@@ -31,7 +31,7 @@
 //раскраска для всех
 
 /obj/mecha/combat/gygax/white
-	desc = ""Легкий экзоскелет, перекрашенный. Похоже, что у этой модели есть некоторые модификации."
+	desc = "Легкий экзоскелет, перекрашенный. Похоже, что у этой модели есть некоторые модификации."
 	name = "\improper White Spirit Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "gygax_white"
