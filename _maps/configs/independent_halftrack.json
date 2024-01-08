@@ -7,7 +7,7 @@
 		"WEAPONS"
 	],
 	"map_short_name": "Halftrack-Class",
-	"description": "A rare sight in the Frontier (but a welcome one), the Halftrack-class is a heavily retrofitted variant of the Li Tieguai-class Rescue Ship, used as a mobile firearms shop by enterprising arms dealers everywhere. While initial variants of the vessel were more obviously just the Li Tieguai with the medical fixtures stripped out and replaced with gun racks and ammunition lockers, the modern iteration of the Halftrack comes complete with a firing range, an Inteq-certified security compliment and a centralized sales floor perfect for showing off the wares while keeping them safe at the same time.",
+	"description": "Редкое явление в Приграничье (но желанное), судно класса Halftrack - это сильно модернизированный вариант спасательного судна класса Li Tieguai, используемое в качестве передвижного магазина огнестрельного оружия предприимчивыми торговцами оружием повсюду. Если первоначальные варианты судна были скорее просто 'Li Tieguai', а медицинские приспособления были удалены и заменены оружейными стойками и шкафами для боеприпасов, то современная версия 'Halftrack' оснащена стрельбищем, сертифицированной службой безопасности InteQ и централизованным торговым залом, идеальным для демонстрации товаров и одновременного обеспечения их безопасности.",
 	"tags": [
 	"Combat",
 	"Cargo"

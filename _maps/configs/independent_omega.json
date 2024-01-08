@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Omega-class Personal Shuttle",
 	"map_short_name": "Omega-class",
-	"description": "The Omega is the sports car of space...",
+	"description": "Судно класса 'Omega' - это спортивный автомобиль космического...",
 	"tags": [
 		"Generalist"
 	],

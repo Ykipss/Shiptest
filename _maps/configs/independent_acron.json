@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Acron-class Mercenary Ship",
 	"prefix": "ISV",
-	"description": "Специальный корабль особого назначения клана Паука для выполнения узконаправленных задач.",
+	"description": "Специальное судно особого назначения клана Паука для выполнения узконаправленных задач.",
 	"tags": [
 		"Боевой",
 		"Медицинский"

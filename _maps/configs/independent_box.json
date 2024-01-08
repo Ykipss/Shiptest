@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Box-class Hospital Ship",
 	"map_short_name": "Box-class",
-	"description": "An early exemplar of several modern shipbuilding techniques that have since become standard, the Box is effectively a tiny spaceborne hospital, loaded with medical equipment that can often be difficult to source in Frontier space. Unusually, Boxes come equipped with medical cryo tubes, which have become a particular rarity on the Frontier due to their delicate nature and steep upkeep costs. Boxes are often found in surprisingly good repair for their age, and they have received several upgrades over the decades that have kept them well abreast of advances in medical science.",
+	"description": "Судно класса 'Box' - ранний образец нескольких современных технологий судостроения, которые с тех пор стали стандартом. По сути, он представляет собой крошечный космический госпиталь, оснащенный медицинским оборудованием, которое зачастую трудно достать в пространстве Фронтира. Как ни странно, боксы оснащены медицинскими криопробирками, которые стали особой редкостью на Фронтире из-за их деликатного характера и дороговизны содержания. Боксы часто встречаются в удивительно хорошем состоянии для своего возраста, и за десятилетия они получили несколько модернизаций, которые позволили им идти в ногу с достижениями медицинской науки.",
 	"tags": [
 		"Medical"
 	],
