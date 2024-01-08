@@ -3474,8 +3474,8 @@
 #include "mod_celadon\code\game\items\fuelcell.dm"
 #include "mod_celadon\code\game\objects\machinery\reactor.dm"
 #include "mod_celadon\code\game\objects\structures\eclipse_decoration.dm"
+#include "mod_celadon\code\modules\mob\emote_panel.dm"
 #include "mod_celadon\code\modules\mob\dead\new_player\sprite_accessories\ipc.dm"
 #include "mod_celadon\code\modules\projectiles\guns\ballistic\revolver.dm"
 #include "mod_celadon\code\modules\vending\pizzamat.dm"
-#include "mod_celadon\code\modules\mob\emote_panel.dm"
 // END_INCLUDE

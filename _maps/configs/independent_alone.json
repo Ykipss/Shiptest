@@ -4,7 +4,7 @@
 	"map_short_name": "Alone",
 	"map_path": "_maps/shuttles/independent/independent_alone.dmm",
 	"prefix": "ISV",
-	"description": "A budget ship designed for seasoned space explorers...",
+	"description": "Бюджетный корабль, предназначенный для опытных исследователей космоса...",
 	"tags": [
 		"Survival"
 	],

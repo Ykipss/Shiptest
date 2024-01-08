@@ -8,7 +8,7 @@
 	],
 	"map_short_name": "Glaive-class",
 	"map_path": "_maps/shuttles/roumain/srm_glaive.dmm",
-	"description": "A standard issue vessel to the highest ranks of the Saint-Roumain Militia. While “standard”, this class of vessel is unique to the Montagne that owns it. Each ship is designed around a central garden consisting of plants, soil, and a tree from the owning Montagnes’ home planet. As a highly religious ascetic order, the SRM supplies each Glaive with supplies to farm, raise animals, and perform medicine in more “natural” ways, using herbs and plants grown in house. Alongside this, the ship has a decent amount of mining equipment, and supplies required to begin the manufacturing of SRM-pattern firearms as is standard for Hunter’s Pride. The ship is captained by a Montagne, who oversees a team of Hunters, and Shadows apprenticing them.",
+	"description": "Стандартное судно для высших чинов ополчения Сен-Румена. Несмотря на то, что это 'стандартное' судно, оно уникально для того Монтана, который им владеет. Каждое судно спроектировано вокруг центрального сада, состоящего из растений, почвы и деревьев с родной планеты Монтан. Будучи высокорелигиозным аскетическим орденом, SRM снабжает каждый 'Glaive' материалами для ведения сельского хозяйства, разведения животных и медицины более 'естественными' способами, используя травы и растения, выращенные в доме. Наряду с этим на судне имеется приличное количество горного оборудования, а также припасы, необходимые для начала производства огнестрельного оружия SRM, как это принято в 'Гордости охотника'. Капитаном корабля является Монтан, который следит за командой Охотников и Теней, обучающих их.",
 	"tags": [
 		"Mining",
 		"Combat",

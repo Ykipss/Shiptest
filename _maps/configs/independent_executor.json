@@ -3,7 +3,7 @@
 	"map_name": "Executor-class Mercenary Vessel",
 	"map_short_name": "Executor-class",
 	"map_path": "_maps/shuttles/independent/independent_executor.dmm",
-	"description": "Корабль класса Исполнитель, на котором чаще всего работают наемники и легальные охотники за головами.",
+	"description": "Судно класса Executor, на котором чаще всего работают наемники и легальные охотники за головами.",
 	"tags": [
 		"Combat",
 		"Generalist"
