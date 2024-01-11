@@ -887,11 +887,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 /obj/item/newspaper/attack_self(mob/user)
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_user = user
-		var/dat
+		var/dat="<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
 		pages = 0
 		switch(screen)
 			if(0) //Cover
-				dat+="<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
 				dat+="<DIV ALIGN='center'><B><FONT SIZE=6>Griffon</FONT></B></div>"
 				dat+="<DIV ALIGN='center'><FONT SIZE=2>Стандартная общедоступная информационная сеть. Лучшее место для вашей рекламы!</FONT></div><HR>"
 				if(!length(news_content))
@@ -917,7 +916,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
 				var/datum/newscaster/feed_channel/C = news_content[curr_page]
-				dat += "<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
 				dat += "<FONT SIZE=4><B>[C.channel_name]</B></FONT><BR><FONT SIZE=1> \[Автор: <FONT COLOR='DarkTurquoisen'>[C.returnAuthor(notContent(C.authorCensorTime))]</FONT>\]</FONT><BR><BR>"
 				if(notContent(C.DclassCensorTime))
 					dat+="Этот канал был признан опасным для общего благосостояния сектора и поэтому отмечен знаком <B><FONT COLOR='red'>D-Notice</B></FONT>. Содержание было проигнорировано на момент печати газеты."
@@ -946,7 +944,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			if(2) //Last page
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
-					dat+="<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
 				if(wantedAuthor!=null)
 					dat+="<DIV STYLE='float:center;'><FONT SIZE=4><B>Межсекторный Розыск:</B></FONT SIZE></DIV><HR><BR><BR>"
 					dat+="<B>Преступник</B>: <FONT COLOR='DarkTurquoisen'>[wantedCriminal]</FONT><BR>"
