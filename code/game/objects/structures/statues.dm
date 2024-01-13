@@ -299,3 +299,8 @@
 	name = "\improper Karl Marx bust"
 	desc = "A bust depicting a certain 19th century economist. You get the feeling a specter is haunting the sector."
 	icon_state = "marx"
+
+/obj/structure/statue/bronze/masson_kills
+	name = "Masson Kill's"
+	desc = "Статуя самого лучшего администратора что вы можете встретить в новогоднюю ночь. Его мешок полон подарков. Надеюсь, ты вел себя хорошо?"
+	icon_state = "masson_kills"
