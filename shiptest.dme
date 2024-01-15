@@ -3480,4 +3480,5 @@
 #include "mod_celadon\code\modules\projectiles\guns\ballistic\revolver.dm"
 #include "mod_celadon\code\modules\vending\pizzamat.dm"
 #include "mod_celadon\code\modules\clothing\suits\armor.dm"
+#include "mod_celadon\code\modules\clothing\suits\syndicateoldsuit.dm"
 // END_INCLUDE
