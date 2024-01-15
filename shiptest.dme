@@ -3476,4 +3476,5 @@
 #include "mod_celadon\code\modules\vending\pizzamat.dm"
 #include "mod_celadon\code\modules\clothing\suits\armor.dm"
 #include "mod_celadon\code\modules\clothing\suits\syndicateoldsuit.dm"
+#include "mod_celadon\code\game\objects\items\syndicateventkits.dm"
 // END_INCLUDE
