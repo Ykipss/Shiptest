@@ -8,7 +8,7 @@
 		"WEAPONS"
 	],
 	"map_short_name": "Ranger-class",
-	"description": "A Nanotrasen rescue and aid vessel. Equipped with an AI core, moderate combat gear, and equipment fit for rescue and general aid operations. Nanotrasen often deploys these ships in lieu of a proper ERT to aid their allies in the Frontier without committing their full might. The shipowner is the Lieutenant of a Loss Prevention squad, with a Commissioner to aid with operations on the ship proper.",
+	"description": "Спасательное судно Нанотрайзен судно класса 'Ranger'. Оснащено ядром ИИ, умеренным боевым снаряжением и оборудованием, пригодным для спасательных операций и оказания общей помощи. Нанотрайзен часто использует эти судна вместо полноценной группы быстрого реагирования, чтобы помочь своим союзникам во Фронтире, не задействуя всю свою мощь. Владелец корабля - лейтенант отряда предотвращения потерь, а комиссар помогает в операциях на самом корабле.",
 	"tags": [
 		"Combat",
 		"Riot",

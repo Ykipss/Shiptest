@@ -9,7 +9,7 @@
 		"DONK"
 	],
 	"map_short_name": "Junker-class",
-	"description": "Судно Donk! Co. предназначеное только для продаж и склада. Больше нет чего сказать",
+	"description": "Судно Donk! Co. предназначеное только для продаж и склада. Больше нечего сказать",
 	"tags": [
 		"Грузовой"
 	],
@@ -31,7 +31,7 @@
 			"slots": 4
 		}
 	},
-	"enabled": true
+	"enabled": false
    }
 
 

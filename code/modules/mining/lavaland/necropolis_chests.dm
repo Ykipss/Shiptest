@@ -232,6 +232,9 @@
 	desc = "A wooden rod about the size of your forearm with a snake carved around it, winding its way up the sides of the rod. Something about it seems to inspire in you the responsibilty and duty to help others."
 	icon = 'icons/obj/lavaland/artefacts.dmi'
 	icon_state = "asclepius_dormant"
+	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
+	item_state = "asclepius_dormant"
 	var/activated = FALSE
 	var/usedHand
 
@@ -243,7 +246,7 @@
 		return
 	var/mob/living/carbon/itemUser = user
 	usedHand = itemUser.get_held_index_of_item(src)
-	if(itemUser.has_status_effect(/datum/status_effect/hippocratic_oath))
+	if(itemUser.has_status_effect(STATUS_EFFECT_HIPPOCRATIC_OATH))
 		to_chat(user, "<span class='warning'>You can't possibly handle the responsibility of more than one rod!</span>")
 		return
 	var/failText = "<span class='warning'>The snake seems unsatisfied with your incomplete oath and returns to its previous place on the rod, returning to its dormant, wooden state. You must stand still while completing your oath!</span>"
@@ -269,7 +272,7 @@
 		to_chat(itemUser, failText)
 		return
 	to_chat(itemUser, "<span class='notice'>The snake, satisfied with your oath, attaches itself and the rod to your forearm with an inseparable grip. Your thoughts seem to only revolve around the core idea of helping others, and harm is nothing more than a distant, wicked memory...</span>")
-	var/datum/status_effect/hippocratic_oath/effect = itemUser.apply_status_effect(/datum/status_effect/hippocratic_oath)
+	var/datum/status_effect/hippocraticOath/effect = itemUser.apply_status_effect(STATUS_EFFECT_HIPPOCRATIC_OATH)
 	effect.hand = usedHand
 	activated()
 
@@ -278,6 +281,9 @@
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 	desc = "A short wooden rod with a mystical snake inseparably gripping itself and the rod to your forearm. It flows with a healing energy that disperses amongst yourself and those around you. "
 	icon_state = "asclepius_active"
+	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
+	item_state = "asclepius_active"
 	activated = TRUE
 
 //Memento Mori
@@ -1233,9 +1239,9 @@
 		user.changeNext_move(CLICK_CD_MELEE * 0.5) //when closed, it attacks very rapidly
 
 /obj/item/melee/transforming/cleaving_saw/nemesis_effects(mob/living/user, mob/living/target)
-	var/datum/status_effect/stacking/saw_bleed/B = target.has_status_effect(/datum/status_effect/stacking/saw_bleed)
+	var/datum/status_effect/stacking/saw_bleed/B = target.has_status_effect(STATUS_EFFECT_SAWBLEED)
 	if(!B)
-		target.apply_status_effect(/datum/status_effect/stacking/saw_bleed,bleed_stacks_per_hit)
+		target.apply_status_effect(STATUS_EFFECT_SAWBLEED,bleed_stacks_per_hit)
 	else
 		B.add_stacks(bleed_stacks_per_hit)
 

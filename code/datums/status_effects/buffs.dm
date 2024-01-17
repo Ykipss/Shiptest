@@ -22,7 +22,7 @@
 /datum/status_effect/shadow_mend/on_remove()
 	owner.visible_message("<span class='warning'>The violet light around [owner] glows black!</span>", "<span class='warning'>The tendrils around you cinch tightly and reap their toll...</span>")
 	playsound(owner, 'sound/magic/teleport_diss.ogg', 50, TRUE)
-	owner.apply_status_effect(/datum/status_effect/void_price)
+	owner.apply_status_effect(STATUS_EFFECT_VOID_PRICE)
 
 
 /datum/status_effect/void_price
@@ -308,7 +308,7 @@
 	STOP_PROCESSING(SSprocessing, src)
 
 //Hippocratic Oath: Applied when the Rod of Asclepius is activated.
-/datum/status_effect/hippocratic_oath
+/datum/status_effect/hippocraticOath
 	id = "Hippocratic Oath"
 	status_type = STATUS_EFFECT_UNIQUE
 	duration = -1
@@ -318,19 +318,19 @@
 	var/hand
 	var/deathTick = 0
 
-/datum/status_effect/hippocratic_oath/on_apply()
+/datum/status_effect/hippocraticOath/on_apply()
 	//Makes the user passive, it's in their oath not to harm!
-	ADD_TRAIT(owner, TRAIT_PACIFISM, "hippocratic_oath")
+	ADD_TRAIT(owner, TRAIT_PACIFISM, "hippocraticOath")
 	var/datum/atom_hud/H = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	H.add_hud_to(owner)
 	return ..()
 
-/datum/status_effect/hippocratic_oath/on_remove()
-	REMOVE_TRAIT(owner, TRAIT_PACIFISM, "hippocratic_oath")
+/datum/status_effect/hippocraticOath/on_remove()
+	REMOVE_TRAIT(owner, TRAIT_PACIFISM, "hippocraticOath")
 	var/datum/atom_hud/H = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	H.remove_hud_from(owner)
 
-/datum/status_effect/hippocratic_oath/tick()
+/datum/status_effect/hippocraticOath/tick()
 	if(owner.stat == DEAD)
 		if(deathTick < 4)
 			deathTick += 1
@@ -369,25 +369,25 @@
 			//Because a servant of medicines stops at nothing to help others, lets keep them on their toes and give them an additional boost.
 			if(itemUser.health < itemUser.maxHealth)
 				new /obj/effect/temp_visual/heal(get_turf(itemUser), "#375637")
-			itemUser.adjustBruteLoss(-1.5)
-			itemUser.adjustFireLoss(-1.5)
+			itemUser.adjustBruteLoss(-1.5, forced = TRUE)
+			itemUser.adjustFireLoss(-1.5, forced = TRUE)
 			itemUser.adjustToxLoss(-1.5, forced = TRUE) //Because Slime People are people too
-			itemUser.adjustOxyLoss(-1.5)
-			itemUser.adjustStaminaLoss(-1.5)
+			itemUser.adjustOxyLoss(-1.5, forced = TRUE)
+			itemUser.adjustStaminaLoss(-1.5, forced = TRUE)
 			itemUser.adjustOrganLoss(ORGAN_SLOT_BRAIN, -1.5)
-			itemUser.adjustCloneLoss(-0.5) //Becasue apparently clone damage is the bastion of all health
+			itemUser.adjustCloneLoss(-0.5, forced = TRUE) //Becasue apparently clone damage is the bastion of all health
 		//Heal all those around you, unbiased
 		for(var/mob/living/L in view(7, owner))
 			if(L.health < L.maxHealth)
 				new /obj/effect/temp_visual/heal(get_turf(L), "#375637")
 			if(iscarbon(L))
-				L.adjustBruteLoss(-3.5)
-				L.adjustFireLoss(-3.5)
+				L.adjustBruteLoss(-3.5, forced = TRUE)
+				L.adjustFireLoss(-3.5, forced = TRUE)
 				L.adjustToxLoss(-3.5, forced = TRUE) //Because Slime People are people too
-				L.adjustOxyLoss(-3.5)
-				L.adjustStaminaLoss(-3.5)
+				L.adjustOxyLoss(-3.5, forced = TRUE)
+				L.adjustStaminaLoss(-3.5, forced = TRUE)
 				L.adjustOrganLoss(ORGAN_SLOT_BRAIN, -3.5)
-				L.adjustCloneLoss(-1) //Becasue apparently clone damage is the bastion of all health
+				L.adjustCloneLoss(-1, forced = TRUE) //Becasue apparently clone damage is the bastion of all health
 			else if(issilicon(L))
 				L.adjustBruteLoss(-3.5)
 				L.adjustFireLoss(-3.5)
@@ -395,7 +395,7 @@
 				var/mob/living/simple_animal/SM = L
 				SM.adjustHealth(-3.5, forced = TRUE)
 
-/datum/status_effect/hippocratic_oath/proc/consume_owner()
+/datum/status_effect/hippocraticOath/proc/consume_owner()
 	owner.visible_message("<span class='notice'>[owner]'s soul is absorbed into the rod, relieving the previous snake of its duty.</span>")
 	var/mob/living/simple_animal/hostile/retaliate/poison/snake/healSnake = new(owner.loc)
 	var/list/chems = list(/datum/reagent/medicine/sal_acid, /datum/reagent/medicine/c2/convermol, /datum/reagent/medicine/oxandrolone)

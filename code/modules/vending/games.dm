@@ -13,7 +13,8 @@
 		/obj/item/hourglass = 2,
 		/obj/item/instrument/piano_synth/headphones = 4,
 		/obj/item/camera = 3,
-		/obj/item/dyespray = 3)
+		/obj/item/dyespray = 3,
+		/obj/item/coin/day_s = 2)
 	contraband = list(/obj/item/dice/fudge = 9)
 	premium = list(
 		/obj/item/melee/skateboard/pro = 3,

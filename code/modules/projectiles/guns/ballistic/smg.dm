@@ -269,8 +269,6 @@
 	desc = "A pre-FTL era carbine, known to be incredibly cheap. Its extreme fire rate make it perfect for bandits, pirates and colonists on a budget."
 	fire_sound = 'sound/weapons/gun/rifle/shot.ogg'
 	icon_state = "aks74u"
-	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
 	item_state = "aks74u"
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL

@@ -7,7 +7,7 @@
 		"NATURAL"
 	],
 	"map_short_name": "HPP-class",
-	"description": " Is it a ship? Oh no...it seems pod.",
+	"description": "Это судно? О нет... кажется, это капсула.",
 	"tags": ["Survival"],
 	"map_path": "_maps/shuttles/independent/independent_hardprisonpod.dmm",
 	"starting_funds": 0,

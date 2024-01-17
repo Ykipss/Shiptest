@@ -8,7 +8,7 @@
 		"PIRATES"
 	],
 	"map_path": "_maps/shuttles/pirate/pirate_noderider.dmm",
-	"description": "The Jupiter-class Stormrider is a specialist design originating from the Silicon Elevation Council, typically used for sustained missions in the Frontier. While habitable to organic life (typically as a matter of convenience), the ship is designed with silicons in mind, and features an AI core built into its hull. Many captains have been quoted as being “frightened” (although “piss-pants scared” was the exact statement) by one suddenly appearing out of a storm, IFF loudly declaring who they were, or in worse conditions, not functioning at all. Some examples have been known to find their way into pirate hands, who leverage the ship to spring ambushes on unsuspecting traders.",
+	"description": "Судно класса штурмовик 'Jupiter' - это специализированное судно, созданное Советом Кремниевого Возвышения, который обычно используется для длительных миссий во Фронтире. Несмотря на то, что корабль пригоден для органической жизни (обычно для удобства), он спроектирован с учетом потребностей силиконов и оснащен ядром ИИ, встроенным в его корпус. Многие капитаны, по их словам, были 'напуганы' (хотя 'напуганы до усрачки' было точным заявлением) тем, что один из них внезапно появлялся из шторма, громко сообщал по IFF, кто он, или, в худших условиях, не функционировал вообще. Известно, что некоторые экземпляры попадали в руки пиратов, которые использовали судно, чтобы устраивать засады на ничего не подозревающих торговцев.",
 	"tags": [
 		"Robotics",
 		"Specialist",

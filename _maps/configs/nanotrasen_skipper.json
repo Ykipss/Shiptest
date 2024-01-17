@@ -11,7 +11,7 @@
 		"MERCANTILE"
 	],
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_skipper.dmm",
-	"description": "An example of one of Nanotrasen’s “standard-pattern” cruisers. The Skipper-class is well-equipped by Frontier standards, with ample room for engineering equipment, well-appointed crew accommodations, and a decent supply of defensive weaponry. Notably, the Skipper comes with a larger command section than average, and the officers on Skippers tend to be better-equipped than their peers. Though not as prestigious as a position aboard an Osprey, few Nanotrasen captains would turn down a position commanding a Skipper.",
+	"description": "Пример одного из крейсеров Нанотрасена 'стандартного образца'. По меркам Фронтира судно класса 'Skipper' хорошо оснащено: достаточно места для инженерного оборудования, хорошо оборудованные места для экипажа и приличный запас оборонительного вооружения. Примечательно, что на 'Skipper' больше, чем в среднем, командный отсек, а офицеры на 'Skipper', как правило, лучше оснащены, чем их коллеги. Хотя должность на борту 'Osprey' не так престижна, как на 'Нанотрайзене', мало кто из капитанов откажется от командования 'Skipper'.",
 	"tags": [
 	"Engineering",
 	"Mining"

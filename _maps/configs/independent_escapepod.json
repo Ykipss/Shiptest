@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Escape Pod X-03",
-	"description": "Your main ship was destroyed, now you need to survive.",
+	"description": "Ваше основное судно было уничтожено, теперь вам нужно выжить.",
 	"tags": [
 		"Survival"
 	],
