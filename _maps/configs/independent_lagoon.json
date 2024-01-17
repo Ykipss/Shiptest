@@ -16,51 +16,51 @@
 	"starting_funds": 3000,
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/captain",
+			"outfit": "/datum/outfit/job/independent/captain",
 			"slots": 1
 		},
 		"Cruise Director": {
-			"outfit": "/datum/outfit/job/head_of_personnel",
+			"outfit": "/datum/outfit/job/independent/hop",
 			"slots": 1
 		},
 		"Security Officer": {
-			"outfit": "/datum/outfit/job/security",
+			"outfit": "/datum/outfit/job/independent/security",
 			"slots": 2
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/independent/doctor",
 			"slots": 1
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/atmos",
+			"outfit": "/datum/outfit/job/independent/atmos",
 			"slots": 1
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/bartender",
+			"outfit": "/datum/outfit/job/independent/bartender",
 			"slots": 1
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/cook",
+			"outfit": "/datum/outfit/job/independent/cook",
 			"slots": 1
 		},
 		"Botanist": {
-			"outfit": "/datum/outfit/job/botanist",
+			"outfit": "/datum/outfit/job/independent/botanist",
 			"slots": 1
 		},
 		"Curator": {
-			"outfit": "/datum/outfit/job/curator",
+			"outfit": "/datum/outfit/job/independent/curator",
 			"slots": 1
 		},
 		"Chaplain": {
-			"outfit": "/datum/outfit/job/chaplain",
+			"outfit": "/datum/outfit/job/independent/chaplain",
 			"slots": 1
 		},
 		"Janitor": {
-			"outfit": "/datum/outfit/job/janitor",
+			"outfit": "/datum/outfit/job/independent/janitor",
 			"slots": 1
 		},
 		"Passenger": {
-			"outfit": "/datum/outfit/job/assistant/corporate",
+			"outfit": "/datum/outfit/job/independent/assistant/fancy",
 			"slots": 10
 		}
 	},

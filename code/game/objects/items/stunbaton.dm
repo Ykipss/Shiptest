@@ -296,6 +296,9 @@
 		QDEL_NULL(sparkler)
 	return ..()
 
+/obj/item/melee/baton/cattleprod/loaded
+	preload_cell_type = /obj/item/stock_parts/cell/high
+
 /obj/item/melee/baton/boomerang
 	name = "\improper OZtek Boomerang"
 	desc = "Эти высокотехнологичные бумеранги, изобретенные конфедерацией Австраликус в 2486 году для великой космической войны Эму, также исключительно хорошо поражают членов экипажа. Просто будьте осторожны, чтобы поймать его при броске!"
