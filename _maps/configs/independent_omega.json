@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Omega-class Personal Shuttle",
 	"map_short_name": "Omega-class",
-	"description": "Судно класса 'Omega' - это спортивный автомобиль космического...",
+	"description": "Судно класса 'Omega' - это спортивный автомобиль космического... В щитспавне по причине: Соло-шип, только для опытных игроков!",
 	"tags": [
 		"Generalist"
 	],
