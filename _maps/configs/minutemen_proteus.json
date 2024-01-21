@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Proteus Assault Corvet",
 	"prefix": "CMSV",
-	"description": "Небольшое, но тяжело бронированное судно, предназначенное для выполнения специальных заданий.",
+	"description": "Небольшое, но тяжело бронированное судно, предназначенное для выполнения специальных заданий. В щитспавне по причине: Минитмены больше не лорные!",
 	"tags": [
 		"Robotics"
 	],
