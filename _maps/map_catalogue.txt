@@ -471,7 +471,7 @@ Find the key for using this catalogue in "map_catalogue_key.txt"
 		Size = (x = 86)(y = 48)(z = 1)
 		Tags = "Medium Combat Challenge", "Major Loot", "Shelter"
 
-                File Name = "_maps\RandomRuins\SpaceRuins\abandoned_ship_criminal.dmm"
+		        File Name = "_maps\RandomRuins\SpaceRuins\abandoned_ship_criminal.dmm"
 		Size = (x = 30)(y = 30)(z = 1)
 		Tags = "Medium Combat Challenge", "Medium Loot", "Shelter", "Ghost Role"
 
@@ -523,7 +523,7 @@ Find the key for using this catalogue in "map_catalogue_key.txt"
 
 		File Name = "_maps\RandomRuins\BeachRuins\beach_syndie_crash.dmm"
 		Size = (x = 69)(y = 52)(z = 1)
-		Tags = ""Boss Combat Challenge", "Major Loot", "Antag Gear" 
+		Tags = ""Boss Combat Challenge", "Major Loot", "Antag Gear"
 
 
 	Deprecated:
