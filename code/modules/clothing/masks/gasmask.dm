@@ -273,3 +273,10 @@
 	item_state = "hunter"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/mask/gas/bb
+	name = "wide angle gas mask"
+	desc = "Gas mask with large cutout for viewing."
+	icon_state = "gas_mask_bb"
+	item_state = "gas_mask_bb"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
