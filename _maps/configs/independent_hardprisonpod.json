@@ -7,7 +7,7 @@
 		"NATURAL"
 	],
 	"map_short_name": "HPP-class",
-	"description": "Это судно? О нет... кажется, это капсула.",
+	"description": "Это судно? О нет... кажется, это капсула. В щитспавне по причине: Сложный соло-шип, только для опытных игроков!",
 	"tags": ["Survival"],
 	"map_path": "_maps/shuttles/independent/independent_hardprisonpod.dmm",
 	"starting_funds": 0,

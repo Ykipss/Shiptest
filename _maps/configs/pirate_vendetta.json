@@ -2,7 +2,7 @@
 	"map_name": "Vendetta-class Pirate Pill",
 	"map_short_name": "Vendetta-class",
 	"map_path": "_maps/shuttles/independent/vendetta_pill.dmm",
-	"description": "Судно класса 'Vendetta' - было захвачено пиратами и переоборудовано в пиратское судно наводящее ужас и трепет на своих жертв.",
+	"description": "Судно класса 'Vendetta' - было захвачено пиратами и переоборудовано в пиратское судно наводящее ужас и трепет на своих жертв. В щитспавне по причине: Пираты...крайне не рекомендуеться спавнить без причины!",
 	"tags": [
 		"Specialist",
 		"Combat"
