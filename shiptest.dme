@@ -3478,4 +3478,5 @@
 #include "mod_celadon\code\modules\clothing\suits\syndicateoldsuit.dm"
 #include "mod_celadon\code\game\objects\items\syndicateventkits.dm"
 #include "mod_celadon\code\modules\mining\event_coin.dm"
+#include "mod_celadon\code\game\objects\items\aifactionlaws.dm"
 // END_INCLUDE
