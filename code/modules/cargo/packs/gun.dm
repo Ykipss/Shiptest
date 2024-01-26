@@ -89,7 +89,7 @@
 /datum/supply_pack/gun/riot_shotgun
 	name = "Riot Shotguns Crate"
 	desc = "For when the greytide gets out of hand. Contains 2 pump shotguns, each with a 4-round magazine."
-	cost = 2500
+	cost = 3500
 	contains = list(/obj/item/gun/ballistic/shotgun/lethal,
 					/obj/item/gun/ballistic/shotgun/lethal)
 	crate_name = "shotguns crate"
@@ -97,7 +97,7 @@
 /datum/supply_pack/gun/ballistic
 	name = "Combat Shotguns Crate"
 	desc = "For when the enemy absolutely needs to be replaced with lead. Contains two Aussec-designed combat shotguns."
-	cost = 4500
+	cost = 6000
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat,
 					/obj/item/gun/ballistic/shotgun/automatic/combat)
 	crate_name = "combat shotguns crate"

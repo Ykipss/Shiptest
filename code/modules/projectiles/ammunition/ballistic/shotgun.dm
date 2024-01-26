@@ -20,8 +20,9 @@
 	desc = "A 12-gauge buckshot shell."
 	icon_state = "buckshot"
 	projectile_type = /obj/projectile/bullet/pellet/buckshot
-	pellets = 8
+	pellets = 6
 	variance = 25
+	custom_materials = list(/datum/material/iron=7000)
 
 /obj/item/ammo_casing/shotgun/beanbag
 	name = "beanbag slug"
@@ -35,7 +36,7 @@
 	desc = "A shotgun casing filled with densely-packed rubber balls, used to incapacitate crowds from a distance."
 	icon_state = "rubber"
 	projectile_type = /obj/projectile/bullet/pellet/rubbershot
-	pellets = 8
+	pellets = 6
 	variance = 25
 	custom_materials = list(/datum/material/iron=4000)
 
@@ -51,7 +52,7 @@
 	icon_state = "improvised"
 	projectile_type = /obj/projectile/bullet/pellet/improvised
 	custom_materials = list(/datum/material/iron=250)
-	pellets = 10
+	pellets = 8
 	variance = 25
 
 /obj/item/ammo_casing/shotgun/incapacitate
@@ -59,7 +60,7 @@
 	desc = "A shotgun casing filled with... something. Used to incapacitate targets."
 	icon_state = "bounty"
 	projectile_type = /obj/projectile/bullet/pellet/rubbershot/incapacitate
-	pellets = 12//double the pellets, but half the stun power of each, which makes this best for just dumping right in someone's face.
+	pellets = 10//double the pellets, but half the stun power of each, which makes this best for just dumping right in someone's face.
 	variance = 25
 	custom_materials = list(/datum/material/iron=4000)
 
