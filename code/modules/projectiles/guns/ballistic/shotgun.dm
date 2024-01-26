@@ -91,7 +91,7 @@
 	desc = "A semi-automatic shotgun with tactical furniture and six-shell capacity underneath."
 	icon_state = "cshotgun"
 	item_state = "shotgun_combat"
-	fire_delay = 5
+	fire_delay = 6
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
 	w_class = WEIGHT_CLASS_HUGE
 
