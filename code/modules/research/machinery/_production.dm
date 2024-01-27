@@ -13,6 +13,7 @@
 	var/list/datum/design/matching_designs
 	var/department_tag = "Unidentified"			//used for material distribution among other things.
 	var/datum/techweb/stored_research
+	var/stripe_color = null		/// What color is this machine's stripe? Leave null to not have a stripe.
 
 	var/screen = RESEARCH_FABRICATOR_SCREEN_MAIN
 	var/selected_category
@@ -379,3 +380,27 @@
 
 	l += "</tr></table></div>"
 	return l
+
+// Stuff for the stripe on the department machines
+/obj/machinery/rnd/production/default_deconstruction_screwdriver(mob/user, icon_state_open, icon_state_closed, obj/item/screwdriver)
+	. = ..()
+
+	update_icon(UPDATE_OVERLAYS)
+
+/obj/machinery/rnd/production/update_overlays()
+	. = ..()
+
+	if(!stripe_color)
+		return
+
+	var/mutable_appearance/stripe = mutable_appearance('icons/obj/machines/research.dmi', "protolate_stripe")
+
+	if(!panel_open)
+		stripe.icon_state = "protolathe_stripe"
+	else
+		stripe.icon_state = "protolathe_stripe_t"
+
+	stripe.color = stripe_color
+
+	. += stripe
+

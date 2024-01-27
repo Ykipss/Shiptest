@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	var/rendered = compose_message(src, message_language, message, , spans, message_mods)
 	for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))
 		AM.Hear(rendered, src, message_language, message, , spans, message_mods)
-
+/*								CELADON-CHANGE -> mod_celadon\code\game\say.dm
 /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)
 	//This proc uses text() because it is faster than appending strings. Thanks BYOND.
 	//Basic span
@@ -73,7 +73,7 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	messagepart = " <span class='message'>[say_emphasis(messagepart)]</span></span>"
 
 	return "[spanpart1][spanpart2][freqpart][languageicon][compose_track_href(speaker, namepart)][namepart][compose_job(speaker, message_language, raw_message, radio_freq)][endspanpart][messagepart]"
-
+*/
 /atom/movable/proc/compose_track_href(atom/movable/speaker, message_langs, raw_message, radio_freq)
 	return ""
 
