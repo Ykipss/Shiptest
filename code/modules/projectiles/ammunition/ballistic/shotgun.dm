@@ -20,7 +20,7 @@
 	desc = "A 12-gauge buckshot shell."
 	icon_state = "buckshot"
 	projectile_type = /obj/projectile/bullet/pellet/buckshot
-	pellets = 6
+	pellets = 7
 	variance = 25
 	custom_materials = list(/datum/material/iron=7000)
 
@@ -36,7 +36,7 @@
 	desc = "A shotgun casing filled with densely-packed rubber balls, used to incapacitate crowds from a distance."
 	icon_state = "rubber"
 	projectile_type = /obj/projectile/bullet/pellet/rubbershot
-	pellets = 6
+	pellets = 8
 	variance = 25
 	custom_materials = list(/datum/material/iron=4000)
 
