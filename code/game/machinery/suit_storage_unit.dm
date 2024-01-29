@@ -347,6 +347,9 @@
 	if (uv)
 		return FALSE
 
+	if (anchored == FALSE)
+		return FALSE
+
 	return TRUE
 
 /obj/machinery/suit_storage_unit/proc/create_silhouette_of(atom/item)
@@ -541,6 +544,13 @@
 		visible_message("<span class='notice'>[user] inserts [I] into [src]</span>", "<span class='notice'>You load [I] into [src].</span>")
 		update_appearance()
 		return
+
+	if(I.tool_behaviour == TOOL_WRENCH && panel_open)
+		to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [src]...</span>")
+		if(I.use_tool(src, user, 40, volume=75))
+			set_anchored(!anchored)
+			to_chat(user, "<span class='notice'>You [anchored ? "" : "un"]secure [src].</span>")
+			return
 
 	if(panel_open && is_wire_tool(I))
 		wires.interact(user)
