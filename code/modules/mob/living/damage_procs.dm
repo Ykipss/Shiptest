@@ -305,3 +305,31 @@
 		if(!amount)
 			break
 	. -= amount //if there's leftover healing, remove it from what we return
+
+/mob/living/proc/apply_damage_type_forced(damage = 0, damagetype = BRUTE)
+	switch(damagetype)
+		if(BRUTE)
+			return adjustBruteLoss(damage, forced = TRUE)
+		if(BURN)
+			return adjustFireLoss(damage, forced = TRUE)
+		if(TOX)
+			return adjustToxLoss(damage, forced = TRUE)
+		if(OXY)
+			return adjustOxyLoss(damage, forced = TRUE)
+		if(CLONE)
+			return adjustCloneLoss(damage, forced = TRUE)
+		if(STAMINA)
+			return adjustStaminaLoss(damage, forced = TRUE)
+
+
+///heal up to amount damage, in a given order
+/mob/living/proc/heal_ordered_damage_forced(amount, list/damage_types)
+	. = amount //we'll return the amount of damage healed
+	for(var/ii in damage_types)
+		var/amount_to_heal = min(amount, get_damage_amount(ii)) //heal only up to the amount of damage we have
+		if(amount_to_heal)
+			apply_damage_type_forced(-amount_to_heal, ii)
+			amount -= amount_to_heal //remove what we healed from our current amount
+		if(!amount)
+			break
+	. -= amount //if there's leftover healing, remove it from what we return
