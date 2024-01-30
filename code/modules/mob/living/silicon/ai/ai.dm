@@ -1041,7 +1041,8 @@
 	set desc = "Wipe your core. This is functionally equivalent to cryo, freeing up your job slot."
 
 	// Guard against misclicks, this isn't the sort of thing we want happening accidentally
-	if(tgui_alert("WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo). Are you entirely sure you want to do this?", "Wipe Core", list("No", "Yes")) != "Yes")
+	var/poll_client = tgui_alert(usr,"WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo). Are you entirely sure you want to do this?", "Wipe Core", list("Yes", "No"))
+	if(poll_client != "Yes")
 		return
 
 	// We warned you.
