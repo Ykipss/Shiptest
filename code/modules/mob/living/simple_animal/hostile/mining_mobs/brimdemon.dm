@@ -198,7 +198,7 @@
 /obj/item/crusher_trophy/brimdemon_fang/on_mark_detonation(mob/living/target, mob/living/user)
 	target.balloon_alert_to_viewers("[pick(comic_phrases)]!")
 	playsound(target, 'sound/creatures/brimdemon_crush.ogg', 100)
-	user.heal_ordered_damage(bonus_value * 0.4, damage_heal_order)
+	user.heal_ordered_damage_forced(bonus_value * 0.4, damage_heal_order)
 
 /obj/effect/decal/cleanable/brimdust
 	name = "brimdust"
