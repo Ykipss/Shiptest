@@ -44,7 +44,7 @@
 			"slots": 2
 		},
 		"Intern": {
-			"outfit": "/datum/outfit/job/doctor/juniordoctor",
+			"outfit": "/datum/outfit/job/doctor",
 			"slots": 5
 		},
 		"Medical Doctor": {
