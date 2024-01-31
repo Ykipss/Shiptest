@@ -17,25 +17,25 @@
 	"limit": 2,
 	"job_slots": {
 		"Капитан": {
-			"outfit": "/datum/outfit/job/captain/nt/lp_lieutenant",
+			"outfit": "/datum/outfit/job/nanotrasen/captain/lp",
 			"officer": true,
 			"slots": 1
 		},
 		"Командир вылетной группы": {
-			"outfit": "/datum/outfit/job/hos/nanotrasen",
+			"outfit": "/datum/outfit/job/nanotrasen/hos",
 			"officer": true,
 			"slots": 1
 		},
 		"Судовой техник": {
-			"outfit": "/datum/outfit/job/engineer/lp",
+			"outfit": "/datum/outfit/job/nanotrasen/engineer/lp",
 			"slots": 1
 		},
 		"Офицер вылетной группы": {
-			"outfit": "/datum/outfit/job/security/lp",
+			"outfit": "/datum/outfit/job/nanotrasen/security/lp",
 			"slots": 4
 		},
 		"Судовой офицер": {
-			"outfit": "/datum/outfit/job/security/nanotrasen",
+			"outfit": "/datum/outfit/job/nanotrasen/security",
 			"slots": 2
 		}
 	},

@@ -17,25 +17,25 @@
 	"starting_funds": 0,
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/captain/nt",
+			"outfit": "/datum/outfit/job/nanotrasen/captain",
 			"officer": true,
 			"slots": 1
 		},
-		"Chief Medical Officer": {
-			"outfit": "/datum/outfit/job/cmo",
+		"Chief Physician": {
+			"outfit": "/datum/outfit/job/independent/cmo",
 			"officer": true,
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/engineer/nt",
+			"outfit": "/datum/outfit/job/nanotrasen/engineer",
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/nanotrasen/doctor",
 			"slots": 3
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/paramedic",
+			"outfit": "/datum/outfit/job/nanotrasen/paramedic",
 			"slots": 1
 		}
 	},

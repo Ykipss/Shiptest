@@ -455,7 +455,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	req_access_txt = "147";
 	name = "Шлюз"
 	},
 /turf/open/floor/plating,
@@ -709,7 +708,7 @@
 "yX" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/syndicate/energy/inteq,
+/obj/machinery/porta_turret,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "zc" = (
@@ -767,11 +766,7 @@
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
 	dir = 4
 	},
-/obj/machinery/porta_turret/ai{
-	density = 0;
-	faction = list("InteQ");
-	layer = 3.6
-	},
+/obj/machinery/porta_turret,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "Bq" = (
@@ -986,7 +981,7 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	req_access_txt = "147";
+	req_access_txt = list(19,3);
 	name = "Шлюз"
 	},
 /turf/open/floor/plating,
@@ -1031,7 +1026,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/cryo)
 "MP" = (
-/obj/machinery/porta_turret/syndicate/energy/inteq,
+/obj/machinery/porta_turret,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "MV" = (
@@ -1387,7 +1382,7 @@
 	id = "Iron_maiden_cargo";
 	dir = 8;
 	pixel_x = 20;
-	req_access_txt = "147"
+	req_access_txt = "1"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)
@@ -1519,7 +1514,7 @@
 	id = "Iron_maiden_cargo";
 	dir = 4;
 	pixel_x = -20;
-	req_access_txt = "147"
+	req_access_txt = "1"
 	},
 /obj/effect/turf_decal/corner/opaque/inteqbrown/border{
 	dir = 9

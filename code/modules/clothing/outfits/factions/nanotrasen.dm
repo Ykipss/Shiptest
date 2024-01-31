@@ -319,6 +319,34 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
+
+// Chief Physician
+
+/datum/outfit/job/nanotrasen/cm
+	name = "Nanotrasen - Chief Physician"
+	job_icon = "chiefmedicalofficer"
+	jobtype = /datum/job/
+
+	id = /obj/item/card/id/silver
+	l_pocket = /obj/item/pinpointer/crew
+	ears = /obj/item/radio/headset/headset_med
+	uniform = /obj/item/clothing/under/rank/medical/doctor/blue
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+	courierbag = /obj/item/storage/backpack/messenger/med
+
+	box = /obj/item/storage/box/survival/medical
+
+	chameleon_extras = list(/obj/item/gun/syringe, /obj/item/stamp/cmo)
+
+/datum/outfit/job/independent/cm/pharma
+
 // Warden
 
 /datum/outfit/job/nanotrasen/warden

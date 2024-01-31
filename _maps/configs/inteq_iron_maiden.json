@@ -18,25 +18,25 @@
 	"limit": 2,
 	"job_slots": {
 		"Капитан-лейтенант INTEQ": {
-			"outfit": "/datum/outfit/job/captain/inteq/naked/cardacces",
+			"outfit": "/datum/outfit/job/inteq/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Первый лейтенант INTEQ": {
-			"outfit": "/datum/outfit/job/warden/inteq/cardacces",
+			"outfit": "/datum/outfit/job/inteq/warden",
 			"officer": true,
 			"slots": 1
 		},
 		"Военный инженер INTEQ": {
-			"outfit": "/datum/outfit/job/engineer/inteq/cardacces",
+			"outfit": "/datum/outfit/job/inteq/engineer",
 			"slots": 1
 		},
 		"Полевой Медик INTEQ": {
-			"outfit": "/datum/outfit/job/paramedic/inteq/naked/cardacces",
+			"outfit": "/datum/outfit/job/inteq/paramedic",
 			"slots": 1
 		},
 		"Штурмовик INTEQ": {
-			"outfit": "/datum/outfit/job/security/inteq/naked/cardacces",
+			"outfit": "/datum/outfit/job/inteq/security",
 			"slots": 5
 		}
 		},

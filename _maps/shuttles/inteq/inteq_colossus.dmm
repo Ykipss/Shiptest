@@ -95,8 +95,7 @@
 /area/ship/engineering)
 "bs" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Crew Quarters";
-	req_access_txt = "147"
+	name = "Crew Quarters"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2401,8 +2400,7 @@
 	},
 /obj/machinery/door/airlock/public/glass{
 	dir = 4;
-	name = "Cryogenic Storage";
-	req_access_txt = "147"
+	name = "Cryogenic Storage"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -2429,7 +2427,7 @@
 "AZ" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Port Engines";
-	req_access_txt = "147"
+	req_access_txt = "10"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2689,7 +2687,7 @@
 "Dr" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Office";
-	req_access_txt = "148"
+	req_access_txt = "1"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -3442,7 +3440,7 @@
 /obj/machinery/door/airlock/maintenance{
 	dir = 4;
 	name = "Engineering";
-	req_access_txt = "147"
+	req_access_txt = "10"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3781,7 +3779,7 @@
 "Qu" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Starboard Engines";
-	req_access_txt = "147"
+	req_access_txt = "10"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3827,7 +3825,7 @@
 "QL" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Bridge";
-	req_access_txt = "149"
+	req_access_txt = list(19,3)
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3967,7 +3965,7 @@
 	dir = 4;
 	id_tag = "colossus_armory";
 	name = "Armory";
-	req_access_txt = "148"
+	req_access_txt = "1"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -4181,8 +4179,7 @@
 /area/ship/crew/office)
 "UN" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Office";
-	req_access_txt = "147"
+	name = "Office"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
