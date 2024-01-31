@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
 /obj/machinery/door/airlock/engineering{
-	req_access_txt = "10";
+	req_access_txt = "147;148";
 	name = "Электро щитовая"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -306,7 +306,7 @@
 	name = "Двигательные заслонки";
 	pixel_x = -19;
 	pixel_y = 3;
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/light_switch{
@@ -939,7 +939,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/command{
 	name = "EnfCO спальня";
-	req_access_txt = list(19,3)
+	req_access_txt =  "147;148"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -1240,7 +1240,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/public/glass{
-	name = "Кухня"
+	name = "Кухня";
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -1271,7 +1272,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/security{
-	name = "Бриг"
+	name = "Бриг";
+	req_access_txt = "148"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Brig"
@@ -1771,7 +1773,7 @@
 	dir = 2
 	},
 /obj/machinery/door/window/brigdoor{
-	req_access_txt = "1"
+	req_access_txt = "148"
 	},
 /obj/effect/turf_decal/trimline/opaque/yellow/warning,
 /turf/open/floor/plasteel/dark,
@@ -2383,14 +2385,14 @@
 /obj/machinery/button/door{
 	name = "Локдаун Карго";
 	id = "cargo";
-	req_access_txt = list(19,3);
+	req_access_txt = "148";
 	pixel_x = -9;
 	pixel_y = 10
 	},
 /obj/machinery/button/door{
 	name = "Локдаун брига";
 	id = "Brig";
-	req_access_txt = list(19,3);
+	req_access_txt = "148";
 	pixel_x = -9
 	},
 /turf/open/floor/plasteel/dark,
@@ -2820,7 +2822,8 @@
 	dir = 1;
 	id = "Hamm_cargo_exit";
 	name = "Внешние створки карго";
-	pixel_y = -20
+	pixel_y = -20;
+	req_access_txt = "147"
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 1;
@@ -2851,13 +2854,13 @@
 	pixel_y = 22;
 	name = "Внешние створки брига";
 	id = "Brig_exit";
-	req_access_txt = "1"
+	req_access_txt = "148"
 	},
 /obj/machinery/button/shieldwallgen{
 	pixel_x = 10;
 	pixel_y = 20;
 	id = "Hamm_down_ex";
-	req_access_txt = "1"
+	req_access_txt = "148"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3835,7 +3838,8 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/highsecurity{
-	name = "Maints"
+	name = "Maints";
+	req_access_txt = "147;148"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4437,7 +4441,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/command{
 	name = "Vanguard Спальня";
-	req_access_txt = list(19,3)
+	req_access_txt = "149"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -4691,7 +4695,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/medical{
-	name = "Мед.пункт"
+	name = "Мед.пункт";
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -5124,14 +5129,14 @@
 	name = "Карцер";
 	pixel_x = 10;
 	pixel_y = -20;
-	req_access_txt = "1"
+	req_access_txt = "148"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Hamm_cell2";
 	name = "Общая камера";
 	pixel_y = -20;
-	req_access_txt = "1";
+	req_access_txt = "148";
 	pixel_x = -10
 	},
 /turf/open/floor/plasteel/dark,
@@ -5318,7 +5323,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/mining{
-	name = "Cargo"
+	name = "Cargo";
+	req_access_txt = "147"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "cargo"
@@ -5341,7 +5347,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/public/glass{
-	name = "Дормиторий"
+	name = "Дормиторий";
+	req_access_txt = "147"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -5491,6 +5498,13 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 28
+	},
+/obj/machinery/button/door{
+	pixel_y = 22;
+	name = "Внешние створки брига";
+	id = "Brig_exit";
+	req_access_txt = "148";
+	pixel_x = -5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
@@ -5990,14 +6004,14 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "IK" = (
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "10";
-	name = "Двигательный отсек"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/door/airlock/engineering{
+	req_access_txt = "147;148";
+	name = "Двигательный отсек"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IO" = (
@@ -6041,7 +6055,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/machinery/door/airlock/atmos{
 	name = "Атмосферика";
-	req_access_txt = "10"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -6068,10 +6082,6 @@
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "Jw" = (
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "10";
-	name = "Электро щитовая"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
 	},
@@ -6089,6 +6099,10 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/engineering{
+	req_access_txt = "147;148";
+	name = "Электро щитовая"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Jy" = (
@@ -6153,7 +6167,7 @@
 	},
 /obj/machinery/door/airlock/mining{
 	name = "Офис";
-	req_access_txt = "10";
+	req_access_txt = "148";
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
@@ -6956,7 +6970,8 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/security{
-	name = "Бриг"
+	name = "Бриг";
+	req_access_txt = "148"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
@@ -7081,7 +7096,8 @@
 	id = "cargo"
 	},
 /obj/machinery/door/airlock/highsecurity{
-	name = "Maints"
+	name = "Maints";
+	req_access_txt = "147;148"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/communications)
@@ -7387,7 +7403,7 @@
 /area/ship/bridge)
 "Sp" = (
 /obj/machinery/door/airlock/engineering{
-	req_access_txt = "10";
+	req_access_txt = "147;148";
 	name = "Двигательный отсек"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -7755,7 +7771,7 @@
 	},
 /obj/machinery/door/airlock/highsecurity{
 	explosion_block = 7;
-	req_access_txt = "1";
+	req_access_txt = "147;148";
 	name = "Укрепленная оружейная"
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -8201,7 +8217,7 @@
 	name = "Наружные окна";
 	pixel_x = 32;
 	pixel_y = 7;
-	req_access_txt = list(19,3)
+	req_access_txt = "148"
 	},
 /obj/machinery/button/door{
 	dir = 8;
@@ -8209,7 +8225,7 @@
 	name = "Локдаун мостика";
 	pixel_x = 32;
 	pixel_y = -7;
-	req_access_txt = list(19,3)
+	req_access_txt = "148"
 	},
 /obj/machinery/button/door{
 	dir = 8;
@@ -8217,7 +8233,7 @@
 	name = "Локдаун центрального корридора";
 	pixel_x = 22;
 	pixel_y = 7;
-	req_access_txt = list(19,3)
+	req_access_txt = "148"
 	},
 /obj/machinery/button/door{
 	dir = 8;
@@ -8225,7 +8241,7 @@
 	name = "Обзорные окна мостика";
 	pixel_x = 22;
 	pixel_y = -7;
-	req_access_txt = list(19,3)
+	req_access_txt = "148"
 	},
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 8
@@ -8294,7 +8310,7 @@
 	},
 /obj/machinery/door/airlock/command{
 	name = "Мостик";
-	req_access_txt = list(19,3);
+	req_access_txt = "147;148";
 	dir = 4;
 	explosion_block = 5
 	},
@@ -8563,7 +8579,8 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/freezer{
-	name = "Уборная"
+	name = "Уборная";
+	req_access_txt = "147"
 	},
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/janitor)

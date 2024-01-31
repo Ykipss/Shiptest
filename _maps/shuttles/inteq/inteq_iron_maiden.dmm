@@ -455,7 +455,8 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	name = "Шлюз"
+	name = "Шлюз";
+	req_access_txt = "147"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
@@ -981,7 +982,7 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	req_access_txt = list(19,3);
+	req_access_txt = "147";
 	name = "Шлюз"
 	},
 /turf/open/floor/plating,
@@ -1382,7 +1383,7 @@
 	id = "Iron_maiden_cargo";
 	dir = 8;
 	pixel_x = 20;
-	req_access_txt = "1"
+	req_access_txt = "147"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)
@@ -1514,7 +1515,7 @@
 	id = "Iron_maiden_cargo";
 	dir = 4;
 	pixel_x = -20;
-	req_access_txt = "1"
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/corner/opaque/inteqbrown/border{
 	dir = 9

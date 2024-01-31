@@ -136,7 +136,8 @@
 	},
 /obj/machinery/door/airlock/public/glass{
 	dir = 4;
-	name = "Crew Quarters"
+	name = "Crew Quarters";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -176,7 +177,8 @@
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/airlock/grunge{
 	dir = 4;
-	name = "Cargo Bay"
+	name = "Cargo Bay";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -375,7 +377,7 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engine Room";
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -451,10 +453,10 @@
 "cT" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/window/northleft{
-	req_access_txt = "61"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/window/southright{
-	req_access_txt = "61"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -493,7 +495,7 @@
 	dir = 4;
 	name = "Engineering";
 	normalspeed = 0;
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
@@ -991,7 +993,8 @@
 	},
 /obj/machinery/door/airlock/grunge{
 	dir = 4;
-	name = "Cargo Bay"
+	name = "Cargo Bay";
+	req_access_txt = "147"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -1165,13 +1168,15 @@
 	id = "talos_bridge";
 	name = "Bridge Shutters";
 	pixel_x = 6;
-	pixel_y = 23
+	pixel_y = 23;
+	req_access_txt = "147;148"
 	},
 /obj/machinery/button/door{
 	id = "talos_windows";
 	name = "Window Lockdown";
 	pixel_x = -6;
-	pixel_y = 23
+	pixel_y = 23;
+	req_access_txt = "147;148"
 	},
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
@@ -1510,7 +1515,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/highsecurity{
 	name = "Communications";
-	req_access_txt = "61"
+	req_access_txt = "147;148"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/communications)
@@ -1635,7 +1640,7 @@
 	dir = 4;
 	name = "Engineering";
 	normalspeed = 0;
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
@@ -1952,7 +1957,7 @@
 	},
 /obj/machinery/door/airlock/command{
 	name = "Bridge";
-	req_one_access = list(19,3)
+	req_one_access = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -2715,7 +2720,7 @@
 	name = "Access Door Control";
 	pixel_x = 21;
 	pixel_y = -6;
-	req_access_txt = "24"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 8;
@@ -2946,14 +2951,16 @@
 	id = "talos_engine_shutter";
 	name = "Shutter Control";
 	pixel_x = -21;
-	pixel_y = -2
+	pixel_y = -2;
+	req_access_txt = "147"
 	},
 /obj/machinery/button/door{
 	dir = 4;
 	id = "talos_engine_vent";
 	name = "External Vent Control";
 	pixel_x = -21;
-	pixel_y = 10
+	pixel_y = 10;
+	req_access_txt = "147"
 	},
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /obj/machinery/computer/atmos_control/incinerator{
@@ -3188,7 +3195,8 @@
 "sY" = (
 /obj/machinery/door/airlock/public/glass{
 	dir = 4;
-	name = "Canteen"
+	name = "Canteen";
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
@@ -3836,7 +3844,7 @@
 	dir = 4;
 	id_tag = "talos_armory";
 	name = "Armory";
-	req_access_txt = "1"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -4237,7 +4245,8 @@
 	id = "talos_cargo";
 	name = "Cargo Door Control";
 	pixel_x = 21;
-	pixel_y = 8
+	pixel_y = 8;
+	req_access_txt = "147"
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 8;
@@ -4729,7 +4738,7 @@
 /obj/effect/turf_decal/borderfloor,
 /obj/machinery/door/airlock/engineering{
 	name = "Storage Bay";
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4867,7 +4876,8 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/security/glass{
-	name = "Office"
+	name = "Office";
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -5462,7 +5472,8 @@
 /area/ship/cargo/starboard)
 "ID" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Cryogenic Storage"
+	name = "Cryogenic Storage";
+	req_access_txt = "147"
 	},
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -5569,7 +5580,7 @@
 	name = "Access Door Control (DANGER) (EXTREMELY DANGEROUS) (DO NOT PRESS)";
 	pixel_x = 21;
 	pixel_y = -6;
-	req_access_txt = "24"
+	req_access_txt = "147;148"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -5774,7 +5785,8 @@
 "KY" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/machinery/door/airlock/public/glass{
-	name = "Crew Quarters"
+	name = "Crew Quarters";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6120,7 +6132,8 @@
 	id = "talos_cargo";
 	name = "Cargo Door Control";
 	pixel_x = 21;
-	pixel_y = -2
+	pixel_y = -2;
+	req_access_txt = "147"
 	},
 /obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/dirt,
@@ -7643,7 +7656,8 @@
 "Zd" = (
 /obj/machinery/door/airlock{
 	dir = 4;
-	name = "Dormitory"
+	name = "Dormitory";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
