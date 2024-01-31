@@ -14,19 +14,19 @@
 	"prefix": "ISV",
 	"job_slots": {
 		"Pilot": {
-			"outfit": "/datum/outfit/job/captain/independent/owner",
+			"outfit": "/datum/outfit/job/independent/captain/masinyane",
 			"slots": 1
 		},
 		"Willbreaker": {
-			"outfit": "/datum/outfit/job/security/Frontiersmen",
+			"outfit": "/datum/outfit/job/frontiersmen/security",
 			"slots": 2
 		},
 		"Medic": {
-			"outfit": "/datum/outfit/job/doctor/surgeon",
+			"outfit": "/datum/outfit/job/doctor",
 			"slots": 1
 		},
 		"Field Engineer": {
-			"outfit": "/datum/outfit/job/engineer/independent/frontiersmen",
+			"outfit": "/datum/outfit/job/frontiersmen/engineer",
 			"slots": 1
 		}
 	},

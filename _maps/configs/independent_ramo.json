@@ -20,7 +20,7 @@
 			"slots": 1
 		},
 		"Salvage Technician": {
-			"outfit": "/datum/outfit/job/engineer/hazard",
+			"outfit": "/datum/outfit/job/independent/engineer",
 			"slots": 2
 		},
 		"Salvage Paramedic": {
@@ -28,11 +28,11 @@
 			"slots": 1
 		},
 		"Salvager": {
-			"outfit": "/datum/outfit/job/miner/hazard",
+			"outfit": "/datum/outfit/job/independent/miner",
 			"slots": 2
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant",
 			"slots": 4
 		}
 	},

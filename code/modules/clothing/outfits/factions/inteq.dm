@@ -193,3 +193,110 @@
 
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 	backpack_contents = list(/obj/item/melee/classic_baton=1)
+
+
+//Интеки с доступами , целадон
+
+//рекрут
+
+/datum/outfit/job/assistant/inteq/cardacces
+	name = "Recruit (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/recruit
+
+/datum/outfit/job/assistant/inteq/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = list(ACCESS_INTEQ_GENERAL)
+	I.update_label()
+
+//Капитан
+
+/datum/outfit/job/captain/inteq/naked/cardacces
+	name = "Vanguard (InteQ)"
+	id = /obj/item/card/id/inteq/vanguard
+
+/datum/outfit/job/captain/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = get_all_accesses()+get_inteq_acces()
+	I.update_label()
+
+//Хос
+
+/datum/outfit/job/hos/inteq/naked/cardacces
+	name = "Enforcer class One (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/enfco
+
+/datum/outfit/job/hos/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = get_all_accesses()+get_inteq_acces()
+	I.update_label()
+
+//Парамедик
+
+/datum/outfit/job/paramedic/inteq/naked/cardacces
+	name = "Corpsman (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/corspman
+
+/datum/outfit/job/paramedic/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MAINT_TUNNELS, ACCESS_EVA, ACCESS_INTEQ_GENERAL)
+	I.update_label()
+
+//Сесурити
+
+/datum/outfit/job/security/inteq/naked/cardacces
+	name = "Enforcer (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/enf
+
+/datum/outfit/job/security/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL, ACCESS_INTEQ_SECURITY)
+	I.update_label()
+
+//Варден
+
+/datum/outfit/job/warden/inteq/cardacces
+	name = "Master At Arms (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/maas
+
+/datum/outfit/job/warden/inteq/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL, ACCESS_INTEQ_SECURITY)
+	I.update_label()
+
+//Инженегр
+
+/datum/outfit/job/engineer/inteq/cardacces
+	name = "Artificer (InteQ)"
+	ears = null
+	id = /obj/item/card/id/inteq/afr
+
+/datum/outfit/job/engineer/inteq/cardacces/post_equip(mob/living/carbon/human/H)
+	H.faction |= list("InteQ")
+
+	var/obj/item/card/id/I = H.wear_id
+	I.registered_name = pick(GLOB.commando_names)
+	I.access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL)
+	I.update_label()
