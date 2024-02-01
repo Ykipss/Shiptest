@@ -95,7 +95,8 @@
 /area/ship/engineering)
 "bs" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Crew Quarters"
+	name = "Crew Quarters";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2400,10 +2401,12 @@
 	},
 /obj/machinery/door/airlock/public/glass{
 	dir = 4;
-	name = "Cryogenic Storage"
+	name = "Cryogenic Storage";
+	req_access_txt = "147"
 	},
 /obj/machinery/door/firedoor/border_only{
-	dir = 4
+	dir = 4;
+	req_access_txt = "147"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -2427,7 +2430,7 @@
 "AZ" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Port Engines";
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2687,7 +2690,7 @@
 "Dr" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Office";
-	req_access_txt = "1"
+	req_access_txt = "147"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -3440,7 +3443,7 @@
 /obj/machinery/door/airlock/maintenance{
 	dir = 4;
 	name = "Engineering";
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3779,7 +3782,7 @@
 "Qu" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Starboard Engines";
-	req_access_txt = "10"
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3825,7 +3828,7 @@
 "QL" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Bridge";
-	req_access_txt = list(19,3)
+	req_access_txt = "147;148"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3965,7 +3968,7 @@
 	dir = 4;
 	id_tag = "colossus_armory";
 	name = "Armory";
-	req_access_txt = "1"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -4179,7 +4182,8 @@
 /area/ship/crew/office)
 "UN" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Office"
+	name = "Office";
+	req_access_txt = "147"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
