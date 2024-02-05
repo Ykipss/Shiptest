@@ -8,7 +8,7 @@
 	name = "beanbag slug"
 	damage = 10
 	stamina = 60
-	armour_penetration = -20
+	armour_penetration = -45
 
 /obj/projectile/bullet/incendiary/shotgun
 	name = "incendiary slug"
@@ -73,7 +73,7 @@
 
 /obj/projectile/bullet/pellet/buckshot
 	name = "buckshot pellet"
-	damage = 10
+	damage = 13
 	armour_penetration = -10
 	tile_dropoff = 0.2
 
@@ -102,6 +102,7 @@
 
 /obj/projectile/bullet/pellet/improvised
 	damage = 6
+	armour_penetration = -35
 	tile_dropoff = 0.6
 
 // Mech Scattershot
