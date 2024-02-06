@@ -30,7 +30,7 @@
 			"slots": 1
 
 		},
-				"Trooper": {
+		"Trooper": {
 			"outfit": "/datum/outfit/job/syndicate/security/gorlex",
 			"slots": 2
 		},

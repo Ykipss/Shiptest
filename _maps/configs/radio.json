@@ -7,7 +7,7 @@
 	"tags": ["Specialist"],
 	"job_slots": {
 		"Assistant": {
-			"outfit": "/datum/outfit/job/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant",
 			"slots": 6
 		}
 	}

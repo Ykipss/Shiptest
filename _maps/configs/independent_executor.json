@@ -18,15 +18,15 @@
 			"slots": 1
 		},
 		"Willbreaker": {
-			"outfit": "/datum/outfit/job/frontiersmen/security",
+			"outfit": "/datum/outfit/job/independent/security/western",
 			"slots": 2
 		},
 		"Medic": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/independent/doctor",
 			"slots": 1
 		},
 		"Field Engineer": {
-			"outfit": "/datum/outfit/job/frontiersmen/engineer",
+			"outfit": "/datum/outfit/job/independent/engineer",
 			"slots": 1
 		}
 	},

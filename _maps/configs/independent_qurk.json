@@ -15,11 +15,11 @@
 	],
 	"job_slots": {
 		"Chief Medical Director": {
-			"outfit": "/datum/outfit/job/cmo",
+			"outfit": "/datum/outfit/job/independent/cmo",
 			"slots": 1
 		},
 		"Research Director": {
-			"outfit": "/datum/outfit/job/rd",
+			"outfit": "/datum/outfit/job/independent/rd",
 			"officer": true,
 			"slots": 1
 		},
@@ -28,27 +28,27 @@
 			"slots": 1
 		},
 		"Roboticist": {
-			"outfit": "/datum/outfit/job/roboticist",
+			"outfit": "/datum/outfit/job/independent/roboticist",
 			"slots": 2
 		},
 		"Researcher": {
-			"outfit": "/datum/outfit/job/scientist",
+			"outfit": "/datum/outfit/job/independent/scientist",
 			"slots": 3
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/paramedic",
+			"outfit": "/datum/outfit/job/independent/paramedic",
 			"slots": 2
 		},
 		"Chemist": {
-			"outfit": "/datum/outfit/job/chemist",
+			"outfit": "/datum/outfit/job/independent/chemist",
 			"slots": 2
 		},
 		"Intern": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/independent/doctor",
 			"slots": 5
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/doctor",
+			"outfit": "/datum/outfit/job/independent/doctor",
 			"slots": 3
 		}
 	},
