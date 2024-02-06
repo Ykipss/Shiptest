@@ -15,7 +15,7 @@
 	"limit": 2,
 	"job_slots": {
 		"Salvage Leader": {
-			"outfit": "/datum/outfit/job/captain",
+			"outfit": "/datum/outfit/job/independent/captain",
 			"officer": true,
 			"slots": 1
 		},
@@ -24,7 +24,7 @@
 			"slots": 2
 		},
 		"Salvage Paramedic": {
-			"outfit": "/datum/outfit/job/paramedic",
+			"outfit": "/datum/outfit/job/independent/paramedic",
 			"slots": 1
 		},
 		"Salvager": {

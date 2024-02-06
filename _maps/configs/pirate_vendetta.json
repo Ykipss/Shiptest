@@ -14,7 +14,7 @@
 	],
 	"job_slots": {
 		"Pirate": {
-			"outfit": "/datum/outfit/job/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant/pirate",
 			"slots": 2
 		}
 	},
