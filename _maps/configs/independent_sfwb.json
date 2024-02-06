@@ -15,7 +15,7 @@
 	"prefix": "ISV",
 	"job_slots": {
 		"Chem-chef": {
-			"outfit": "/datum/outfit/job/independent/chemist",
+			"outfit": "/datum/outfit/job/chemist",
 			"slots": 2
 		}
 	},

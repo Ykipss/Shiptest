@@ -22,7 +22,7 @@
 			"slots": 1
 		},
 		"Chief Physician": {
-			"outfit": "/datum/outfit/job/nanotrasen/cm",
+			"outfit": "/datum/outfit/job/independent/cmo",
 			"officer": true,
 			"slots": 1
 		},

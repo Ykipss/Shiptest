@@ -20,7 +20,7 @@
 			"slots": 1
 		},
 		"Ship's Doctor": {
-			"outfit": "/datum/outfit/job/independent/doctor",
+			"outfit": "/datum/outfit/job/doctor",
 			"slots": 1
 		},
 		"Ship's Engineer": {

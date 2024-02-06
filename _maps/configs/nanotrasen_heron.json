@@ -67,31 +67,12 @@
 			"slots": 1
 		},
 
-		"Atmospheric Technician":
-                        "outfit": "/datum/outfit/job/nanotrasen/atmos",
-			"slots": 1
-		}, 
-		"Quartermaster": 
-                        "outfit": "/datum/outfit/job/nanotrasen/quartermaster",
-			"slots": 1
-		},
-		"Cargo Technician":
-                        "outfit": "/datum/outfit/job/nanotrasen/cargo_tech",
-			"slots": 1
-		}, 
-		"Cook":
-                        "outfit": "/datum/outfit/job/independent/cook",
-			"slots": 1
-		}, 
-		"Janitor":
-                        "outfit": "/datum/outfit/job/independent/janitor",
-			"slots": 1
-		},
-		"Assistant":
-                       "outfit": "/datum/outfit/job/nanotrasen/assistant",
-		       "slots": 2
-		}
-                    
+		"Atmospheric Technician": 1,
+		"Quartermaster": 1,
+		"Cargo Technician": 1,
+		"Cook": 1,
+		"Janitor": 1,
+		"Assistant": 2
 	},
 	"enabled": false
 }

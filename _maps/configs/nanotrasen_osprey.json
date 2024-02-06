@@ -58,11 +58,11 @@
 			"slots": 1
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/independent/cook",
+			"outfit": "/datum/outfit/job/cook",
 			"slots": 1
 		},
 		"Janitor": {
-			"outfit": "/datum/outfit/job/independent/janitor",
+			"outfit": "/datum/outfit/job/janitor",
 			"slots": 1
 		},
 		"Assistant": {
@@ -70,5 +70,5 @@
 			"slots": 3
 		}
 	},
-	"enabled": false
+	"enabled": true
 }
