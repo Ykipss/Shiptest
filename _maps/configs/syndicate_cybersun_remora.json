@@ -52,7 +52,7 @@
 			"outfit": "/datum/outfit/job/roboticist",
 			"slots": 2
 		},
-		"CyberSun Inern": {
+		"CyberSun Intern": {
 			"outfit": "/datum/outfit/job/syndicate/assistant/cybersun",
 			"slots": 4
 		}
