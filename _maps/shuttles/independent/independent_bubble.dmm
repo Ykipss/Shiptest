@@ -149,7 +149,7 @@
 /obj/effect/turf_decal/corner/opaque/green/border{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "gZ" = (
@@ -315,7 +315,9 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/obj/item/soap,
+/obj/structure/toilet{
+	pixel_y = 7
+	},
 /turf/open/floor/plating/rust,
 /area/ship/maintenance/port)
 "nd" = (
@@ -514,6 +516,9 @@
 	pixel_x = -20;
 	pixel_y = -11
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "rc" = (
@@ -527,6 +532,7 @@
 /turf/open/floor/plasteel,
 /area/ship/science)
 "rd" = (
+/obj/item/soap,
 /turf/open/floor/plating/rust,
 /area/ship/maintenance/port)
 "rv" = (
@@ -704,6 +710,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
+"zX" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/closed/wall,
+/area/ship/bridge)
 "Ae" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -782,7 +794,7 @@
 /turf/closed/wall,
 /area/ship/cargo)
 "Ej" = (
-/obj/structure/toilet,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating/rust,
 /area/ship/maintenance/port)
 "Ew" = (
@@ -1043,6 +1055,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
@@ -1630,7 +1648,7 @@ Tr
 Tr
 kq
 kq
-VC
+zX
 eI
 jk
 ws
