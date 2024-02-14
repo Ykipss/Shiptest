@@ -18,34 +18,34 @@
 	"limit": 1,
 	"job_slots": {
 		"Vanguard": {
-			"outfit": "/datum/outfit/job/inteq/captain",
+			"outfit": "/datum/outfit/job/captain/inteq/naked/cardacces",
 			"officer": true,
 			"slots": 1
 		},
 		"Master At Arms": {
-			"outfit": "/datum/outfit/job/inteq/warden",
+			"outfit": "/datum/outfit/job/warden/inteq/cardacces",
 			"officer": true,
 			"slots": 1
 		},
 		"Artificer Class II": {
-			"outfit": "/datum/outfit/job/inteq/ce",
+			"outfit": "/datum/outfit/job/engineer/inteq/cardacces",
 			"officer": true,
 			"slots": 1
 		},
 		"Artificer": {
-			"outfit": "/datum/outfit/job/inteq/engineer",
+			"outfit": "/datum/outfit/job/engineer/inteq/cardacces",
 			"slots": 3
 		},
 		"Corpsman": {
-			"outfit": "/datum/outfit/job/inteq/paramedic",
+			"outfit": "/datum/outfit/job/paramedic/inteq/naked/cardacces",
 			"slots": 2
 		},
 		"Enforcer": {
-			"outfit": "/datum/outfit/job/inteq/security",
+			"outfit": "/datum/outfit/job/security/inteq/naked/cardacces",
 			"slots": 1
 		},
 		"Recruit": {
-			"outfit": "/datum/outfit/job/inteq/assistant",
+			"outfit": "/datum/outfit/job/assistant/inteq/cardacces",
 			"slots": 4
 		}
 	},

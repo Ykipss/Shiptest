@@ -1957,7 +1957,7 @@
 	},
 /obj/machinery/door/airlock/command{
 	name = "Bridge";
-	req_one_access = "147;148"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
