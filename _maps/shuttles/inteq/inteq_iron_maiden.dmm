@@ -753,23 +753,6 @@
 /obj/item/storage/backpack/messenger/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
-"zu" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
-	dir = 4
-	},
-/obj/machinery/porta_turret,
-/turf/open/floor/plating,
-/area/ship/bridge)
 "Bq" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -1449,8 +1432,10 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/porta_turret,
 /turf/open/floor/plating,
-/area/ship/cargo)
+/area/space,
+/area/ship/bridge)
 "XH" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
 	dir = 4
@@ -1671,7 +1656,7 @@ hb
 yR
 wO
 wO
-zu
+BL
 wO
 wO
 UU
