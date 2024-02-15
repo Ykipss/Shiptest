@@ -28,7 +28,7 @@
 /obj/projectile/bullet/a8_50r
 	name = "8x50mmR bullet"
 	speed = 0.3
-	damage = 30
+	damage = 35
 	armour_penetration = 40
 
 // .300 Magnum (Smile Rifle)
@@ -36,7 +36,7 @@
 /obj/projectile/bullet/a300
 	name = ".300 Magnum bullet"
 	speed = 0.3
-	damage = 40
+	damage = 45
 	stamina = 10
 	armour_penetration = 40
 
@@ -92,7 +92,7 @@
 /obj/projectile/bullet/a858
 	name = "8x58mm caseless bullet"
 	speed = 0.3
-	damage = 30
+	damage = 35
 	armour_penetration = 40
 
 
