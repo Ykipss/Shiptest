@@ -222,11 +222,11 @@
 
 //Капитан
 
-/datum/outfit/job/captain/inteq/naked/cardacces
+/datum/outfit/job/inteq/captain/geared/cardacces
 	name = "Vanguard (InteQ)"
 	id = /obj/item/card/id/inteq/vanguard
 
-/datum/outfit/job/captain/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/captain/geared/cardacces/post_equip(mob/living/carbon/human/H)
 	H.faction |= list("InteQ")
 
 	var/obj/item/card/id/I = H.wear_id

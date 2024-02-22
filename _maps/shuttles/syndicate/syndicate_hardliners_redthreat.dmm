@@ -1907,11 +1907,11 @@
 /obj/item/ammo_box/magazine/m12g,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/turf_decal/industrial/traffic/full,
+/obj/item/ammo_box/a556_box/m903,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/c556mmHITP,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Gm" = (

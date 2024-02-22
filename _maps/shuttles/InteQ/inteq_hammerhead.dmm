@@ -89,6 +89,7 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/gun/ballistic/revolver/horizonx,
+/obj/item/clothing/head/inteq_peaked,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "aq" = (
@@ -488,7 +489,9 @@
 "bU" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/robot_debris,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "ca" = (
@@ -939,7 +942,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/command{
 	name = "EnfCO спальня";
-	req_access_txt =  "147;148"
+	req_access_txt = "147;148"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Centr_lock"
@@ -1173,7 +1176,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "gy" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "gF" = (
@@ -1203,7 +1208,9 @@
 /area/ship/maintenance/central)
 "gG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "gJ" = (
@@ -1615,7 +1622,9 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/security/prison)
 "ji" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "jl" = (
@@ -2437,7 +2446,9 @@
 /area/ship/security/prison)
 "oN" = (
 /obj/effect/decal/cleanable/squid_ink,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "oP" = (
@@ -2771,7 +2782,9 @@
 /area/ship/security/armory)
 "rz" = (
 /obj/machinery/porta_turret/syndicate/energy/inteq,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "rA" = (
@@ -3483,7 +3496,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "vU" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "vX" = (
@@ -4211,7 +4226,6 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/shield/riot/tele,
 /obj/item/clothing/accessory/holster,
-/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
 /obj/item/ammo_box/magazine/m45,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
@@ -5650,9 +5664,10 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
 /obj/item/storage/box/prisoner,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/item/ammo_box/magazine/m45,
 /obj/item/ammo_box/magazine/m45,
+/obj/item/gun/ballistic/automatic/pistol/candor,
+/obj/item/gun/ballistic/automatic/pistol/candor/no_mag,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
 "GR" = (
@@ -5665,8 +5680,6 @@
 	name = "Scrape paper";
 	default_raw_text = "old but gold"
 	},
-/obj/item/gun/ballistic/shotgun/winchester,
-/obj/item/gun/ballistic/shotgun/winchester/mk1,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Ha" = (
@@ -6852,6 +6865,10 @@
 	name = "weapons locker";
 	req_access_txt = "147;148"
 	},
+/obj/item/gun/ballistic/shotgun/automatic/combat{
+	pixel_y = -6
+	},
+/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -7028,7 +7045,9 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "PB" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal{
 	explosion_block = 5
 	},
@@ -7497,7 +7516,9 @@
 /area/ship/cargo/office)
 "SU" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "Ta" = (

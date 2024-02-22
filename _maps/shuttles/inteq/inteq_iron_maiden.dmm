@@ -405,6 +405,7 @@
 /obj/item/card/id/inteq/vanguard,
 /obj/item/card/id/inteq/enfco,
 /obj/item/card/id/inteq/maas,
+/obj/item/clothing/head/inteq_peaked,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "qh" = (
@@ -709,7 +710,9 @@
 "yX" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "zc" = (
@@ -946,6 +949,26 @@
 /obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
+"LV" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
+	dir = 4
+	},
+/obj/machinery/porta_turret{
+	density = 0;
+	faction = list("turret","InteQ")
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Ms" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -1010,7 +1033,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/cryo)
 "MP" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret{
+	faction = list("turret","InteQ")
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "MV" = (
@@ -1432,10 +1457,8 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/porta_turret,
 /turf/open/floor/plating,
-/area/space,
-/area/ship/bridge)
+/area/ship/cargo)
 "XH" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
 	dir = 4
@@ -1656,7 +1679,7 @@ hb
 yR
 wO
 wO
-BL
+LV
 wO
 wO
 UU

@@ -521,7 +521,6 @@
 	dir = 8
 	},
 /obj/structure/closet/l3closet/virology,
-/obj/item/book/manual/wiki/infections,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "be" = (
@@ -835,8 +834,6 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/book/manual/wiki/research_and_development,
-/obj/item/book/manual/wiki/experimentor,
 /obj/item/storage/box/monkeycubes,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/science)
@@ -3815,14 +3812,6 @@
 /area/ship/science/robotics)
 "gE" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/robotics_cyborgs{
-	pixel_x = 10;
-	pixel_y = 3
-	},
-/obj/item/book/manual/wiki/grenades{
-	pixel_y = -5;
-	pixel_x = 5
-	},
 /obj/item/stack/sheet/plasteel/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
@@ -3969,7 +3958,6 @@
 	density = 0
 	},
 /obj/structure/table/wood,
-/obj/item/book/manual/wiki/barman_recipes,
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "gS" = (

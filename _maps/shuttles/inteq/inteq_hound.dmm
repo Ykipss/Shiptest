@@ -358,15 +358,6 @@
 "ih" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/port)
-"iw" = (
-/obj/machinery/button/door{
-	id = "hound_windows";
-	name = "Window Lockdown";
-	pixel_x = -6;
-	pixel_y = 25
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "jb" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/yellow,
@@ -600,6 +591,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/item/storage/toolbox/ammo/a762_39,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "nL" = (
@@ -1307,9 +1299,6 @@
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "BQ" = (
-/obj/machinery/modular_computer/console/preset/command{
-	dir = 8
-	},
 /obj/item/radio/intercom/directional/south,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -1317,6 +1306,9 @@
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/turf_decal/steeldecal/steel_decals_central4{
 	dir = 1
+	},
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1531,6 +1523,11 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = 7
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "HV" = (
@@ -1626,6 +1623,18 @@
 /obj/item/areaeditor/shuttle,
 /obj/item/shield/riot/tele,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/clothing/head/inteq_peaked,
+/obj/item/reagent_containers/food/drinks/bottle/whiskey{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/storage/fancy/cigarettes/cigars{
+	pixel_x = -1
+	},
+/obj/item/lighter{
+	pixel_x = -11;
+	pixel_y = 5
+	},
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "ID" = (
@@ -1651,6 +1660,11 @@
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 8
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -1
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
@@ -2387,22 +2401,11 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/dorm)
 "Zy" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/fancy/cigarettes/cigars{
-	pixel_x = 8
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "1"
 	},
-/obj/item/lighter{
-	pixel_x = -11;
-	pixel_y = 5
-	},
-/obj/item/storage/toolbox/ammo/a762_39{
-	pixel_x = 5;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/bottle/whiskey{
-	pixel_x = -7;
-	pixel_y = 6
-	},
+/obj/item/tank/jetpack/oxygen,
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "ZR" = (
@@ -2890,7 +2893,7 @@ pe
 HV
 KK
 BQ
-iw
+pe
 ib
 ib
 ib

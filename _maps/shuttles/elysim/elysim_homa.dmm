@@ -1327,7 +1327,6 @@
 	dir = 8;
 	pixel_x = 30
 	},
-/obj/item/disk/design_disk/ammo_n762,
 /obj/item/disk/design_disk/ammo_1911,
 /obj/item/disk/design_disk/ammo_c10mm,
 /turf/open/floor/plasteel,
