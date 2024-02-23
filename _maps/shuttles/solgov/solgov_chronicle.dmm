@@ -247,31 +247,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew)
 "bH" = (
-/obj/structure/closet/secure_closet/captains{
-	populate = 0;
-	anchored = 1
-	},
-/obj/item/clothing/under/solgov/formal/captain,
-/obj/item/clothing/shoes/laceup,
-/obj/item/clothing/head/solgov/captain,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov/red,
-/obj/item/folder/solgov/red,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/gloves/combat,
-/obj/item/storage/backpack/captain,
-/obj/item/door_remote/captain,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov/captain,
-/obj/item/stamp/solgov,
-/obj/item/clothing/suit/armor/solgov_trenchcoat,
-/obj/item/spacecash/bundle/loadsamoney,
-/obj/item/gun/ballistic/automatic/powered/gauss/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/clothing/neck/cloak/solgovcap,
+/obj/structure/closet/secure_closet/captains/solgov,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
 "cg" = (
@@ -550,32 +526,12 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "fl" = (
-/obj/structure/closet/secure_closet/miner{
-	name = "field engineer's locker";
-	populate = 0;
-	anchored = 1
-	},
-/obj/item/pickaxe/drill/jackhammer,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/kitchen/knife/combat/survival,
-/obj/item/clothing/gloves/combat,
-/obj/item/storage/backpack,
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/item/clothing/glasses/meson,
+/obj/structure/closet/secure_closet/miner/solgov,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "fq" = (
@@ -933,31 +889,14 @@
 /turf/open/floor/wood,
 /area/ship/crew/crewtwo)
 "id" = (
-/obj/structure/closet/secure_closet/security{
-	populate = 0;
-	name = "sonnensöldners's locker";
-	anchored = 1
-	},
-/obj/item/clothing/head/solgov/sonnensoldner,
 /obj/structure/sign/poster/solgov/sonnensoldner{
 	pixel_y = 30
 	},
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/gloves/combat,
-/obj/item/radio/headset/solgov/alt,
-/obj/item/storage/backpack,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
+/obj/structure/closet/secure_closet/security/solgov,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ie" = (
@@ -2672,29 +2611,12 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	name = "ship engineer's locker";
-	populate = 0
-	},
-/obj/item/storage/backpack/industrial,
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/folder/solgov,
-/obj/item/clipboard,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/head/welding,
-/obj/item/pen/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/machinery/light/directional/west,
 /obj/structure/sign/poster/solgov/random{
 	pixel_y = 30
 	},
+/obj/structure/closet/secure_closet/engineering_personal/solgov,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Au" = (
@@ -4111,26 +4033,8 @@
 /turf/open/floor/wood,
 /area/ship/crew/office)
 "OU" = (
-/obj/item/clothing/neck/cloak/overseer,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov/overseer,
-/obj/structure/closet/secure_closet/head_of_personnel{
-	anchored = 1;
-	name = "\proper overseer's locker";
-	populate = 0
-	},
-/obj/item/clothing/gloves/combat,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov/red,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/head/solgov,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/storage/backpack,
-/obj/item/pen/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/stamp/solgov,
 /obj/machinery/light/directional/south,
-/obj/item/clothing/suit/armor/solgov_trenchcoat,
+/obj/structure/closet/secure_closet/head_of_personnel/solgov,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/crewtwo)
 "OX" = (
@@ -4510,25 +4414,8 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	name = "ship engineer's locker";
-	populate = 0
-	},
-/obj/item/storage/backpack/industrial,
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/folder/solgov,
-/obj/item/clipboard,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/head/welding,
-/obj/item/pen/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
+/obj/structure/closet/secure_closet/engineering_personal/solgov,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "SH" = (

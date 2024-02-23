@@ -363,40 +363,23 @@
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
 	dir = 10
 	},
-/obj/structure/closet/wall/blue{
-	dir = 4;
-	pixel_x = -28;
-	req_access_txt = "147;148"
-	},
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/megaphone/command,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/structure/table/reinforced,
-/obj/item/spacecash/bundle/c500{
-	pixel_y = -10
-	},
-/obj/item/spacecash/bundle/c500{
-	pixel_y = -10
-	},
 /obj/machinery/recharger{
 	pixel_x = -5;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/item/radio/headset/inteq/alt/captain,
-/obj/item/shield/riot/tele,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/storage/belt/military/assault,
-/obj/item/storage/belt/security/webbing/inteq,
-/obj/item/areaeditor/shuttle,
-/obj/item/melee/baton/loaded,
+/obj/structure/closet/secure_closet/captains/vanguard/wall{
+	dir = 4;
+	pixel_x = -28
+	},
+/obj/item/spacecash/bundle/c500{
+	pixel_y = -10
+	},
+/obj/item/spacecash/bundle/c500{
+	pixel_y = -10
+	},
 /obj/item/gun/energy/disabler,
+/obj/item/melee/baton/loaded,
 /obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -405,7 +388,6 @@
 /obj/item/card/id/inteq/vanguard,
 /obj/item/card/id/inteq/enfco,
 /obj/item/card/id/inteq/maas,
-/obj/item/clothing/head/inteq_peaked,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "qh" = (
@@ -892,9 +874,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "JU" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
@@ -1043,9 +1023,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west{
 	dir = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/door/window/eastright{
 	name = "Engine Access";
 	dir = 2
@@ -1110,9 +1088,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west{
 	dir = 2
 	},
-/obj/structure/window/plasma/reinforced/spawner/west{
-	dir = 8
-	},
+/obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Qj" = (
@@ -1223,9 +1199,7 @@
 	id = "iron_maiden_eng";
 	name = "Engine Blast Door"
 	},
-/obj/structure/window/plasma/reinforced/spawner/west{
-	dir = 8
-	},
+/obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner/west{
 	dir = 1
 	},
@@ -1236,7 +1210,6 @@
 	icon_door = "med_wall";
 	name = "medical locker";
 	req_access_txt = "5";
-	dir = 2;
 	pixel_y = 28
 	},
 /obj/item/clothing/shoes/combat,
@@ -1287,9 +1260,7 @@
 "UQ" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/rack,
 /obj/item/clothing/suit/space/inteq,
 /obj/item/clothing/head/helmet/space/inteq,

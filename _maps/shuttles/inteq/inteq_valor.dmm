@@ -2597,7 +2597,6 @@
 /area/ship/medical)
 "xU" = (
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	name = "valor docking port";
 	port_direction = 8;
 	preferred_direction = 4;
@@ -2683,26 +2682,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "ze" = (
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/megaphone/command,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/structure/closet/secure_closet/wall{
+/obj/structure/closet/secure_closet/captains/vanguard/wall{
 	dir = 4;
-	icon_door = "solgov_wall";
-	icon_state = "solgov_wall";
-	name = "vanguard's locker";
-	pixel_x = -28;
-	req_access = list(58)
+	pixel_x = -28
 	},
 /obj/item/storage/lockbox/medal/sec,
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/head/inteq_peaked,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "zh" = (
