@@ -1,5 +1,6 @@
 /obj/item/gun/ballistic/shotgun
 	name = "shotgun"
+	icon_state = "shotgun"
 	item_state = "shotgun"
 	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
 	vary_fire_sound = FALSE
