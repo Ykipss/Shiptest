@@ -5,19 +5,11 @@
 
 /obj/structure/closet/secure_closet/engineering_chief/PopulateContents()
 	..()
+	new /obj/item/storage/bag/garment/engineering_chief(src)
 	//WS Begin
-	new /obj/item/clothing/head/beret/ce(src) //Berets
-	new /obj/item/clothing/under/rank/command(src) //Better command uniforms
 	new /obj/item/card/id/departmental_budget/eng(src) //Budger Cards
 	new /obj/item/stack/tape/industrial/pro(src) //Better tape
 	//WS End
-	new /obj/item/clothing/neck/cloak/ce(src)
-	new /obj/item/clothing/under/rank/engineering/chief_engineer(src)
-	new /obj/item/clothing/under/rank/engineering/chief_engineer/skirt(src)
-	new /obj/item/clothing/head/hardhat/white(src)
-	new /obj/item/clothing/head/hardhat/weldhat/white(src)
-	new /obj/item/clothing/gloves/color/yellow(src)
-	new /obj/item/clothing/shoes/sneakers/brown(src)
 	new /obj/item/tank/jetpack/suit(src)
 	new /obj/item/cartridge/ce(src)
 	new /obj/item/radio/headset/heads/ce(src)
@@ -84,6 +76,25 @@
 	new /obj/item/storage/box/emptysandbags(src)
 	new /obj/item/storage/bag/construction(src)
 
+/obj/structure/closet/secure_closet/engineering_personal/solgov
+	name = "ship engineer's locker"
+
+/obj/structure/closet/secure_closet/engineering_personal/solgov/PopulateContents()
+	new /obj/item/storage/backpack/industrial(src)
+	new /obj/item/clothing/head/hardhat/solgov(src)
+	new /obj/item/folder/solgov(src)
+	new /obj/item/clipboard(src)
+	new /obj/item/clothing/under/solgov/formal(src)
+	new /obj/item/clothing/under/solgov(src)
+	new /obj/item/clothing/accessory/armband/engine(src)
+	new /obj/item/storage/toolbox/mechanical(src)
+	new /obj/item/clothing/glasses/welding(src)
+	new /obj/item/clothing/head/welding(src)
+	new /obj/item/pen/solgov(src)
+	new /obj/item/clothing/suit/hazardvest/solgov(src)
+	new /obj/item/clothing/shoes/workboots(src)
+	new /obj/item/clothing/gloves/combat(src)
+	new /obj/item/clothing/glasses/meson/prescription(src)
 
 /obj/structure/closet/secure_closet/atmospherics
 	name = "\proper atmospheric technician's locker"

@@ -56,40 +56,22 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "ap" = (
-/obj/structure/closet/secure_closet{
-	icon_state = "cap";
-	anchored = 1;
-	req_access_txt = "147;148;149"
-	},
-/obj/item/radio/headset/inteq/alt,
+/obj/structure/closet/secure_closet/captains/vanguard,
 /obj/item/clothing/suit/armor/hos/inteq/honorable{
 	name = "Expensive vanguard battlecoat"
-	},
-/obj/item/clothing/under/syndicate/inteq/honorable{
-	name = "Expensive vanguard turtleneck"
 	},
 /obj/item/clothing/head/beret/sec/hos/inteq/honorable{
 	name = "Expensive vanguard beret"
 	},
-/obj/item/storage/belt/security/webbing/inteq,
-/obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/item/storage/backpack/satchel/leather,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/clothing/gloves/combat,
 /obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/shoes/combat,
-/obj/item/shield/riot/tele,
+/obj/item/ammo_box/a357,
 /obj/item/clothing/accessory/holster,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
 /obj/item/gun/ballistic/revolver/horizonx,
-/obj/item/clothing/head/inteq_peaked,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "aq" = (
@@ -1887,7 +1869,7 @@
 	},
 /obj/machinery/computer/atmos_control/tank/air_tank{
 	dir = 1;
-	sensors = list("mix_sensor" = "Air Mix Tank")
+	sensors = list("mix_sensor"="Air Mix Tank")
 	},
 /obj/machinery/light/directional/south,
 /obj/structure/catwalk/over/plated_catwalk/dark,
@@ -2166,7 +2148,6 @@
 /area/ship/crew/canteen/kitchen)
 "nt" = (
 /obj/structure/chair/comfy/shuttle{
-	dir = 2;
 	name = "Operations"
 	},
 /obj/effect/turf_decal/corner/opaque/brown/border{
@@ -2486,7 +2467,6 @@
 	dir = 1
 	},
 /obj/machinery/computer/crew{
-	dir = 2;
 	icon_state = "computer-left"
 	},
 /turf/open/floor/plasteel/dark,
@@ -3461,7 +3441,7 @@
 	},
 /obj/machinery/computer/atmos_control/tank/nitrogen_tank{
 	dir = 1;
-	sensors = list("n2_sensor" = "Nsitrogen Tank")
+	sensors = list("n2_sensor"="Nsitrogen Tank")
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
@@ -4413,9 +4393,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 2
-	},
+/obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "AD" = (
@@ -5741,9 +5719,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 2
-	},
+/obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "Hi" = (
@@ -6657,7 +6633,6 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle{
-	dir = 2;
 	name = "Operations"
 	},
 /obj/effect/turf_decal/corner/opaque/brown/border{
@@ -7763,7 +7738,6 @@
 /area/ship/crew/cryo)
 "Uy" = (
 /obj/structure/chair/comfy/shuttle{
-	dir = 2;
 	name = "Operations"
 	},
 /obj/effect/turf_decal/corner/opaque/brown/border{
@@ -7979,9 +7953,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 2
-	},
+/obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)

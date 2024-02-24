@@ -1995,7 +1995,6 @@
 /area/ship/crew/cryo)
 "tv" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 2;
 	name = "atmos waste outlet injector"
 	},
 /turf/open/floor/plating,
@@ -2473,30 +2472,12 @@
 /turf/open/floor/wood,
 /area/ship/bridge)
 "ye" = (
-/obj/item/clothing/neck/cloak/overseer,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov/overseer,
-/obj/structure/closet/secure_closet/head_of_personnel{
-	anchored = 1;
-	name = "\proper overseer's locker";
-	populate = 0
-	},
-/obj/item/clothing/gloves/combat,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov/red,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/head/solgov,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/storage/backpack,
-/obj/item/pen/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/stamp/solgov,
-/obj/item/clothing/suit/armor/solgov_trenchcoat,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
 	color = "#792f27"
 	},
 /obj/machinery/light/directional/north,
+/obj/structure/closet/secure_closet/head_of_personnel/solgov,
 /turf/open/floor/wood/mahogany,
 /area/ship/bridge)
 "ym" = (
@@ -3569,31 +3550,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/crewtwo)
 "IX" = (
-/obj/item/clothing/head/solgov/captain,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov/captain,
-/obj/item/clothing/under/solgov/formal/captain,
-/obj/item/clothing/shoes/laceup,
-/obj/item/clothing/gloves/combat,
-/obj/item/door_remote/captain,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov/red,
-/obj/item/folder/solgov/red,
-/obj/structure/closet/secure_closet{
-	icon_state = "cap";
-	name = "\proper captain's locker";
-	req_access_txt = "20"
-	},
-/obj/item/fish_feed,
-/obj/item/pen/fountain/solgov,
-/obj/item/gun/ballistic/automatic/powered/gauss/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/clothing/neck/cloak/solgovcap,
+/obj/structure/closet/secure_closet/captains/solgov,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "IZ" = (
@@ -4450,9 +4407,7 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/storage/firstaid/o2{
-	pixel_y = 0
-	},
+/obj/item/storage/firstaid/o2,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/ship/medical/surgery)
 "QP" = (

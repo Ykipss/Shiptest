@@ -5,18 +5,7 @@
 
 /obj/structure/closet/secure_closet/RD/PopulateContents()
 	..()
-	new /obj/item/clothing/head/beret/rd(src) //WS edit - Berets
-	new /obj/item/clothing/under/rank/command(src) //WS edit - better command uniforms
-	new /obj/item/clothing/neck/cloak/rd(src)
-	new /obj/item/clothing/suit/bio_suit/scientist(src)
-	new /obj/item/clothing/head/bio_hood/scientist(src)
-	new /obj/item/clothing/suit/toggle/labcoat(src)
-	new /obj/item/clothing/under/rank/rnd/research_director(src)
-	new /obj/item/clothing/under/rank/rnd/research_director/skirt(src)
-	new /obj/item/clothing/under/rank/rnd/research_director/alt(src)
-	new /obj/item/clothing/under/rank/rnd/research_director/alt/skirt(src)
-	new /obj/item/clothing/under/rank/rnd/research_director/turtleneck(src)
-	new /obj/item/clothing/under/rank/rnd/research_director/turtleneck/skirt(src)
+	new /obj/item/storage/bag/garment/research_director(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
 	new /obj/item/cartridge/rd(src)
 	new /obj/item/radio/headset/heads/rd(src)

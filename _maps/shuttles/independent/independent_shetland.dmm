@@ -1020,9 +1020,7 @@
 /area/ship/external)
 "kY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/computer/cryopod/directional/north{
-	pixel_y = 17
-	},
+/obj/machinery/computer/cryopod/directional/north,
 /obj/structure/dresser,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
@@ -1398,20 +1396,7 @@
 /area/ship/hallway/port)
 "oB" = (
 /obj/machinery/airalarm/directional/south,
-/obj/structure/closet/secure_closet{
-	icon_state = "hop";
-	name = "\proper first officer's locker";
-	req_access_txt = "57"
-	},
-/obj/item/clothing/under/rank/command/head_of_personnel,
-/obj/item/clothing/under/rank/command/head_of_personnel/skirt,
-/obj/item/clothing/suit/armor/vest/hop,
-/obj/item/clothing/head/beret/hop,
-/obj/item/gun/energy/e_gun/mini,
-/obj/item/clothing/shoes/laceup,
-/obj/item/radio/headset/headset_com/alt,
-/obj/item/storage/box/ids,
-/obj/item/storage/briefcase,
+/obj/structure/closet/secure_closet/head_of_personnel,
 /turf/open/floor/carpet/blue,
 /area/ship/bridge)
 "oC" = (
@@ -3636,18 +3621,7 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
-/obj/structure/closet/secure_closet{
-	icon_state = "cap";
-	name = "\proper captain's locker";
-	req_access_txt = "20"
-	},
-/obj/item/clothing/under/rank/command/captain/suit,
-/obj/item/clothing/under/rank/command/captain/skirt,
-/obj/item/storage/backpack/captain,
-/obj/item/radio/headset/heads/captain/alt,
-/obj/item/clothing/gloves/color/captain,
-/obj/item/gun/energy/e_gun,
-/obj/item/clothing/shoes/laceup,
+/obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet/blue,
 /area/ship/bridge)
 "KN" = (
@@ -3996,7 +3970,6 @@
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	dir = 2;
 	launch_status = 0;
 	port_direction = 8;

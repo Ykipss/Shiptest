@@ -641,7 +641,6 @@
 /area/template_noop)
 "iG" = (
 /obj/structure/closet/secure_closet/captains,
-/obj/item/megaphone/command,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "iQ" = (
@@ -2464,7 +2463,6 @@
 /area/ship/medical)
 "FP" = (
 /obj/structure/closet/secure_closet/CMO,
-/obj/item/megaphone/command,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/crewtwo)
