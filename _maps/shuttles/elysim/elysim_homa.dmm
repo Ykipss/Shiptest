@@ -164,9 +164,16 @@
 /area/ship/cargo)
 "fp" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/assault/ak47{
-	pixel_x = -3;
-	pixel_y = 6
+/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+	pixel_x = 2;
+	pixel_y = -8
+	},
+/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+	pixel_x = 1;
+	pixel_y = 9
+	},
+/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+	pixel_x = -5
 	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
@@ -193,8 +200,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_x = 9
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = 2;
+	pixel_y = -8
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
@@ -244,9 +252,9 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_x = -4;
-	pixel_y = 10
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -1;
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
@@ -451,10 +459,9 @@
 /area/ship/cargo)
 "nl" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/assault/ak47,
-/obj/item/gun/ballistic/automatic/assault/ak47{
-	pixel_x = -3;
-	pixel_y = 6
+/obj/item/ammo_box/a762_40/inteq{
+	pixel_x = -5;
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
@@ -476,11 +483,22 @@
 /area/ship/cargo)
 "oD" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/assault/ak47,
-/obj/item/ammo_box/magazine/ak47,
-/obj/item/ammo_box/magazine/ak47,
-/obj/item/ammo_box/magazine/ak47,
 /obj/item/areaeditor/shuttle,
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -9
+	},
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = 11;
+	pixel_y = 7
+	},
+/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+	pixel_x = -16;
+	pixel_y = -2
+	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "pl" = (
@@ -596,20 +614,17 @@
 /area/ship/cargo)
 "sC" = (
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/ak47{
-	pixel_y = -1
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -4
 	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_x = 9
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = 13
 	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_x = -6
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = 7
 	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_y = 6
-	},
-/obj/item/ammo_box/magazine/ak47{
-	pixel_x = 6
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
@@ -1027,6 +1042,21 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
+	},
+/obj/item/ammo_casing/a762_40{
+	pixel_y = 10;
+	pixel_x = -7
+	},
+/obj/item/ammo_casing/a762_40{
+	pixel_y = 9;
+	pixel_x = 7
+	},
+/obj/item/ammo_casing/a762_40{
+	pixel_x = -11
+	},
+/obj/item/ammo_casing/a762_40,
+/obj/item/ammo_casing/a762_40{
+	pixel_x = 4
 	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
@@ -1512,7 +1542,10 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/automatic/assault/ak47,
+/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+	pixel_x = -5;
+	pixel_y = 20
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "TN" = (
