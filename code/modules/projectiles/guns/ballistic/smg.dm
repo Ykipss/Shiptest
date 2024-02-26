@@ -264,6 +264,23 @@
 	fire_sound = 'sound/weapons/gun/rifle/shot.ogg'
 	icon_state = "aks74u"
 	item_state = "aks74u"
+/obj/item/gun/ballistic/automatic/smg/skm_carbine
+	name = "\improper SKM-24v"
+	desc = "The SKM-24v was a carbine modification of the SKM-24 during the Frontiersmen War. This, however, is just a shoddy imitation of that carbine, effectively an SKM-24 with a sawed down barrel and a folding wire stock. Can be fired with the stock folded, though accuracy suffers. Chambered in 4.6x30mm."
+
+	icon = 'icons/obj/guns/48x32guns.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/back.dmi'
+	icon_state = "skm_carbine"
+	item_state = "skm_carbine"
+
+	fire_sound = 'sound/weapons/gun/rifle/skm_smg.ogg'
+
+	rack_sound = 'sound/weapons/gun/rifle/skm_cocked.ogg'
+	load_sound = 'sound/weapons/gun/rifle/skm_reload.ogg'
+	load_empty_sound = 'sound/weapons/gun/rifle/skm_reload.ogg'
+	eject_sound = 'sound/weapons/gun/rifle/skm_unload.ogg'
+	eject_empty_sound = 'sound/weapons/gun/rifle/skm_unload.ogg'
+
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/skm_545_39
@@ -291,23 +308,6 @@
 
 	var/unfolded_slowdown = 0.35
 	var/unfolded_wield_delay = 0.2 SECONDS
-
-/obj/item/gun/ballistic/automatic/smg/skm_carbine
-	name = "\improper SKM-24v"
-	desc = "The SKM-24v was a carbine modification of the SKM-24 during the Frontiersmen War. This, however, is just a shoddy imitation of that carbine, effectively an SKM-24 with a sawed down barrel and a folding wire stock. Can be fired with the stock folded, though accuracy suffers. Chambered in 4.6x30mm."
-
-	icon = 'icons/obj/guns/48x32guns.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/back.dmi'
-	icon_state = "skm_carbine"
-	item_state = "skm_carbine"
-
-	fire_sound = 'sound/weapons/gun/rifle/skm_smg.ogg'
-
-	rack_sound = 'sound/weapons/gun/rifle/skm_cocked.ogg'
-	load_sound = 'sound/weapons/gun/rifle/skm_reload.ogg'
-	load_empty_sound = 'sound/weapons/gun/rifle/skm_reload.ogg'
-	eject_sound = 'sound/weapons/gun/rifle/skm_unload.ogg'
-	eject_empty_sound = 'sound/weapons/gun/rifle/skm_unload.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/ComponentInitialize()
 	. = ..()
