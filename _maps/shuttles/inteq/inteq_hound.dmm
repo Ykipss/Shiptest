@@ -591,7 +591,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/obj/item/storage/toolbox/ammo/a762_39,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "nL" = (
