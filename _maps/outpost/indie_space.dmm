@@ -2556,6 +2556,7 @@
 /obj/machinery/power/terminal{
 	dir = 4
 	},
+/mob/living/simple_animal/bot/medbot,
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "rp" = (
@@ -5819,11 +5820,14 @@
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "Ki" = (
-/obj/machinery/door/poddoor/shutters/indestructible{
-	dir = 4
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
+/obj/effect/turf_decal/spline/fancy/opaque/lightgrey{
+	dir = 8
 	},
-/turf/closed/indestructible/rock,
-/area/outpost/external)
+/mob/living/simple_animal/bot/medbot,
+/turf/open/floor/plasteel,
+/area/outpost/storage)
 "Kl" = (
 /obj/effect/turf_decal/corner/opaque/grey/full,
 /obj/structure/cable/yellow{
@@ -14401,7 +14405,7 @@ Rg
 Kx
 Kx
 Ml
-aw
+Ki
 aw
 zr
 Kx
@@ -19339,7 +19343,7 @@ mC
 mC
 HD
 HD
-Ki
+HD
 HD
 mC
 mC

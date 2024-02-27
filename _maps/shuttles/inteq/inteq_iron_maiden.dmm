@@ -785,6 +785,8 @@
 /obj/item/ammo_box/magazine/p16/g36sh,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/ammo_box/magazine/skm_762_40,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "EH" = (
@@ -1245,7 +1247,7 @@
 	req_access_txt = "147"
 	},
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq,
-/obj/item/gun/ballistic/automatic/smg/inteq,
+/obj/item/gun/ballistic/automatic/assault/skm/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "UC" = (
@@ -1479,6 +1481,7 @@
 /obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/c10mm,
+/obj/item/ammo_box/a762_40,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ZZ" = (
