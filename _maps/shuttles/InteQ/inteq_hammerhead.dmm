@@ -475,7 +475,7 @@
 	faction = list("turret","InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "ca" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -1608,7 +1608,7 @@
 	faction = list("turret","InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "jl" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -2431,7 +2431,7 @@
 	faction = list("turret","InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "oP" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -4957,8 +4957,8 @@
 	req_access_txt = "147;148"
 	},
 /obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/automatic/smg/inteq,
 /obj/item/gun/ballistic/shotgun/bulldog/inteq,
+/obj/item/ammo_box/magazine/m12g,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -7495,7 +7495,7 @@
 	faction = list("turret","InteQ")
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/maintenance/central)
+/area/ship/bridge)
 "Ta" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
