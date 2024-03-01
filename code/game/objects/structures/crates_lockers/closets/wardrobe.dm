@@ -202,3 +202,21 @@
 		new /obj/item/clothing/suit/hooded/wintercoat(src)
 		new /obj/item/clothing/shoes/winterboots(src)
 	return
+
+/obj/structure/closet/wardrobe/miner
+	name = "mining wardrobe"
+	icon_door = "mixed"
+
+/obj/structure/closet/wardrobe/miner/PopulateContents()
+	new /obj/item/storage/backpack/duffelbag(src)
+	new /obj/item/storage/backpack/explorer(src)
+	new /obj/item/storage/backpack/satchel/explorer(src)
+	new /obj/item/clothing/under/rank/cargo/miner/lavaland(src)
+	new /obj/item/clothing/under/rank/cargo/miner/lavaland(src)
+	new /obj/item/clothing/under/rank/cargo/miner/lavaland(src)
+	new /obj/item/clothing/shoes/workboots/mining(src)
+	new /obj/item/clothing/shoes/workboots/mining(src)
+	new /obj/item/clothing/shoes/workboots/mining(src)
+	new /obj/item/clothing/gloves/color/black(src)
+	new /obj/item/clothing/gloves/color/black(src)
+	new /obj/item/clothing/gloves/color/black(src)

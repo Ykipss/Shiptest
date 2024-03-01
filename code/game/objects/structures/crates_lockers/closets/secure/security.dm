@@ -5,40 +5,59 @@
 
 /obj/structure/closet/secure_closet/captains/PopulateContents()
 	..()
+	new /obj/item/storage/bag/garment/captain(src)
 	//WS Begin
 	new /obj/item/clothing/head/beret/captain(src) //Berets
 	new /obj/item/storage/backpack/messenger/com(src) //Messenger Bags
 	//WS End
-	new /obj/item/clothing/suit/hooded/wintercoat/captain(src)
 	if(prob(33))
 		new /obj/item/storage/backpack/captain(src)
 	else if(prob(50))
 		new /obj/item/storage/backpack/satchel/cap(src)
-	new /obj/item/storage/backpack/duffelbag/captain(src)
-	new /obj/item/clothing/neck/cloak/cap(src)
 	new /obj/item/clothing/neck/petcollar(src)
+	new /obj/item/storage/backpack/duffelbag/captain(src)
 	new /obj/item/pet_carrier(src)
-	new /obj/item/clothing/shoes/sneakers/brown(src)
-	new /obj/item/clothing/under/rank/command/captain(src)
-	new /obj/item/clothing/under/rank/command/captain/skirt(src)
-	new /obj/item/clothing/suit/armor/vest/capcarapace(src)
-	new /obj/item/clothing/head/caphat(src)
-	new /obj/item/clothing/under/rank/command/captain/parade(src)
-	new /obj/item/clothing/suit/armor/vest/capcarapace/alt(src)
-	new /obj/item/clothing/head/caphat/parade(src)
-	new /obj/item/clothing/suit/armor/vest/capcarapace/captunic(src)
-	new /obj/item/clothing/head/crown/fancy(src)
 	new /obj/item/cartridge/captain(src)
 	new /obj/item/storage/box/silver_ids(src)
 	new /obj/item/radio/headset/heads/captain/alt(src)
 	new /obj/item/radio/headset/heads/captain(src)
-	new /obj/item/clothing/glasses/sunglasses/gar/supergar(src)
-	new /obj/item/clothing/gloves/color/captain(src)
 	new /obj/item/storage/belt/sabre(src)
 	new /obj/item/gun/energy/e_gun(src)
 	new /obj/item/door_remote/captain(src)
 	new /obj/item/card/id/captains_spare(src)
 	new /obj/item/storage/photo_album/Captain(src)
+
+/obj/structure/closet/secure_closet/captains/vanguard
+	name = "vanguard's locker"
+
+/obj/structure/closet/secure_closet/captains/vanguard/PopulateContents()
+	new /obj/item/storage/bag/garment/inteq/vanguard(src)
+	new /obj/item/megaphone/command(src)
+	new /obj/item/storage/belt/security/webbing/inteq/alt(src)
+	new /obj/item/storage/belt/security/webbing/inteq(src)
+	new /obj/item/storage/belt/military/assault(src)
+	new /obj/item/radio/headset/inteq/alt/captain(src)
+	new /obj/item/shield/riot/tele(src)
+	new /obj/item/areaeditor/shuttle(src)
+	new /obj/item/storage/backpack/messenger/inteq(src)
+
+/obj/structure/closet/secure_closet/captains/solgov
+
+/obj/structure/closet/secure_closet/captains/solgov/PopulateContents()
+	new /obj/item/storage/bag/garment/solgov/captain(src)
+	new /obj/item/folder/solgov(src)
+	new /obj/item/folder/solgov(src)
+	new /obj/item/folder/solgov/red(src)
+	new /obj/item/folder/solgov/red(src)
+	new /obj/item/storage/backpack/captain(src)
+	new /obj/item/door_remote/captain(src)
+	new /obj/item/storage/belt/sabre/solgov(src)
+	new /obj/item/stamp/solgov(src)
+	new /obj/item/spacecash/bundle/loadsamoney(src)
+	new /obj/item/gun/ballistic/automatic/powered/gauss/modelh(src)
+	new /obj/item/ammo_box/magazine/modelh(src)
+	new /obj/item/ammo_box/magazine/modelh(src)
+	new /obj/item/areaeditor/shuttle(src)
 
 /obj/structure/closet/secure_closet/head_of_personnel
 	name = "\proper head of personnel's locker"
@@ -47,21 +66,15 @@
 
 /obj/structure/closet/secure_closet/head_of_personnel/PopulateContents()
 	..()
-	new /obj/item/clothing/neck/cloak/head_of_personnel(src)
+
+	new /obj/item/storage/bag/garment/hop(src)
 	new /obj/item/storage/lockbox/medal/service(src)
-	new /obj/item/clothing/head/beret/hop(src) //WS edit - More Berets
-	new /obj/item/clothing/under/rank/command/head_of_personnel(src) //WS Edit - Better Command Uniforms
-	new /obj/item/clothing/under/rank/command/head_of_personnel/skirt(src) //WS Edit - Better Command Uniforms
-	new /obj/item/clothing/head/hopcap(src)
 	new /obj/item/cartridge/head_of_personnel(src)
 	new /obj/item/radio/headset/heads/head_of_personnel(src)
-	new /obj/item/clothing/shoes/sneakers/brown(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/megaphone/command(src)
-	new /obj/item/clothing/suit/armor/vest/hop(src) //WS edit - Command Resprite 3
 	new /obj/item/assembly/flash/handheld(src)
-	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/gun/energy/e_gun/mini(src) //WS Edit - Gives HoP a mini egun
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
@@ -70,6 +83,18 @@
 	new /obj/item/storage/photo_album/HoP(src)
 	new /obj/item/storage/lockbox/medal/hop(src)
 
+/obj/structure/closet/secure_closet/head_of_personnel/solgov
+	name = "\proper overseer's locker"
+
+/obj/structure/closet/secure_closet/head_of_personnel/solgov/PopulateContents()
+	new /obj/item/folder/solgov(src)
+	new /obj/item/folder/solgov(src)
+	new /obj/item/folder/solgov/red(src)
+	new /obj/item/storage/belt/sabre/solgov(src)
+	new /obj/item/storage/backpack(src)
+	new /obj/item/pen/solgov(src)
+	new /obj/item/clothing/under/solgov/dress(src)
+	new /obj/item/stamp/solgov(src)
 
 /obj/structure/closet/secure_closet/hos
 	name = "\proper head of security's locker"
@@ -78,29 +103,15 @@
 
 /obj/structure/closet/secure_closet/hos/PopulateContents()
 	..()
+	new /obj/item/storage/bag/garment/hos(src)
 	new /obj/item/storage/box/deputy(src) //WS edit - Small QoL Brig additions
-	new /obj/item/clothing/neck/cloak/hos(src)
-	new /obj/item/clothing/under/rank/command(src) //WS edit - better command uniforms
 	new /obj/item/cartridge/hos(src)
 	new /obj/item/radio/headset/heads/hos/alt(src) //WS edit - Small QoL Brig additions
 	new /obj/item/radio/headset/heads/hos(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade/female(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade(src)
-	new /obj/item/clothing/suit/armor/vest/leather(src)
-	new /obj/item/clothing/suit/armor/hos/trenchcoat(src) //WS edit - Small QoL Brig additions
-	new /obj/item/clothing/suit/armor/hos(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/skirt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt/skirt(src)
-	new /obj/item/clothing/head/HoS(src)
-	new /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch(src)
-	new /obj/item/clothing/glasses/hud/security/sunglasses/gars/supergars(src)
-	new /obj/item/clothing/suit/armor/vest/security/hos(src) //WS Edit - Better security jumpsuit sprites
-	new /obj/item/storage/lockbox/medal/sec(src)
 	new /obj/item/megaphone/sec(src)
 	new /obj/item/holosign_creator/security(src)
+	new /obj/item/storage/lockbox/medal/sec(src)
 	new /obj/item/storage/lockbox/loyalty(src)
-	new /obj/item/clothing/mask/gas/sechailer/swat(src)
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/shield/riot/tele(src)
 	new /obj/item/storage/belt/security/full(src)
@@ -162,6 +173,22 @@
 		new /obj/item/clothing/glasses/hud/security/prescription(src)
 	//WS end
 	new /obj/item/flashlight/seclite(src)
+
+/obj/structure/closet/secure_closet/security/solgov
+	name = "sonnensöldners's locker"
+
+/obj/structure/closet/secure_closet/security/solgov/PopulateContents()
+	new /obj/item/clothing/head/solgov/sonnensoldner(src)
+	new /obj/item/radio{icon_state = "sec_radio"}(src)
+	new /obj/item/clothing/under/solgov/formal(src)
+	new /obj/item/clothing/under/solgov/dress(src)
+	new /obj/item/clothing/under/solgov(src)
+	new /obj/item/clothing/shoes/workboots(src)
+	new /obj/item/storage/belt/sabre/solgov(src)
+	new /obj/item/clothing/gloves/combat(src)
+	new /obj/item/radio/headset/solgov/alt(src)
+	new /obj/item/storage/backpack(src)
+	new /obj/item/clothing/suit/armor/vest/bulletproof/solgov(src)
 
 /obj/structure/closet/secure_closet/security/sec
 

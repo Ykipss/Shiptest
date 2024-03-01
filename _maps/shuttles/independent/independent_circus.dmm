@@ -188,7 +188,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "bk" = (
-/obj/structure/table/wood/bar,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
@@ -200,6 +199,7 @@
 /obj/item/pen{
 	pixel_x = 3
 	},
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "bw" = (
@@ -2478,14 +2478,13 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "BH" = (
-/obj/structure/table/wood/bar,
-/obj/structure/table/wood/bar,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/item/storage/fancy/donut_box,
 /obj/item/toy/figure/mime,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "BM" = (
@@ -2790,7 +2789,6 @@
 	},
 /area/ship/crew/dorm)
 "EW" = (
-/obj/structure/table/wood/bar,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2798,6 +2796,7 @@
 /obj/item/restraints/handcuffs,
 /obj/item/clothing/head/beret/sec,
 /obj/item/gun/energy/taser,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "EZ" = (
@@ -3254,7 +3253,6 @@
 /turf/open/floor/wood/maple,
 /area/ship/crew/canteen)
 "JX" = (
-/obj/structure/table/wood/bar,
 /obj/machinery/door/window/northleft{
 	dir = 8;
 	req_access_txt = null
@@ -3267,6 +3265,7 @@
 	dir = 4
 	},
 /obj/machinery/recharger,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "Kd" = (
@@ -3879,13 +3878,13 @@
 /turf/template_noop,
 /area/template_noop)
 "Uz" = (
-/obj/structure/table/wood/bar,
 /obj/machinery/door/window/northleft{
 	dir = 2;
 	req_access_txt = null
 	},
 /obj/item/ticket_machine_ticket,
 /obj/item/spacecash/bundle/c50,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "UH" = (
@@ -4172,13 +4171,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Yc" = (
-/obj/structure/table/wood/bar,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/item/kirbyplants/random,
 /obj/machinery/light/directional/east,
 /obj/structure/reagent_dispensers/beerkeg,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "Yf" = (

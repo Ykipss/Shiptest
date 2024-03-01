@@ -1013,6 +1013,7 @@
 /obj/machinery/firealarm/directional/east,
 /obj/item/stack/sheet/mineral/plasma/five,
 /obj/item/export_scanner,
+/obj/item/gun/ballistic/shotgun/automatic/combat,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "vG" = (
@@ -2111,7 +2112,6 @@
 /area/ship/engineering/atmospherics)
 "Rp" = (
 /obj/structure/guncase/shotgun,
-/obj/item/gun/ballistic/shotgun/winchester,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "Rz" = (

@@ -729,6 +729,7 @@
 /obj/machinery/light/small/directional/west,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/cell_charger,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "jK" = (
@@ -913,36 +914,16 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/starboard)
 "mu" = (
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
-	icon_door = "solgov_wall";
-	icon_state = "solgov_wall";
-	name = "vanguard's locker";
-	pixel_x = -28;
-	req_access_txt = "20"
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/megaphone/command,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/item/radio/headset/inteq/alt/captain,
-/obj/item/shield/riot/tele,
-/obj/item/storage/belt/security/webbing/inteq,
-/obj/item/storage/belt/military/assault,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 1
 	},
-/obj/item/clothing/head/inteq_peaked,
+/obj/structure/closet/secure_closet/captains/vanguard/wall{
+	dir = 4;
+	pixel_x = -28
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "mE" = (
@@ -1977,10 +1958,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/warden/drill{
-	desc = "A special armored campaign hat with the IRMG insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.";
-	name = "master at arms' campaign hat"
-	},
 /obj/item/megaphone/sec,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
@@ -1992,6 +1969,8 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/machinery/light/small/directional/south,
+/obj/item/clothing/head/warden/inteq,
+/obj/item/clothing/suit/armor/vest/security/warden/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Eh" = (
@@ -3083,7 +3062,7 @@
 "Xb" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Bridge";
-	req_one_access = list(19, 3)
+	req_one_access = list(19,3)
 	},
 /obj/structure/cable{
 	icon_state = "1-2"

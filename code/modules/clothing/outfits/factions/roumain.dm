@@ -2,6 +2,7 @@
 	name = "Saint-Roumain Militia - Base Outfit"
 
 	uniform = /obj/item/clothing/under/suit/roumain
+	box = /obj/item/storage/box/survival
 	id = /obj/item/card/id
 	faction_icon = "bg_srm"
 
