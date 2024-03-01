@@ -1,17 +1,36 @@
 /*\ Mechanical Surgery for IPC's and the augmented \*/
 
-/datum/surgery/brain_surgery/mechanic
+/datum/surgery/robo_brain_surgery
 	name = "Mechanical brain surgery"
 	requires_bodypart_type = BODYTYPE_ROBOTIC
 	steps = list(
 		/datum/surgery_step/mechanic_open,
 		/datum/surgery_step/open_hatch,
 		/datum/surgery_step/prepare_electronics,
-		/datum/surgery_step/fix_brain,
+		/datum/surgery_step/fix_robo_brain,
 		/datum/surgery_step/mechanic_close
 	)
-	lying_required = FALSE
+	lying_required = TRUE
+	possible_locs = list(BODY_ZONE_CHEST) // ipc brain in chest
 	self_operable = TRUE
+	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
+
+/datum/surgery/robo_brain_surgery/can_start(mob/user, mob/living/carbon/target)
+	var/obj/item/organ/brain/mmi_holder/brain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	if(!istype(brain))
+		return FALSE
+	return TRUE
+
+/datum/surgery_step/fix_robo_brain
+	name = "recalibrate positronic brain"
+	implements = list(
+		TOOL_MULTITOOL = 100)
+	repeatable = TRUE
+	time = 10 SECONDS //long and complicated
+	preop_sound = 'sound/items/tape_flip.ogg'
+	success_sound = 'sound/items/taperecorder_close.ogg'
+	failure_sound = 'sound/machines/defib_zap.ogg'
+	experience_given = 0 // per_trauma
 
 /datum/surgery/healing/mechanic
 	name = "Repair machinery"
@@ -31,9 +50,7 @@
 				TOOL_WIRECUTTER = 100,
 				TOOL_CAUTERY = 60,
 				TOOL_HEMOSTAT = 60,
-				TOOL_RETRACTOR = 60,
-				/obj/item/melee/transforming/energy = 40,
-				/obj/item/gun/energy/laser = 20)
+				TOOL_RETRACTOR = 60)
 	time = 2 SECONDS
 	missinghpbonus = 10
 
@@ -43,8 +60,7 @@
 		brutehealing = 5
 		burnhealing = 0
 		repairtype = "dents"
-		preop_sound = 'sound/items/welder.ogg'
-		success_sound = 'sound/items/welder2.ogg'
+		success_sound = pick('sound/items/welder2.ogg','sound/items/welder.ogg')
 	if(tool.tool_behaviour == TOOL_WIRECUTTER || tool.tool_behaviour == TOOL_HEMOSTAT || tool.tool_behaviour == TOOL_RETRACTOR)
 		burnhealing = 5
 		brutehealing = 0

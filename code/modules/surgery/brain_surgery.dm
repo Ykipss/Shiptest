@@ -11,6 +11,7 @@
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	possible_locs = list(BODY_ZONE_HEAD)
 	requires_bodypart_type = 0
+	self_operable = FALSE
 
 /datum/surgery_step/fix_brain
 	name = "fix brain"
@@ -26,10 +27,14 @@
 	experience_given = 0 // per_trauma
 
 /datum/surgery/brain_surgery/can_start(mob/user, mob/living/carbon/target)
-	var/obj/item/organ/brain/B = target.getorganslot(ORGAN_SLOT_BRAIN)
-	if(!B)
+	var/obj/item/organ/brain/brain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	var/obj/item/organ/brain/mmi_holder/posibrain/posibrain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	if(!brain)
 		return FALSE
-	return TRUE
+	else if(istype(posibrain))
+		return FALSE
+	else
+		return TRUE
 
 /datum/surgery_step/fix_brain/preop(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
 	display_results(user, target, "<span class='notice'>You begin to fix [target]'s brain...</span>",

@@ -14,7 +14,7 @@
 	move_to_delay = 12
 	maxHealth = 100
 	health = 100
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 	obj_damage = 40
 	melee_damage_lower = 25
 	melee_damage_upper = 25
@@ -85,8 +85,9 @@
 	attack_verb_simple = "CQB"
 	speed = 7
 	move_to_delay = 7
-	maxHealth = 300
-	health = 300
+	maxHealth = 200
+	health = 200
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 	obj_damage = 60
 	icon_state = "warbear"
 	icon_living = "warbear"

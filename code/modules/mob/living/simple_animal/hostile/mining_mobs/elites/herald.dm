@@ -28,8 +28,7 @@
 	pixel_x = -16
 	base_pixel_x = -16
 	health_doll_icon = "herald"
-	maxHealth = 800
-	health = 800
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 50, "bio" = 40, "rad" = 20, "fire" = 20, "acid" = 20)
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 	attack_verb_continuous = "preaches to"
@@ -126,6 +125,12 @@
 		if(HERALD_MIRROR)
 			herald_mirror()
 
+/mob/living/simple_animal/hostile/asteroid/elite/herald/AttackingTarget()
+	if(target && isliving(target))
+		if(prob(10))
+			herald_teleshot(target)
+	return ..()
+
 /mob/living/simple_animal/hostile/asteroid/elite/herald/proc/shoot_projectile(turf/marker, set_angle, is_teleshot)
 	var/turf/startloc = get_turf(src)
 	var/obj/projectile/herald/H = null
@@ -155,7 +160,11 @@
 
 /mob/living/simple_animal/hostile/asteroid/elite/herald/proc/herald_circleshot()
 	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)
+	var/static/list/directional_shot_angless = list(22, 67, 112, 157, 202, 247, 292, 337)
 	for(var/i in directional_shot_angles)
+		shoot_projectile(get_turf(src), i, FALSE)
+	sleep(5)
+	for(var/i in directional_shot_angless)
 		shoot_projectile(get_turf(src), i, FALSE)
 
 /mob/living/simple_animal/hostile/asteroid/elite/herald/proc/unenrage()
@@ -229,7 +238,6 @@
 
 /obj/projectile/herald/teleshot
 	name ="golden bolt"
-	damage = 0
 	color = rgb(255,255,102)
 
 /obj/projectile/herald/on_hit(atom/target, blocked = FALSE)
@@ -241,8 +249,8 @@
 	else if(isliving(target))
 		var/mob/living/L = target
 		var/mob/living/F = firer
-		if(F != null && istype(F, /mob/living/simple_animal/hostile/asteroid/elite) && F.faction_check_mob(L))
-			L.heal_overall_damage(damage)
+		if(F != null && istype(F, /mob/living/simple_animal/hostile/asteroid/elite) && L.faction_check_mob(F))
+			F.heal_overall_damage(damage)
 
 /obj/projectile/herald/teleshot/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -259,7 +267,12 @@
 	hit_reaction_chance = 25
 
 /obj/item/clothing/neck/cloak/herald_cloak/proc/reactionshot(mob/living/carbon/owner)
-	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)
+	var/static/list/directional_shot_angles
+	switch(rand(1,2))
+		if(1)
+			directional_shot_angles = list(45, 135, 225, 315)
+		if(2)
+			directional_shot_angles = list(0, 90, 180, 270)
 	for(var/i in directional_shot_angles)
 		shoot_projectile(get_turf(owner), i, owner)
 
@@ -276,6 +289,5 @@
 	if(rand(1,100) > hit_reaction_chance)
 		return
 	owner.visible_message("<span class='danger'>[owner]'s [src] emits a loud noise as [owner] is struck!</span>")
-	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)
 	playsound(get_turf(owner), 'sound/magic/clockwork/invoke_general.ogg', 20, TRUE)
 	addtimer(CALLBACK(src, PROC_REF(reactionshot), owner), 10)

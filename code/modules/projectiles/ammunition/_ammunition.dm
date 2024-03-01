@@ -63,6 +63,8 @@
 
 /obj/item/ammo_casing/update_icon_state()
 	icon_state = "[initial(icon_state)][BB ? (bullet_skin ? "-[bullet_skin]" : "") : "-empty"]"
+	if(icon_state == "[initial(icon_state)]-empty")
+		custom_materials = list(/datum/material/iron=500)
 	return ..()
 
 /obj/item/ammo_casing/update_desc()

@@ -29,11 +29,10 @@
 	pixel_x = -16
 	base_pixel_x = -16
 	health_doll_icon = "broodmother"
-	maxHealth = 800
-	health = 800
-	melee_damage_lower = 30
-	melee_damage_upper = 30
-	armour_penetration = 30
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 20, "energy" = 30, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 20)
+	melee_damage_lower = 10
+	melee_damage_upper = 10
+	armour_penetration = 0
 	attack_verb_continuous = "beats down on"
 	attack_verb_simple = "beat down on"
 	attack_sound = 'sound/weapons/punch1.ogg'
@@ -52,6 +51,11 @@
 
 	var/rand_tent = 0
 	var/list/mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/children_list = list()
+	var/hp_high = 0
+	var/hp_mid = 0
+	var/hp_low = 0
+	var/hp_dead = 0
+	var/childragecall = 0
 
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother/Destroy()
 	children_list.Cut()
@@ -118,6 +122,28 @@
 			var/turf/t = pick_n_take(tentacle_loc)
 			new /obj/effect/temp_visual/goliath_tentacle/broodmother(t, src)
 
+/mob/living/simple_animal/hostile/asteroid/elite/broodmother/update_stat()
+	. = ..()
+	if(hp_high != 1 && health < maxHealth * 0.75 && health >= maxHealth * 0.5)
+		spawn_children()
+		hp_high = 1
+	if(hp_mid != 1 && health < maxHealth * 0.50 && health >= maxHealth * 0.25)
+		spawn_children()
+		hp_mid = 1
+	if(hp_low != 1 && health < maxHealth * 0.25 && health >= 1)
+		spawn_children()
+		hp_low = 1
+	if(hp_dead != 1 && stat == DEAD)
+		spawn_children()
+		hp_dead = 1
+
+/mob/living/simple_animal/hostile/asteroid/elite/broodmother/AttackingTarget()
+	if(target && isliving(target))
+		if(childragecall != 0)
+			call_children()
+			childragecall = 0
+	return ..()
+
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother/proc/tentacle_patch(target)
 	ranged_cooldown = world.time + 15
 	var/tturf = get_turf(target)
@@ -142,6 +168,7 @@
 	ranged_cooldown = world.time + 70
 	playsound(src,'sound/spookoween/insane_low_laugh.ogg', 200, 1)
 	visible_message("<span class='warning'>[src] starts picking up speed!</span>")
+	childragecall = 1
 	color = "#FF0000"
 	set_varspeed(0)
 	move_to_delay = 3

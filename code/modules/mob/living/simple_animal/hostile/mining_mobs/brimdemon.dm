@@ -20,6 +20,7 @@
 	move_to_delay = 5
 	maxHealth = 150
 	health = 150
+	armor = list("melee" = 0, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 50, "acid" = 20)
 	obj_damage = 15
 	melee_damage_lower = 7.5
 	melee_damage_upper = 7.5
@@ -99,6 +100,7 @@
 	balloon_alert(src, "charging...")
 	to_chat(src, "<span class='warning'>You begin to charge up...</span>")
 	addtimer(CALLBACK(src, PROC_REF(fire_laser)), 1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(end_laser)), 3 SECONDS)
 	COOLDOWN_START(src, ranged_cooldown, ranged_cooldown_time)
 
 /mob/living/simple_animal/hostile/asteroid/brimdemon/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
@@ -111,7 +113,7 @@
 	face_atom(target)
 	OpenFire()
 
-/// Fires a brimbeam, getting a line of turfs between it and the direction to the target and creating a brimbeam effect on every one of them.
+/// Fires a brimbeam, getting a line of turfs between it and the direction to the target and creating a brimbeam effect on every one of them, exept ones it cannot see.
 /mob/living/simple_animal/hostile/asteroid/brimdemon/proc/fire_laser()
 	if(stat == DEAD)
 		return
@@ -123,27 +125,32 @@
 	var/turf/origin_turf = get_turf(src)
 	var/list/affected_turfs = get_line(origin_turf, target_turf) - origin_turf
 	for(var/turf/affected_turf in affected_turfs)
-		var/blocked = FALSE
 		if(affected_turf.opacity)
-			blocked = TRUE
+			break
+		var/blocked = FALSE
 		for(var/obj/potential_block in affected_turf.contents)
 			if(potential_block.opacity)
 				blocked = TRUE
 				break
 		if(blocked)
 			break
-		var/atom/new_brimbeam = new /obj/effect/brimbeam(affected_turf)
-		new_brimbeam.dir = dir
+		var/obj/effect/brimbeam/new_brimbeam = new(affected_turf, src)
+		new_brimbeam.dir = src.dir
 		beamparts += new_brimbeam
 		for(var/mob/living/hit_mob in affected_turf.contents)
-			hit_mob.adjustFireLoss(35)
-			to_chat(hit_mob, span_userdanger("You're hit by [src]'s brimbeam!"))
-	if(length(beamparts))
-		var/atom/last_brimbeam = beamparts[length(beamparts)]
-		last_brimbeam.icon_state = "brimbeam_end"
-		var/atom/first_brimbeam = beamparts[1]
-		first_brimbeam.icon_state = "brimbeam_start"
-	addtimer(CALLBACK(src, PROC_REF(end_laser)), 2 SECONDS)
+			var/mob/living/carbon/C = hit_mob
+			to_chat(hit_mob, span_userdanger("You're blasted by [src]'s brimbeam!"))
+			if(iscarbon(C))
+				return C.apply_damage(25, BURN, spread_damage = TRUE)
+			else
+				return C.apply_damage(25, BURN)
+	if(!length(beamparts))
+		return FALSE
+	var/atom/last_brimbeam = beamparts[length(beamparts)]
+	last_brimbeam.icon_state = "brimbeam_end"
+	var/atom/first_brimbeam = beamparts[1]
+	first_brimbeam.icon_state = "brimbeam_start"
+	return TRUE
 
 /// Deletes all the brimbeam parts and sets variables back to their initial ones.
 /mob/living/simple_animal/hostile/asteroid/brimdemon/proc/end_laser()
@@ -181,8 +188,12 @@
 		damage(hit_mob)
 
 /obj/effect/brimbeam/proc/damage(mob/living/hit_mob)
-	hit_mob.adjustFireLoss(5)
+	var/mob/living/carbon/C = hit_mob
 	to_chat(hit_mob, span_danger("You're damaged by [src]!"))
+	if(iscarbon(C))
+		return C.apply_damage(5, BURN, spread_damage=TRUE)
+	else
+		return C.apply_damage(5, BURN)
 
 /obj/item/crusher_trophy/brimdemon_fang
 	name = "brimdemon's fang"

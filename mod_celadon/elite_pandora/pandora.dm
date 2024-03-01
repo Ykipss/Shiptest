@@ -18,23 +18,27 @@
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora
 	name = "pandora"
-	desc = "A large magic box with similar power and design to the Hierophant.  Once it opens, it's not easy to close it."
+	desc = "A large magic box with similar power and design to the Hierophant. Once it opens, it's not easy to close it."
 	icon_state = "pandora"
 	icon_living = "pandora"
 	icon_aggro = "pandora"
 	icon_dead = "pandora_dead"
 	icon_gib = "syndicate_gib"
 	health_doll_icon = "pandora"
-	maxHealth = 800
-	health = 800
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	faction = list("elitefauna", "pandora")
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 50, "bio" = 40, "rad" = 20, "fire" = 20, "acid" = 20)
+	melee_damage_lower = 0
+	melee_damage_upper = 0
 	attack_verb_continuous = "smashes into the side of"
 	attack_verb_simple = "smash into the side of"
+	friendly_verb_continuous = "wails at"
+	friendly_verb_simple = "wails at"
 	attack_sound = 'sound/weapons/sonic_jackhammer.ogg'
 	throw_message = "merely dinks off of the"
-	speed = 4
+	speed = 3
 	move_to_delay = 10
+	retreat_distance = 4
+	minimum_distance = 3
 	mouse_opacity = MOUSE_OPACITY_ICON
 	deathsound = 'sound/magic/repulse.ogg'
 	deathmessage = "'s lights flicker, before its top part falls down."
@@ -47,7 +51,16 @@
 
 	var/sing_shot_length = 8
 	var/cooldown_time = 20
-	var/dungeon = FALSE //if true then will open gates on death
+	var/dungeon = FALSE		//if true then will open gates on death
+	var/turf/startingloc	// Saves the turf the mob was created at
+	var/rage_check = FALSE
+	var/blast_charges = 0
+	var/magicconstructs = list(/mob/living/simple_animal/hostile/construct/juggernaut/wizard/hostile,
+								/mob/living/simple_animal/hostile/construct/wraith/wizard/hostile)
+	var/hp_high = 0
+	var/hp_mid = 0
+	var/hp_low = 0
+	var/hp_dead = 0
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/dungeon
 	dungeon = TRUE
@@ -99,16 +112,47 @@
 		if(AOE_SQUARES)
 			aoe_squares(target)
 
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/Initialize()
+	. = ..()
+	startingloc = get_turf(src)
+
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/Life()
 	. = ..()
-	if(health >= maxHealth * 0.5)
+	if(health >= maxHealth * 0.75)
 		cooldown_time = 20
-		return
-	if(health < maxHealth * 0.5 && health > maxHealth * 0.25)
+	if(health < maxHealth * 0.75 && health >= maxHealth * 0.25)
 		cooldown_time = 15
-		return
-	else
+	if(health < maxHealth * 0.25 && health >= 1)
 		cooldown_time = 10
+	if(!client)
+		if(get_dist(src, startingloc) > 9)
+			pandora_teleport(startingloc)
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/AttackingTarget()
+	var/aiattack = rand(1,2)
+	if(target && isliving(target))
+		switch(aiattack)
+			if(1)
+				singular_shot(target)
+			if(2)
+				aoe_squares(target)
+	return ..()
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/update_stat()
+	. = ..()
+	if(hp_high != 1 && health < maxHealth * 0.75 && health >= maxHealth * 0.5)
+		aoe_squares(loc)
+		hp_high = 1
+	if(hp_mid != 1 && health < maxHealth * 0.50 && health >= maxHealth * 0.25)
+		aoe_squares(loc)
+		pandoras_secrets()
+		hp_mid = 1
+	if(hp_low != 1 && health < maxHealth * 0.25 && health >= 1)
+		aoe_squares(loc)
+		hp_low = 1
+	if(hp_dead != 1 && stat == DEAD)
+		aoe_squares(loc)
+		hp_dead = 1
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/singular_shot(target)
 	ranged_cooldown = world.time + (cooldown_time * 0.5)
@@ -132,13 +176,14 @@
 			new /obj/effect/temp_visual/hierophant/blast/pandora(t, src)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport(target)
-	ranged_cooldown = world.time + cooldown_time
 	var/turf/T = get_turf(target)
 	var/turf/source = get_turf(src)
-	new /obj/effect/temp_visual/hierophant/telegraph(T, src)
-	new /obj/effect/temp_visual/hierophant/telegraph(source, src)
-	playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
-	addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
+	if(get_dist(T, source) > 2)
+		ranged_cooldown = world.time + cooldown_time
+		new /obj/effect/temp_visual/hierophant/telegraph(T, src)
+		new /obj/effect/temp_visual/hierophant/telegraph(source, src)
+		playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
+		addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport_2(turf/T, turf/source)
 	new /obj/effect/temp_visual/hierophant/telegraph/teleport(T, src)
@@ -173,13 +218,93 @@
 			new /obj/effect/temp_visual/hierophant/blast/pandora(t, src)
 	addtimer(CALLBACK(src, PROC_REF(aoe_squares_2), T, (ring + 1), max_size), 2)
 
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/blast_spam()
+	if(stat != DEAD)
+		if(blast_charges >= 1)
+			blast_charges -= 1
+			var/list/turf/blast_turfs = RANGE_TURFS(10, startingloc)
+			var/list/turf/blast_picked_turfs = list()
+			for(var/i in 1 to 50)
+				var/turf/T = pick_n_take(blast_turfs)
+				blast_picked_turfs += T
+				new /obj/effect/temp_visual/hierophant/blast/pandora(T, src)
+			addtimer(CALLBACK(src, PROC_REF(blast_spam)), 3 SECONDS)
+			return blast_picked_turfs
+		else
+			return blast_charges
+	else
+		return stat
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/conjure_hostiles(switchdir)
+	if(stat != DEAD)
+		switch(switchdir)
+			if(1)
+				conjure_hostile(NORTH)
+				conjure_hostile(SOUTH)
+				conjure_hostile(WEST)
+				conjure_hostile(EAST)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 20 SECONDS)
+			if(2)
+				conjure_hostile(NORTHEAST)
+				conjure_hostile(NORTHWEST)
+				conjure_hostile(SOUTHEAST)
+				conjure_hostile(SOUTHWEST)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 20 SECONDS)
+	else
+		return
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/conjure_hostile(dir)
+	var/turf/stepturf = get_turf(src)
+	var/turf/startingturf = get_turf(src)
+	var/pickconstruct = pick(magicconstructs)
+	for(var/T in 1 to 5)
+		stepturf = get_open_turf_in_dir(stepturf, dir)
+		sleep(2)
+		if(get_dist(startingturf, stepturf) > 4)
+			new /obj/effect/temp_visual/hierophant/blast/pandora(stepturf)
+			sleep(7)
+			new pickconstruct(stepturf)
+		else
+			if(get_open_turf_in_dir_null(stepturf, dir) == null)
+				new /obj/effect/temp_visual/hierophant/blast/pandora(stepturf)
+				sleep(7)
+				new pickconstruct(stepturf)
+			else
+				new /obj/effect/temp_visual/revenant(stepturf)
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/Move(atom/newloc, dir, step_x , step_y)
+	if(rage_check == TRUE)
+		return FALSE
+	return ..()
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/reinforce()
+	armor = list("melee" = 200, "bullet" = 200, "laser" = 200, "energy" = 200, "bomb" = 200, "bio" = 200, "rad" = 200, "fire" = 200, "acid" = 200)
+	armor = getArmor(arglist(armor)) // so it actually be real armor and not simple list
+	ranged = FALSE
+	rage_check = TRUE
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/reinforce_end()
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 50, "bio" = 40, "rad" = 20, "fire" = 20, "acid" = 20)
+	armor = getArmor(arglist(armor))
+	ranged = TRUE
+	rage_check = FALSE
+
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandoras_secrets()
+	if(isturf(startingloc))
+		pandora_teleport(startingloc)
+		reinforce()
+		addtimer(CALLBACK(src, PROC_REF(reinforce_end)), 55 SECONDS)
+		blast_charges += 20
+		addtimer(CALLBACK(src, PROC_REF(blast_spam)), 1 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 20 SECONDS)
+		speed = 2.5
+
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/death()
 	//open all pandora gates
 	if(dungeon)
 		for(var/obj/machinery/door/poddoor/D in GLOB.machines)
 			if(D.id == "pandora_dead")
 				D.open()
-
 	..()
 
 //The specific version of hiero's squares pandora uses

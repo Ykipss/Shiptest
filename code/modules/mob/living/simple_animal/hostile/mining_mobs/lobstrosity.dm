@@ -18,6 +18,7 @@
 	move_to_delay = 10
 	maxHealth = 150
 	health = 150
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 50, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
 	obj_damage = 15
 	melee_damage_lower = 15
 	melee_damage_upper = 19

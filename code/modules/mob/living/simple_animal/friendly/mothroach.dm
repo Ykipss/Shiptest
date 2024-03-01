@@ -5,7 +5,7 @@
 	icon_state = "mothroach"
 	icon_living = "mothroach"
 	icon_dead = "mothroach_dead"
-	deathsound =  'sound/voice/moth/moth_a.ogg'
+	deathsound =  'sound/voice/moth/moth_death.ogg'
 	held_state = "mothroach"
 	head_icon = 'icons/mob/pets_held.dmi'
 	worn_slot_flags = ITEM_SLOT_HEAD
@@ -34,6 +34,13 @@
 	add_verb(src, /mob/living/proc/update_resting)
 	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
 
+/mob/living/simple_animal/pet/mothroach/Life()
+	. = ..()
+	if(prob(1))
+		if(stat == CONSCIOUS)
+			playsound(loc, 'sound/voice/moth/moth_flutter.ogg', 50, TRUE)
+			return
+
 /mob/living/simple_animal/pet/mothroach/update_resting()
 	. = ..()
 	if(stat == DEAD)
@@ -54,8 +61,9 @@
 				new /obj/effect/temp_visual/heart(loc)
 				manual_emote("chitters happily!")
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, src, /datum/mood_event/pet_animal, src)
-			if("harm")
 				playsound(loc, 'sound/voice/moth/scream_moth.ogg', 50, TRUE)
+			if("harm")
+				playsound(loc, 'sound/voice/moth/mothsqueak.ogg', 75, TRUE)
 
 /mob/living/simple_animal/pet/mothroach/attackby(obj/item/I, mob/user, params)
 	if(isclothing(I))

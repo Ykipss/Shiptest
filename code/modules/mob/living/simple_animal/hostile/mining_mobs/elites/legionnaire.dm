@@ -25,15 +25,16 @@
 	icon_dead = "legionnaire_dead"
 	icon_gib = "syndicate_gib"
 	health_doll_icon = "legionnaire"
-	maxHealth = 800
-	health = 800
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 20, "energy" = 30, "bomb" = 40, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	attack_verb_continuous = "slashes its arms at"
 	attack_verb_simple = "slash your arms at"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	throw_message = "doesn't affect the sturdiness of"
-	speed = 1
+	speed = 5
+	retreat_distance = 4
+	minimum_distance = 3
 	move_to_delay = 3
 	mouse_opacity = MOUSE_OPACITY_ICON
 	deathsound = 'sound/magic/curse.ogg'
@@ -85,7 +86,7 @@
 			if(SPEW_SMOKE)
 				spew_smoke()
 		return
-	var/aiattack = rand(1,4)
+	var/aiattack = rand(1,3)
 	switch(aiattack)
 		if(LEGIONNAIRE_CHARGE)
 			legionnaire_charge(target)
@@ -93,8 +94,6 @@
 			head_detach(target)
 		if(BONFIRE_TELEPORT)
 			bonfire_teleport()
-		if(SPEW_SMOKE)
-			spew_smoke()
 /mob/living/simple_animal/hostile/asteroid/elite/legionnaire/proc/legionnaire_charge(target)
 	ranged_cooldown = world.time + 50
 	var/dir_to_target = get_dir(get_turf(src), get_turf(target))
@@ -184,7 +183,7 @@
 		var/turf/legionturf = get_turf(src)
 		var/turf/pileturf = get_turf(mypile)
 		if(legionturf == pileturf)
-			mypile.take_damage(100)
+			mypile.take_damage(50)
 			mypile = null
 			return
 		playsound(pileturf,'sound/items/fultext_deploy.ogg', 200, 1)
@@ -222,7 +221,7 @@
 	icon_gib = "syndicate_gib"
 	maxHealth = 80
 	health = 80
-	melee_damage_lower = 10
+	melee_damage_lower = 5
 	melee_damage_upper = 10
 	attack_verb_continuous = "bites at"
 	attack_verb_simple = "bite at"
@@ -247,7 +246,8 @@
 	desc = "A pile of bones which seems to occasionally move a little.  It's probably a good idea to smash them."
 	icon = 'icons/obj/lavaland/legionnaire_bonfire.dmi'
 	icon_state = "bonfire"
-	max_integrity = 100
+	max_integrity = 50
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = -10)
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
 	anchored = TRUE
 	density = FALSE
@@ -255,10 +255,21 @@
 	light_color = COLOR_SOFT_RED
 	var/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/myowner = null
 
+/obj/structure/legionnaire_bonfire/Initialize()
+	. = ..()
+	var/datum/effect_system/smoke_spread/smoke = new
+	smoke.set_up(1, loc)
+	smoke.start()
+	addtimer(CALLBACK(src, PROC_REF(conjure_broodlings)), 5 SECONDS)
 
-/obj/structure/legionnaire_bonfire/Entered(atom/movable/mover, atom/target)
-	if(isliving(mover))
-		var/mob/living/L = mover
+/obj/structure/legionnaire_bonfire/proc/conjure_broodlings()
+	var/mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/A = new /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion(get_turf(src),src)
+	A.faction = myowner.faction
+	addtimer(CALLBACK(src, PROC_REF(conjure_broodlings)), 5 SECONDS)
+
+/obj/structure/legionnaire_bonfire/Entered(atom/movable/arrived, atom/target)
+	if(isliving(arrived))
+		var/mob/living/L = arrived
 		L.adjust_fire_stacks(3)
 		L.IgniteMob()
 	. = ..()
@@ -266,6 +277,7 @@
 /obj/structure/legionnaire_bonfire/Destroy()
 	if(myowner != null)
 		myowner.mypile = null
+	new /obj/item/organ/regenerative_core/legion(loc)
 	. = ..()
 
 //The visual effect which appears in front of legionnaire when he goes to charge.

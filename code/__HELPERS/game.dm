@@ -40,6 +40,14 @@ block( \
 	if(istype(T))
 		return T
 
+// Same as before, but returns null if false
+/proc/get_open_turf_in_dir_null(atom/center, dir)
+	var/turf/open/T = get_step(center, dir)
+	if(istype(T))
+		return T
+	else
+		return null
+
 ///Returns a list with all the adjacent open turfs.
 /proc/get_adjacent_open_turfs(atom/center)
 	var/list/hand_back = list()

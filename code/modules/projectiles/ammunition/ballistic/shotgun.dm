@@ -11,24 +11,20 @@
 
 	bounce_sfx_override = 'sound/weapons/gun/general/bulletcasing_shotgun_bounce.ogg'
 
-/obj/item/ammo_casing/shotgun/update_icon_state()
-	icon_state = "[initial(icon_state)][BB ? "" : "-spent"]"
-	return ..()
-
 /obj/item/ammo_casing/shotgun/buckshot
 	name = "buckshot shell"
 	desc = "A 12-gauge buckshot shell."
 	icon_state = "buckshot"
 	projectile_type = /obj/projectile/bullet/pellet/buckshot
-	pellets = 7
+	pellets = 6
 	variance = 25
-	custom_materials = list(/datum/material/iron=7000)
+	custom_materials = list(/datum/material/iron=6000)
 
 /obj/item/ammo_casing/shotgun/beanbag
 	name = "beanbag slug"
 	desc = "A weak beanbag slug for riot control."
 	icon_state = "beanbag"
-	custom_materials = list(/datum/material/iron=250)
+	custom_materials = list(/datum/material/iron=2000)
 	projectile_type = /obj/projectile/bullet/slug/beanbag
 
 /obj/item/ammo_casing/shotgun/rubbershot
@@ -51,7 +47,7 @@
 	desc = "An extremely weak shotgun shell with multiple small pellets made out of metal shards."
 	icon_state = "improvised"
 	projectile_type = /obj/projectile/bullet/pellet/improvised
-	custom_materials = list(/datum/material/iron=250)
+	custom_materials = list(/datum/material/iron=2000)
 	pellets = 8
 	variance = 25
 
@@ -69,7 +65,7 @@
 	desc = "A stunning taser slug."
 	icon_state = "taser"
 	projectile_type = /obj/projectile/bullet/slug/stun
-	custom_materials = list(/datum/material/iron=250)
+	custom_materials = list(/datum/material/iron=2000)
 
 /obj/item/ammo_casing/shotgun/dart
 	name = "shotgun dart"
