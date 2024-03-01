@@ -25,6 +25,7 @@
 	light_on = FALSE
 	custom_price = 800
 	var/list/trophies = list()
+	var/trophiesnumber = 0
 	var/charged = TRUE
 	var/charge_time = 15
 	var/detonation_damage = 20
@@ -231,11 +232,13 @@
 		return
 	H.trophies += src
 	to_chat(user, "<span class='notice'>You attach [src] to [H].</span>")
+	H.trophiesnumber = H.trophies.len
 	return TRUE
 
 /obj/item/crusher_trophy/proc/remove_from(obj/item/kinetic_crusher/H, mob/living/user)
 	forceMove(get_turf(H))
 	H.trophies -= src
+	H.trophiesnumber = H.trophies.len
 	return TRUE
 
 /obj/item/crusher_trophy/proc/on_melee_hit(mob/living/target, mob/living/user) //the target and the user

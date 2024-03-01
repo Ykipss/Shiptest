@@ -241,6 +241,7 @@
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
+		"theinnerhell" = 'mod_celadon/achievement_theinnerhell/theinnerhell.png', // Celadon EDIT
 	)
 
 /datum/asset/spritesheet/simple/pills

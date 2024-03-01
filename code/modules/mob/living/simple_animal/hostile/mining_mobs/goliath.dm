@@ -125,9 +125,9 @@
 	icon_dead = "goliath_baby_dead"
 	throw_message = "does nothing to the tough hide of the"
 	pre_attack_icon = "goliath_baby"
-	maxHealth = 60
-	health = 60
-	armor = list("melee" = 0, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	maxHealth = 30
+	health = 30
+	armor = list("melee" = 0, "bullet" = 5, "laser" = 5, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	harm_intent_damage = 0
 	obj_damage = 100
 	melee_damage_lower = 2

@@ -44,6 +44,7 @@
 	var/runetype
 	var/datum/action/innate/cult/create_rune/our_rune
 	var/holy = FALSE
+	var/glowtheme = "cult"
 
 /mob/living/simple_animal/hostile/construct/Initialize()
 	. = ..()
@@ -66,7 +67,8 @@
 		var/pos = 2+spellnum*31
 		our_rune.button.screen_loc = "6:[pos],4:-2"
 		our_rune.button.moved = "6:[pos],4:-2"
-	add_overlay("glow_[icon_state][holy]")
+	add_overlay("glow_[icon_state]_[glowtheme]")
+	flick("make_[icon_state]_[glowtheme]", src)
 
 /mob/living/simple_animal/hostile/construct/Destroy()
 	QDEL_NULL(our_rune)
@@ -149,6 +151,7 @@
 	status_flags = 0
 	mob_size = MOB_SIZE_LARGE
 	force_threshold = 10
+	glowtheme = "cult"
 	construct_spells = list(/obj/effect/proc_holder/spell/targeted/forcewall/cult,
 							/obj/effect/proc_holder/spell/targeted/projectile/dumbfire/juggernaut)
 	runetype = /datum/action/innate/cult/create_rune/wall
@@ -192,6 +195,7 @@
 /mob/living/simple_animal/hostile/construct/juggernaut/angelic
 	holy = TRUE
 	loot = list(/obj/item/ectoplasm/angelic)
+	glowtheme = "holy"
 
 /mob/living/simple_animal/hostile/construct/juggernaut/noncult
 
@@ -213,6 +217,7 @@
 	construct_spells = list(/obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift)
 	runetype = /datum/action/innate/cult/create_rune/tele
 	playstyle_string = "<b>You are a Wraith. Though relatively fragile, you are fast, deadly, can phase through walls, and your attacks will lower the cooldown on phasing.</b>"
+	glowtheme = "cult"
 
 	var/attack_refund = 10 //1 second per attack
 	var/crit_refund = 50 //5 seconds when putting a target into critical
@@ -244,6 +249,7 @@
 //////////////////////////Angelic-Wraith////////////////////////////
 /mob/living/simple_animal/hostile/construct/wraith/angelic
 	holy = TRUE
+	glowtheme = "holy"
 	construct_spells = list(/obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/angelic)
 	loot = list(/obj/item/ectoplasm/angelic)
 
@@ -270,6 +276,7 @@
 	attack_verb_simple = "ram"
 	environment_smash = ENVIRONMENT_SMASH_WALLS
 	attack_sound = 'sound/weapons/punch2.ogg'
+	glowtheme = "cult"
 	construct_spells = list(/obj/effect/proc_holder/spell/aoe_turf/conjure/wall,
 							/obj/effect/proc_holder/spell/aoe_turf/conjure/floor,
 							/obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone,
@@ -330,6 +337,7 @@
 /mob/living/simple_animal/hostile/construct/artificer/angelic
 	desc = "A bulbous construct dedicated to building and maintaining holy armies."
 	holy = TRUE
+	glowtheme = "holy"
 	loot = list(/obj/item/ectoplasm/angelic)
 	construct_spells = list(/obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone/noncult/purified,
 							/obj/effect/proc_holder/spell/aoe_turf/conjure/construct/lesser,
@@ -357,6 +365,7 @@
 	attack_verb_continuous = "butchers"
 	attack_verb_simple = "butcher"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
+	glowtheme = "cult"
 	construct_spells = list(/obj/effect/proc_holder/spell/aoe_turf/area_conversion,
 							/obj/effect/proc_holder/spell/targeted/forcewall/cult)
 	playstyle_string = "<B>You are a Harvester. You are incapable of directly killing humans, but your attacks will remove their limbs: \

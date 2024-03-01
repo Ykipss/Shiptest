@@ -16,12 +16,14 @@
 	speed = 3
 	maxHealth = 75
 	health = 75
+	armor = list("melee" = -10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 20)
 	harm_intent_damage = 5
 	melee_damage_lower = 0
 	melee_damage_upper = 0
 	attack_verb_continuous = "lashes out at"
 	attack_verb_simple = "lash out at"
 	speak_emote = list("telepathically cries")
+	deathmessage = "telepathically cries."
 	attack_sound = 'sound/weapons/pierce.ogg'
 	throw_message = "falls right through the strange body of the"
 	ranged_cooldown = 0

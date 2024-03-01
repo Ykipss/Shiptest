@@ -19,6 +19,7 @@
 	speed = 0
 	maxHealth = 50
 	health = 50
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 30, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
 	pixel_x = -16
 	base_pixel_x = -16
 	harm_intent_damage = 5

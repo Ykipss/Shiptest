@@ -16,6 +16,7 @@
 	ranged_cooldown_time = 90
 	maxHealth = 100
 	health = 100
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 	obj_damage = 15
 	melee_damage_lower = 7
 	melee_damage_upper = 7

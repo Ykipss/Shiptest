@@ -720,7 +720,7 @@ GLOBAL_LIST_INIT(ore_probability, list(
 				new /obj/item/clothing/glasses/meson/night(loc)
 				new /mob/living/simple_animal/hostile/asteroid/goliath/beast(loc)
 			if(prob(50))
-				new /obj/item/kinetic_crusher(loc)
+				new /obj/item/disk/design_disk/bof_disk/bof_buckshot(loc)
 			else
 				new /obj/item/gun/energy/kinetic_accelerator(loc)
 			new /mob/living/simple_animal/hostile/asteroid/goliath/beast(loc)

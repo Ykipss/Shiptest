@@ -17,6 +17,7 @@
 	speed = 0
 	maxHealth = 100
 	health = 100
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 35, "acid" = 30)
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 10
