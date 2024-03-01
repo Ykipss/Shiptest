@@ -4,7 +4,7 @@
 			Пожалуйста, прикрепите присланный сенсор к вашему кораблю и пролетите на нем сквозь шторм.\
 			Для сбора данных сенсор должен быть подключен к эл. сети. "
 	value = 3000 // base value, before adding bonus for number of things to fly through
-	duration = 30 MINUTES
+	duration = 60 MINUTES
 	weight = 8
 
 	var/datum/overmap/objective_type = /datum/overmap/event/electric

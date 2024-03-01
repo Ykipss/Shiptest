@@ -24,7 +24,6 @@
 /area/ship/medical)
 "aB" = (
 /obj/structure/table/wood/fancy/royalblack,
-/obj/machinery/fax/hacked,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "aP" = (
@@ -425,7 +424,6 @@
 /obj/item/stack/telecrystal/five,
 /obj/item/stack/telecrystal/five,
 /obj/item/stack/telecrystal/five,
-/obj/item/clothing/under/syndicate/aclf,
 /obj/item/organ/cyberimp/arm/combat,
 /obj/item/storage/box/cyber_implants,
 /obj/item/autosurgeon/syndicate,
@@ -490,10 +488,6 @@
 	pixel_x = -28;
 	name = "uniform closet"
 	},
-/obj/item/clothing/under/syndicate/aclf,
-/obj/item/clothing/under/syndicate/aclf,
-/obj/item/clothing/under/syndicate/aclf,
-/obj/item/clothing/under/syndicate/aclf,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
@@ -502,6 +496,14 @@
 /obj/item/clothing/glasses/thermal/xray,
 /obj/item/clothing/glasses/thermal/xray,
 /obj/item/clothing/glasses/thermal/xray,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/syndicate/coldres,
+/obj/item/clothing/under/syndicate/coldres,
+/obj/item/clothing/under/syndicate/coldres,
+/obj/item/clothing/under/syndicate/coldres,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/cryo)
 "mu" = (
@@ -586,6 +588,7 @@
 /obj/item/wrench/combat,
 /obj/item/wrench/combat,
 /obj/item/wrench/combat,
+/obj/item/clothing/accessory/holster,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "oS" = (
@@ -1260,8 +1263,6 @@
 	name = "lieutenant locker";
 	req_access = list(3,150)
 	},
-/obj/item/clothing/under/syndicate/aclfgrunt,
-/obj/item/clothing/accessory/holster/lieutenant,
 /obj/item/storage/backpack/duffelbag/syndie/x4,
 /obj/item/storage/backpack/duffelbag/syndie/x4,
 /obj/item/sbeacondrop/bomb,

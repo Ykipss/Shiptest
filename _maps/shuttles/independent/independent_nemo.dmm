@@ -2178,7 +2178,7 @@
 	},
 /obj/item/firing_pin,
 /obj/item/kitchen/knife/hunting,
-/obj/item/gun/ballistic/shotgun/contender,
+/obj/item/gun/ballistic/shotgun/doublebarrel/beacon,
 /obj/item/ammo_box/a4570,
 /obj/item/ammo_box/a4570,
 /turf/open/floor/carpet/black,
@@ -2241,7 +2241,7 @@
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "GX" = (
-/obj/item/book/manual/wiki/tcomms,
+/obj/item/book/manual/wiki/engineering,
 /obj/effect/turf_decal/number/five{
 	dir = 8
 	},
@@ -2635,24 +2635,17 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
 	},
+/obj/machinery/newscaster/directional/east,
+/obj/structure/closet/secure_closet/RD,
 /obj/item/card/id/captains_spare,
 /obj/item/pen/survival,
 /obj/item/areaeditor/shuttle,
 /obj/item/radio/off,
-/obj/structure/closet/secure_closet{
-	icon_state = "rd";
-	name = "research director's locker";
-	req_access = list(30)
-	},
 /obj/item/megaphone/command,
-/obj/item/clothing/neck/cloak/rd,
-/obj/item/clothing/under/rank/rnd/research_director/turtleneck,
-/obj/item/clothing/suit/hooded/wintercoat/science,
 /obj/item/assembly/flash/handheld,
 /obj/item/binoculars,
 /obj/item/clothing/glasses/science,
 /obj/item/gps/science,
-/obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "NI" = (
@@ -3248,7 +3241,7 @@
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "VK" = (
-/obj/structure/bookcase/manuals/research_and_development,
+/obj/structure/bookcase/manuals/chemistry,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},

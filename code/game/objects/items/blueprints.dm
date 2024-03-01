@@ -345,7 +345,7 @@
 		newA = new area_choice
 		newA.setup(str)
 		newA.set_dynamic_lighting()
-		newA.has_gravity = oldA.has_gravity
+		newA.has_gravity = TRUE
 	else
 		newA = area_choice
 

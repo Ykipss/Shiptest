@@ -66,13 +66,13 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 
 /datum/outfit/job/inteq/captain/honorable/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
 	if(visualsOnly)
 		return
 
 	var/obj/item/card/id/W = H.wear_id
 	W.assignment = "Honorable Vanguard"
 	W.update_label()
-	..()
 
 ///Chief Engineer
 
@@ -113,6 +113,14 @@
 
 	suit_store = /obj/item/flashlight/pen
 	backpack_contents = list(/obj/item/roller=1)
+
+/datum/outfit/job/inteq/paramedic/empty
+	name = "IRMG Corpsman (Inteq) (Naked)"
+
+	head = null
+	suit = null
+	suit_store = null
+	belt = null
 
 ///Security Officers
 
@@ -180,12 +188,12 @@
 	job_icon = "warden"
 
 	ears = /obj/item/radio/headset/inteq/alt
+	head = /obj/item/clothing/head/warden/inteq
 	uniform = /obj/item/clothing/under/syndicate/inteq
-	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	mask = /obj/item/clothing/mask/gas/sechailer/inteq
 	belt = /obj/item/storage/belt/military/assault
-	suit = /obj/item/clothing/suit/armor/vest/alt
+	suit = /obj/item/clothing/suit/armor/vest/security/warden/inteq
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
@@ -214,11 +222,11 @@
 
 //Капитан
 
-/datum/outfit/job/captain/inteq/naked/cardacces
+/datum/outfit/job/inteq/captain/geared/cardacces
 	name = "Vanguard (InteQ)"
 	id = /obj/item/card/id/inteq/vanguard
 
-/datum/outfit/job/captain/inteq/naked/cardacces/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/captain/geared/cardacces/post_equip(mob/living/carbon/human/H)
 	H.faction |= list("InteQ")
 
 	var/obj/item/card/id/I = H.wear_id
@@ -300,3 +308,30 @@
 	I.registered_name = pick(GLOB.commando_names)
 	I.access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM, ACCESS_EVA, ACCESS_INTEQ_GENERAL)
 	I.update_label()
+// cmo
+
+/datum/outfit/job/inteq/cmo
+	name = "IRMG Honorable Corpsman (Inteq)"
+	jobtype = /datum/job/cmo
+	job_icon = "chiefmedicalofficer"
+
+	belt = /obj/item/storage/belt/medical/webbing/paramedic
+	ears = /obj/item/radio/headset/inteq/captain
+	uniform = /obj/item/clothing/under/syndicate/inteq/corpsman
+	alt_uniform = /obj/item/clothing/under/syndicate/inteq/skirt/corpsman
+	shoes = /obj/item/clothing/shoes/combat
+	suit = /obj/item/clothing/suit/hooded/wintercoat/security/inteq/alt
+	alt_suit = /obj/item/clothing/suit/armor/inteq/corpsman
+	dcoat = /obj/item/clothing/suit/armor/hos/inteq
+	r_pocket = /obj/item/pda/medical
+
+	chameleon_extras = null
+
+/datum/outfit/job/inteq/cmo/empty
+	name = "IRMG Honorable Corpsman (Inteq) (Naked)"
+	belt = null
+	suit = null
+	alt_suit = null
+	suit_store = null
+	dcoat = null
+	r_pocket = null

@@ -135,51 +135,16 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/library)
 "bt" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	name = "ship engineer's locker";
-	populate = 0
-	},
-/obj/item/storage/backpack/industrial,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/folder/solgov,
-/obj/item/clipboard,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/head/welding,
-/obj/item/pen/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/clothing/glasses/meson/prescription,
 /obj/machinery/light/directional/south,
+/obj/structure/closet/secure_closet/engineering_personal/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "bu" = (
-/obj/structure/closet/secure_closet/security{
-	populate = 0;
-	name = "sonnensöldners's locker";
-	anchored = 1
-	},
-/obj/item/clothing/head/solgov/sonnensoldner,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/gloves/combat,
-/obj/item/radio/headset/solgov/alt,
-/obj/item/storage/backpack,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/outline/red,
+/obj/structure/closet/secure_closet/security/solgov,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -291,29 +256,12 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "cI" = (
-/obj/structure/closet/secure_closet/security{
-	populate = 0;
-	name = "sonnensöldners's locker";
-	anchored = 1
-	},
-/obj/item/clothing/head/solgov/sonnensoldner,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/gloves/combat,
-/obj/item/radio/headset/solgov/alt,
-/obj/item/storage/backpack,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/outline/red,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/structure/closet/secure_closet/security/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "cL" = (
@@ -1533,9 +1481,7 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
-	dir = 2
-	},
+/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "ks" = (
@@ -1719,7 +1665,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/turretid/lethal{
-	pixel_y = 0;
 	pixel_x = -26
 	},
 /turf/open/floor/plasteel/stairs/wood{
@@ -2531,9 +2476,7 @@
 	name = "boxcutter"
 	},
 /obj/item/storage/box/shipping,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
-	dir = 2
-	},
+/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
 /obj/structure/sign/poster/solgov/random{
 	pixel_y = 32
 	},
@@ -2635,25 +2578,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "rN" = (
-/obj/structure/closet/secure_closet/miner{
-	name = "field engineer's locker";
-	populate = 0;
-	anchored = 1
-	},
-/obj/item/pickaxe/drill/jackhammer,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
-/obj/item/storage/backpack,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
@@ -2661,11 +2585,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/clothing/glasses/meson/prescription,
-/obj/item/kitchen/knife/letter_opener,
-/obj/item/clothing/glasses/meson,
 /obj/machinery/light/directional/north,
-/obj/item/storage/bag/ore,
+/obj/structure/closet/secure_closet/miner/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "rQ" = (
@@ -2900,7 +2821,6 @@
 /area/ship/cargo)
 "sV" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 2;
 	name = "atmos waste outlet injector"
 	},
 /turf/open/floor/plating,
@@ -2981,26 +2901,6 @@
 /turf/open/floor/wood/birch,
 /area/ship/crew/dorm/dormthree)
 "tr" = (
-/obj/structure/closet/secure_closet/miner{
-	name = "field engineer's locker";
-	populate = 0;
-	anchored = 1
-	},
-/obj/item/pickaxe/drill/jackhammer,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
-/obj/item/storage/backpack,
-/obj/item/clothing/glasses/meson/prescription,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
@@ -3008,12 +2908,10 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/kitchen/knife/letter_opener,
-/obj/item/clothing/glasses/meson,
 /obj/structure/sign/poster/solgov/random{
 	pixel_y = 32
 	},
-/obj/item/storage/bag/ore,
+/obj/structure/closet/secure_closet/miner/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "ts" = (
@@ -3523,25 +3421,8 @@
 /turf/open/floor/plating,
 /area/ship/crew/dorm/dormthree)
 "wo" = (
-/obj/item/clothing/gloves/combat,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/pen/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/stamp/solgov,
-/obj/item/clothing/suit/armor/solgov_trenchcoat,
-/obj/item/storage/backpack/satchel,
-/obj/item/kitchen/knife/letter_opener,
-/obj/structure/closet/secure_closet/quartermaster{
-	populate = 0;
-	anchored = 1;
-	name = "\proper logistics deck officer's locker"
-	},
-/obj/item/clothing/suit/solgov/overcoat,
-/obj/item/clothing/head/flatcap/solgov,
-/obj/item/clothing/glasses/sunglasses,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet/quartermaster/solgov,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormthree)
 "wq" = (
@@ -3580,26 +3461,9 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "wB" = (
-/obj/structure/closet/secure_closet/security{
-	populate = 0;
-	name = "sonnensöldners's locker";
-	anchored = 1
-	},
-/obj/item/clothing/head/solgov/sonnensoldner,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/gloves/combat,
-/obj/item/radio/headset/solgov/alt,
-/obj/item/storage/backpack,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/outline/red,
+/obj/structure/closet/secure_closet/security/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "wF" = (
@@ -5772,31 +5636,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "LB" = (
-/obj/item/clothing/head/solgov/captain,
-/obj/item/clothing/suit/armor/vest/bulletproof/solgov/captain,
-/obj/item/clothing/under/solgov/formal/captain,
-/obj/item/clothing/shoes/laceup,
-/obj/item/clothing/gloves/combat,
-/obj/item/door_remote/captain,
-/obj/item/storage/belt/sabre/solgov,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov,
-/obj/item/folder/solgov/red,
-/obj/item/folder/solgov/red,
-/obj/structure/closet/secure_closet{
-	icon_state = "cap";
-	name = "\proper captain's locker";
-	req_access_txt = "20"
-	},
-/obj/item/fish_feed,
-/obj/item/pen/fountain/solgov,
-/obj/item/gun/ballistic/automatic/powered/gauss/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/ammo_box/magazine/modelh,
-/obj/item/clothing/neck/cloak/solgovcap,
+/obj/structure/closet/secure_closet/captains/solgov,
 /turf/open/floor/wood/maple,
 /area/ship/crew/dorm/dormtwo)
 "LJ" = (
@@ -6587,28 +6427,10 @@
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "RI" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	name = "ship engineer's locker";
-	populate = 0
-	},
-/obj/item/storage/backpack/industrial,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/folder/solgov,
-/obj/item/clipboard,
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/head/welding,
-/obj/item/pen/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/clothing/glasses/meson/prescription,
 /obj/item/radio/intercom/directional/south,
+/obj/structure/closet/secure_closet/engineering_personal/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "RL" = (
@@ -6785,39 +6607,16 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 2;
 	id = "sgi_holocargo2"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)
 "Td" = (
-/obj/structure/closet/secure_closet/miner{
-	name = "field engineer's locker";
-	populate = 0;
-	anchored = 1
-	},
-/obj/item/pickaxe/drill/jackhammer,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/head/hardhat/solgov,
-/obj/item/radio{
-	icon_state = "sec_radio"
-	},
-/obj/item/clothing/under/solgov/formal,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/suit/hazardvest/solgov,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
-/obj/item/storage/backpack,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/item/clothing/glasses/meson/prescription,
-/obj/item/kitchen/knife/letter_opener,
-/obj/item/clothing/glasses/meson,
-/obj/item/storage/bag/ore,
+/obj/structure/closet/secure_closet/miner/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "Tf" = (
@@ -7427,7 +7226,6 @@
 /area/ship/engineering)
 "XZ" = (
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	preferred_direction = 4;
 	port_direction = 4
 	},
@@ -7635,7 +7433,6 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 2;
 	id = "sgi_holocargo1"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
