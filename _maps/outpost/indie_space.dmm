@@ -5175,7 +5175,8 @@
 /obj/structure/table,
 /obj/effect/turf_decal/floordetail/tiled,
 /obj/machinery/fax/admin/outpost{
-	pixel_y = 5
+	pixel_y = 5;
+	visible_to_network = 1
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/security)
@@ -14395,7 +14396,7 @@ Rg
 Kx
 Kx
 Ml
-Ki
+um
 aw
 zr
 Kx
