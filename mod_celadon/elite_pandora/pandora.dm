@@ -235,21 +235,47 @@
 	else
 		return stat
 
-/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/conjure_hostiles(switchdir)
+/mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/conjure_hostiles(switchdirs)
+	var/carboncount = 0
 	if(stat != DEAD)
-		switch(switchdir)
-			if(1)
-				conjure_hostile(NORTH)
-				conjure_hostile(SOUTH)
-				conjure_hostile(WEST)
-				conjure_hostile(EAST)
-				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 20 SECONDS)
-			if(2)
-				conjure_hostile(NORTHEAST)
-				conjure_hostile(NORTHWEST)
-				conjure_hostile(SOUTHEAST)
-				conjure_hostile(SOUTHWEST)
-				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 20 SECONDS)
+		for(var/mob/living/carbon/C in range(10, src))
+			carboncount += 1
+		if(carboncount >= 4)
+			switch(switchdirs)
+				if(1)
+					conjure_hostile(NORTH)
+					conjure_hostile(SOUTH)
+					conjure_hostile(WEST)
+					conjure_hostile(EAST)
+					addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
+					return switchdirs
+				if(2)
+					conjure_hostile(NORTHEAST)
+					conjure_hostile(NORTHWEST)
+					conjure_hostile(SOUTHEAST)
+					conjure_hostile(SOUTHWEST)
+					addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+					return
+		else if(carboncount == 3)
+			conjure_hostile(NORTH)
+			conjure_hostile(SOUTHEAST)
+			conjure_hostile(SOUTHWEST)
+			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			return
+		else if(carboncount == 2)
+			switch(rand(1, 2))
+				if(1)
+					conjure_hostile(NORTH)
+					conjure_hostile(EAST)
+				if(2)
+					conjure_hostile(SOUTH)
+					conjure_hostile(WEST)
+			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			return
+		else
+			conjure_hostile(rand(1, 8))
+			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			return
 	else
 		return
 
