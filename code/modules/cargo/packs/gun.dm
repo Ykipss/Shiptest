@@ -91,8 +91,8 @@
 	name = "Riot Shotguns Crate"
 	desc = "For when the greytide gets out of hand. Contains 2 pump shotguns, each with a 4-round magazine."
 	cost = 3000
-	contains = list(/obj/item/gun/ballistic/shotgun/lethal,
-					/obj/item/gun/ballistic/shotgun/lethal)
+	contains = list(/obj/item/gun/ballistic/shotgun/doublebarrel,
+					/obj/item/gun/ballistic/shotgun/doublebarrel)
 	crate_name = "shotguns crate"
 
 /datum/supply_pack/gun/ballistic
