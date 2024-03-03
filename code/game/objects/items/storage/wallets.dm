@@ -37,7 +37,8 @@
 		/obj/item/reagent_containers/dropper,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/screwdriver,
-		/obj/item/stamp),
+		/obj/item/stamp,
+		/obj/item/key/ship),
 		list(/obj/item/screwdriver/power))
 
 /obj/item/storage/wallet/Exited(atom/movable/AM)
