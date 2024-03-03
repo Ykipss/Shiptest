@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(gondola_recipes, list ( \
 
 /obj/item/stack/sheet/animalhide/gondola
 	name = "gondola hide"
-	desc = "The extremely valuable product of gondola hunting."
+	desc = "Что это за херь..."
 	singular_name = "gondola hide piece"
 	icon_state = "sheet-gondola"
 	item_state = "sheet-gondola"
