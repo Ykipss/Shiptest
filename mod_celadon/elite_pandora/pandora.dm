@@ -57,6 +57,7 @@
 	var/blast_charges = 0
 	var/magicconstructs = list(/mob/living/simple_animal/hostile/construct/juggernaut/wizard/hostile,
 								/mob/living/simple_animal/hostile/construct/wraith/wizard/hostile)
+	var/conjurecount = 0
 	var/hp_high = 0
 	var/hp_mid = 0
 	var/hp_low = 0
@@ -239,30 +240,37 @@
 	var/carboncount = 0
 	if(stat != DEAD)
 		for(var/mob/living/carbon/C in range(10, src))
-			carboncount += 1
+			if(carboncount < 4)
+				carboncount += 1
 		if(carboncount >= 4)
+			conjurecount -= 4
 			switch(switchdirs)
 				if(1)
 					conjure_hostile(NORTH)
 					conjure_hostile(SOUTH)
 					conjure_hostile(WEST)
 					conjure_hostile(EAST)
-					addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
+					if(conjurecount != 0)
+						addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
 					return switchdirs
 				if(2)
 					conjure_hostile(NORTHEAST)
 					conjure_hostile(NORTHWEST)
 					conjure_hostile(SOUTHEAST)
 					conjure_hostile(SOUTHWEST)
-					addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+					if(conjurecount != 0)
+						addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
 					return
 		else if(carboncount == 3)
+			conjurecount -= 3
 			conjure_hostile(NORTH)
 			conjure_hostile(SOUTHEAST)
 			conjure_hostile(SOUTHWEST)
-			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			if(conjurecount != 0)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
 			return
 		else if(carboncount == 2)
+			conjurecount -= 2
 			switch(rand(1, 2))
 				if(1)
 					conjure_hostile(NORTH)
@@ -270,11 +278,14 @@
 				if(2)
 					conjure_hostile(SOUTH)
 					conjure_hostile(WEST)
-			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			if(conjurecount != 0)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
 			return
 		else
 			conjure_hostile(rand(1, 8))
-			addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 25 SECONDS)
+			conjurecount -= 1
+			if(conjurecount != 0)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 25 SECONDS)
 			return
 	else
 		return
@@ -321,6 +332,7 @@
 		reinforce()
 		addtimer(CALLBACK(src, PROC_REF(reinforce_end)), 55 SECONDS)
 		blast_charges += 20
+		conjurecount = 8
 		addtimer(CALLBACK(src, PROC_REF(blast_spam)), 1 SECONDS)
 		addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 20 SECONDS)
 		speed = 2.5
