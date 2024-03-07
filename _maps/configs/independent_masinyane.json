@@ -26,5 +26,6 @@
 			"outfit": "/datum/outfit/job/independent/assistant/fancy",
 			"slots": 1
 		}
-	}
+	},
+	"enabled": true
 }
