@@ -33,7 +33,7 @@
 	name = "ammo box (.308)"
 	icon = 'icons/obj/ammo_celadon.dmi'
 	icon_state = "win308new"
-	ammo_type = /obj/item/ammo_casing/win308
+	ammo_type = /obj/item/ammo_casing/a308
 	max_ammo = 30
 
 /obj/item/ammo_box/a308/surplus
