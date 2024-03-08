@@ -37,7 +37,7 @@
 /obj/item/ammo_casing/shotgun/bof
 	name = "fauna-hunting buckshot shell"
 	desc = "An anti-fauna buckshot shell for exotic hunting."
-	icon = 'mod_celadon/antifauna_bullets/bof_bullets.dmi'
+	icon = 'mod_celadon/updates/SlightPvEOverhaul/antifauna_bullets/bof_bullets.dmi'
 	icon_state = "bof"
 	pellets = 5
 	variance = 20

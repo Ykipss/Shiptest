@@ -92,7 +92,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	desc = "An odd, pulsing tumor sticking out of the ground.  You feel compelled to reach out and touch it..."
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	resistance_flags = INDESTRUCTIBLE
-	icon = 'mod_celadon/megafauna_tumor/tumor.dmi'
+	icon = 'mod_celadon/updates/SlightPvEOverhaul/megafauna_tumor/tumor.dmi'
 	icon_state = "tumor"
 	pixel_x = -16
 	base_pixel_x = -16
@@ -244,11 +244,11 @@ While using this makes the system rely on OnFire, it still gives options for tim
 		switch(gem.type)
 			if(/obj/item/gem/phoron)
 				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/hierophant)
-				mfauna = "hierophant_"
+//				mfauna = "hierophant_"
 //				icon_state = "hierophant_tumor_passive"
 //				flick("hierophant_tumor_rise", src)
 				playsound(loc,'sound/magic/blind.ogg', 150, 0, 50, TRUE, TRUE)
-				desc = "[desc] Around it appears to be glowing purple squares."
+				desc = "[desc] Around it appears to be glowing purple shapes."
 				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], purple glowing shapes appears around [src].</span>")
 			if(/obj/item/gem/bloodstone)
 				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/bubblegum)
@@ -268,7 +268,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], a small metal spikes starts to rise around it.</span>")
 			if(/obj/item/gem/amber)
 				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/dragon)
-				mfauna = "dragon_"
+//				mfauna = "dragon_"
 //				icon_state = "dragon_tumor_passive"
 //				flick("dragon_tumor_rise", src)
 				playsound(loc,'sound/creatures/legion_death_far.ogg', 50, 0, 50, TRUE, TRUE)
@@ -276,7 +276,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], a distant growl comes from within.</span>")
 			if(/obj/item/gem/void)
 				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/demonic_frost_miner)
-				mfauna = "dfminer_"
+//				mfauna = "dfminer_"
 //				icon_state = "demonfrostminer_tumor_passive"
 //				flick("demonfrostminer_tumor_rise", src)
 				playsound(loc,'sound/creatures/narsie_rises.ogg', 50, 0, 50, TRUE, TRUE)
