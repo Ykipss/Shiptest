@@ -1212,8 +1212,8 @@
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/pistol/APS,
 /obj/machinery/light/small/directional/south,
-/obj/item/gun/energy/pulse/pistol/m1911{
-	pixel_y = 2
+/obj/item/gun/ballistic/automatic/pistol/candor{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
