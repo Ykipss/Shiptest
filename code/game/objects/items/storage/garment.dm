@@ -84,7 +84,6 @@
 	new /obj/item/clothing/neck/cloak/solgovcap(src)
 
 /obj/item/storage/bag/garment/inteq/vanguard/PopulateContents()
-	new /obj/item/clothing/mask/gas/sechailer/inteq(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/inteq(src)
 	new /obj/item/clothing/gloves/tackler/combat/insulated(src)
 	new /obj/item/clothing/head/beret/sec/hos/inteq(src)

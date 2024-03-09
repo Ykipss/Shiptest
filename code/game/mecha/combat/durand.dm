@@ -14,7 +14,7 @@
 	var/obj/durand_shield/shield
 
 
-/obj/mecha/combat/durand/cmm
+/obj/mecha/combat/durand/clip
 	desc = "Устаревший боевой экзоскелет, позаимствованный с заброшенных объектов Nanotrasen, теперь поставляется подразделению CMM-BARD по борьбе с ксенофауной."
 	name = "\improper Paladin"
 	icon_state = "clipdurand"
