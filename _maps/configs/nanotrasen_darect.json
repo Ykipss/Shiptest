@@ -13,7 +13,7 @@
 
 	],
 	"map_short_name": "Darect-class",
-	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_darect.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_darect.dmm",
 	"limit": 2,
 	"job_slots": {
 		"Капитан": {
