@@ -17,8 +17,8 @@
 /obj/mecha/combat/durand/cmm
 	desc = "Устаревший боевой экзоскелет, позаимствованный с заброшенных объектов Nanotrasen, теперь поставляется подразделению CMM-BARD по борьбе с ксенофауной."
 	name = "\improper Paladin"
-	icon_state = "cmmdurand"
-	wreckage = /obj/structure/mecha_wreckage/durand/cmm
+	icon_state = "clipdurand"
+	wreckage = /obj/structure/mecha_wreckage/durand/clip
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
 
 	//TODO: Custom melee backlash shield with no projectile protection

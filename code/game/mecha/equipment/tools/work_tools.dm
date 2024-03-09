@@ -567,11 +567,11 @@
 	desc = "Изготовленный на заказ легкий навесной комплект CMM для автономного силового погрузчика 'Рипли' MK-I, позволяющий преобразовать его в мобильную и вместительную конструкцию Mk-IV. Этот набор нельзя снять после его применения."
 	icon_state = "cmmupgrade"
 	source_mech = list(/obj/mecha/working/ripley, /obj/mecha/working/ripley/mining)
-	result_mech = /obj/mecha/working/ripley/cmm
+	result_mech = /obj/mecha/working/ripley/clip
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/paladin
 	name = "CMM Paladin Conversion Kit"
 	desc = "Изготовленный на заказ комплект для переоборудования боевого экзоскелета Дюранда в специализированный экзоскелет Паладина против ксенофауны."
 	icon_state = "cmmupgrade"
 	source_mech = list(/obj/mecha/combat/durand)
-	result_mech = /obj/mecha/combat/durand/cmm
+	result_mech = /obj/mecha/combat/durand/clip

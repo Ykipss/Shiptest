@@ -259,7 +259,7 @@
 
 /obj/item/gun/ballistic/automatic/smg/cm5
 	name = "\improper CM-5"
-	desc = "The standard issue SMG of the CMM. One of the few firearm designs that were left mostly intact from the designs found on the UNSV Lichtenstein. Chambered in 9mm."
+	desc = "The standard issue SMG of CLIP. One of the few firearm designs that were left mostly intact from the designs found on the UNSV Lichtenstein. Chambered in 9mm."
 	icon_state = "cm5"
 	item_state = "cm5"
 	mag_type = /obj/item/ammo_box/magazine/smgm9mm
@@ -280,6 +280,22 @@
 	fire_sound = 'sound/weapons/gun/rifle/shot.ogg'
 	icon_state = "aks74u"
 	item_state = "aks74u"
+/obj/item/gun/ballistic/automatic/smg/cm5/compact
+	name = "\improper CM-5c"
+	desc = "The compact conversion of the CM-5. While not exactly restricted, it is looked down upon due to CLIP's doctrine on medium-longrange combat, however it excels at close range and is very lightweight. You feel like this gun is mildly unfinished. Chambered in 9mm."
+	w_class = WEIGHT_CLASS_NORMAL
+	spread = 25
+	spread_unwielded = 40
+
+	recoil = 1
+	recoil_unwielded = 2
+	wield_delay = 0.2 SECONDS
+	wield_slowdown = 0.15
+
+/obj/item/gun/ballistic/automatic/smg/cm5/compact/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.8 SECONDS)
+
 /obj/item/gun/ballistic/automatic/smg/skm_carbine
 	name = "\improper SKM-24v"
 	desc = "The SKM-24v was a carbine modification of the SKM-24 during the Frontiersmen War. This, however, is just a shoddy imitation of that carbine, effectively an SKM-24 with a sawed down barrel and a folding wire stock. Can be fired with the stock folded, though accuracy suffers. Chambered in 4.6x30mm."
