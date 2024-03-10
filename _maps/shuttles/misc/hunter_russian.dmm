@@ -109,10 +109,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
-"w" = (
-/obj/machinery/fugitive_capture,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle/hunter)
 "x" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
@@ -462,7 +458,7 @@ a
 b
 b
 s
-w
+q
 A
 C
 E

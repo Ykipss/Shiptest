@@ -945,8 +945,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "fb" = (
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq,
 /obj/item/radio/headset/inteq,
 /obj/item/radio/headset/inteq,
@@ -4195,7 +4193,6 @@
 /obj/item/clothing/head/beret/sec/hos/inteq,
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/storage/backpack/satchel/leather,
 /obj/item/storage/backpack/messenger/inteq,
@@ -4207,6 +4204,7 @@
 /obj/item/shield/riot/tele,
 /obj/item/clothing/accessory/holster,
 /obj/item/ammo_box/magazine/m45,
+/obj/item/clothing/mask/gas/sechailer/balaclava/inteq,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "zM" = (
@@ -5637,7 +5635,6 @@
 /obj/item/clothing/under/syndicate/inteq/skirt,
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
-/obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/gloves/tackler/combat/insulated,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
@@ -6989,11 +6986,6 @@
 /obj/item/radio/headset/inteq,
 /obj/item/radio/headset/inteq,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
-/obj/item/clothing/mask/gas/sechailer/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
