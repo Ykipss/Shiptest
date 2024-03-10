@@ -158,14 +158,3 @@
 	icon = 'icons/obj/wallcloset.dmi'
 	icon_state = "generic_wall"
 	icon_door = "generic_wall"
-
-// Some preset stuff
-
-/obj/structure/closet/secure_closet/captains/vanguard/wall
-	wall_mounted = TRUE
-	anchored = TRUE
-	density = TRUE
-	can_be_unanchored = FALSE
-	icon = 'icons/obj/wallcloset.dmi'
-	icon_state = "solgov_wall"
-	icon_door = "solgov_wall"
