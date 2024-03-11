@@ -1424,10 +1424,6 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
-/obj/item/clothing/mask/gas/sechailer/minutemen,
-/obj/item/clothing/mask/gas/sechailer/minutemen,
-/obj/item/clothing/mask/gas/sechailer/minutemen,
-/obj/item/clothing/mask/gas/sechailer/minutemen,
 /obj/effect/turf_decal/corner/opaque/red/border{
 	dir = 10
 	},
@@ -1445,6 +1441,9 @@
 /obj/item/storage/belt/military,
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Co" = (
