@@ -241,6 +241,7 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	"Syndicate" = list(
 		"SEV",
 		"SSV",
+		"XSV",
 	),
 	"New Gorlex Republic" = list(
 		"NGRV",
@@ -261,7 +262,6 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 		"SV",
 		"IMV",
 		"ISV",
-		"XSV",
 	),
 	"Inteq Risk Management Group" = list(
 		"IRMV",
