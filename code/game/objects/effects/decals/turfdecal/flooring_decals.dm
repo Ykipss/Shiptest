@@ -705,6 +705,10 @@ TURF_DECAL_COLOR_HELPER(transparent/inteqbrown, "#4b2a18", 140)
 	name = "techfloor corner"
 	icon_state = "techfloororange_corners"
 
+/obj/effect/turf_decal/techfloor/line
+	name = "techfloor lines"
+	icon_state = "techfloor_lines"
+
 /obj/effect/turf_decal/techfloor/hole
 	name = "hole left"
 	icon_state = "techfloor_hole_left"
