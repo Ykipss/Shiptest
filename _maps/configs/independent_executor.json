@@ -3,7 +3,7 @@
 	"map_name": "Executor-class Mercenary Vessel",
 	"map_short_name": "Executor-class",
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_executor.dmm",
-	"description": "Судно класса Executor, на котором чаще всего работают наемники и легальные охотники за головами.",
+	"description": "Судно класса Executor, на котором чаще всего работают наемники и легальные охотники за головами. В щитспавне по причине: Требуется капитальный маперский ремонт.",
 	"tags": [
 		"Combat",
 		"Generalist"
@@ -30,5 +30,5 @@
 			"slots": 1
 		}
 	},
-	"enabled": true
+	"enabled": false
 }
