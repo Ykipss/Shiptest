@@ -253,6 +253,7 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 		"SUNS",
 	),
 	"SolGov" = list(
+		"SCSV",
 		"SGSV",
 		"BSFSV",
 	),
