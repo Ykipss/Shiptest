@@ -247,7 +247,35 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew)
 "bH" = (
+<<<<<<< HEAD
 /obj/structure/closet/secure_closet/captains/solgov,
+=======
+/obj/structure/closet/secure_closet/captains{
+	populate = 0;
+	anchored = 1
+	},
+/obj/item/clothing/under/solgov/formal/captain,
+/obj/item/clothing/shoes/laceup,
+/obj/item/clothing/head/solgov/captain,
+/obj/item/folder/solgov,
+/obj/item/folder/solgov,
+/obj/item/folder/documents/solgov,
+/obj/item/folder/documents/solgov,
+/obj/item/clothing/under/solgov/formal,
+/obj/item/clothing/gloves/combat,
+/obj/item/storage/backpack/captain,
+/obj/item/door_remote/captain,
+/obj/item/storage/belt/sabre/solgov,
+/obj/item/clothing/under/solgov/dress,
+/obj/item/clothing/suit/armor/vest/bulletproof/solgov/captain,
+/obj/item/stamp/solgov,
+/obj/item/clothing/suit/armor/solgov_trenchcoat,
+/obj/item/spacecash/bundle/loadsamoney,
+/obj/item/gun/ballistic/automatic/powered/gauss/modelh,
+/obj/item/ammo_box/magazine/modelh,
+/obj/item/ammo_box/magazine/modelh,
+/obj/item/clothing/neck/cloak/solgovcap,
+>>>>>>> 544135c5de (TGUI Folders and Clipboards + Biscuit Cards (#2760))
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
 "cg" = (
