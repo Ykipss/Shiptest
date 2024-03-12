@@ -121,6 +121,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/fore)
 "bJ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/fax/inteq,
+/obj/machinery/light/directional/north,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
