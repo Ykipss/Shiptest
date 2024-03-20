@@ -3530,4 +3530,5 @@
 #include "mod_celadon\updates\SlightPvEOverhaul\antifauna_bullets\baneoffauna.dm"
 #include "mod_celadon\updates\SlightPvEOverhaul\elite_pandora\pandora.dm"
 #include "mod_celadon\updates\SlightPvEOverhaul\elite_pandora\wizardconstructs.dm"
+#include "mod_celadon\code\modules\melee\skimitar.dm"
 // END_INCLUDE
