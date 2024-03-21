@@ -98,21 +98,6 @@
 	desc = "A neckpiece for a maid costume, it smells faintly of disappointment."
 	icon_state = "maid_neck"
 
-/obj/item/clothing/neck/tie/enby
-	name = "nonbinary tie"
-	desc = "A neosilk clip-on tie. This one is in the colors of the nonbinary flag."
-	icon_state = "nonbinary"
-
-/obj/item/clothing/neck/tie/bi
-	name = "bisexual tie"
-	desc = "A neosilk clip-on tie. This one is in the colors of the bisexual flag."
-	icon_state = "bisexual"
-
-/obj/item/clothing/neck/tie/intersex
-	name = "intersex tie"
-	desc = "A neosilk clip-on tie. This one is in the colors of the intersex flag."
-	icon_state = "intersex"
-
 /obj/item/clothing/neck/tie/gay
 	name = "gay tie"
 	desc = "A neosilk clip-on tie. This one is in the colors of the gay flag."
