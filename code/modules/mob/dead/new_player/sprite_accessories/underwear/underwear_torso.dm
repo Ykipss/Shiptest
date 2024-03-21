@@ -116,35 +116,3 @@
 	name = "T-Shirt (RILENA)"
 	icon_state = "rilena"
 	use_static = TRUE
-
-// Pride shirts
-
-/datum/sprite_accessory/undershirt/tank_les
-	name = "Tank Top (Pride)"
-	icon_state = "pride"
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/tank_les
-	name = "Tank Top (Lesbian)"
-	icon_state = "les"
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/tank_bi
-	name = "Tank Top (Bi)" //we gotta study this
-	icon_state = "bi"
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/tank_trans
-	name = "Tank Top (Trans)"
-	icon_state = "trans"
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/tank_enby
-	name = "Tank Top (Nonbinary)"
-	icon_state = "enby"
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/tank_ace
-	name = "Tank Top (Asexual)"
-	icon_state = "ace"
-	use_static = TRUE

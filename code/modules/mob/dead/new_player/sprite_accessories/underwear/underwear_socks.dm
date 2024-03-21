@@ -95,30 +95,3 @@
 /datum/sprite_accessory/socks/pantyhose_waist
 	name = "High Pantyhose"
 	icon_state = "pantyhose"
-
-//Pride Socks todo:finish the damn sprites and digi variants. ugh
-
-/datum/sprite_accessory/socks/lesbian
-	name = "Thigh-High (Lesbian)"
-	icon_state = "thigh_les"
-	use_static = TRUE
-
-/datum/sprite_accessory/socks/bisexual
-	name = "Thigh-High (Bi)"
-	icon_state = "thigh_bi" //:wegottastudythis:
-	use_static = TRUE
-
-/datum/sprite_accessory/socks/transgender
-	name = "Thigh-High (Trans)"
-	icon_state = "thigh_trans"
-	use_static = TRUE
-
-/datum/sprite_accessory/socks/nonbinary
-	name = "Thigh-High (Nonbinary)"
-	icon_state = "thigh_enby"
-	use_static = TRUE
-
-/datum/sprite_accessory/socks/asexual
-	name = "Thigh-High (Asexual)"
-	icon_state = "thigh_ace"
-	use_static = TRUE
