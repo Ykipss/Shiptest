@@ -38,7 +38,6 @@
 	dir = 4
 	},
 /obj/item/clothing/under/rank/civilian/clown/orange,
-/obj/item/clothing/neck/tie/lesbian,
 /obj/item/bikehorn,
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/plasteel/dark,
@@ -191,7 +190,6 @@
 	},
 /obj/item/clothing/mask/gas/mime,
 /obj/item/storage/backpack/mime,
-/obj/item/clothing/neck/tie/lesbian,
 /obj/item/clothing/under/rank/civilian/mime,
 /turf/open/floor/plasteel/dark,
 /area/ruin/jungle/roommates/shack)
