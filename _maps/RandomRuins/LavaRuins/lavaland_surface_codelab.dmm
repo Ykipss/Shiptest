@@ -2528,7 +2528,6 @@
 /area/ruin/unpowered/codelab/storage)
 "DH" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/neck/tie/rainbow,
 /obj/item/spacecash/bundle/c20,
 /turf/open/floor/wood,
 /area/ruin/unpowered/codelab/laboratory)
@@ -2692,7 +2691,6 @@
 /area/ruin/unpowered/codelab/laboratory)
 "Fz" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/neck/tie/trans,
 /obj/item/spacecash/bundle/c100,
 /turf/open/floor/wood,
 /area/ruin/unpowered/codelab/laboratory)
