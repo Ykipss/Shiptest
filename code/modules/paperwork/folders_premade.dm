@@ -18,6 +18,10 @@
 	desc = "A blue folder with a SolGov seal."
 	icon_state = "folder_solgov"
 
+/obj/item/folder/solgov/red
+	desc = "A red folder with a SolGov seal."
+	icon_state = "folder_solgovred"
+
 /obj/item/folder/terragov
 	desc = "A green folder with a Terran Regency seal."
 	icon_state = "folder_terragov"
