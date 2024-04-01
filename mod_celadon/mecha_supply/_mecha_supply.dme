@@ -1,0 +1,3 @@
+#include "_mecha_supply.dm"
+
+#include "mod_celadon\mecha_supply\_mecha_supply.dme"

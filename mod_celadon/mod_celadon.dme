@@ -1,7 +1,7 @@
 #include "_modpack.dm"
 #include "_modpacks.dm"
 // #include "example/_example.dme"
-
+#include "mod_celadon\mecha_supply\_mecha_supply.dme"
 // Features
 // #include "fullscreen/_fullscreen.dme"
 // NOT USED
