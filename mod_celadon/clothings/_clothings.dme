@@ -1,0 +1,4 @@
+#include "_clothings.dm"
+
+#include "code\hats.dm"
+#include "code\suits.dm"
