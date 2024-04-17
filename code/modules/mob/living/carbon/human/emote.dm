@@ -1,7 +1,7 @@
 /datum/emote/living/carbon/human
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 
-/datum/emote/living/carbon/human/cry
+/* /datum/emote/living/carbon/human/cry			// Celadon Mod => mod_celadon/_components/code/emotes.dm
 	key = "cry"
 	key_third_person = "cries"
 	message = "cries."
@@ -22,7 +22,7 @@
 	key = "grumble"
 	key_third_person = "grumbles"
 	message = "grumbles!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_AUDIBLE */
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
@@ -31,7 +31,7 @@
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/living/carbon/human/hug
+/* /datum/emote/living/carbon/human/hug			// Celadon Mod => mod_celadon/_components/code/emotes.dm
 	key = "hug"
 	key_third_person = "hugs"
 	message = "hugs themself."
@@ -50,7 +50,7 @@
 	key_third_person = "screams"
 	message = "screams!"
 	emote_type = EMOTE_AUDIBLE
-	vary = TRUE
+	vary = TRUE */
 
 /datum/emote/living/carbon/human/scream/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -70,12 +70,12 @@
 	else if(islizard(H))
 		return pick('sound/voice/lizard/lizard_scream_1.ogg', 'sound/voice/lizard/lizard_scream_2.ogg', 'sound/voice/lizard/lizard_scream_3.ogg', 'sound/voice/lizard/lizard_scream_4.ogg')
 
-/datum/emote/living/carbon/human/hiss //lizard
+/* /datum/emote/living/carbon/human/hiss //lizard			// Celadon Mod => mod_celadon/_components/code/emotes.dm
 	key = "hiss"
 	key_third_person = "hisses"
 	message = "hisses!"
 	emote_type = EMOTE_AUDIBLE
-	vary = TRUE
+	vary = TRUE */
 
 /datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -122,7 +122,7 @@
 	if(islizard(user))
 		return 'sound/voice/lizard/weh.ogg'
 
-/datum/emote/living/carbon/human/pale
+/* /datum/emote/living/carbon/human/pale			// Celadon Mod => mod_celadon/_components/code/emotes.dm
 	key = "pale"
 	message = "goes pale for a second."
 
@@ -147,7 +147,7 @@
 /datum/emote/living/carbon/human/wag
 	key = "wag"
 	key_third_person = "wags"
-	message = "wags their tail."
+	message = "wags their tail." */
 
 /datum/emote/living/carbon/human/wag/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
