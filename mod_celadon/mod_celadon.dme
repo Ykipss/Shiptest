@@ -23,6 +23,8 @@
 #include "elysium_stuff/_elysium_stuff.dme"
 #include "celadon_old_syndicate_rigs/_celadon_old_syndicate_rigs.dme"
 
+// --- POWER --- //
+#include "MK17_reactor/_MK17_reactor.dme"
 
 // --- MISC --- //
 #include "balance/_balance.dme"
