@@ -54,7 +54,6 @@
 	},
 /obj/structure/cable,
 /obj/structure/closet/wall{
-	dir = 1;
 	name = "Tools";
 	pixel_y = -30
 	},
@@ -220,6 +219,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
+"BG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/bag/ore,
+/obj/structure/rack,
+/obj/item/shovel,
+/obj/item/pickaxe/drill,
+/turf/open/floor/plasteel,
+/area/ship/bridge)
 "CA" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/door/window/brigdoor/northright,
@@ -314,11 +321,8 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/rack,
-/obj/item/pickaxe/drill,
-/obj/item/shovel,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/item/storage/bag/ore,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "UL" = (
@@ -477,7 +481,7 @@ Wp
 So
 ry
 zu
-bd
+BG
 pz
 "}
 (7,1,1) = {"

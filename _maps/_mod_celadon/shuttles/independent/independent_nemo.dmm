@@ -51,6 +51,10 @@
 /obj/effect/turf_decal/kfp_small/left{
 	dir = 8
 	},
+/obj/item/book/manual/wiki/engineering,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "aF" = (
@@ -204,7 +208,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/science)
 "cj" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/blue/corpo/right,
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "cq" = (
@@ -547,7 +551,9 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/north,
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/fishfingers,
+/obj/item/reagent_containers/food/snacks/fishfingers{
+	pixel_y = 1
+	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -1392,10 +1398,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/science)
 "rO" = (
-/obj/structure/chair/comfy/black{
+/obj/machinery/airalarm/directional/east,
+/obj/structure/chair/comfy/beige{
 	dir = 8
 	},
-/obj/machinery/airalarm/directional/east,
 /turf/open/floor/carpet/black,
 /area/ship/crew/library)
 "se" = (
@@ -1421,11 +1427,11 @@
 /turf/open/floor/wood,
 /area/ship/crew/library)
 "tQ" = (
-/obj/structure/chair/sofa/left,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/east,
+/obj/structure/chair/sofa/blue/corpo/left,
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "tX" = (
@@ -1525,6 +1531,18 @@
 "vv" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood,
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "vB" = (
@@ -1757,7 +1775,6 @@
 /obj/item/camera,
 /obj/item/gps,
 /obj/item/binoculars,
-/obj/item/radio/off,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -1891,7 +1908,7 @@
 /obj/item/kinetic_crusher,
 /obj/item/kinetic_crusher,
 /obj/structure/closet/wall/orange{
-	dir = 4;
+	dir = 8;
 	pixel_x = -32
 	},
 /obj/item/t_scanner/adv_mining_scanner/lesser,
@@ -2170,13 +2187,12 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/wall{
-	dir = 4;
+	dir = 8;
 	icon_state = "sec_wall";
 	name = "hunting locker";
-	pixel_x = -32;
+	pixel_x = -30;
 	req_access = list(30)
 	},
-/obj/item/firing_pin,
 /obj/item/kitchen/knife/hunting,
 /obj/item/gun/ballistic/shotgun/doublebarrel/beacon,
 /obj/item/ammo_box/a4570,
@@ -2201,16 +2217,12 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "Gx" = (
-/obj/structure/closet/wall{
-	dir = 8;
-	pixel_x = 32
-	},
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
+	},
+/obj/structure/closet/wall{
+	dir = 4;
+	pixel_x = 30
 	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
@@ -2241,9 +2253,12 @@
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "GX" = (
-/obj/item/book/manual/wiki/engineering,
 /obj/effect/turf_decal/number/five{
 	dir = 8
+	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
@@ -2564,14 +2579,13 @@
 	dir = 1
 	},
 /obj/structure/closet/wall/orange{
-	dir = 4;
+	dir = 8;
 	pixel_x = -30
 	},
 /obj/item/clothing/head/hardhat/weldhat,
 /obj/item/pipe_dispenser,
 /obj/item/construction/rcd/loaded,
 /obj/item/clothing/suit/hooded/wintercoat/engineering,
-/obj/item/radio/off,
 /obj/item/holosign_creator/atmos,
 /obj/item/multitool,
 /obj/item/clothing/gloves/color/yellow,
@@ -2638,7 +2652,6 @@
 /obj/item/card/id/captains_spare,
 /obj/item/pen/survival,
 /obj/item/areaeditor/shuttle,
-/obj/item/radio/off,
 /obj/structure/closet/secure_closet{
 	icon_state = "rd";
 	name = "research director's locker";
@@ -2927,7 +2940,7 @@
 	dir = 8
 	},
 /obj/structure/closet/wall/white/med{
-	dir = 4;
+	dir = 8;
 	pixel_x = -30
 	},
 /obj/item/defibrillator/loaded,
@@ -2962,7 +2975,7 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "Rh" = (
-/obj/structure/chair/comfy/black{
+/obj/structure/chair/comfy/beige{
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
@@ -3010,12 +3023,11 @@
 /obj/item/pipe_dispenser,
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer5,
-/obj/item/radio/off,
 /obj/item/storage/belt/utility/atmostech,
 /obj/item/holosign_creator/atmos,
 /obj/item/analyzer,
 /obj/structure/closet/wall/orange{
-	dir = 4;
+	dir = 8;
 	pixel_x = -32
 	},
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos,
@@ -3458,9 +3470,6 @@
 /turf/open/floor/circuit/green,
 /area/ship/crew/dorm)
 "Yb" = (
-/obj/structure/chair/comfy/brown{
-	dir = 4
-	},
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -3498,10 +3507,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/atmospherics)
-"YE" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/carpet/black,
-/area/ship/crew/library)
 "YO" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
@@ -4106,7 +4111,7 @@ jg
 BN
 kW
 yA
-YE
+Jp
 uK
 Cv
 tb
@@ -4127,7 +4132,7 @@ Ax
 pR
 tf
 FG
-YE
+Jp
 Xi
 Cv
 tb

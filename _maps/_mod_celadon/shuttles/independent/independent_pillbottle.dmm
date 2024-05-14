@@ -561,6 +561,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light/small/directional/east,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "hN" = (
@@ -3145,8 +3146,11 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/reagent_dispensers/watertank,
 /obj/item/radio/intercom/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ZN" = (

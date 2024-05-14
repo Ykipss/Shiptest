@@ -68,6 +68,9 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "eO" = (
@@ -113,6 +116,9 @@
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -218,6 +224,10 @@
 	pixel_y = 23
 	},
 /obj/machinery/light/small/directional/west,
+/obj/item/areaeditor/shuttle,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "nY" = (
@@ -352,6 +362,9 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "uc" = (
@@ -457,10 +470,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/tank/air{
-	piping_layer = 2
-	},
 /obj/machinery/light/small/directional/west,
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "JW" = (
@@ -524,6 +538,15 @@
 	pixel_x = 22;
 	id = "Exit"
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/wood,
+/area/ship/bridge)
+"PQ" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "QE" = (
@@ -537,11 +560,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/structure/closet/wall{
-	dir = 8;
-	pixel_x = 32
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/obj/item/areaeditor/shuttle,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "RY" = (
@@ -559,6 +581,12 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
+/area/ship/bridge)
+"SW" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
 /area/ship/bridge)
 "TW" = (
 /obj/structure/window/reinforced/spawner/west,
@@ -606,6 +634,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "XF" = (
@@ -630,15 +661,15 @@
 	icon_state = "0-4"
 	},
 /obj/structure/crate_shelf,
-/obj/structure/closet/crate/medical,
-/obj/structure/closet/crate/medical,
-/obj/structure/closet/crate/medical,
 /obj/machinery/light/small/directional/north,
 /obj/machinery/button/door{
 	pixel_x = 14;
 	pixel_y = 23;
 	id = "thruster"
 	},
+/obj/structure/closet/crate/medical,
+/obj/structure/closet/crate/medical,
+/obj/structure/closet/crate/medical,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "Yy" = (
@@ -736,7 +767,7 @@ ak
 (6,1,1) = {"
 vV
 ar
-Kl
+SW
 Ni
 Kl
 TW
@@ -746,7 +777,7 @@ ak
 (7,1,1) = {"
 vV
 qS
-Kl
+SW
 qA
 DO
 Oa
@@ -756,7 +787,7 @@ ak
 (8,1,1) = {"
 uc
 jn
-Kl
+SW
 ag
 Kl
 pe
@@ -766,7 +797,7 @@ ak
 (9,1,1) = {"
 uc
 QE
-Kl
+SW
 fB
 Kl
 li
@@ -777,7 +808,7 @@ ak
 uc
 vy
 eE
-Kl
+PQ
 Oh
 ys
 kr

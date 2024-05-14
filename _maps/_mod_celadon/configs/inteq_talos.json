@@ -1,4 +1,4 @@
-{
+	{
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Talos-class Command Clipper",
 	"prefix": "IRMV",
@@ -18,35 +18,35 @@
 	"limit": 1,
 	"job_slots": {
 		"Vanguard": {
-			"outfit": "/datum/outfit/job/inteq/captain/geared/cardacces",
+			"outfit": "/datum/outfit/job/inteq/captain/geared",
 			"officer": true,
 			"slots": 1
 		},
 		"Master At Arms": {
-			"outfit": "/datum/outfit/job/warden/inteq/cardacces",
+			"outfit": "/datum/outfit/job/inteq/warden",
 			"officer": true,
 			"slots": 1
 		},
 		"Artificer Class II": {
-			"outfit": "/datum/outfit/job/engineer/inteq/cardacces",
+			"outfit": "/datum/outfit/job/inteq/ce",
 			"officer": true,
 			"slots": 1
 		},
 		"Artificer": {
-			"outfit": "/datum/outfit/job/engineer/inteq/cardacces",
+			"outfit": "/datum/outfit/job/inteq/engineer",
 			"slots": 3
 		},
 		"Corpsman": {
-			"outfit": "/datum/outfit/job/paramedic/inteq/naked/cardacces",
+			"outfit": "/datum/outfit/job/inteq/paramedic",
 			"slots": 2
 		},
 		"Enforcer": {
-			"outfit": "/datum/outfit/job/security/inteq/naked/cardacces",
-			"slots": 1
+			"outfit": "/datum/outfit/job/inteq/security",
+			"slots": 3
 		},
 		"Recruit": {
-			"outfit": "/datum/outfit/job/assistant/inteq/cardacces",
-			"slots": 4
+			"outfit": "/datum/outfit/job/inteq/assistant",
+			"slots": 2
 		}
 	},
 	"enabled": true

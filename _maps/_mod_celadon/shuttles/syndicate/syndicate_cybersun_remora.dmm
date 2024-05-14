@@ -112,7 +112,8 @@
 /obj/structure/chair/plastic,
 /obj/machinery/light/directional/west,
 /obj/structure/closet/firecloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm)
@@ -127,7 +128,8 @@
 	dir = 4
 	},
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm)
@@ -250,7 +252,8 @@
 	pixel_y = 50
 	},
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
@@ -423,7 +426,6 @@
 /obj/structure/closet/wall{
 	name = "uniform closet";
 	icon_state = "generic_wall";
-	dir = 1;
 	pixel_y = -29;
 	icon_door = "orange_wall"
 	},
@@ -443,11 +445,6 @@
 	},
 /obj/item/storage/backpack/duffelbag/syndie,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -952,6 +949,11 @@
 	pixel_y = -23;
 	pixel_x = 10
 	},
+/obj/machinery/autolathe/hacked,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/glass/five,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "cd" = (
@@ -970,12 +972,8 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/autolathe/hacked,
 /obj/machinery/firealarm/directional/south,
-/obj/item/stack/sheet/glass/five,
-/obj/item/stack/sheet/glass/five,
-/obj/item/stack/sheet/metal/five,
-/obj/item/stack/sheet/metal/five,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "cf" = (
@@ -1182,6 +1180,9 @@
 	pixel_x = -1;
 	pixel_y = 8
 	},
+/obj/item/implant/radio{
+	pixel_x = 10
+	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "cx" = (
@@ -1360,23 +1361,20 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/atmospherics)
 "cN" = (
-/obj/structure/chair/sofa/left{
-	icon_state = "sofaend_left";
+/obj/machinery/firealarm/directional/west,
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 1
 	},
-/obj/machinery/firealarm/directional/west,
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "cO" = (
-/obj/structure/chair/sofa{
-	icon_state = "sofamiddle";
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "cP" = (
-/obj/structure/chair/sofa/right{
-	icon_state = "sofaend_right";
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -1584,7 +1582,7 @@
 "dl" = (
 /obj/structure/closet/wall/white/chem{
 	icon_state = "freezer_wall";
-	dir = 4;
+	dir = 8;
 	pixel_x = -30
 	},
 /obj/item/cartridge/chemistry,
@@ -1653,7 +1651,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
@@ -1824,7 +1823,7 @@
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
 	icon_state = "open";
-	id = bridge_window
+	id = "bridge_window"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -2502,9 +2501,6 @@
 /area/ship/bridge)
 "eU" = (
 /obj/effect/turf_decal/corner/transparent/purple/borderfull,
-/obj/machinery/computer/communications{
-	dir = 4
-	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "eV" = (
@@ -2694,14 +2690,14 @@
 	open = 0;
 	anchored = 1
 	},
-/obj/item/gun/ballistic/shotgun/bulldog/unrestricted,
-/obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
 /obj/item/gun/ballistic/automatic/pistol,
 /obj/item/gun/ballistic/automatic/pistol,
 /obj/machinery/door/window{
 	icon_state = "left";
 	dir = 8
 	},
+/obj/item/gun/ballistic/automatic/smg/m90,
+/obj/item/gun/ballistic/shotgun/bulldog,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "fk" = (
@@ -2763,6 +2759,7 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
+/obj/item/gun/ballistic/automatic/smg/m90,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "fo" = (
@@ -3103,7 +3100,7 @@
 	dir = 1
 	},
 /obj/machinery/button/door{
-	id = bridge_window;
+	id = "bridge_window";
 	name = "bridge window button";
 	pixel_x = -7;
 	pixel_y = 8
@@ -3141,7 +3138,7 @@
 	},
 /obj/machinery/light/directional/south,
 /obj/machinery/computer/med_data/syndie{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -3428,7 +3425,8 @@
 	pixel_y = 50
 	},
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -4097,7 +4095,8 @@
 	dir = 1
 	},
 /obj/structure/closet/firecloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
@@ -4106,7 +4105,7 @@
 	req_ship_access = 1;
 	req_access = list(6)
 	},
-/mob/living/carbon/monkey,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 "mG" = (
@@ -4199,7 +4198,7 @@
 	pixel_x = 4
 	},
 /obj/structure/closet/emcloset/wall{
-	dir = 8;
+	dir = 4;
 	pixel_x = 28
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -4336,7 +4335,8 @@
 	pixel_y = 50
 	},
 /obj/structure/closet/firecloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/machinery/syndicatebomb{
 	anchored = 1
@@ -4408,7 +4408,8 @@
 	pixel_y = 50
 	},
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
@@ -4463,8 +4464,8 @@
 /area/ship/engineering/electrical)
 "QF" = (
 /obj/machinery/door/window/brigdoor/westleft,
-/mob/living/carbon/monkey/angry,
 /obj/effect/decal/cleanable/blood,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 "RO" = (
@@ -4483,7 +4484,8 @@
 /obj/structure/closet/mob_capture,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/structure/closet/firecloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
@@ -4501,6 +4503,32 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
+/area/ship/hallway/central)
+"Vy" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "med_secure";
+	name = "doctor locker"
+	},
+/obj/item/clothing/under/syndicate/cybersun,
+/obj/item/clothing/head/soft/red,
+/obj/item/storage/belt/medical/webbing,
+/obj/item/holosign_creator/medical/infinite,
+/obj/item/organ/cyberimp/eyes/hud/medical,
+/obj/item/storage/bag/medical,
+/obj/item/cartridge/medical,
+/obj/item/clothing/suit/longcoat,
+/obj/item/clothing/suit/toggle/labcoat,
+/obj/item/clothing/suit/toggle/lawyer/medical,
+/obj/item/clothing/under/plasmaman/medical,
+/obj/item/clothing/head/helmet/space/plasmaman/medical,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/neck/stethoscope,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/organ/cyberimp/eyes/hud/medical,
+/obj/item/implanter/explosive,
+/obj/item/gun/ballistic/automatic/smg/m90,
+/turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/central)
 "WF" = (
 /obj/effect/turf_decal/corner/transparent/syndiered/border{
@@ -4563,8 +4591,8 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/mob/living/carbon/monkey,
 /obj/effect/decal/cleanable/blood,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 
@@ -4923,7 +4951,7 @@ dO
 eg
 ac
 eZ
-fl
+Vy
 fl
 gb
 ac

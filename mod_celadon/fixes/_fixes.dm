@@ -1,4 +1,4 @@
 /datum/modpack/example
 	name = "Fixes"
-	desc = "Различные фиксы багулин"
-	author = "RalseiDreemuurr"
+	desc = "Содержит различные фиксы багов. Фикс удушья при пустом баллоне." // TODO сделать ПР для офов
+	author = "RalseiDreemuurr, Mirag1993,Корольный крыс"

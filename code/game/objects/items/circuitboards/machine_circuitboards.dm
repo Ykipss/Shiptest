@@ -389,6 +389,17 @@
 	name = "Freezer (Machine Board)"
 	build_path = PATH_FREEZER
 
+/obj/item/circuitboard/machine/ship_gravity
+	name = "Gravity Generator (Machine Board)"
+	icon_state = "engineering"
+	build_path = /obj/machinery/power/ship_gravity
+	req_components = list(
+		/obj/item/stock_parts/capacitor = 5,
+		/obj/item/stack/sheet/bluespace_crystal = 1,
+		/obj/item/stock_parts/micro_laser = 4
+		)
+	needs_anchored = FALSE
+
 #undef PATH_FREEZER
 #undef PATH_HEATER
 
@@ -644,6 +655,9 @@
 		/obj/machinery/vending/sovietsoda = "BODA",
 		/obj/machinery/vending/security = "SecTech",
 		/obj/machinery/vending/modularpc = "Deluxe Silicate Selections",
+// [CELADON-ADD] - CELADON_BALANCE - Универсальная плата вендоров
+		/obj/machinery/vending/mining_equipment = "Mining Equipment",
+// [/CELADON-ADD]
 		/obj/machinery/vending/custom = "Custom Vendor")
 
 /obj/item/circuitboard/machine/vendor/attackby(obj/item/I, mob/user, params)

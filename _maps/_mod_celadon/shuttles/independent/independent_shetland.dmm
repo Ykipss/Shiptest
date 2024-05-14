@@ -397,6 +397,9 @@
 /obj/effect/turf_decal/miskilamo_big/one{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "eV" = (
@@ -2364,9 +2367,7 @@
 /obj/effect/turf_decal/corner/opaque/neutral/three_quarters{
 	dir = 4
 	},
-/obj/machinery/computer/communications{
-	dir = 8
-	},
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "xs" = (
@@ -3366,6 +3367,9 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "HV" = (
@@ -4304,6 +4308,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
+"QJ" = (
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "QP" = (
 /obj/structure/cable{
 	icon_state = "4-10"
@@ -4449,9 +4461,6 @@
 /turf/open/floor/plating,
 /area/ship/hallway/fore)
 "Sn" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
 /obj/effect/landmark/start/head_of_personnel,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -5549,7 +5558,7 @@ tj
 uZ
 WU
 Qb
-UH
+QJ
 eI
 oD
 LC

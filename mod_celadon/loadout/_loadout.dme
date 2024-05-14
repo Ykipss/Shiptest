@@ -1,3 +1,6 @@
+#ifndef MODPACK_CELADON_LOADOUT
+#define MODPACK_CELADON_LOADOUT
+
 #include "_loadout.dm"
 
 #include "code/accessories.dm"
@@ -8,5 +11,7 @@
 #include "code/hat.dm"
 #include "code/suit.dm"
 #include "code/uniform.dm"
+#include "code/gloves.dm"
+#include "code/glasses.dm"
 
-
+#endif

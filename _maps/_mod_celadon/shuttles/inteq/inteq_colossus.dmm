@@ -190,10 +190,9 @@
 /obj/item/clothing/head/soft/inteq,
 /obj/item/clothing/head/soft/inteq,
 /obj/item/clothing/head/soft/inteq,
-/obj/structure/closet/wall{
+/obj/structure/closet/wall/directional/north{
 	icon_door = "orange_wall";
-	name = "uniform closet";
-	pixel_y = 28
+	name = "uniform closet"
 	},
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/grimy,
@@ -1427,7 +1426,8 @@
 /area/ship/crew/cryo)
 "qJ" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 9
+	dir = 9;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -1635,7 +1635,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "sz" = (
@@ -1775,10 +1774,8 @@
 /obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/oxygen,
-/obj/structure/closet/wall{
-	dir = 8;
-	icon_state = "emergency_wall";
-	pixel_x = 28
+/obj/structure/closet/wall/directional/east{
+	icon_state = "emergency_wall"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/port)
@@ -1791,7 +1788,6 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "tK" = (
@@ -1845,7 +1841,6 @@
 	dir = 4;
 	name = "Helm"
 	},
-/obj/effect/landmark/start/head_of_security,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "um" = (
@@ -2024,7 +2019,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
-/obj/effect/landmark/start/warden,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "vH" = (
@@ -2134,7 +2128,8 @@
 /area/ship/hallway/central)
 "xh" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 5
+	dir = 5;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -2294,10 +2289,9 @@
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
-/obj/structure/closet/wall{
+/obj/structure/closet/wall/directional/north{
 	icon_door = "orange_wall";
-	name = "uniform closet";
-	pixel_y = 28
+	name = "uniform closet"
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
@@ -2621,12 +2615,10 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Da" = (
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
+/obj/structure/closet/secure_closet/wall/directional/west{
 	icon_door = "solgov_wall";
 	icon_state = "solgov_wall";
 	name = "vanguard's locker";
-	pixel_x = -28;
 	req_access_txt = "58"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2751,7 +2743,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
 "EC" = (
@@ -2800,6 +2791,9 @@
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden/layer1,
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
@@ -2898,11 +2892,9 @@
 /area/ship/crew/toilet)
 "GL" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
-/obj/structure/closet/wall{
-	dir = 8;
+/obj/structure/closet/wall/directional/east{
 	icon_door = "yellow_wall";
-	name = "engineering closet";
-	pixel_x = 32
+	name = "engineering closet"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/storage/backpack/industrial,
@@ -3006,7 +2998,8 @@
 /area/ship/engineering)
 "Hu" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 6
+	dir = 6;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -3208,9 +3201,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Kv" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
+/obj/structure/chair/comfy/grey/directional/east,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
@@ -3264,10 +3255,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "KM" = (
-/obj/structure/closet/emcloset/wall{
-	dir = 4;
-	pixel_x = -32
-	},
+/obj/structure/closet/emcloset/wall/directional/west,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Ld" = (
@@ -3289,7 +3277,8 @@
 /area/ship/security/armory)
 "Ll" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 5
+	dir = 5;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -3483,13 +3472,6 @@
 /obj/item/radio,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
-"Nz" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/effect/landmark/start/security_officer,
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/office)
 "NH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -3544,7 +3526,8 @@
 /area/ship/cargo)
 "Oa" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 6
+	dir = 6;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -3662,8 +3645,9 @@
 /obj/structure/sign/warning/nosmoking/circle{
 	pixel_x = 32
 	},
-/obj/effect/turf_decal/number/zero{
-	dir = 8
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
@@ -3795,7 +3779,8 @@
 "QL" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Bridge";
-	req_access_txt = "20"
+	req_access_txt = null;
+	req_one_access = list(19,3)
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3824,7 +3809,8 @@
 /area/ship/hallway/central)
 "QZ" = (
 /obj/machinery/porta_turret/ship/ballistic{
-	dir = 10
+	dir = 10;
+	faction = list("turret")
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -3916,7 +3902,6 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/industrial/loading,
-/obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Sa" = (
@@ -3991,7 +3976,6 @@
 /area/ship/hallway/central)
 "Ss" = (
 /obj/effect/decal/cleanable/oil/streak,
-/obj/effect/landmark/start/assistant,
 /obj/structure/sign/warning/incident{
 	pixel_x = 32
 	},
@@ -4059,7 +4043,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Tt" = (
@@ -4547,10 +4530,7 @@
 	piping_layer = 2
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/closet/firecloset/wall{
-	dir = 4;
-	pixel_x = -28
-	},
+/obj/structure/closet/firecloset/wall/directional/west,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Zz" = (
@@ -5007,7 +4987,7 @@ XJ
 lU
 dS
 jw
-Nz
+ry
 ry
 Ck
 Od
@@ -5052,7 +5032,7 @@ Wn
 eK
 jw
 sP
-Nz
+ry
 Er
 Pv
 Ur

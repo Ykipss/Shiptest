@@ -737,7 +737,6 @@
 /obj/item/gps/mining,
 /obj/item/gps/mining,
 /obj/structure/closet/crate/miningcar,
-/obj/item/disk/holodisk/rube/disk7,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/effect/turf_decal/corner_steel_grid,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -777,8 +776,6 @@
 	},
 /obj/structure/table/wood,
 /obj/item/pipe_dispenser,
-/obj/item/disk/holodisk/rube/disk4,
-/obj/item/disk/holodisk/rube/disk3,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "hf" = (
@@ -1266,7 +1263,6 @@
 /obj/item/holosign_creator/atmos,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/disk/holodisk/rube/disk6,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/storage)
 "mi" = (
@@ -1428,7 +1424,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/firecloset/wall{
-	dir = 4;
+	dir = 8;
 	pixel_x = -28
 	},
 /turf/open/floor/plating/airless,
@@ -1460,7 +1456,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/border{
 	dir = 1
 	},
-/obj/item/disk/holodisk/rube/disk4,
 /turf/open/floor/mineral/titanium,
 /area/ship/bridge)
 "od" = (
@@ -2648,12 +2643,10 @@
 /obj/item/radio/intercom/wideband/table{
 	pixel_y = -9
 	},
-/obj/item/disk/holodisk/rube/disk1,
-/obj/item/disk/holodisk/rube/disk2,
-/obj/item/disk/holodisk/rube/disk3,
-/obj/item/disk/holodisk/rube/disk4,
-/obj/item/disk/holodisk/rube/disk5,
-/obj/item/disk/holodisk/rube/disk6,
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 13
+	},
 /turf/open/floor/mineral/titanium,
 /area/ship/bridge)
 "zL" = (
@@ -3119,11 +3112,18 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm)
 "ES" = (
-/obj/structure/chair/sofa/right{
-	dir = 1
-	},
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
+"EZ" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "Fb" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
@@ -3599,7 +3599,6 @@
 	dir = 4
 	},
 /obj/structure/closet/firecloset/wall{
-	dir = 1;
 	pixel_y = -29
 	},
 /turf/open/floor/plating,
@@ -3747,9 +3746,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Kh" = (
-/obj/structure/chair/sofa/corner{
-	dir = 1
-	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
@@ -3903,7 +3899,6 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/disk/holodisk/rube/disk5,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "LK" = (
@@ -4106,7 +4101,8 @@
 /area/ship/crew/canteen)
 "NC" = (
 /obj/structure/closet/emcloset/wall{
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -5275,9 +5271,6 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/medical)
 "ZY" = (
-/obj/structure/chair/sofa/left{
-	dir = 4
-	},
 /obj/item/toy/plush/among{
 	pixel_x = 8;
 	pixel_y = -8
@@ -6443,7 +6436,7 @@ Zg
 Zg
 Zg
 VA
-cF
+EZ
 ag
 BV
 Sw

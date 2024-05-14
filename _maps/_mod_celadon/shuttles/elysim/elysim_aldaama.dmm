@@ -458,6 +458,11 @@
 	pixel_x = 10;
 	pixel_y = 9
 	},
+/obj/item/clothing/head/shemag/green,
+/obj/item/bong/lungbuster{
+	pixel_y = 3;
+	pixel_x = -12
+	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
 "dV" = (
@@ -549,6 +554,7 @@
 "fm" = (
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/banner/elysim,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "fE" = (
@@ -875,9 +881,12 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "jk" = (
-/obj/machinery/suit_storage_unit/standard_unit,
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/suit_storage_unit/independent,
+/obj/item/clothing/suit/space/elysm/junk,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/pod,
 /area/ship/security/armory)
 "jl" = (
@@ -1174,6 +1183,15 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
+"lK" = (
+/obj/structure/catwalk,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/suit_storage_unit/independent,
+/obj/item/clothing/suit/space/elysm/junk,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "lM" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
@@ -1252,9 +1270,12 @@
 	},
 /area/ship/maintenance/fore)
 "mU" = (
-/obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
+/obj/machinery/suit_storage_unit/independent,
+/obj/item/clothing/suit/space/elysm/junk,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/pod,
 /area/ship/security/armory)
 "mW" = (
@@ -1498,6 +1519,9 @@
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/independent,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "pC" = (
@@ -1610,7 +1634,9 @@
 "qM" = (
 /obj/structure/grille,
 /obj/docking_port/stationary{
-	dir = 8
+	dwidth = 15;
+	height = 15;
+	width = 30
 	},
 /turf/open/floor/plating,
 /area/ship/external)
@@ -2280,6 +2306,10 @@
 /obj/item/ammo_box/magazine/skm_762_40/drum{
 	pixel_y = -10
 	},
+/obj/item/clothing/head/bandana/elysium/black{
+	pixel_y = 3;
+	pixel_x = 17
+	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "wJ" = (
@@ -2297,6 +2327,10 @@
 /obj/structure/table,
 /obj/item/areaeditor/shuttle,
 /obj/item/melee/skimitar{
+	pixel_y = 6
+	},
+/obj/item/storage/book/bible/koran{
+	pixel_x = -8;
 	pixel_y = 6
 	},
 /turf/open/floor/carpet/green,
@@ -2361,6 +2395,14 @@
 	pixel_y = -16
 	},
 /obj/structure/cable,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/neck/shemagh{
+	pixel_x = 8
+	},
+/obj/item/clothing/head/shemag/black{
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "xr" = (
@@ -2504,7 +2546,10 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "zc" = (
-/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/suit_storage_unit/independent,
+/obj/item/clothing/suit/space/elysm/junk,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/pod,
 /area/ship/security/armory)
 "zj" = (
@@ -2560,14 +2605,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "zP" = (
-/obj/structure/chair/sofa/corner{
-	dir = 4
-	},
 /mob/living/simple_animal/hostile/retaliate/goose{
 	name = "Khasir"
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/left{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -2736,6 +2781,11 @@
 	dir = 10
 	},
 /obj/structure/table,
+/obj/item/clothing/head/bandana/elysium/white,
+/obj/item/clothing/head/bandana/elysium/green{
+	pixel_y = 9;
+	pixel_x = 11
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "BE" = (
@@ -2878,6 +2928,24 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
+"CU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/electrical)
 "Df" = (
 /obj/machinery/light/small/directional/south,
 /obj/machinery/vending/tool,
@@ -2887,6 +2955,11 @@
 /obj/structure/closet/crate/large,
 /obj/structure/training_machine,
 /obj/machinery/firealarm/directional/south,
+/obj/item/clothing/head/space/elysm/space_helm{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/clothing/suit/space/elysm/EVA_armored,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "Do" = (
@@ -3259,6 +3332,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/head/bandana/elysium/black{
+	pixel_y = -21
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "He" = (
@@ -3348,6 +3424,10 @@
 /area/ship/construction)
 "IH" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -3595,11 +3675,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "LY" = (
-/obj/structure/chair/sofa{
-	dir = 4
-	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/directional{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -3935,9 +4015,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Qc" = (
-/obj/structure/chair/sofa/right{
-	dir = 4
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -3;
@@ -3945,6 +4022,9 @@
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/right{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -4340,7 +4420,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "TR" = (
-/obj/structure/chair/sofa/left,
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -4720,6 +4799,10 @@
 	pixel_y = 14;
 	pixel_x = -2
 	},
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/head/shemag/black{
+	pixel_x = -7
+	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
 "XY" = (
@@ -4814,15 +4897,16 @@
 /area/ship/engineering)
 "ZJ" = (
 /obj/structure/fans/tiny,
-/obj/docking_port/mobile{
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 8;
-	dir = 4
-	},
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
 	id = "shutt1"
+	},
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4;
+	set_dir_on_move = 4
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5081,7 +5165,7 @@ uP
 Lu
 Ko
 vK
-pA
+lK
 So
 lh
 df
@@ -5675,7 +5759,7 @@ XH
 GH
 OA
 tt
-GE
+CU
 IH
 Pk
 jn

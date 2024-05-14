@@ -400,6 +400,10 @@
 /obj/item/stack/sheet/plasteel/fifty,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
+"Jz" = (
+/obj/machinery/power/ship_gravity/unanchored,
+/turf/open/floor/plating/airless,
+/area/ship/construction)
 "JY" = (
 /obj/structure/closet/crate/engineering/electrical{
 	name = "electrical crate"
@@ -912,7 +916,7 @@ SA
 ke
 MA
 HK
-MA
+Jz
 yQ
 Tc
 wd

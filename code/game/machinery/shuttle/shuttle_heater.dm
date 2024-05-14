@@ -8,7 +8,10 @@
 	name = "shuttle atmospherics device"
 	desc = "This does something to do with shuttle atmospherics"
 	icon_state = "heater"
-	icon = 'icons/obj/shuttle.dmi'
+	// [CELADON-EDIT] - CELADON_BALANCE
+	// icon = 'icons/obj/shuttle.dmi' // CELADON-EDIT - ORIGINAL
+	icon = 'mod_celadon/balance/icons/shuttle.dmi'
+	// [/CELADON-EDIT]
 
 /obj/machinery/atmospherics/components/unary/shuttle/heater
 	name = "engine heater"

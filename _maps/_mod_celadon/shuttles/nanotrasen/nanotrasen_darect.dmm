@@ -1,7 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aO" = (
 /obj/structure/closet/wall{
-	dir = 1;
 	name = "uniform closet";
 	pixel_y = -30
 	},
@@ -31,14 +30,7 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 4
 	},
-/obj/structure/closet/wall{
-	dir = 8;
-	icon_door = "yellow_wall";
-	name = "engineering closet";
-	pixel_x = 28
-	},
 /obj/item/clothing/accessory/armband/engine,
-/obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/head/hardhat/dblue,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/storage/backpack/industrial,
@@ -56,6 +48,14 @@
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals3{
 	dir = 4
+	},
+/obj/item/clothing/mask/gas/atmos,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/head/helmet/space/light/engineer,
+/obj/item/clothing/suit/space/engineer,
+/obj/structure/closet/wall{
+	dir = 4;
+	pixel_x = 30
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -216,7 +216,8 @@
 	},
 /obj/structure/closet/wall/orange{
 	name = "fuel locker";
-	pixel_y = 28
+	pixel_y = 30;
+	dir = 1
 	},
 /obj/item/stack/sheet/mineral/plasma/twenty,
 /obj/item/stack/sheet/mineral/plasma/twenty{
@@ -631,11 +632,11 @@
 "kR" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/light/small/directional/north,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/engineer,
-/obj/item/clothing/head/helmet/space/light/engineer,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/atmos,
+/obj/machinery/power/ship_gravity,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "lE" = (
@@ -995,7 +996,8 @@
 /obj/item/storage/bag/trash,
 /obj/structure/closet/wall{
 	name = "Janitorial supplies";
-	pixel_y = 30
+	pixel_y = 30;
+	dir = 1
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/ship/hallway/central)
@@ -1318,7 +1320,6 @@
 "ze" = (
 /obj/effect/turf_decal/techfloor,
 /obj/structure/closet/secure_closet/wall{
-	dir = 1;
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
@@ -1515,7 +1516,8 @@
 /obj/structure/closet/wall/red{
 	name = "Ammo locker";
 	pixel_y = 28;
-	pixel_x = -7
+	pixel_x = -7;
+	dir = 1
 	},
 /obj/item/ammo_box/magazine/smgm9mm{
 	pixel_y = 7;
@@ -1654,7 +1656,6 @@
 	dir = 10
 	},
 /obj/structure/closet/wall{
-	dir = 1;
 	name = "uniform closet";
 	pixel_y = -30
 	},
@@ -2301,7 +2302,6 @@
 /area/ship/security)
 "QS" = (
 /obj/structure/closet/wall{
-	dir = 1;
 	icon_door = null;
 	name = "radio locker";
 	pixel_y = -28
@@ -2641,6 +2641,9 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)

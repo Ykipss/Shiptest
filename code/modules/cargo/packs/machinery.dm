@@ -136,6 +136,14 @@
 		Miscellaneous machines
 */
 
+/datum/supply_pack/machinery/gravgen
+	name = "Ship-Portable Gravity Generator Crate"
+	desc = "For those tired of their tools floating away from them. Contains a single gravity generator."
+	cost = 2000
+	contains = list(/obj/machinery/power/ship_gravity/unanchored)
+	crate_name = "gravity generator crate"
+	crate_type = /obj/structure/closet/crate/engineering/electrical
+
 /datum/supply_pack/machinery/breach_shield_gen
 	name = "Anti-breach Shield Projector Crate"
 	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
@@ -201,9 +209,16 @@
 /datum/supply_pack/machinery/plasma_thruster
 	name = "Plasma Thruster Crate"
 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-	cost = 1500
-	contains = list(/obj/item/circuitboard/machine/shuttle/heater,
-					/obj/item/circuitboard/machine/shuttle/engine/plasma)
+	// [CELADON-EDIT] - CARGO_ITEMS - Ребаланс цен и наполнения
+	// cost = 1500 // CELADON-EDIT - ORIGINAL
+	// contains = list(/obj/item/circuitboard/machine/shuttle/heater, // CELADON-EDIT - ORIGINAL
+	//				/obj/item/circuitboard/machine/shuttle/engine/plasma) // CELADON-EDIT - ORIGINAL
+	cost = 5000
+	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,
+					/obj/item/circuitboard/machine/shuttle/heater,
+					/obj/item/circuitboard/machine/pipedispenser,
+					/obj/machinery/portable_atmospherics/canister/toxins)
+	// [/CELADON-EDIT]
 	crate_name = "plasma thruster crate"
 	crate_type = /obj/structure/closet/crate/engineering
 

@@ -113,7 +113,10 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "as" = (
@@ -407,13 +410,13 @@
 	icon_state = "1-4"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/landmark/start/assistant,
 /obj/machinery/firealarm/directional/south,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_y = -18;
 	pixel_x = 11
 	},
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "aW" = (
@@ -513,7 +516,6 @@
 /area/ship/medical)
 "bf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/white,
 /area/ship/medical/morgue)
 "bg" = (
@@ -920,7 +922,6 @@
 "bX" = (
 /obj/machinery/atmospherics/pipe/manifold,
 /obj/effect/turf_decal/siding/blue,
-/obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "bY" = (
@@ -991,7 +992,6 @@
 /obj/effect/turf_decal/corner/transparent/blue/border{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
@@ -999,7 +999,7 @@
 	pixel_x = -11;
 	pixel_y = 23
 	},
-/obj/structure/chair/sofa/left,
+/obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "cf" = (
@@ -1182,7 +1182,7 @@
 /obj/item/storage/backpack/satchel/chem,
 /obj/item/storage/backpack/satchel/chem,
 /obj/structure/closet/wall/white/chem{
-	dir = 4;
+	dir = 8;
 	pixel_x = -30
 	},
 /obj/structure/chair,
@@ -1261,7 +1261,7 @@
 /obj/effect/turf_decal/corner/transparent/blue/border{
 	dir = 8
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/blue/corpo/directional{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/white,
@@ -1397,10 +1397,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "cR" = (
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/hallway/central)
-"cS" = (
-/obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "cT" = (
@@ -1597,23 +1593,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
-"dl" = (
-/obj/effect/turf_decal/corner/transparent/blue/border,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/landmark/start/assistant,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/ship/medical)
 "dm" = (
 /obj/effect/turf_decal/corner/transparent/blue/border,
 /obj/structure/cable{
@@ -1740,7 +1719,9 @@
 	dir = 10
 	},
 /obj/machinery/firealarm/directional/south,
-/obj/item/kirbyplants/photosynthetic,
+/obj/structure/chair/sofa/blue/corpo/right{
+	dir = 4
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "dy" = (
@@ -1889,9 +1870,6 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/stairs/medium{
 	dir = 4
 	},
 /area/ship/hallway/central)
@@ -2803,13 +2781,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/cryo)
-"fn" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/obj/effect/landmark/start/medical_doctor,
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew/canteen)
 "fo" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -2986,7 +2957,7 @@
 	dir = 9
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/blue/corpo/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/white,
@@ -3232,13 +3203,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
-"fX" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/obj/effect/landmark/start/assistant,
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew/canteen)
 "fY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4026,7 +3990,7 @@ dx
 ec
 ga
 fk
-fX
+gg
 gQ
 Th
 aa
@@ -4052,7 +4016,7 @@ cH
 dE
 ec
 eu
-fn
+gg
 gg
 bj
 Th
@@ -4237,7 +4201,7 @@ ae
 bc
 ci
 cw
-dl
+cX
 el
 Ad
 fM
@@ -4856,7 +4820,7 @@ aa
 aa
 PC
 cC
-cS
+cR
 dq
 dX
 eE

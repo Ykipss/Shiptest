@@ -142,11 +142,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "ju" = (
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8
-	},
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/hatch{
 	name = "External Maintenance Hatch"
@@ -164,6 +159,12 @@
 /obj/effect/turf_decal/number/three{
 	dir = 4
 	},
+/obj/structure/closet/crate{
+	color = "#ffcc00";
+	name = "spare fuel crate"
+	},
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/stack/sheet/mineral/uranium/twenty,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ks" = (
@@ -489,6 +490,11 @@
 	id = "masinyane_blastdoors";
 	name = "Masinyane Entrance Doors"
 	},
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Iw" = (
@@ -513,7 +519,7 @@
 	},
 /obj/item/storage/firstaid/regular,
 /obj/structure/closet/wall/blue{
-	dir = 4;
+	dir = 8;
 	name = "Equipment closet";
 	pixel_x = -30
 	},
@@ -639,15 +645,11 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/closet/crate{
-	color = "#ffcc00";
-	name = "spare fuel crate"
-	},
-/obj/item/stack/sheet/mineral/plasma/twenty,
-/obj/item/stack/sheet/mineral/uranium/twenty,
 /obj/effect/turf_decal/number/five{
 	dir = 4
 	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "St" = (
@@ -729,6 +731,7 @@
 "Xq" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/light/small/directional/west,
+/obj/docking_port,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "XT" = (

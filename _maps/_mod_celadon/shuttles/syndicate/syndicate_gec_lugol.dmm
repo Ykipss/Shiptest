@@ -128,7 +128,7 @@
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -893,7 +893,6 @@
 	color = "#4c535b"
 	},
 /obj/structure/closet/wall{
-	dir = 1;
 	name = "Radio Closet";
 	pixel_y = -30
 	},
@@ -945,7 +944,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "iV" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
@@ -1454,7 +1453,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "oq" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
@@ -1698,8 +1697,10 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals_central2,
-/obj/effect/turf_decal/arrows{
-	dir = 1
+/obj/machinery/power/ship_gravity,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -4925,7 +4926,7 @@
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
 	},
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 8
 	},
 /turf/open/floor/plating,

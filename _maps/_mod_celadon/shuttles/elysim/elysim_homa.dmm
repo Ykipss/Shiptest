@@ -18,6 +18,21 @@
 	pixel_x = -5;
 	pixel_y = -3
 	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_y = -13;
+	pixel_x = 7
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 14;
+	pixel_y = -7
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 18
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 18;
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel,
 /area/ship/security/dock)
 "aD" = (
@@ -46,7 +61,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "aM" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 8
 	},
 /turf/open/floor/carpet/green,
@@ -209,7 +224,7 @@
 /area/template_noop)
 "fX" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/brown/corpo/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -231,11 +246,11 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "gs" = (
-/obj/structure/chair/sofa/corner{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/brown/corpo/corner{
+	dir = 8
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "gQ" = (
@@ -267,14 +282,15 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
 /obj/item/areaeditor/shuttle,
+/obj/item/melee/skimitar{
+	pixel_y = 6
+	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "hn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/orange{
-	dir = 1;
 	pixel_y = -30
 	},
 /obj/item/clothing/mask/gas/welding,
@@ -342,9 +358,6 @@
 /area/ship/crew/canteen)
 "jH" = (
 /obj/structure/mineral_door/wood,
-/obj/structure/curtain/cloth/grey{
-	color = "#0A470E"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -354,6 +367,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
+/obj/structure/curtain/cloth/elysim,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
 "jJ" = (
@@ -431,6 +445,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/ship/cargo)
 "kS" = (
@@ -474,7 +491,6 @@
 /area/ship/hallway/central)
 "lM" = (
 /obj/structure/closet/wall{
-	dir = 1;
 	pixel_y = -30
 	},
 /obj/item/disk/design_disk/ammo_c10mm,
@@ -485,9 +501,23 @@
 /obj/item/radio,
 /obj/item/radio,
 /obj/item/disk/design_disk/ammo_1911,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
+/obj/item/clothing/head/bandana/elysium/black,
+/obj/item/clothing/head/bandana/elysium/black,
+/obj/item/clothing/head/bandana/elysium/green,
+/obj/item/clothing/head/bandana/elysium/green,
+/obj/item/clothing/head/bandana/elysium/white,
+/obj/item/clothing/head/bandana/elysium/white,
+/obj/item/clothing/shoes/wheelys,
+/obj/item/clothing/shoes/wheelys,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/head/shemag/black,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "lT" = (
@@ -634,7 +664,8 @@
 "qG" = (
 /obj/item/storage/firstaid/regular,
 /obj/structure/closet/wall/white/med{
-	pixel_y = 30
+	pixel_y = 30;
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -799,7 +830,10 @@
 "wF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/closet/cardboard,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "xd" = (
@@ -876,18 +910,16 @@
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "yE" = (
-/obj/structure/chair/sofa/left{
+/obj/machinery/light/small/directional/west,
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "yN" = (
-/obj/structure/curtain/cloth/grey{
-	color = "#0A470E"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/clown,
+/obj/structure/curtain/cloth/elysim,
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "zh" = (
@@ -897,7 +929,6 @@
 	pixel_y = 7
 	},
 /obj/structure/closet/wall{
-	dir = 1;
 	pixel_y = -30
 	},
 /obj/item/clothing/mask/bandana/durathread,
@@ -1108,6 +1139,7 @@
 	dir = 4;
 	layer = 4.1
 	},
+/obj/item/banner/elysim,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "Hy" = (
@@ -1134,7 +1166,12 @@
 /area/ship/crew/canteen)
 "HI" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plating,
 /area/ship/security/dock)
 "HM" = (
@@ -1340,6 +1377,7 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
+/obj/item/clothing/suit/space/elysm/junk,
 /turf/open/floor/plating,
 /area/ship/security/dock)
 "NF" = (
@@ -1388,7 +1426,14 @@
 "NQ" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck/cas{
-	pixel_y = 8
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/storage/book/bible/koran{
+	pixel_x = 6
+	},
+/obj/item/bong{
+	pixel_x = -8
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
@@ -1457,7 +1502,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "PP" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -1562,7 +1607,12 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Vf" = (
-/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel,
 /area/ship/security/dock)
 "Vs" = (
@@ -1578,7 +1628,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "VE" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,

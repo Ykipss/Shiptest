@@ -45,5 +45,5 @@
 		}
 
 	},
-	"enabled": true
+	"enabled": false // Отправлен на доработку. Причина: https://discord.com/channels/1100198143456465067/1229890148301275257
 }
