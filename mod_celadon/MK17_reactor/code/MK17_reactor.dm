@@ -161,7 +161,7 @@
 	sheet_left -= temp
 	sheets -= round(needed_sheets)
 	needed_sheets -= round(needed_sheets)
-	radiation_pulse(src, 3, 5)
+	radiation_pulse(src, 15, 5, FALSE, FALSE)
 
 	if (sheet_left <= 0 && sheets > 0)
 		sheet_left = 1 - needed_sheets
@@ -179,8 +179,8 @@
 		current_heat += rand1
 	else
 		current_heat += rand(rand1, rand2)
-		if (current_heat < lower_limit)
-			current_heat = lower_limit
+		if (current_heat < 0)
+			current_heat = 0
 		if (current_heat > upper_limit)
 			current_heat = upper_limit
 
@@ -189,7 +189,6 @@
 
 	if (current_heat >= upper_limit)
 		overheat()
-		qdel(src)
 
 	update_brightness()
 	return
@@ -203,6 +202,7 @@
 /obj/machinery/power/celadon/solarflareMk17/overheat()
 	. =..()
 	explosion(src.loc, 3, 5, 2, 7)
+	qdel(src)
 
 /obj/machinery/power/celadon/solarflareMk17/attackby(obj/item/O, mob/user, params)
 	if(istype(O, sheet_path))
